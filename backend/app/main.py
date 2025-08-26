@@ -1,9 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-import os
-
 load_dotenv()
+
+import os
+from app.router import role_router
+from app import model
+from app.database import engine
+
+model.Base.metadata.create_all(bind=engine)
+model.init_data()
+
 
 FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
 
@@ -17,10 +24,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+app.include_router(role_router.router)
 
 # py -m app.main
 if __name__ == "__main__":
