@@ -22,7 +22,7 @@ app.add_middleware(
 def read_root():
     return {"Hello": "World"}
 
-
+# py -m app.main
 if __name__ == "__main__":
     import uvicorn
 
