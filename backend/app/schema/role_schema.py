@@ -1,12 +1,13 @@
-from pydantic import BaseModel
+from pydantic import Field, BaseModel
+from typing import Annotated
+from fastapi import Query
 
 class RoleResponse(BaseModel):
     id: int
     name: str
-    class config:
-        from_attributes: True
 
 class RoleCreate(BaseModel):
+    name: str 
+
+class RoleUpdate(BaseModel):
     name: str
-    class config:
-        from_attributes: True
