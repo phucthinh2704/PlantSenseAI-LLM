@@ -14,6 +14,10 @@ async def create(role_data: RoleCreate,
                  db: Session = Depends(get_db)):
     return role_service.create(role_data, db)
 
+@router.get("/{role_id}", response_model=RoleResponse)
+async def detail(role_id: int, db: Session = Depends(get_db)):
+    return role_service.detail(role_id, db)
+
 @router.post("/update/{role_id}", response_model=RoleResponse)
 async def update(role_id: int, role_data: RoleUpdate,
                  db: Session = Depends(get_db)):
