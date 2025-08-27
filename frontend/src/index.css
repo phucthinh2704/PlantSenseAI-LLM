@@ -1,1 +1,37 @@
 @import "tailwindcss";
+@layer base {
+	*,
+	*::before,
+	*::after {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	h1 {
+		@apply text-4xl font-bold; /* 2em (32px) with default 16px base */
+	}
+
+	h2 {
+		@apply text-3xl font-bold; /* 1.5em (24px) with default 16px base */
+	}
+
+	h3 {
+		@apply text-2xl font-bold   /* 1.17em (18.72px) with default 16px base */;
+	}
+
+	h4 {
+		@apply text-xl font-bold; /* 1em (16px) with default 16px base */
+	}
+
+	h5 {
+		@apply text-base font-bold; /* 0.83em (13.28px) with default 16px base */
+	}
+
+	h6 {
+		@apply text-sm font-bold; /* 0.67em (10.72px) with default 16px base */
+	}
+}
+
+input, textarea, select {
+	@apply border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500;
+}
