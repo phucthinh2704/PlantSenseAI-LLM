@@ -32,13 +32,14 @@ def update(role_id: int, role_data: RoleUpdate, db: Session) -> RoleResponse:
     db.commit()
     return role_query.first()
 
+
 def delete(role_id: int, db: Session) -> None:
     role_query = db.query(Role).filter(Role.id == role_id)
     if not role_query.first():
         raise HTTPException(
         status_code=status.HTTP_404_NOT_FOUND,
         detail="Role not found"
-    )
+    )   
     role_query.delete(synchronize_session=False)
     db.commit()
 
