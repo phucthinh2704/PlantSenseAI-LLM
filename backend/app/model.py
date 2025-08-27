@@ -75,7 +75,7 @@ def init_data():
         admin_user = User(
             name="Admin",
             email=admin_email,
-            password=get_password_hash("123"),  # Bạn nên hash password trước khi lưu
+            password=get_password_hash("123"),  
             status=UserStatus.active,
             role_id=admin_role.id,
             is_outside=False,
