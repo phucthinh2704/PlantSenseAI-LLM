@@ -1,4 +1,4 @@
-import axios from "../config/axios";
+import axios from "@configs/axios";
 
 export const apiLogin = async (data) =>
 	axios({
