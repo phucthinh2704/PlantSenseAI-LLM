@@ -8,7 +8,7 @@ import {
 	Users,
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import { apiLogin } from "../api/auth";
+import { apiLogin } from "@services/auth";
 const LoginPage = () => {
 	const [showPassword, setShowPassword] = useState(false);
 	const [email, setEmail] = useState("");
@@ -84,7 +84,7 @@ const LoginPage = () => {
 							</div>
 							<div>
 								<h1 className="text-3xl font-bold">
-									AgriChat Bot
+									CTU AgriChatBot
 								</h1>
 								<p className="text-green-100">
 									Trợ lý AI cho nông nghiệp thông minh
@@ -159,7 +159,7 @@ const LoginPage = () => {
 								Chào mừng trở lại!
 							</h2>
 							<p className="text-gray-600">
-								Đăng nhập để tiếp tục sử dụng AgriChat Bot
+								Đăng nhập để tiếp tục sử dụng CTU AgriChatBot
 							</p>
 						</div>
 
@@ -265,7 +265,7 @@ const LoginPage = () => {
 								)}
 							</button>
 						</div>
-						<div className="flex items-center mt-6">
+						<div className="flex items-center mt-6 mb-5">
 							<hr className="flex-1 border-gray-300" />
 							<span className="px-4 text-gray-500 text-sm">
 								hoặc
@@ -273,13 +273,12 @@ const LoginPage = () => {
 							<hr className="flex-1 border-gray-300" />
 						</div>
 						<GoogleOAuthProvider
-							clientId={`${
-								import.meta.env.VITE_GOOGLE_CLIENT_ID
-							}`}>
+							clientId={`${import.meta.env.VITE_GOOGLE_CLIENT_ID
+								}`}>
 							<div className="App">
-								<p className="text-center">
+								{/* <p className="text-center">
 									Đăng nhập với Google
-								</p>
+								</p> */}
 								<GoogleLogin
 									onSuccess={handleSuccess}
 									onError={() => console.log("Login Failed")}
