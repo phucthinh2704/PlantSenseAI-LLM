@@ -9,12 +9,17 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { apiLogin } from "@services/auth";
+import { useAlert } from "@hooks/useAlert";
+import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
 	const [showPassword, setShowPassword] = useState(false);
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
 	const [animatedStats, setAnimatedStats] = useState([0, 0, 0]);
+
+	const { showSuccess, showError } = useAlert();
+	const navigate = useNavigate();
 
 	// Animate statistics numbers
 	useEffect(() => {
@@ -46,11 +51,21 @@ const LoginPage = () => {
 			const token = credentialResponse.credential;
 			console.log("Google ID Token:", token);
 
-			// Gửi token lên FastAPI để verify
-			const res = await apiLogin({ token });
-
-			console.log("Server response:", res);
-			localStorage.setItem("access_token", res.access_token);
+			try {
+				// Gửi token lên FastAPI để verify
+				const res = await apiLogin({ token });
+				if(!res.success){
+					showError(res.message || "Đăng nhập thất bại");
+					console.error("Error during API login:", res.message);
+					return;
+				}
+				navigate("/");
+				await showSuccess("Đăng nhập thành công!");
+				// console.log("Server response:", res);
+				localStorage.setItem("access_token", res.data.access_token);
+			} catch (error) {
+				console.error("Error during API login:", error);
+			}
 		} catch (error) {
 			console.error("Error during Google login:", error);
 		}
@@ -273,8 +288,9 @@ const LoginPage = () => {
 							<hr className="flex-1 border-gray-300" />
 						</div>
 						<GoogleOAuthProvider
-							clientId={`${import.meta.env.VITE_GOOGLE_CLIENT_ID
-								}`}>
+							clientId={`${
+								import.meta.env.VITE_GOOGLE_CLIENT_ID
+							}`}>
 							<div className="App">
 								{/* <p className="text-center">
 									Đăng nhập với Google
