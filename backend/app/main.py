@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import os
-from app.router import role_router, auth_router
+from app.router import role_router, auth_router, user_router
 from app import model
 from app.database import engine
 
@@ -26,6 +26,7 @@ app.add_middleware(
 
 app.include_router(role_router.router)
 app.include_router(auth_router.router)
+app.include_router(user_router.router)
 
 # py -m app.main
 if __name__ == "__main__":

@@ -1,11 +1,17 @@
 from app.schema.response_schema import APIResponse
-from fastapi import APIRouter, Depends, Response
+from fastapi import APIRouter, Depends, Response, HTTPException
 from sqlalchemy.orm import Session
+from dotenv import load_dotenv
+
+load_dotenv()
+
+import os
 from app.database import get_db
 from app.service import auth_service
 from app.schema.auth_schema import AuthResponse, AuthLogin, TokenRequest
 
 router = APIRouter(prefix="/auth", tags=["Auth"])
+GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
 
 
 @router.post("/login", response_model=APIResponse)
@@ -14,10 +20,12 @@ async def login(login_data: AuthLogin, db: Session = Depends(get_db)):
     return APIResponse(success=True, message="Đăng nhập thành công", data=result)
 
 
-@router.post("/google")
-async def auth_google(req: TokenRequest):
-    return {
-        "access_token": req.token,
-        "email": "thinh@example.com",
-        "name": "Phuc Thinh",
-    }
+@router.post("/google", response_model=APIResponse)
+async def auth_google(req: TokenRequest, db: Session = Depends(get_db)):
+    result = auth_service.login_google(req.token, GOOGLE_CLIENT_ID, db)
+
+    return APIResponse(
+        success=True,
+        message="Đăng nhập thành công",
+        data=result,
+    )
