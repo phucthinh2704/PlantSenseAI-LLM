@@ -9,6 +9,7 @@ class AuthLogin(BaseModel):
 class AuthResponse(BaseModel):
     id: int
     name: str
+    access_token: str
 
     class Config:
         from_attributes = True
