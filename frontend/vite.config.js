@@ -22,8 +22,7 @@ export default defineConfig({
     }
   },
   server: {
-    open: '/login',
-    // host: true,
+    open: '/',
     port: 5173
   }
 })
