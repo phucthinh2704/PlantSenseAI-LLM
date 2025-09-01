@@ -11,5 +11,5 @@ class UpdateUserRequest(BaseModel):
     # password update sẽ có schema riêng (ChangePasswordRequest)
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
