@@ -1,17 +1,19 @@
-import React from 'react';
-import { Navigate } from 'react-router-dom';
+import React from "react";
+import { Navigate } from "react-router-dom";
 
 const PublicRoute = ({ children }) => {
-    // Kiểm tra user trong localStorage
-    const user = localStorage.getItem('access_token');
+	const user = localStorage.getItem("access_token");
 
-    // Nếu đã có user, điều hướng về trang chủ
-    if (user) {
-        return <Navigate to="/" replace />;
-    }
+	if (user) {
+		return (
+			<Navigate
+				to="/"
+				replace
+			/>
+		);
+	}
 
-    // Nếu không có user, cho phép truy cập
-    return children;
+	return children;
 };
 
 export default PublicRoute;

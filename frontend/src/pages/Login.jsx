@@ -1,4 +1,6 @@
+import { useAlert } from "@hooks/useAlert";
 import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
+import { apiLogin } from "@services/auth";
 import {
 	Eye,
 	EyeOff,
@@ -8,8 +10,6 @@ import {
 	Users,
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import { apiLogin } from "@services/auth";
-import { useAlert } from "@hooks/useAlert";
 import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
 	const [showPassword, setShowPassword] = useState(false);
@@ -59,10 +59,9 @@ const LoginPage = () => {
 					console.error("Error during API login:", res.message);
 					return;
 				}
-				navigate("/");
-				await showSuccess("Đăng nhập thành công!");
-				// console.log("Server response:", res);
 				localStorage.setItem("access_token", res.data.access_token);
+				await showSuccess("Đăng nhập thành công!");
+				navigate("/");
 			} catch (error) {
 				console.error("Error during API login:", error);
 			}
