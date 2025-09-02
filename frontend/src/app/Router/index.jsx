@@ -11,22 +11,9 @@ function Router() {
 				v7_relativeSplatPath: true,
 			}}>
 			<Routes>
-				{routes.map((route) => {
-					const { path, element, title } = route;
-					const RouteType = route.type;
-
-					return (
-						<Route
-							key={path}
-							path={path}
-							element={
-								<RouteType>
-									<Title>{title}</Title>
-									{element}
-								</RouteType>
-							}></Route>
-					);
-				})}
+				{routes.map(({ path, element }) => (
+          <Route key={path} path={path} element={element} />
+        ))}
 			</Routes>
 		</BrowserRouter>
 	);

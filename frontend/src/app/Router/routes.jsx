@@ -2,43 +2,44 @@ import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
 import LoginPage from "@pages/Login";
 import HomePage from "@pages/Home";
-import React from 'react';
+import React from "react";
+import Title from "@components/Title";
 
 const ROUTE_TYPE = {
-    PUBLIC: PublicRoute,
-    PRIVATE: PrivateRoute
-}
+	PUBLIC: PublicRoute,
+	PRIVATE: PrivateRoute,
+};
 
 const routes = [
-    {
-        path: "/",
-        Page: HomePage,
-        // Layout: ,
-        type: ROUTE_TYPE.PUBLIC,
-        title: "CTU ArgiChatbot"
-    },
-    {
-        path: "/login",
-        Page: LoginPage,
-        type: ROUTE_TYPE.PUBLIC,
-        title: "Đăng nhập"
-    },
-]
+	{
+		path: "/",
+		Page: HomePage,
+		type: ROUTE_TYPE.PRIVATE, // Không bọc bằng PublicRoute
+		title: "CTU ArgiChatbot",
+	},
+	{
+		path: "/login",
+		Page: LoginPage,
+		type: ROUTE_TYPE.PUBLIC, // Login mới cần PublicRoute
+		title: "Đăng nhập",
+	},
+];
 
 function createRoute(route) {
-    const { Page, Layout, title, path, type } = route;
-    const WrappedLayout = Layout || React.Fragment;
+  const { Page, Layout, path, type: RouteType, title } = route;
+  const WrappedLayout = Layout || React.Fragment;
 
-    return {
-        path,
-        type,
-        title,
-        element: (
-            <WrappedLayout>
-                <Page />
-            </WrappedLayout>
-        )
-    };
+  return {
+    path,
+    element: (
+      <RouteType>
+        <Title>{title}</Title>
+        <WrappedLayout>
+          <Page />
+        </WrappedLayout>
+      </RouteType>
+    ),
+  };
 }
 
 const appRoutes = routes.map(createRoute);
