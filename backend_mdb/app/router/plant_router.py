@@ -16,45 +16,41 @@ def create_plant(plant: Plant):
     )
 
 
-@router.get("/")
-def get_all_plants():
+@router.get("/", response_model=APIResponse)
+async def get_plants():
+    plants = await plant_service.get_all_plants()
     return APIResponse(
-        success=True,
-        message="Plants retrieved successfully",
-        data=plant_service.get_all_plants(),
+        success=True, message="Plants retrieved successfully", data=plants
     )
 
 
-@router.get("/{plant_id}")
-def get_plant(plant_id: str):
-    plant = plant_service.get_plant_by_id(plant_id)
+@router.get("/{plant_id}", response_model=APIResponse)
+async def get_plant(plant_id: str):
+    plant = await plant_service.get_plant_by_id(plant_id)
     if not plant:
         raise HTTPException(status_code=404, detail="Plant not found")
     return APIResponse(success=True, message="Plant retrieved successfully", data=plant)
 
 
 @router.get("/by_category/{category}")
-def get_by_category(category: str):
-    return APIResponse(
-        success=True,
-        message="Plants retrieved successfully",
-        data=plant_service.get_plants_by_category(category),
-    )
+async def get_by_category(category: str):
+    plants = await plant_service.get_plants_by_category(category)
+    if not plants:
+        raise HTTPException(status_code=404, detail=f"No plant found in category: {category}")
+    return APIResponse(success=True, message="Plants retrieved successfully", data=plants)
 
 
 @router.get("/by_name/{name}")
-def get_by_name(name: str):
-    plants = plant_service.get_plants_by_name(name)
+async def get_by_name(name: str):
+    plants = await plant_service.get_plants_by_name(name)
     if not plants:
         raise HTTPException(status_code=404, detail=f"No plant found with name: {name}")
-    return APIResponse(
-        success=True, message="Plants retrieved successfully", data=plants
-    )
+    return APIResponse(success=True, message="Plants retrieved successfully", data=plants)
 
 
 @router.get("/by_disease/{disease_name}")
-def get_by_disease(disease_name: str):
-    plants = plant_service.get_plants_by_disease(disease_name)
+async def get_by_disease(disease_name: str):
+    plants = await plant_service.get_plants_by_disease(disease_name)
     if not plants:
         raise HTTPException(
             status_code=404, detail=f"No plant found with disease: {disease_name}"
