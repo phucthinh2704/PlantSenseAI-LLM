@@ -38,17 +38,24 @@ async def register(user: User):
     )
 
 
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
+
 # Login (local)
 @router.post("/login", response_model=APIResponse)
-async def login(form_data: OAuth2PasswordRequestForm = Depends()):
-    user = await user_service.get_user_by_email(form_data.username)
+async def login(form_data: LoginRequest):
+    user = await user_service.get_user_by_email(form_data.email)
     if (
         not user
         or not user.password
         or not verify_password(form_data.password, user.password)
     ):
         raise HTTPException(status_code=401, detail="Invalid credentials")
-    token = create_access_token({"sub": str(user.id), "email": user.email})
+    token = create_access_token(
+        {"sub": str(user.id), "email": user.email, "role": user.role}
+    )
     return APIResponse(
         success=True,
         message="Login successful",
@@ -78,7 +85,7 @@ async def login_google(req: TokenRequest):
 async def get_me(token: str = Depends(oauth2_scheme)):
     payload = decode_access_token(token)
     user_id = payload.get("sub")
-    user = await user_service.get_user_by_id(user_id) 
+    user = await user_service.get_user_by_id(user_id)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return APIResponse(
