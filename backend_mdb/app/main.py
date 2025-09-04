@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.models.user import create_admin_user
 from contextlib import asynccontextmanager
 from dotenv import load_dotenv
 
@@ -16,6 +17,9 @@ async def lifespan(app: FastAPI):
     print("Ứng dụng đang khởi động...")
     await create_indexes()  # tạo index bất đồng bộ
     print("Các chỉ mục đã được tạo thành công.")
+
+    await create_admin_user()
+    print("Các chỉ mục và admin đã được tạo thành công.")
     yield  # đây là điểm ứng dụng "đang chạy"
     # Shutdown
     print("Đang đóng kết nối MongoDB...")

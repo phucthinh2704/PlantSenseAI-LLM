@@ -31,3 +31,31 @@ class User(BaseModel):
         arbitrary_types_allowed = True
         populate_by_name = True
         json_encoders = {ObjectId: str}
+
+
+from app.core.security import hash_password
+from app.core.database import user_collection
+from app.models.user import UserStatus
+from datetime import datetime, timezone
+
+async def create_admin_user():
+    existing = await user_collection.find_one({"email": "admin@gmail.com"})
+    if existing:
+        print("Admin already exists")
+        return
+
+    new_user = {
+        "name": "Admin",
+        "email": "admin@gmail.com",
+        "password": hash_password("admin@password"),
+        "status": UserStatus.active.value,
+        "role": "admin",
+        "is_outside": False,
+        "created_at": datetime.now(timezone.utc),
+        "updated_at": datetime.now(timezone.utc),
+    }
+
+    # Không gán _id nào
+    result = await user_collection.insert_one(new_user)
+    print("Admin user created with id:", str(result.inserted_id))
+
