@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import os
-from app.router import plant_router, auth_router
+from app.router import plant_router, auth_router, cultivation_router, disease_router
 from app.core.database import create_indexes, client
 
 
@@ -40,6 +40,8 @@ app.add_middleware(
 
 # Đăng ký router
 app.include_router(plant_router.router, prefix="/plants", tags=["Plants"])
+app.include_router(disease_router.router, prefix="/diseases", tags=["Diseases"])
+app.include_router(cultivation_router.router, prefix="/cultivation", tags=["Cultivation"])
 app.include_router(auth_router.router, prefix="/auth", tags=["Auth"])
 
 # py -m app.main
