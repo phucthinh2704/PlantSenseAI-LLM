@@ -1,21 +1,7 @@
-from pydantic import BaseModel
-from typing import List, Optional
-
-class Step(BaseModel):
-    step: int
-    name: str
-    description: str
-
-class DiseaseTreatment(BaseModel):
-    step: int
-    name: str
-    description: str
-
-class Disease(BaseModel):
-    name: str
-    symptom: str
-    prevention: List[DiseaseTreatment]
-    treatment: List[DiseaseTreatment]
+from pydantic import BaseModel, Field
+from typing import Optional, List
+from datetime import datetime
+from bson import ObjectId
 
 class Morphology(BaseModel):
     height: str
@@ -24,13 +10,15 @@ class Morphology(BaseModel):
     grain: str
 
 class Plant(BaseModel):
+    id: Optional[str] = Field(default=None, alias="_id")
     name: str
     scientific_name: str
     origin: str
     category: str
     growth_duration_days: int
     morphology: Morphology
-    cultivation_technology: List[Step]
-    diseases: Optional[List[Disease]] = []
-    class Config:
-        from_attributes = True
+    description: Optional[str] = None  # mô tả tổng quát
+    image_url: Optional[str] = None    # ảnh minh họa
+
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
