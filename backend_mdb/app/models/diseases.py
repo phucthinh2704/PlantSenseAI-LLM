@@ -1,15 +1,15 @@
 from pydantic import BaseModel, Field
 from typing import Optional, List
 from datetime import datetime
-from bson import ObjectId
 
 
 class TreatmentStep(BaseModel):
     step: int
     name: str
     description: str
-    chemical: Optional[str] = None  # thuốc, hoạt chất
-    dosage: Optional[str] = None  # liều lượng
+    stage: Optional[str] = None  # giai đoạn cây (VD: "Mạ", "Đẻ nhánh", "Trổ đồng")
+    chemical: Optional[str] = None
+    dosage: Optional[str] = None
     note: Optional[str] = None
 
 
@@ -22,6 +22,6 @@ class Disease(BaseModel):
     treatment: List[TreatmentStep]
     image_url: Optional[str] = None
 
-    plant_ids: List[str]  # danh sách _id các plant bị bệnh này
+    plant_ids: List[str]
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
