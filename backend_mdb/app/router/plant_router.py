@@ -1,6 +1,7 @@
-# app/routes/plant_router.py
 from fastapi import APIRouter, HTTPException
 from app.models.plant import Plant
+from app.models.cultivation_techniques import CultivationTechnique, Step
+from app.models.diseases import Disease, TreatmentStep
 from app.services import plant_service
 from app.schema.response_schema import APIResponse
 from datetime import datetime
@@ -41,9 +42,7 @@ async def get_plant_details(plant_id: str):
     if not result:
         raise HTTPException(status_code=404, detail="Plant not found")
     return APIResponse(
-        success=True,
-        message="Plant details retrieved successfully",
-        data=result,
+        success=True, message="Plant details retrieved successfully", data=result
     )
 
 
@@ -81,14 +80,6 @@ async def get_by_name(name: str):
     )
 
 
-@router.get("/by_disease/{disease_name}", response_model=APIResponse)
-async def get_by_disease(disease_name: str):
-    plants = await plant_service.get_plants_by_disease(disease_name)
-    return APIResponse(
-        success=True, message="Plants retrieved successfully", data=plants
-    )
-
-
 @router.post("/seed", response_model=APIResponse)
 async def seed_database():
     # Xóa dữ liệu cũ
@@ -96,19 +87,14 @@ async def seed_database():
     await db.diseases.delete_many({})
     await db.cultivation_techniques.delete_many({})
 
-    # Seed Plant
+    # --- Seed Plant ---
     plant_data = {
         "name": "Lúa OM5451",
-        "scientific_name": "Oryza sativa",
         "origin": "Việt Nam",
         "category": "Lúa",
-        "growth_duration_days": 105,
-        "morphology": {
-            "height": "90-95cm",
-            "stem": "Thân cứng, chống đổ tốt",
-            "leaf": "Lá xanh đậm, dạng đứng",
-            "grain": "Hạt dài, trắng, cơm mềm",
-        },
+        "growth_duration": "105 ngày",
+        "morphology": "Thân cứng, cao 90-95cm, lá xanh đậm, hạt dài trắng",
+        "yield_per_ha": "6-7 tấn/ha",
         "description": "Giống lúa OM5451 thích hợp vùng ĐBSCL, năng suất cao.",
         "image_url": "https://example.com/om5451.png",
         "created_at": datetime.utcnow(),
@@ -116,8 +102,9 @@ async def seed_database():
     }
     plant_result = await db.plants.insert_one(plant_data)
     plant_id = str(plant_result.inserted_id)
+    plant_data["_id"] = plant_id
 
-    # Seed Disease
+    # --- Seed Disease ---
     disease_data = {
         "name": "Bệnh đạo ôn lá",
         "cause": "Nấm Pyricularia oryzae",
@@ -127,30 +114,46 @@ async def seed_database():
                 "step": 1,
                 "name": "Vệ sinh đồng ruộng",
                 "description": "Dọn sạch cỏ, tàn dư rơm rạ.",
+                "stage": "Trước gieo sạ",
+                "note": "Giúp giảm nguồn bệnh tồn dư trong đất",
             },
             {
                 "step": 2,
                 "name": "Chọn giống kháng bệnh",
                 "description": "Sử dụng giống có khả năng chống chịu.",
+                "stage": "Chuẩn bị giống",
+                "note": "Ưu tiên các giống được khuyến cáo cho vùng ĐBSCL",
             },
         ],
         "treatment": [
             {
                 "step": 1,
-                "name": "Phun thuốc",
-                "description": "Sử dụng thuốc trừ đạo ôn giai đoạn 20-25 ngày sau sạ",
-                "chemical": "Tricyclazole",
+                "name": "Phun thuốc lần 1",
+                "description": "Phun thuốc khi bệnh chớm xuất hiện giai đoạn 20-25 ngày sau sạ.",
+                "stage": "Đẻ nhánh",
+                "chemical": "Tricyclazole 75WP",
                 "dosage": "150g/ha",
-            }
+                "note": "Pha theo đúng hướng dẫn, phun ướt đều lá",
+            },
+            {
+                "step": 2,
+                "name": "Phun thuốc lần 2",
+                "description": "Lặp lại sau 5-7 ngày nếu bệnh vẫn còn.",
+                "stage": "Đẻ nhánh",
+                "chemical": "Tricyclazole 75WP hoặc Isoprothiolane",
+                "dosage": "150-200g/ha",
+                "note": "Không phun quá 2 lần liên tiếp một hoạt chất để tránh kháng thuốc",
+            },
         ],
         "image_url": "https://example.com/dao_on.png",
         "plant_ids": [plant_id],
         "created_at": datetime.utcnow(),
         "updated_at": datetime.utcnow(),
     }
-    await db.diseases.insert_one(disease_data)
+    disease_result = await db.diseases.insert_one(disease_data)
+    disease_data["_id"] = str(disease_result.inserted_id)
 
-    # 3️Seed Cultivation Technique
+    # --- Seed Cultivation Technique ---
     cultivation_data = {
         "plant_id": plant_id,
         "season": "Vụ Đông Xuân",
@@ -179,6 +182,15 @@ async def seed_database():
         "created_at": datetime.utcnow(),
         "updated_at": datetime.utcnow(),
     }
-    await db.cultivation_techniques.insert_one(cultivation_data)
+    cultivation_result = await db.cultivation_techniques.insert_one(cultivation_data)
+    cultivation_data["_id"] = str(cultivation_result.inserted_id)
 
-    return APIResponse(success=True, message="Database seeded successfully")
+    return APIResponse(
+        success=True,
+        message="Database seeded successfully",
+        data={
+            "plant": plant_data,
+            "disease": disease_data,
+            "cultivation_technique": cultivation_data,
+        },
+    )
