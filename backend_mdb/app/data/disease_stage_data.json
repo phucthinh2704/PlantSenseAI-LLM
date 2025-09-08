@@ -1,0 +1,29 @@
+[
+  {
+    "disease_id": "68be6cc3d6ce295f1fc1abcb",
+    "stage": "Giai đoạn sớm",
+    "symptom": "Lá vàng, xuất hiện đốm nâu nhỏ.",
+    "prevention": [
+      {
+        "step": 1,
+        "name": "Vệ sinh ruộng",
+        "description": "Dọn sạch cỏ dại, rác thải.",
+        "chemical": null,
+        "dosage": null,
+        "note": "Tiến hành trước gieo trồng."
+      }
+    ],
+    "treatment": [
+      {
+        "step": 1,
+        "name": "Phun thuốc",
+        "description": "Sử dụng thuốc trừ nấm loại X.",
+        "chemical": "Thuốc X",
+        "dosage": "1ml/1 lít nước",
+        "note": "Phun vào buổi sáng."
+      }
+    ],
+    "created_at": "2025-09-08T05:00:00Z",
+    "updated_at": "2025-09-08T05:00:00Z"
+  }
+]

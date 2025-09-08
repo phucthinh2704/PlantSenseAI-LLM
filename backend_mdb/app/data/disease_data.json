@@ -1,0 +1,77 @@
+[
+	{
+		"name": "Bệnh đốm đen",
+		"cause": "Vi khuẩn Xanthomonas oryzae",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh thán thư",
+		"cause": "Nấm Colletotrichum gloeosporioides",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh loét vi khuẩn",
+		"cause": "Vi khuẩn Xanthomonas canpestris pv. citri",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh thối mốc đen",
+		"cause": "Vi khuẩn Xanthomonas campestris pv. Mangiferae",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh ghẻ",
+		"cause": "Nấm Elsinoë mangiferae",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh thối cuống",
+		"cause": "Nấm Lasiodiplodia theobromae",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh bạc lá lúa",
+		"cause": "Vi khuẩn Xanthomonas oryzae pv. oryzae",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh đốm nâu",
+		"cause": "Nấm Bipolaris oryzae (Cochliobolus miyabeanus)",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh đạo ôn lá",
+		"cause": "Nấm Magnaporthe oryzae (tên cũ Pyricularia oryzae)",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh cháy lá",
+		"cause": "Nấm Rhizoctonia solani",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh gạch nâu",
+		"cause": "Nấm Cochliobolus miyabeanus",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh đạo ôn cổ bông",
+		"cause": "Nấm Magnaporthe oryzae",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh sâu bọ gai",
+		"cause": "Côn trùng Stenchaetothrips biformis",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh đốm vằn",
+		"cause": "Nấm Rhizoctonia solani",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh vàng lùn tungro",
+		"cause": "Virus tungro (truyền qua rầy nâu Nilaparvata lugens)",
+		"plant_ids": []
+	}
+]

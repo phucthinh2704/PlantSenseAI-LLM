@@ -1,0 +1,22 @@
+[
+  {
+    "plant_id": "68bd660ad924e4d21cca2333",
+    "season": "Vụ Hè Thu",
+    "steps": [
+      {
+        "step": 1,
+        "name": "Làm đất",
+        "description": "Cày bừa, vệ sinh ruộng, tạo luống.",
+        "image_url": "https://example.com/images/step1.jpg"
+      },
+      {
+        "step": 2,
+        "name": "Gieo hạt",
+        "description": "Chọn giống tốt, ngâm hạt 24h trước khi gieo.",
+        "image_url": "https://example.com/images/step2.jpg"
+      }
+    ],
+    "created_at": "2025-09-08T05:00:00Z",
+    "updated_at": "2025-09-08T05:00:00Z"
+  }
+]
