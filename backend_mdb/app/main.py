@@ -7,7 +7,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import os
-from app.router import plant_router, auth_router, cultivation_router, disease_router
+from app.router import (
+    plant_router,
+    auth_router,
+    cultivation_router,
+    disease_router,
+    disease_stage_router,
+    insert_router,
+)
 from app.core.database import create_indexes, client
 
 
@@ -26,6 +33,7 @@ async def lifespan(app: FastAPI):
     client.close()
     print("Kết nối đã được đóng.")
 
+
 app = FastAPI(title="PlantSense API", lifespan=lifespan)
 
 FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
@@ -41,7 +49,13 @@ app.add_middleware(
 # Đăng ký router
 app.include_router(plant_router.router, prefix="/plants", tags=["Plants"])
 app.include_router(disease_router.router, prefix="/diseases", tags=["Diseases"])
-app.include_router(cultivation_router.router, prefix="/cultivation", tags=["Cultivation"])
+app.include_router(
+    disease_stage_router.router, prefix="/disease-stages", tags=["Disease Stages"]
+)
+app.include_router(
+    cultivation_router.router, prefix="/cultivation", tags=["Cultivation"]
+)
+app.include_router(insert_router.router, prefix="/insert", tags=["Insert"])
 app.include_router(auth_router.router, prefix="/auth", tags=["Auth"])
 
 # py -m app.main

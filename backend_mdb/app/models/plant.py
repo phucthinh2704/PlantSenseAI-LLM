@@ -10,7 +10,7 @@ class Plant(BaseModel):
     category: str
     growth_duration: str          
     morphology: str               
-    yield_per_ha: Optional[str] = None  # VD: "5-7 tấn/ha"
+    yields: Optional[str] = None  # VD: "5-7 tấn/ha"
     description: Optional[str] = None
     image_url: Optional[str] = None
 
