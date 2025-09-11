@@ -14,7 +14,8 @@ const routes = [
 	{
 		path: "/",
 		Page: HomePage,
-		type: React.Fragment,
+		// type: React.Fragment,
+		type: ROUTE_TYPE.PRIVATE, // Login mới cần PublicRoute
 		title: "CTU ArgiChatbot",
 	},
 	{

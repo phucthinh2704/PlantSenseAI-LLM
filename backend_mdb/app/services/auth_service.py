@@ -2,7 +2,7 @@ from fastapi import HTTPException, status
 from google.oauth2 import id_token
 from google.auth.transport import requests as google_requests
 from app.core.database import user_collection
-from app.core.security import create_access_token
+from app.core.security import create_access_token, create_refresh_token
 
 
 async def google_login(google_token: str, client_id: str):
@@ -43,14 +43,22 @@ async def google_login(google_token: str, client_id: str):
         access_token = create_access_token(
             data={"sub": str(user["_id"]), "email": user["email"], "role": user["role"]}
         )
+        
+        refresh_token = create_refresh_token(data={"sub": str(user["_id"])})
+        # Lưu refresh_token vào DB (nếu bạn muốn revoke sau này)
+        user["refresh_token"] = refresh_token
+        await user_collection.update_one({"_id": user["_id"]}, {"$set": user})
 
         return {
             "access_token": access_token,
+            "refresh_token": refresh_token,
             "user": {
                 "id": str(user["_id"]),
                 "name": user["name"],
                 "email": user["email"],
                 "avatar": user.get("avatar"),
+                "role": user["role"],
+                "status": user["status"],
             },
         }
 

@@ -1,10 +1,22 @@
 import Swal from "sweetalert2";
 
-export const useAlert = () => {
+export default function useAlert() {
 	const showSuccess = (message) =>
-		Swal.fire("Thành công!", message, "success");
+		Swal.fire({
+			title: "Thành công!",
+			text: message,
+			icon: "success",
+			timer: 2000,
+			timerProgressBar: true,
+			showConfirmButton: false,
+		});
 
-	const showError = (message) => Swal.fire("Lỗi!", message, "error");
+	const showError = (message) =>
+		Swal.fire({
+			title: "Lỗi!",
+			text: message,
+			icon: "error",
+		});
 
 	const showConfirm = async (message) => {
 		return Swal.fire({
@@ -18,4 +30,4 @@ export const useAlert = () => {
 	};
 
 	return { showSuccess, showError, showConfirm };
-};
+}

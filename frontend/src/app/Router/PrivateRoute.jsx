@@ -1,21 +1,22 @@
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const PrivateRoute = ({ children }) => {
-	const user = localStorage.getItem("access_token");
+	const { accessToken } = useSelector((state) => state.auth);
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		if (!user) {
+		if (!accessToken) {
 			toast.info("Bạn cần đăng nhập để vào hệ thống!", {
 				autoClose: 2000,
 			});
 			navigate("/login", { replace: true });
 		}
-	}, [user, navigate]);
+	}, [accessToken, navigate]);
 
-	if (!user) return null; // Không render gì khi chưa đăng nhập
+	if (!accessToken) return null; // Không render gì khi chưa đăng nhập
 
 	return children;
 };
