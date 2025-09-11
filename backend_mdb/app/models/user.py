@@ -22,6 +22,7 @@ class User(BaseModel):
     provider_name: Optional[str] = None  # "local" | "google" | "facebook"
     provider_id: Optional[str] = None  # ID do bên thứ 3 cung cấp
     is_outside: bool = False  # Người dùng đăng ký từ bên ngoài hay nội bộ
+    refresh_token: Optional[str] = None  # Refresh token để cấp mới access token
 
     status: UserStatus = UserStatus.inactive  # Trạng thái mặc định
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))

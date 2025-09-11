@@ -14,6 +14,7 @@ from app.router import (
     disease_router,
     disease_stage_router,
     insert_router,
+    conversation_router
 )
 from app.core.database import create_indexes, client
 
@@ -55,8 +56,9 @@ app.include_router(
 app.include_router(
     cultivation_router.router, prefix="/cultivation", tags=["Cultivation"]
 )
-app.include_router(insert_router.router, prefix="/insert", tags=["Insert"])
 app.include_router(auth_router.router, prefix="/auth", tags=["Auth"])
+app.include_router(conversation_router.router, prefix="/conversations", tags=["Conversations"])
+app.include_router(insert_router.router, prefix="/insert", tags=["Insert"])
 
 # py -m app.main
 if __name__ == "__main__":

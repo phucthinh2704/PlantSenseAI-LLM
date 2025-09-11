@@ -1,3 +1,5 @@
+import useAlert from "@hooks/useAlert";
+import { logoutUser } from "@redux/auth";
 import {
 	Bot,
 	Bug,
@@ -5,6 +7,7 @@ import {
 	Edit3,
 	Image as ImageIcon,
 	Leaf,
+	LogOut,
 	Menu,
 	Plus,
 	Send,
@@ -16,6 +19,7 @@ import {
 	X,
 } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
+import { useDispatch } from "react-redux";
 
 // Chat History Sidebar Component
 const ChatSidebar = ({ isOpen, toggleSidebar }) => {
@@ -50,6 +54,15 @@ const ChatSidebar = ({ isOpen, toggleSidebar }) => {
 		},
 	]);
 
+	const dispatch = useDispatch();
+	const { showConfirm } = useAlert();
+	const handleLogout = () => {
+		showConfirm("Bạn có chắc chắn muốn đăng xuất?").then((result) => {
+			if (result.isConfirmed) {
+				dispatch(logoutUser());
+			}
+		});
+	};
 	return (
 		<>
 			{/* Mobile Overlay */}
@@ -63,12 +76,12 @@ const ChatSidebar = ({ isOpen, toggleSidebar }) => {
 			{/* Sidebar */}
 			<aside
 				className={`
-        fixed left-0 top-0 h-full w-80 bg-gray-900 text-white z-50 transform transition-transform duration-300 ease-in-out flex flex-col
+        fixed left-0 top-0 h-full w-80 bg-gray-800 text-white z-50 transform transition-transform duration-300 ease-in-out flex flex-col
         ${isOpen ? "translate-x-0" : "-translate-x-full"}
         lg:translate-x-0 lg:relative lg:z-auto
       `}>
 				{/* Header */}
-				<div className="p-4 border-b border-gray-700">
+				<div className="p-4 border-b border-gray-600">
 					<div className="flex items-center justify-between mb-4">
 						<div className="flex items-center space-x-3">
 							<div className="p-2 bg-green-600 rounded-lg">
@@ -149,6 +162,12 @@ const ChatSidebar = ({ isOpen, toggleSidebar }) => {
 					<button className="w-full flex items-center space-x-3 p-3 hover:bg-gray-800 rounded-lg transition-colors text-left">
 						<Settings size={18} />
 						<span>Cài đặt</span>
+					</button>
+					<button
+						onClick={handleLogout} // hàm xử lý đăng xuất
+						className="w-full flex items-center space-x-3 p-3 hover:bg-red-600/20 text-red-500 rounded-lg transition-colors text-left">
+						<LogOut size={18} />
+						<span>Đăng xuất</span>
 					</button>
 				</div>
 			</aside>
