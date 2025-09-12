@@ -22,10 +22,69 @@
   "context": "", 
   "response": "Để xử lý ruộng lúa bị đạo ôn lá, cần ngưng bón phân đạm, tăng cường phân kali, phun thuốc hóa học có hoạt chất đặc trị như Tricyclazole, Fenoxanil, hoặc Isoprothiolane theo đúng nguyên tắc 4 đúng (đúng thuốc, đúng lúc, đúng nồng độ, đúng cách). Phun ướt đẫm toàn bộ lá lúa và phun lặp lại lần hai sau 5-7 ngày nếu ruộng bị nặng.", 
   "category": "disease"}
-
-{"instruction": "Lúa bị vàng lá là do nguyên nhân gì?",
-  "context": "",
-  "response": "Lúa bị vàng lá có thể do nhiều nguyên nhân, bao gồm thiếu dinh dưỡng (thiếu đạm, lân, kali, sắt), bệnh sinh lý do đất chua, phèn, thiếu oxy, tấn công của nấm và vi khuẩn (như nấm Fusarium, vi khuẩn Xanthomonas), hoặc do côn trùng gây hại (như rầy nâu, tuyến trùng). Ngoài ra, điều kiện môi trường bất lợi như mưa nhiều, ngập úng, thời tiết âm u kéo dài, hoặc đất đai có vấn đề (bón nhiều phân hữu cơ chưa hoai mục, đất ngộ độc hữu cơ) cũng là nguyên nhân phổ biến gây ra hiện tượng vàng lá.",
-  "category": "disease"}
+{"instruction": "Triệu chứng ban đầu của bệnh đạo ôn lá trên lúa là gì?", 
+ "context": "", 
+ "response": "Triệu chứng ban đầu của bệnh đạo ôn lá là các vết nhỏ màu xanh xám hoặc nâu nhạt, sau đó lan rộng thành vết cháy hình thoi có tâm xám trắng, viền nâu, thường xuất hiện trên lá lúa non.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn thường phát sinh trong điều kiện thời tiết nào?", 
+ "context": "", 
+ "response": "Bệnh đạo ôn thường phát triển mạnh khi trời âm u, có nhiều sương mù, độ ẩm trên 90%, nhiệt độ từ 24-28°C và chênh lệch nhiệt độ ngày đêm lớn.", 
+ "category": "disease"}
+{"instruction": "Những giai đoạn nào của cây lúa dễ bị bệnh đạo ôn tấn công nhất?", 
+ "context": "", 
+ "response": "Bệnh đạo ôn có thể gây hại ở mọi giai đoạn sinh trưởng của cây lúa, nhưng thường nặng ở giai đoạn mạ, đẻ nhánh và làm đòng. Nếu tấn công vào cổ bông sẽ làm lép hạt, gây thất thu lớn.", 
+ "category": "disease"}
+{"instruction": "Nguồn lây lan bệnh đạo ôn lúa từ đâu?", 
+ "context": "", 
+ "response": "Nguồn lây lan chính của bệnh đạo ôn là tàn dư cây trồng, cỏ dại và lúa chét còn mang mầm bệnh. Ngoài ra, bào tử nấm có thể phát tán theo gió và nước.", 
+ "category": "disease"}
+{"instruction": "Làm sao để phòng ngừa bệnh đạo ôn lúa hiệu quả?", 
+ "context": "", 
+ "response": "Để phòng ngừa bệnh đạo ôn, nên gieo sạ thưa hợp lý, bón phân cân đối (hạn chế bón thừa đạm), sử dụng giống lúa kháng bệnh, vệ sinh đồng ruộng và theo dõi sát ruộng để phát hiện sớm bệnh.", 
+ "category": "disease"}
+{"instruction": "Có nên phun thuốc phòng bệnh đạo ôn không?", 
+ "context": "", 
+ "response": "Nên phun thuốc phòng bệnh đạo ôn khi thời tiết thuận lợi cho bệnh phát sinh hoặc khi ruộng đã từng bị nặng trong vụ trước. Thuốc nên phun ở giai đoạn lúa đẻ nhánh rộ và trước khi làm đòng.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn lúa gây hại như thế nào đến năng suất?", 
+ "context": "", 
+ "response": "Bệnh đạo ôn làm lá lúa bị cháy, giảm khả năng quang hợp, gây lép hạt khi tấn công vào cổ bông, có thể làm mất năng suất từ 30-70% nếu không phòng trị kịp thời.", 
+ "category": "disease"}
+{"instruction": "Có giống lúa nào kháng bệnh đạo ôn không?", 
+ "context": "", 
+ "response": "Hiện nay có nhiều giống lúa kháng hoặc chống chịu khá tốt với bệnh đạo ôn như OM5451, OM6976, OM4900, nhưng khả năng kháng có thể thay đổi theo điều kiện thời tiết và vùng sinh thái.", 
+ "category": "disease"}
+{"instruction": "Thời điểm nào cần phun thuốc phòng bệnh đạo ôn hiệu quả nhất?", 
+ "context": "", 
+ "response": "Thuốc phòng bệnh đạo ôn nên được phun vào giai đoạn lúa đẻ nhánh rộ và trước khi lúa làm đòng, đặc biệt trong điều kiện thời tiết ẩm ướt, sương mù nhiều.", 
+ "category": "disease"}
+{"instruction": "Phân bón có ảnh hưởng thế nào đến bệnh đạo ôn lúa?", 
+ "context": "", 
+ "response": "Bón thừa phân đạm sẽ làm lúa xanh tốt, lá mềm dễ bị nấm đạo ôn tấn công. Ngược lại, bón cân đối đạm, lân, kali giúp cây khỏe và giảm nguy cơ bệnh.", 
+ "category": "disease"}
+{"instruction": "Lúa bị đạo ôn lá có nên bón thêm phân đạm không?", 
+ "context": "", 
+ "response": "Không nên bón thêm phân đạm khi lúa bị đạo ôn, vì đạm sẽ làm bệnh phát triển mạnh hơn. Thay vào đó, nên bổ sung kali để tăng sức chống chịu cho cây.", 
+ "category": "disease"}
+{"instruction": "Có biện pháp sinh học nào phòng bệnh đạo ôn lúa không?", 
+ "context": "", 
+ "response": "Một số biện pháp sinh học như sử dụng chế phẩm Trichoderma hoặc vi khuẩn đối kháng có thể giúp hạn chế sự phát triển của nấm đạo ôn, kết hợp với biện pháp canh tác hợp lý.", 
+ "category": "disease"}
+{"instruction": "Năng suất lúa giảm bao nhiêu khi bị bệnh đạo ôn cổ bông?", 
+ "context": "", 
+ "response": "Nếu bệnh đạo ôn tấn công cổ bông nặng, năng suất lúa có thể giảm từ 50-70% do bông lép trắng nhiều và hạt bị thối.", 
+ "category": "disease"}
+{"instruction": "Tại sao bệnh đạo ôn thường bùng phát vào vụ Đông Xuân?", 
+ "context": "", 
+ "response": "Vụ Đông Xuân có thời tiết lạnh, ẩm, nhiều sương mù và chênh lệch nhiệt độ ngày đêm lớn, tạo điều kiện thuận lợi cho nấm đạo ôn phát triển mạnh.", 
+ "category": "disease"}
+{"instruction": "Có thể nhận biết ruộng lúa bị đạo ôn nặng bằng dấu hiệu nào?", 
+ "context": "", 
+ "response": "Ruộng lúa bị đạo ôn nặng thường có nhiều vết cháy hình thoi lan rộng, lá khô chết từng mảng, cây còi cọc và nếu bệnh lan đến cổ bông sẽ làm bông lúa lép trắng hàng loạt.", 
+ "category": "disease"}
+{"instruction": "Người nông dân thường mắc sai lầm gì khi trị bệnh đạo ôn?", 
+ "context": "", 
+ "response": "Một số sai lầm thường gặp là phun thuốc quá muộn khi bệnh đã lan rộng, dùng một loại thuốc lặp lại nhiều lần dẫn đến nấm kháng thuốc, hoặc tiếp tục bón thừa đạm khiến bệnh nặng thêm.", 
+ "category": "disease"}
 
 
