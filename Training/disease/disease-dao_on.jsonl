@@ -1,0 +1,124 @@
+{"instruction": "Nguyên nhân gây bệnh đạo ôn lá trên lúa?", 
+ "context": "Ruộng lúa 30 ngày tuổi xuất hiện vết cháy hình thoi trên lá", 
+ "response": "Nguyên nhân gây bệnh đạo ôn lá là do nấm Pyricularia oryzae, phát triển mạnh trong điều kiện thời tiết ẩm ướt, trời âm u, nhiều mây, và chênh lệch nhiệt độ ngày đêm cao, đặc biệt khi độ ẩm không khí trên 90% và nhiệt độ khoảng 24-28°C. Các yếu tố canh tác không phù hợp như sạ dày, bón thừa đạm, hay sử dụng giống lúa mẫn cảm cũng làm tăng nguy cơ bùng phát bệnh. Nguồn lây lan của nấm nằm trên tàn dư cây trồng, lúa chét và cỏ dại.", 
+ "category": "disease"}
+{"instruction": "Lúa xuất hiện những vết hình thoi màu nâu nhạt, rộng ở phần giữa, nhọn ở hai đầu là bệnh gì?", 
+ "context": "", 
+ "response": "Lúa bị bệnh đạo ôn nguyên nhân gây bệnh đạo ôn lá là do nấm Pyricularia oryzae, phát triển mạnh trong điều kiện thời tiết ẩm ướt, trời âm u, nhiều mây, và chênh lệch nhiệt độ ngày đêm cao, đặc biệt khi độ ẩm không khí trên 90% và nhiệt độ khoảng 24-28°C. Các yếu tố canh tác không phù hợp như sạ dày, bón thừa đạm, hay sử dụng giống lúa mẫn cảm cũng làm tăng nguy cơ bùng phát bệnh. Nguồn lây lan của nấm nằm trên tàn dư cây trồng, lúa chét và cỏ dại.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn lá trên lúa?", 
+ "context": "", 
+ "response": "Nguyên nhân gây bệnh đạo ôn lá là do nấm Pyricularia oryzae. Để điều trị bệnh đạo ôn cần ngừng ", 
+ "category": "disease"}
+{"instruction": "Làm sao xử lý bệnh đạo ôn trên lúa?", 
+ "context": "Ruộng lúa 30 ngày tuổi xuất hiện vết cháy hình thoi trên lá", 
+ "response": "Ngừng ngay việc bón phân đạm, bón phân qua lá, và các chất kích thích sinh trưởng. Sử dụng thuốc có hoạt chất đặc trị đạo ôn, sau khi phun thuốc 3-5 ngày, kiểm tra lại ruộng. Nếu vết bệnh mới vẫn còn phát triển, phải phun lại lần 2, có thể thay đổi hoạt chất thuốc để tránh nấm kháng thuốc.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị đạo ôn lá thì xử lý thế nào?", 
+  "context": "", 
+  "response": "Để xử lý ruộng lúa bị đạo ôn lá, cần ngưng bón phân đạm, tăng cường phân kali, phun thuốc hóa học có hoạt chất đặc trị như Tricyclazole, Fenoxanil, hoặc Isoprothiolane theo đúng nguyên tắc 4 đúng (đúng thuốc, đúng lúc, đúng nồng độ, đúng cách). Phun ướt đẫm toàn bộ lá lúa và phun lặp lại lần hai sau 5-7 ngày nếu ruộng bị nặng.", 
+  "category": "disease"}
+{"instruction": "Cách trị đạo ôn lá trên lúa?", 
+  "context": "", 
+  "response": "Để xử lý ruộng lúa bị đạo ôn lá, cần ngưng bón phân đạm, tăng cường phân kali, phun thuốc hóa học có hoạt chất đặc trị như Tricyclazole, Fenoxanil, hoặc Isoprothiolane theo đúng nguyên tắc 4 đúng (đúng thuốc, đúng lúc, đúng nồng độ, đúng cách). Phun ướt đẫm toàn bộ lá lúa và phun lặp lại lần hai sau 5-7 ngày nếu ruộng bị nặng.", 
+  "category": "disease"}
+{"instruction": "Triệu chứng ban đầu của bệnh đạo ôn lá trên lúa là gì?", 
+ "context": "", 
+ "response": "Triệu chứng ban đầu của bệnh đạo ôn lá là các vết nhỏ màu xanh xám hoặc nâu nhạt, sau đó lan rộng thành vết cháy hình thoi có tâm xám trắng, viền nâu, thường xuất hiện trên lá lúa non.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn thường phát sinh trong điều kiện thời tiết nào?", 
+ "context": "", 
+ "response": "Bệnh đạo ôn thường phát triển mạnh khi trời âm u, có nhiều sương mù, độ ẩm trên 90%, nhiệt độ từ 24-28°C và chênh lệch nhiệt độ ngày đêm lớn.", 
+ "category": "disease"}
+{"instruction": "Những giai đoạn nào của cây lúa dễ bị bệnh đạo ôn tấn công nhất?", 
+ "context": "", 
+ "response": "Bệnh đạo ôn có thể gây hại ở mọi giai đoạn sinh trưởng của cây lúa, nhưng thường nặng ở giai đoạn mạ, đẻ nhánh và làm đòng. Nếu tấn công vào cổ bông sẽ làm lép hạt, gây thất thu lớn.", 
+ "category": "disease"}
+{"instruction": "Nguồn lây lan bệnh đạo ôn lúa từ đâu?", 
+ "context": "", 
+ "response": "Nguồn lây lan chính của bệnh đạo ôn là tàn dư cây trồng, cỏ dại và lúa chét còn mang mầm bệnh. Ngoài ra, bào tử nấm có thể phát tán theo gió và nước.", 
+ "category": "disease"}
+{"instruction": "Làm sao để phòng ngừa bệnh đạo ôn lúa hiệu quả?", 
+ "context": "", 
+ "response": "Để phòng ngừa bệnh đạo ôn, nên gieo sạ thưa hợp lý, bón phân cân đối (hạn chế bón thừa đạm), sử dụng giống lúa kháng bệnh, vệ sinh đồng ruộng và theo dõi sát ruộng để phát hiện sớm bệnh.", 
+ "category": "disease"}
+{"instruction": "Có nên phun thuốc phòng bệnh đạo ôn không?", 
+ "context": "", 
+ "response": "Nên phun thuốc phòng bệnh đạo ôn khi thời tiết thuận lợi cho bệnh phát sinh hoặc khi ruộng đã từng bị nặng trong vụ trước. Thuốc nên phun ở giai đoạn lúa đẻ nhánh rộ và trước khi làm đòng.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn lúa gây hại như thế nào đến năng suất?", 
+ "context": "", 
+ "response": "Bệnh đạo ôn làm lá lúa bị cháy, giảm khả năng quang hợp, gây lép hạt khi tấn công vào cổ bông, có thể làm mất năng suất từ 30-70% nếu không phòng trị kịp thời.", 
+ "category": "disease"}
+{"instruction": "Có giống lúa nào kháng bệnh đạo ôn không?", 
+ "context": "", 
+ "response": "Hiện nay có nhiều giống lúa kháng hoặc chống chịu khá tốt với bệnh đạo ôn như OM5451, OM6976, OM4900, nhưng khả năng kháng có thể thay đổi theo điều kiện thời tiết và vùng sinh thái.", 
+ "category": "disease"}
+{"instruction": "Thời điểm nào cần phun thuốc phòng bệnh đạo ôn hiệu quả nhất?", 
+ "context": "", 
+ "response": "Thuốc phòng bệnh đạo ôn nên được phun vào giai đoạn lúa đẻ nhánh rộ và trước khi lúa làm đòng, đặc biệt trong điều kiện thời tiết ẩm ướt, sương mù nhiều.", 
+ "category": "disease"}
+{"instruction": "Phân bón có ảnh hưởng thế nào đến bệnh đạo ôn lúa?", 
+ "context": "", 
+ "response": "Bón thừa phân đạm sẽ làm lúa xanh tốt, lá mềm dễ bị nấm đạo ôn tấn công. Ngược lại, bón cân đối đạm, lân, kali giúp cây khỏe và giảm nguy cơ bệnh.", 
+ "category": "disease"}
+{"instruction": "Lúa bị đạo ôn lá có nên bón thêm phân đạm không?", 
+ "context": "", 
+ "response": "Không nên bón thêm phân đạm khi lúa bị đạo ôn, vì đạm sẽ làm bệnh phát triển mạnh hơn. Thay vào đó, nên bổ sung kali để tăng sức chống chịu cho cây.", 
+ "category": "disease"}
+{"instruction": "Có biện pháp sinh học nào phòng bệnh đạo ôn lúa không?", 
+ "context": "", 
+ "response": "Một số biện pháp sinh học như sử dụng chế phẩm Trichoderma hoặc vi khuẩn đối kháng có thể giúp hạn chế sự phát triển của nấm đạo ôn, kết hợp với biện pháp canh tác hợp lý.", 
+ "category": "disease"}
+{"instruction": "Năng suất lúa giảm bao nhiêu khi bị bệnh đạo ôn cổ bông?", 
+ "context": "", 
+ "response": "Nếu bệnh đạo ôn tấn công cổ bông nặng, năng suất lúa có thể giảm từ 50-70% do bông lép trắng nhiều và hạt bị thối.", 
+ "category": "disease"}
+{"instruction": "Tại sao bệnh đạo ôn thường bùng phát vào vụ Đông Xuân?", 
+ "context": "", 
+ "response": "Vụ Đông Xuân có thời tiết lạnh, ẩm, nhiều sương mù và chênh lệch nhiệt độ ngày đêm lớn, tạo điều kiện thuận lợi cho nấm đạo ôn phát triển mạnh.", 
+ "category": "disease"}
+{"instruction": "Có thể nhận biết ruộng lúa bị đạo ôn nặng bằng dấu hiệu nào?", 
+ "context": "", 
+ "response": "Ruộng lúa bị đạo ôn nặng thường có nhiều vết cháy hình thoi lan rộng, lá khô chết từng mảng, cây còi cọc và nếu bệnh lan đến cổ bông sẽ làm bông lúa lép trắng hàng loạt.", 
+ "category": "disease"}
+{"instruction": "Người nông dân thường mắc sai lầm gì khi trị bệnh đạo ôn?", 
+ "context": "", 
+ "response": "Một số sai lầm thường gặp là phun thuốc quá muộn khi bệnh đã lan rộng, dùng một loại thuốc lặp lại nhiều lần dẫn đến nấm kháng thuốc, hoặc tiếp tục bón thừa đạm khiến bệnh nặng thêm.", 
+ "category": "disease"}
+{"instruction": "Nếu không trị bệnh đạo ôn kịp thời thì hậu quả thế nào?", 
+ "context": "", 
+ "response": "Nếu không phòng trị kịp thời, bệnh đạo ôn sẽ lan rộng, làm khô lá, chết chòm, ảnh hưởng đến quang hợp. Khi bệnh tấn công vào cổ bông sẽ gây lép hạt hàng loạt, năng suất có thể giảm đến 70%.", 
+ "category": "disease"}
+{"instruction": "Có nên sử dụng thuốc hóa học liên tục để phòng bệnh đạo ôn không?", 
+ "context": "", 
+ "response": "Không nên lạm dụng thuốc hóa học liên tục vì có thể gây kháng thuốc ở nấm. Cần kết hợp biện pháp canh tác, dùng thuốc đúng lúc, luân phiên hoạt chất và chỉ phun khi có nguy cơ hoặc bệnh chớm xuất hiện.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị đạo ôn có thể thu hoạch được không?", 
+ "context": "Ruộng bị nhiễm bệnh đạo ôn nặng ở lá và một phần cổ bông", 
+ "response": "Ruộng lúa vẫn có thể thu hoạch nhưng năng suất và chất lượng gạo giảm mạnh. Nếu bệnh đạo ôn tấn công cổ bông nặng, hạt bị lép nhiều, gạo kém chất lượng và khó bảo quản.", 
+ "category": "disease"}
+{"instruction": "Cần làm gì sau khi phun thuốc trị đạo ôn?", 
+ "context": "", 
+ "response": "Sau khi phun thuốc trị đạo ôn, cần kiểm tra lại ruộng sau 3-5 ngày. Nếu bệnh còn phát triển phải phun lại lần 2, có thể thay đổi hoạt chất thuốc để tránh nấm kháng thuốc. Không nên bón thêm đạm ngay sau phun.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn có ảnh hưởng đến phẩm chất gạo không?", 
+ "context": "", 
+ "response": "Có. Khi bệnh đạo ôn tấn công cổ bông làm nhiều hạt lép, hạt thóc nhỏ, chất lượng gạo giảm, cơm ít dẻo và khó bảo quản. Nhiễm nặng còn gây hạt thóc bị thối.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn lây lan nhanh bằng cách nào?", 
+ "context": "", 
+ "response": "Bào tử nấm đạo ôn có thể phát tán theo gió, nước mưa, công cụ canh tác và thậm chí qua con người di chuyển trên ruộng. Đây là nguyên nhân làm bệnh lây lan nhanh trên diện rộng.", 
+ "category": "disease"}
+{"instruction": "Cách nhận biết bệnh đạo ôn?", 
+ "context": "", 
+ "response": "Lá lúa bị bệnh đạo ôn thường có vết cháy hình thoi, tâm xám trắng, viền nâu đậm. Vết bệnh có thể liên kết lại thành mảng lớn làm lá khô héo và chết.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn có thể xuất hiện trên những bộ phận nào của cây lúa?", 
+ "context": "", 
+ "response": "Bệnh đạo ôn có thể xuất hiện trên lá, cổ lá, bẹ lá, cổ bông và cả hạt lúa. Nguy hiểm nhất là khi nấm tấn công vào cổ bông, gây lép trắng và giảm năng suất nặng.", 
+ "category": "disease"}
+{"instruction": "Có nên dùng cùng một loại thuốc nhiều lần để trị bệnh đạo ôn không?", 
+ "context": "", 
+ "response": "Không nên dùng một loại thuốc nhiều lần liên tiếp vì nấm có thể kháng thuốc. Cần luân phiên các loại thuốc có hoạt chất khác nhau để tăng hiệu quả trị bệnh.", 
+ "category": "disease"}
