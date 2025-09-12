@@ -1,0 +1,31 @@
+{"instruction": "Nguyên nhân gây bệnh đạo ôn lá trên lúa?", 
+ "context": "Ruộng lúa 30 ngày tuổi xuất hiện vết cháy hình thoi trên lá", 
+ "response": "Nguyên nhân gây bệnh đạo ôn lá là do nấm Pyricularia oryzae, phát triển mạnh trong điều kiện thời tiết ẩm ướt, trời âm u, nhiều mây, và chênh lệch nhiệt độ ngày đêm cao, đặc biệt khi độ ẩm không khí trên 90% và nhiệt độ khoảng 24-28°C. Các yếu tố canh tác không phù hợp như sạ dày, bón thừa đạm, hay sử dụng giống lúa mẫn cảm cũng làm tăng nguy cơ bùng phát bệnh. Nguồn lây lan của nấm nằm trên tàn dư cây trồng, lúa chét và cỏ dại.", 
+ "category": "disease"}
+{"instruction": "Lúa xuất hiện những vết hình thoi màu nâu nhạt, rộng ở phần giữa, nhọn ở hai đầu là bệnh gì?", 
+ "context": "", 
+ "response": "Lúa bị bệnh đạo ôn nguyên nhân gây bệnh đạo ôn lá là do nấm Pyricularia oryzae, phát triển mạnh trong điều kiện thời tiết ẩm ướt, trời âm u, nhiều mây, và chênh lệch nhiệt độ ngày đêm cao, đặc biệt khi độ ẩm không khí trên 90% và nhiệt độ khoảng 24-28°C. Các yếu tố canh tác không phù hợp như sạ dày, bón thừa đạm, hay sử dụng giống lúa mẫn cảm cũng làm tăng nguy cơ bùng phát bệnh. Nguồn lây lan của nấm nằm trên tàn dư cây trồng, lúa chét và cỏ dại.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn lá trên lúa?", 
+ "context": "", 
+ "response": "Nguyên nhân gây bệnh đạo ôn lá là do nấm Pyricularia oryzae. Để điều trị bệnh đạo ôn cần ngừng ", 
+ "category": "disease"}
+{"instruction": "Làm sao xử lý bệnh đạo ôn trên lúa?", 
+ "context": "Ruộng lúa 30 ngày tuổi xuất hiện vết cháy hình thoi trên lá", 
+ "response": "Ngừng ngay việc bón phân đạm, bón phân qua lá, và các chất kích thích sinh trưởng. Sử dụng thuốc có hoạt chất đặc trị đạo ôn, sau khi phun thuốc 3-5 ngày, kiểm tra lại ruộng. Nếu vết bệnh mới vẫn còn phát triển, phải phun lại lần 2, có thể thay đổi hoạt chất thuốc để tránh nấm kháng thuốc.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị đạo ôn lá thì xử lý thế nào?", 
+  "context": "", 
+  "response": "Để xử lý ruộng lúa bị đạo ôn lá, cần ngưng bón phân đạm, tăng cường phân kali, phun thuốc hóa học có hoạt chất đặc trị như Tricyclazole, Fenoxanil, hoặc Isoprothiolane theo đúng nguyên tắc 4 đúng (đúng thuốc, đúng lúc, đúng nồng độ, đúng cách). Phun ướt đẫm toàn bộ lá lúa và phun lặp lại lần hai sau 5-7 ngày nếu ruộng bị nặng.", 
+  "category": "disease"}
+{"instruction": "Cách trị đạo ôn lá trên lúa?", 
+  "context": "", 
+  "response": "Để xử lý ruộng lúa bị đạo ôn lá, cần ngưng bón phân đạm, tăng cường phân kali, phun thuốc hóa học có hoạt chất đặc trị như Tricyclazole, Fenoxanil, hoặc Isoprothiolane theo đúng nguyên tắc 4 đúng (đúng thuốc, đúng lúc, đúng nồng độ, đúng cách). Phun ướt đẫm toàn bộ lá lúa và phun lặp lại lần hai sau 5-7 ngày nếu ruộng bị nặng.", 
+  "category": "disease"}
+
+{"instruction": "Lúa bị vàng lá là do nguyên nhân gì?",
+  "context": "",
+  "response": "Lúa bị vàng lá có thể do nhiều nguyên nhân, bao gồm thiếu dinh dưỡng (thiếu đạm, lân, kali, sắt), bệnh sinh lý do đất chua, phèn, thiếu oxy, tấn công của nấm và vi khuẩn (như nấm Fusarium, vi khuẩn Xanthomonas), hoặc do côn trùng gây hại (như rầy nâu, tuyến trùng). Ngoài ra, điều kiện môi trường bất lợi như mưa nhiều, ngập úng, thời tiết âm u kéo dài, hoặc đất đai có vấn đề (bón nhiều phân hữu cơ chưa hoai mục, đất ngộ độc hữu cơ) cũng là nguyên nhân phổ biến gây ra hiện tượng vàng lá.",
+  "category": "disease"}
+
+
