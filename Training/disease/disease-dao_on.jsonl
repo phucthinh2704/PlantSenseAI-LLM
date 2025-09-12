@@ -86,5 +86,39 @@
  "context": "", 
  "response": "Một số sai lầm thường gặp là phun thuốc quá muộn khi bệnh đã lan rộng, dùng một loại thuốc lặp lại nhiều lần dẫn đến nấm kháng thuốc, hoặc tiếp tục bón thừa đạm khiến bệnh nặng thêm.", 
  "category": "disease"}
-
-
+{"instruction": "Nếu không trị bệnh đạo ôn kịp thời thì hậu quả thế nào?", 
+ "context": "", 
+ "response": "Nếu không phòng trị kịp thời, bệnh đạo ôn sẽ lan rộng, làm khô lá, chết chòm, ảnh hưởng đến quang hợp. Khi bệnh tấn công vào cổ bông sẽ gây lép hạt hàng loạt, năng suất có thể giảm đến 70%.", 
+ "category": "disease"}
+{"instruction": "Có nên sử dụng thuốc hóa học liên tục để phòng bệnh đạo ôn không?", 
+ "context": "", 
+ "response": "Không nên lạm dụng thuốc hóa học liên tục vì có thể gây kháng thuốc ở nấm. Cần kết hợp biện pháp canh tác, dùng thuốc đúng lúc, luân phiên hoạt chất và chỉ phun khi có nguy cơ hoặc bệnh chớm xuất hiện.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị đạo ôn có thể thu hoạch được không?", 
+ "context": "Ruộng bị nhiễm bệnh đạo ôn nặng ở lá và một phần cổ bông", 
+ "response": "Ruộng lúa vẫn có thể thu hoạch nhưng năng suất và chất lượng gạo giảm mạnh. Nếu bệnh đạo ôn tấn công cổ bông nặng, hạt bị lép nhiều, gạo kém chất lượng và khó bảo quản.", 
+ "category": "disease"}
+{"instruction": "Cần làm gì sau khi phun thuốc trị đạo ôn?", 
+ "context": "", 
+ "response": "Sau khi phun thuốc trị đạo ôn, cần kiểm tra lại ruộng sau 3-5 ngày. Nếu bệnh còn phát triển phải phun lại lần 2, có thể thay đổi hoạt chất thuốc để tránh nấm kháng thuốc. Không nên bón thêm đạm ngay sau phun.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn có ảnh hưởng đến phẩm chất gạo không?", 
+ "context": "", 
+ "response": "Có. Khi bệnh đạo ôn tấn công cổ bông làm nhiều hạt lép, hạt thóc nhỏ, chất lượng gạo giảm, cơm ít dẻo và khó bảo quản. Nhiễm nặng còn gây hạt thóc bị thối.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn lây lan nhanh bằng cách nào?", 
+ "context": "", 
+ "response": "Bào tử nấm đạo ôn có thể phát tán theo gió, nước mưa, công cụ canh tác và thậm chí qua con người di chuyển trên ruộng. Đây là nguyên nhân làm bệnh lây lan nhanh trên diện rộng.", 
+ "category": "disease"}
+{"instruction": "Cách nhận biết bệnh đạo ôn?", 
+ "context": "", 
+ "response": "Lá lúa bị bệnh đạo ôn thường có vết cháy hình thoi, tâm xám trắng, viền nâu đậm. Vết bệnh có thể liên kết lại thành mảng lớn làm lá khô héo và chết.", 
+ "category": "disease"}
+{"instruction": "Bệnh đạo ôn có thể xuất hiện trên những bộ phận nào của cây lúa?", 
+ "context": "", 
+ "response": "Bệnh đạo ôn có thể xuất hiện trên lá, cổ lá, bẹ lá, cổ bông và cả hạt lúa. Nguy hiểm nhất là khi nấm tấn công vào cổ bông, gây lép trắng và giảm năng suất nặng.", 
+ "category": "disease"}
+{"instruction": "Có nên dùng cùng một loại thuốc nhiều lần để trị bệnh đạo ôn không?", 
+ "context": "", 
+ "response": "Không nên dùng một loại thuốc nhiều lần liên tiếp vì nấm có thể kháng thuốc. Cần luân phiên các loại thuốc có hoạt chất khác nhau để tăng hiệu quả trị bệnh.", 
+ "category": "disease"}
