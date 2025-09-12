@@ -1,6 +1,7 @@
-import { useAlert } from "@hooks/useAlert";
+import useAlert from "@hooks/useAlert";
 import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
-import { apiLogin, apiGoogleLogin } from "@services/auth";
+import { loginSuccess } from "@redux/auth";
+import { apiGoogleLogin, apiLogin } from "@services/auth";
 import {
 	Eye,
 	EyeOff,
@@ -10,16 +11,17 @@ import {
 	Users,
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 const LoginPage = () => {
 	const [showPassword, setShowPassword] = useState(false);
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
 	const [animatedStats, setAnimatedStats] = useState([0, 0, 0]);
+	const [errors, setErrors] = useState({});
 
 	const { showSuccess, showError } = useAlert();
-	const navigate = useNavigate();
+	const dispatch = useDispatch();
 
 	// Animate statistics numbers
 	useEffect(() => {
@@ -58,9 +60,14 @@ const LoginPage = () => {
 					console.error("Error during API login:", res.message);
 					return;
 				}
-				localStorage.setItem("access_token", res.data.access_token);
-				await showSuccess("Đăng nhập thành công!");
-				navigate("/");
+				dispatch(
+					loginSuccess({
+						user: res.data.user,
+						accessToken: res.data.access_token,
+						refreshToken: res.data.refresh_token,
+					})
+				);
+				showSuccess("Đăng nhập thành công!");
 			} catch (error) {
 				console.error("Error during API login:", error);
 			}
@@ -69,8 +76,28 @@ const LoginPage = () => {
 		}
 	};
 
+	const validateForm = () => {
+		let newErrors = {};
+
+		if (!email) {
+			newErrors.email = "Vui lòng nhập email";
+		} else if (!/\S+@\S+\.\S+/.test(email)) {
+			newErrors.email = "Email không hợp lệ";
+		}
+
+		if (!password) {
+			newErrors.password = "Vui lòng nhập mật khẩu";
+		} else if (password.length < 6) {
+			newErrors.password = "Mật khẩu phải có ít nhất 6 ký tự";
+		}
+
+		setErrors(newErrors);
+		return Object.keys(newErrors).length === 0;
+	};
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		if (!validateForm()) return;
 		setIsLoading(true);
 		setTimeout(async () => {
 			try {
@@ -80,9 +107,14 @@ const LoginPage = () => {
 					setIsLoading(false);
 					return;
 				}
-				localStorage.setItem("access_token", res.data.access_token);
-				await showSuccess("Đăng nhập thành công!");
-				navigate("/");
+				dispatch(
+					loginSuccess({
+						user: res.data.user,
+						accessToken: res.data.access_token,
+						refreshToken: res.data.refresh_token,
+					})
+				);
+				showSuccess("Đăng nhập thành công!");
 			} catch (error) {
 				console.error("Error during login:", error);
 			}
@@ -176,12 +208,12 @@ const LoginPage = () => {
 
 				{/* Right side - Login Form */}
 				<div className="w-full max-w-md">
-					<div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
-						<div className="text-center mb-8">
-							<div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl mb-4 shadow-lg">
+					<div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl p-6 border border-white/20">
+						<div className="text-center mb-5">
+							<div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl mb-3 shadow-lg">
 								<Leaf className="w-8 h-8 text-white" />
 							</div>
-							<h2 className="text-2xl font-bold text-gray-800 mb-2">
+							<h2 className="text-2xl font-bold text-gray-800 mb-1">
 								Chào mừng trở lại!
 							</h2>
 							<p className="text-gray-600">
@@ -191,91 +223,105 @@ const LoginPage = () => {
 
 						{/* Email/Password Form */}
 						<form onSubmit={handleSubmit}>
-						<div className="space-y-4">
-							<div>
-								<label
-									htmlFor="email"
-									className="block text-sm font-medium text-gray-700 mb-2">
-									Email
-								</label>
-								<input
-									type="email"
-									id="email"
-									value={email}
-									onChange={(e) => setEmail(e.target.value)}
-									className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
-									placeholder="example@email.com"
-									required
-								/>
-							</div>
-
-							<div>
-								<label
-									htmlFor="password"
-									className="block text-sm font-medium text-gray-700 mb-2">
-									Mật khẩu
-								</label>
-								<div className="relative">
+							<div className="space-y-3">
+								<div className="relative mb-8">
+									<label
+										htmlFor="email"
+										className="block text-sm font-medium text-gray-700 mb-2">
+										Email
+									</label>
 									<input
-										type={
-											showPassword ? "text" : "password"
-										}
-										id="password"
-										value={password}
+										type="email"
+										id="email"
+										value={email}
 										onChange={(e) =>
-											setPassword(e.target.value)
+											setEmail(e.target.value)
 										}
-										className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
-										placeholder="••••••••"
+										className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
+										placeholder="user@gmail.com"
 										required
 									/>
-									<button
-										type="button"
-										onClick={() =>
-											setShowPassword(!showPassword)
-										}
-										className="cursor-pointer absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-gray-600">
-										{showPassword ? (
-											<EyeOff className="w-5 h-5" />
-										) : (
-											<Eye className="w-5 h-5" />
-										)}
-									</button>
+									{errors.email && (
+										<p className="absolute left-0 -bottom-5 text-sm text-red-500">
+											{errors.email}
+										</p>
+									)}
 								</div>
-							</div>
 
-							<div className="flex items-center justify-between text-sm">
-								<label className="flex items-center">
-									<input
-										type="checkbox"
-										className="rounded border-gray-300 text-green-600 focus:ring-green-500"
-									/>
-									<span className="ml-2 text-gray-600">
-										Ghi nhớ đăng nhập
-									</span>
-								</label>
-								<a
-									href="#"
-									className="text-green-600 hover:text-green-700 font-medium">
-									Quên mật khẩu?
-								</a>
-							</div>
-
-							<button
-								type="submit"
-								onClick={handleSubmit}
-								disabled={isLoading}
-								className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-3 px-4 rounded-xl font-medium hover:from-green-600 hover:to-emerald-600 transform hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl cursor-pointer">
-								{isLoading ? (
-									<div className="flex items-center justify-center space-x-2">
-										<div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-										<span>Đang xử lý...</span>
+								<div className="relative mb-8">
+									<label
+										htmlFor="password"
+										className="block text-sm font-medium text-gray-700 mb-2">
+										Mật khẩu
+									</label>
+									<div className="relative">
+										<input
+											type={
+												showPassword
+													? "text"
+													: "password"
+											}
+											id="password"
+											value={password}
+											onChange={(e) =>
+												setPassword(e.target.value)
+											}
+											className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200"
+											placeholder="••••••••"
+											required
+										/>
+										<button
+											type="button"
+											onClick={() =>
+												setShowPassword(!showPassword)
+											}
+											className="cursor-pointer absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-gray-600">
+											{showPassword ? (
+												<EyeOff className="w-5 h-5" />
+											) : (
+												<Eye className="w-5 h-5" />
+											)}
+										</button>
 									</div>
-								) : (
-									"Đăng nhập"
-								)}
-							</button>
-						</div>
+									{errors.password && (
+										<p className="absolute left-0 -bottom-5 text-sm text-red-500">
+											{errors.password}
+										</p>
+									)}
+								</div>
+
+								<div className="flex items-center justify-between text-sm">
+									<label className="flex items-center">
+										<input
+											type="checkbox"
+											className="rounded border-gray-300 text-green-600 focus:ring-green-500"
+										/>
+										<span className="ml-2 text-gray-600">
+											Ghi nhớ đăng nhập
+										</span>
+									</label>
+									<a
+										href="#"
+										className="text-green-600 hover:text-green-700 font-medium">
+										Quên mật khẩu?
+									</a>
+								</div>
+
+								<button
+									type="submit"
+									onClick={handleSubmit}
+									disabled={isLoading}
+									className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-3 px-4 rounded-xl font-medium hover:from-green-600 hover:to-emerald-600 transform hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl cursor-pointer">
+									{isLoading ? (
+										<div className="flex items-center justify-center space-x-2">
+											<div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+											<span>Đang xử lý...</span>
+										</div>
+									) : (
+										"Đăng nhập"
+									)}
+								</button>
+							</div>
 						</form>
 						<div className="flex items-center mt-6 mb-5">
 							<hr className="flex-1 border-gray-300" />

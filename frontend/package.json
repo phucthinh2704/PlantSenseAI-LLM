@@ -11,14 +11,17 @@
   },
   "dependencies": {
     "@react-oauth/google": "^0.12.2",
+    "@reduxjs/toolkit": "^2.9.0",
     "@tailwindcss/vite": "^4.1.12",
     "axios": "^1.11.0",
     "lucide-react": "^0.542.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^6.30.1",
     "react-toastify": "^11.0.5",
+    "redux-persist": "^6.0.0",
     "sweetalert2": "^11.22.5",
     "tailwindcss": "^4.1.12"
   },

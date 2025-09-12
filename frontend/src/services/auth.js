@@ -12,3 +12,9 @@ export const apiGoogleLogin = async (data) =>
 		url: `/auth/google`,
 		data,
 	});
+export const apiLogout = async (data) =>
+	axios({
+		method: "POST",
+		url: `/auth/logout`,
+		data,
+	});
