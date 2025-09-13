@@ -1,0 +1,124 @@
+{"instruction": "Nguyên nhân gây bệnh gạch nâu trên lúa?", 
+ "context": "Ruộng lúa 40 ngày tuổi xuất hiện vết sọc dài màu nâu đỏ trên lá", 
+ "response": "Nguyên nhân gây bệnh gạch nâu là do nấm Sphaerulina oryzina. Bệnh phát triển mạnh trong điều kiện thời tiết nóng ẩm, ruộng bón thừa đạm, thiếu kali và lúa gieo sạ dày. Nguồn bệnh thường tồn tại trên tàn dư rơm rạ và cỏ dại ký chủ.", 
+ "category": "disease"}
+{"instruction": "Lúa xuất hiện những vết sọc dài màu nâu đỏ chạy dọc theo gân lá là bệnh gì?", 
+ "context": "", 
+ "response": "Lúa bị bệnh gạch nâu, nguyên nhân do nấm Cercospora oryzae gây ra. Bệnh thường phát triển trong điều kiện nắng mưa xen kẽ, ẩm độ cao và ruộng bón nhiều đạm, thiếu kali.", 
+ "category": "disease"}
+{"instruction": "Bệnh gạch nâu lá trên lúa?", 
+ "context": "", 
+ "response": "Bệnh gạch nâu do nấm Sphaerulina oryzina gây ra. Triệu chứng là vết bệnh hình sọc dài màu nâu đỏ trên lá, làm lá bị vàng khô và giảm khả năng quang hợp.", 
+ "category": "disease"}
+{"instruction": "Làm sao xử lý bệnh gạch nâu trên lúa?", 
+ "context": "Ruộng lúa 40 ngày tuổi xuất hiện vết sọc nâu đỏ trên lá", 
+ "response": "Ngưng ngay việc bón thêm phân đạm, bổ sung kali và lân. Phun thuốc đặc trị có hoạt chất Hexaconazole, Propiconazole hoặc Tebuconazole. Kiểm tra lại sau 5-7 ngày, nếu bệnh còn phát triển cần phun lại.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị gạch nâu thì xử lý thế nào?", 
+ "context": "", 
+ "response": "Để xử lý bệnh gạch nâu, cần bón phân cân đối, hạn chế đạm, tăng cường kali. Phun thuốc hóa học đặc trị như Hexaconazole, Propiconazole hoặc Tebuconazole theo nguyên tắc 4 đúng. Trường hợp nặng cần phun lặp lại sau 5-7 ngày.", 
+ "category": "disease"}
+{"instruction": "Cách trị gạch nâu trên lúa?", 
+ "context": "", 
+ "response": "Để trị bệnh gạch nâu, cần kết hợp biện pháp canh tác và hóa học. Ngưng bón đạm, tăng kali, vệ sinh đồng ruộng và phun thuốc có hoạt chất đặc trị như Propiconazole hoặc Tebuconazole theo khuyến cáo.", 
+ "category": "disease"}
+{"instruction": "Triệu chứng ban đầu của bệnh gạch nâu trên lúa là gì?", 
+ "context": "", 
+ "response": "Triệu chứng ban đầu của bệnh gạch nâu là các vết nhỏ màu nâu đỏ chạy dọc theo gân lá, sau đó kéo dài thành vết sọc. Nhiễm nặng làm lá vàng và khô từ chóp xuống.", 
+ "category": "disease"}
+{"instruction": "Bệnh gạch nâu thường phát sinh trong điều kiện thời tiết nào?", 
+ "context": "", 
+ "response": "Bệnh gạch nâu thường phát sinh khi thời tiết nóng ẩm, mưa nhiều, xen kẽ nắng gắt, đặc biệt khi ruộng lúa rậm rạp và bón thừa đạm.", 
+ "category": "disease"}
+{"instruction": "Những giai đoạn nào của cây lúa dễ bị bệnh gạch nâu tấn công nhất?", 
+ "context": "", 
+ "response": "Bệnh gạch nâu có thể xuất hiện ở nhiều giai đoạn, nhưng thường gây hại nặng từ giai đoạn đẻ nhánh đến làm đòng. Nếu nặng sẽ làm lá vàng khô và ảnh hưởng đến năng suất.", 
+ "category": "disease"}
+{"instruction": "Nguồn lây lan bệnh gạch nâu lúa từ đâu?", 
+ "context": "", 
+ "response": "Nguồn lây lan chính của bệnh gạch nâu là từ tàn dư rơm rạ, cỏ dại và cây lúa chét. Bào tử nấm có thể phát tán theo gió và nước mưa.", 
+ "category": "disease"}
+{"instruction": "Làm sao để phòng ngừa bệnh gạch nâu lúa hiệu quả?", 
+ "context": "", 
+ "response": "Để phòng bệnh gạch nâu, cần bón phân cân đối (hạn chế đạm, tăng kali và lân), gieo sạ mật độ hợp lý, vệ sinh đồng ruộng và chọn giống có khả năng chống chịu.", 
+ "category": "disease"}
+{"instruction": "Có nên phun thuốc phòng bệnh gạch nâu không?", 
+ "context": "", 
+ "response": "Nên phun thuốc phòng bệnh gạch nâu khi ruộng có nguy cơ cao như đã từng bị bệnh ở vụ trước hoặc khi thời tiết thuận lợi cho bệnh phát triển. Thuốc nên phun giai đoạn lúa đẻ nhánh rộ và trước trổ.", 
+ "category": "disease"}
+{"instruction": "Bệnh gạch nâu lúa gây hại như thế nào đến năng suất?", 
+ "context": "", 
+ "response": "Bệnh gạch nâu làm lá lúa vàng và khô, giảm diện tích quang hợp, khiến hạt lúa nhỏ, nhẹ, giảm năng suất từ 10-30% nếu bị nặng.", 
+ "category": "disease"}
+{"instruction": "Có giống lúa nào kháng bệnh gạch nâu không?", 
+ "context": "", 
+ "response": "Một số giống lúa có khả năng chống chịu bệnh gạch nâu khá tốt như OM6976, OM4900, OM5451, nhưng hiệu quả kháng có thể thay đổi tùy điều kiện canh tác và thời tiết.", 
+ "category": "disease"}
+{"instruction": "Thời điểm nào cần phun thuốc phòng bệnh gạch nâu hiệu quả nhất?", 
+ "context": "", 
+ "response": "Thuốc phòng bệnh gạch nâu nên được phun ở giai đoạn lúa đẻ nhánh rộ và trước trổ, đặc biệt khi ruộng đã từng nhiễm bệnh hoặc thời tiết nóng ẩm kéo dài.", 
+ "category": "disease"}
+{"instruction": "Phân bón có ảnh hưởng thế nào đến bệnh gạch nâu lúa?", 
+ "context": "", 
+ "response": "Bón thừa phân đạm làm lá lúa xanh tốt, dễ bị bệnh gạch nâu tấn công. Ngược lại, bón cân đối đạm, lân, kali giúp cây khỏe và giảm nguy cơ bệnh.", 
+ "category": "disease"}
+{"instruction": "Lúa bị gạch nâu có nên bón thêm phân đạm không?", 
+ "context": "", 
+ "response": "Không nên bón thêm đạm khi lúa bị gạch nâu, vì sẽ làm bệnh phát triển mạnh hơn. Thay vào đó nên bổ sung kali để tăng sức chống chịu cho cây.", 
+ "category": "disease"}
+{"instruction": "Có biện pháp sinh học nào phòng bệnh gạch nâu lúa không?", 
+ "context": "", 
+ "response": "Có thể dùng chế phẩm sinh học như Trichoderma hoặc vi sinh vật đối kháng để hạn chế bệnh gạch nâu, kết hợp với biện pháp canh tác hợp lý.", 
+ "category": "disease"}
+{"instruction": "Năng suất lúa giảm bao nhiêu khi bị bệnh gạch nâu nặng?", 
+ "context": "", 
+ "response": "Nếu bệnh gạch nâu gây hại nặng, năng suất lúa có thể giảm 20-30%, chất lượng hạt gạo giảm rõ rệt.", 
+ "category": "disease"}
+{"instruction": "Tại sao bệnh gạch nâu thường bùng phát vào vụ Hè Thu?", 
+ "context": "", 
+ "response": "Vụ Hè Thu có thời tiết nóng ẩm, mưa nhiều, xen kẽ nắng gắt, là điều kiện thuận lợi cho bệnh gạch nâu phát triển mạnh.", 
+ "category": "disease"}
+{"instruction": "Có thể nhận biết ruộng lúa bị gạch nâu nặng bằng dấu hiệu nào?", 
+ "context": "", 
+ "response": "Ruộng lúa bị gạch nâu nặng có nhiều vết sọc nâu đỏ lan rộng trên lá, lá vàng úa và khô hàng loạt, làm cây còi cọc và năng suất giảm rõ rệt.", 
+ "category": "disease"}
+{"instruction": "Người nông dân thường mắc sai lầm gì khi trị bệnh gạch nâu?", 
+ "context": "", 
+ "response": "Một số sai lầm thường gặp là tiếp tục bón nhiều đạm khi lúa đã bị bệnh, phun thuốc quá muộn, hoặc chỉ dùng một loại thuốc lặp lại nhiều lần làm nấm kháng thuốc.", 
+ "category": "disease"}
+{"instruction": "Nếu không trị bệnh gạch nâu kịp thời thì hậu quả thế nào?", 
+ "context": "", 
+ "response": "Nếu không phòng trị kịp thời, bệnh gạch nâu sẽ lan nhanh, làm lá vàng khô, giảm quang hợp, gây thất thu từ 10-30% và làm chất lượng hạt kém.", 
+ "category": "disease"}
+{"instruction": "Có nên sử dụng thuốc hóa học liên tục để phòng bệnh gạch nâu không?", 
+ "context": "", 
+ "response": "Không nên lạm dụng thuốc hóa học liên tục vì dễ gây kháng thuốc. Cần kết hợp biện pháp canh tác và luân phiên hoạt chất thuốc để đạt hiệu quả cao.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị gạch nâu có thể thu hoạch được không?", 
+ "context": "Ruộng lúa bị nhiễm bệnh gạch nâu nặng ở lá", 
+ "response": "Ruộng lúa vẫn có thể thu hoạch, nhưng năng suất và chất lượng gạo giảm. Bệnh nặng làm hạt nhỏ, nhẹ và phẩm chất gạo kém.", 
+ "category": "disease"}
+{"instruction": "Cần làm gì sau khi phun thuốc trị gạch nâu?", 
+ "context": "", 
+ "response": "Sau khi phun thuốc trị gạch nâu, cần kiểm tra lại ruộng sau 5-7 ngày. Nếu bệnh còn phát triển cần phun nhắc lại, đồng thời bón bổ sung kali để cây hồi phục tốt hơn.", 
+ "category": "disease"}
+{"instruction": "Bệnh gạch nâu có ảnh hưởng đến phẩm chất gạo không?", 
+ "context": "", 
+ "response": "Có. Bệnh gạch nâu làm hạt gạo nhỏ, nhẹ, ít tinh bột, cơm ít ngon và dễ gãy khi xay xát. Bệnh nặng làm giảm rõ rệt chất lượng gạo.", 
+ "category": "disease"}
+{"instruction": "Bệnh gạch nâu lây lan nhanh bằng cách nào?", 
+ "context": "", 
+ "response": "Bào tử nấm gạch nâu có thể phát tán theo gió, nước mưa, công cụ canh tác và qua con người di chuyển trên ruộng, khiến bệnh lây lan nhanh.", 
+ "category": "disease"}
+{"instruction": "Cách nhận biết bệnh gạch nâu?", 
+ "context": "", 
+ "response": "Lá lúa bị bệnh gạch nâu thường có vết sọc dài màu nâu đỏ chạy dọc theo gân lá. Vết bệnh nhiều làm lá vàng và khô chết sớm.", 
+ "category": "disease"}
+{"instruction": "Bệnh gạch nâu có thể xuất hiện trên những bộ phận nào của cây lúa?", 
+ "context": "", 
+ "response": "Bệnh gạch nâu chủ yếu xuất hiện trên lá lúa, đôi khi trên bẹ lá. Khi nặng, bệnh làm toàn bộ lá bị vàng khô.", 
+ "category": "disease"}
+{"instruction": "Có nên dùng cùng một loại thuốc nhiều lần để trị bệnh gạch nâu không?", 
+ "context": "", 
+ "response": "Không nên dùng một loại thuốc nhiều lần liên tiếp vì nấm có thể kháng thuốc. Nên luân phiên các loại thuốc có hoạt chất khác nhau để tăng hiệu quả trị bệnh.", 
+ "category": "disease"}
