@@ -1,8 +1,10 @@
+import AvatarDefault from "@components/AvatarDefault";
 import useAlert from "@hooks/useAlert";
 import { logoutUser } from "@redux/auth";
 import {
 	Bot,
 	Bug,
+	ChevronDown,
 	Droplets,
 	Edit3,
 	Image as ImageIcon,
@@ -19,7 +21,7 @@ import {
 	X,
 } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 // Chat History Sidebar Component
 const ChatSidebar = ({ isOpen, toggleSidebar }) => {
@@ -175,6 +177,175 @@ const ChatSidebar = ({ isOpen, toggleSidebar }) => {
 	);
 };
 
+const Navbar = ({ user }) => {
+	const [showUserMenu, setShowUserMenu] = useState(false);
+	const dispatch = useDispatch();
+	const { showConfirm } = useAlert();
+
+	const getStatusColor = (status) => {
+		return status === "active" ? "text-green-600" : "text-gray-500";
+	};
+
+	const getStatusText = (status) => {
+		return status === "active" ? "Đang hoạt động" : "Không hoạt động";
+	};
+
+	const handleLogout = () => {
+		showConfirm("Bạn có chắc chắn muốn đăng xuất?").then((result) => {
+			if (result.isConfirmed) {
+				dispatch(logoutUser());
+			}
+		});
+	};
+
+	return (
+		<nav className="bg-white border-b border-green-200 shadow-sm">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div className="flex items-center justify-between h-16">
+					{/* User Info */}
+					<div className="flex items-center space-x-4">
+						{/* Status */}
+						<div className="hidden sm:flex items-center space-x-2">
+							<div
+								className={`w-2 h-2 rounded-full ${
+									user.status === "active"
+										? "bg-green-500 animate-pulse"
+										: "bg-gray-400"
+								}`}></div>
+							<span
+								className={`text-sm font-medium ${getStatusColor(
+									user.status
+								)}`}>
+								{getStatusText(user.status)}
+							</span>
+						</div>
+
+						{/* User Menu */}
+						<div className="relative">
+							<button
+								onClick={() => setShowUserMenu(!showUserMenu)}
+								className="flex items-center space-x-3 p-2 rounded-lg hover:bg-green-50 transition-colors duration-200 cursor-pointer">
+								{user.avatar ? (
+									<img
+										src={`${user.avatar}`}
+										alt="Avatar"
+										className="w-8 h-8 rounded-full border-2 border-green-200 object-cover"
+									/>
+								) : (
+									<AvatarDefault name={user.name} />
+								)}
+
+								<div className="text-left hidden sm:block">
+									<p className="text-sm font-medium text-gray-800">
+										{user.name}
+									</p>
+									<p className="text-xs text-green-600">
+										{user.email}
+									</p>
+								</div>
+								<ChevronDown
+									className={`w-4 h-4 text-gray-500 transition-transform ${
+										showUserMenu ? "rotate-180" : ""
+									}`}
+								/>
+							</button>
+
+							{/* Dropdown Menu */}
+							{showUserMenu && (
+								<>
+									{/* Overlay */}
+									<div
+										className="fixed inset-0 z-40"
+										onClick={() =>
+											setShowUserMenu(false)
+										}></div>
+
+									<div className="absolute right-0 mt-2 w-72 bg-white border border-green-200 rounded-xl shadow-lg z-50">
+										{/* User Info Header */}
+										<div className="p-4 border-b border-gray-100">
+											<div className="flex items-center space-x-3">
+												{user.avatar ? (
+													<img
+														src={user.avatar}
+														alt="Avatar"
+														className="w-12 h-12 rounded-full border-2 border-green-200 object-cover"
+													/>
+												) : (
+													<AvatarDefault
+														name={user.name}
+														size={48}
+														textSize="text-lg"
+													/>
+												)}
+
+												<div className="flex-1">
+													<h5 className="font-semibold text-gray-800">
+														{user.name}
+													</h5>
+													<p className="text-xs text-gray-600 line-clamp-1">
+														{user.email}
+													</p>
+													<div className="flex items-center justify-between mt-2">
+														<div className="flex items-center space-x-1">
+															<div
+																className={`w-2 h-2 rounded-full ${
+																	user.status ===
+																	"active"
+																		? "bg-green-500"
+																		: "bg-gray-400"
+																}`}></div>
+															<span
+																className={`text-xs ${getStatusColor(
+																	user.status
+																)}`}>
+																{getStatusText(
+																	user.status
+																)}
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											{/* User ID */}
+											<div className="mt-3 p-2 bg-gray-50 rounded-lg">
+												<p className="text-xs text-gray-500">
+													ID người dùng
+												</p>
+												<p className="text-sm font-mono text-gray-800">
+													{user.id}
+												</p>
+											</div>
+										</div>
+
+										{/* Menu Actions */}
+										<div className="p-2">
+											<button className="flex items-center space-x-3 w-full p-2 text-left text-gray-700 hover:bg-green-50 rounded-lg transition-colors">
+												<User className="w-4 h-4" />
+												<span>Thông tin cá nhân</span>
+											</button>
+											<button className="flex items-center space-x-3 w-full p-2 text-left text-gray-700 hover:bg-green-50 rounded-lg transition-colors">
+												<Settings className="w-4 h-4" />
+												<span>Cài đặt tài khoản</span>
+											</button>
+											<hr className="my-2 border-gray-200" />
+											<button
+												className="flex items-center space-x-3 w-full p-2 text-left text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+												onClick={handleLogout}>
+												<LogOut className="w-4 h-4" />
+												<span>Đăng xuất</span>
+											</button>
+										</div>
+									</div>
+								</>
+							)}
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	);
+};
 // Message Component
 const Message = ({ message, isBot = false, timestamp }) => {
 	return (
@@ -496,6 +667,7 @@ const HomePage = () => {
 	const [messages, setMessages] = useState([]);
 	const [isTyping, setIsTyping] = useState(false);
 	const messagesEndRef = useRef(null);
+	const { user } = useSelector((state) => state.auth);
 
 	const scrollToBottom = () => {
 		messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -575,12 +747,7 @@ const HomePage = () => {
 						</div>
 					</div>
 
-					<div className="flex items-center space-x-2">
-						<div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-						<span className="text-sm text-green-600 font-medium">
-							Online
-						</span>
-					</div>
+					<Navbar user={user} />
 				</header>
 
 				{/* Messages Area */}

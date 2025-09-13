@@ -1,7 +1,6 @@
 import React from "react";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import routes from "./routes";
-import Title from "@components/Title";
 function Router() {
 	return (
 		<BrowserRouter
@@ -12,8 +11,12 @@ function Router() {
 			}}>
 			<Routes>
 				{routes.map(({ path, element }) => (
-          <Route key={path} path={path} element={element} />
-        ))}
+					<Route
+						key={path}
+						path={path}
+						element={element}
+					/>
+				))}
 			</Routes>
 		</BrowserRouter>
 	);
