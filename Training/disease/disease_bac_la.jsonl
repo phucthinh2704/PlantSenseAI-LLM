@@ -1,0 +1,112 @@
+{"instruction": "Nguyên nhân gây bệnh bạc lá trên lúa là gì?", 
+ "context": "Ruộng lúa 25 ngày tuổi xuất hiện lá bị cháy dọc theo gân", 
+ "response": "Nguyên nhân gây bệnh bạc lá lúa là do vi khuẩn Xanthomonas oryzae pv. oryzae. Bệnh phát triển mạnh trong điều kiện mưa nhiều, gió lớn, nhiệt độ cao và ruộng bón nhiều đạm.", 
+ "category": "disease"}
+{"instruction": "Triệu chứng điển hình của bệnh bạc lá lúa là gì?", 
+ "context": "", 
+ "response": "Triệu chứng điển hình là lá lúa bị bạc từ chóp lá xuống dọc theo gân lá, ban đầu xanh nhạt rồi chuyển sang xám trắng. Lá bệnh khô nhanh, có thể xoắn lại khi khô.", 
+ "category": "disease"}
+{"instruction": "Bệnh bạc lá lúa thường phát sinh trong điều kiện nào?", 
+ "context": "", 
+ "response": "Bệnh thường bùng phát trong điều kiện mưa bão, gió mạnh, nhiệt độ 25-34°C, ẩm độ cao, ruộng sạ dày và bón nhiều phân đạm.", 
+ "category": "disease"}
+{"instruction": "Những giai đoạn nào của lúa dễ bị bạc lá nhất?", 
+ "context": "", 
+ "response": "Lúa dễ bị bạc lá ở giai đoạn mạ, đẻ nhánh và làm đòng. Nếu nhiễm sớm cây còi cọc, nếu nhiễm lúc trổ bông năng suất giảm nặng.", 
+ "category": "disease"}
+{"instruction": "Nguồn lây lan chính của bệnh bạc lá lúa là gì?", 
+ "context": "", 
+ "response": "Nguồn bệnh tồn tại trên tàn dư rơm rạ, cỏ dại ký chủ và hạt giống nhiễm khuẩn. Vi khuẩn lây lan qua nước mưa, gió, côn trùng và công cụ canh tác.", 
+ "category": "disease"}
+{"instruction": "Làm sao phân biệt bệnh bạc lá và cháy bìa lá trên lúa?", 
+ "context": "", 
+ "response": "Bạc lá có vết bệnh chạy dọc gân lá, màu xám trắng và khô nhanh. Cháy bìa lá thường bắt đầu từ mép lá, có viền vàng rõ rệt và lan dần vào bên trong phiến lá.", 
+ "category": "disease"}
+{"instruction": "Triệu chứng ban đầu của bệnh bạc lá là gì?", 
+ "context": "", 
+ "response": "Ban đầu trên lá xuất hiện vết sọc nước màu xanh nhạt dọc theo gân lá, sau đó vết bệnh lan nhanh và biến thành màu xám trắng.", 
+ "category": "disease"}
+{"instruction": "Tác hại của bệnh bạc lá đối với năng suất lúa?", 
+ "context": "", 
+ "response": "Bệnh bạc lá làm giảm diện tích lá quang hợp, cây còi cọc, ít hạt và có thể gây thất thu từ 20-60% năng suất, đặc biệt khi nhiễm nặng ở giai đoạn trổ bông.", 
+ "category": "disease"}
+{"instruction": "Cách xử lý khi ruộng lúa bị bạc lá?", 
+ "context": "Ruộng lúa 30 ngày tuổi có nhiều lá bạc trắng", 
+ "response": "Ngừng bón phân đạm, bổ sung kali và silic. Quản lý nước hợp lý, thoát nước khi mưa nhiều. Phun thuốc chứa hoạt chất Copper hydroxide, Kasugamycin, Streptomycin hoặc hỗn hợp đặc trị vi khuẩn theo nguyên tắc 4 đúng.", 
+ "category": "disease"}
+{"instruction": "Biện pháp phòng ngừa bệnh bạc lá lúa hiệu quả?", 
+ "context": "", 
+ "response": "Dùng giống kháng bệnh, vệ sinh đồng ruộng, cày vùi rơm rạ, gieo sạ thưa hợp lý, bón phân cân đối, quản lý nước tốt, và chủ động phun thuốc phòng khi có điều kiện thời tiết thuận lợi cho bệnh.", 
+ "category": "disease"}
+{"instruction": "Có nên bón phân đạm khi lúa bị bạc lá không?", 
+ "context": "", 
+ "response": "Không. Bón thêm đạm sẽ làm bệnh phát triển mạnh hơn. Nên bổ sung kali và silic để tăng sức chống chịu cho cây lúa.", 
+ "category": "disease"}
+{"instruction": "Thời điểm nào cần phun thuốc để phòng bệnh bạc lá tốt nhất?", 
+ "context": "", 
+ "response": "Nên phun thuốc phòng khi lúa ở giai đoạn mạ, đẻ nhánh rộ và trước trổ, đặc biệt trong điều kiện mưa nhiều, gió mạnh và ẩm độ cao.", 
+ "category": "disease"}
+{"instruction": "Có giống lúa nào kháng bệnh bạc lá không?", 
+ "context": "", 
+ "response": "Một số giống có khả năng kháng hoặc chống chịu như OM1490, OM6976, IR64, Jasmine 85. Tuy nhiên mức độ kháng còn tùy vào điều kiện canh tác và vùng sinh thái.", 
+ "category": "disease"}
+{"instruction": "Bệnh bạc lá lây lan nhanh bằng cách nào?", 
+ "context": "", 
+ "response": "Vi khuẩn bạc lá lây lan nhờ nước mưa, gió, công cụ canh tác, người di chuyển trên ruộng và cả côn trùng gây vết thương cho cây.", 
+ "category": "disease"}
+{"instruction": "Người nông dân thường mắc sai lầm gì khi trị bệnh bạc lá?", 
+ "context": "", 
+ "response": "Thường gặp các sai lầm như: tiếp tục bón nhiều đạm, phun thuốc quá muộn khi bệnh đã lan rộng, hoặc dùng thuốc trị nấm thay vì thuốc đặc trị vi khuẩn.", 
+ "category": "disease"}
+{"instruction": "Nếu không trị bệnh bạc lá kịp thời thì hậu quả thế nào?", 
+ "context": "", 
+ "response": "Bệnh sẽ lan nhanh, làm lá khô hàng loạt, cây còi cọc, giảm năng suất nghiêm trọng, có thể mất trắng nếu nhiễm nặng ở giai đoạn đòng trổ.", 
+ "category": "disease"}
+{"instruction": "Có biện pháp sinh học nào phòng bệnh bạc lá không?", 
+ "context": "", 
+ "response": "Có. Một số chế phẩm sinh học chứa vi khuẩn đối kháng như Bacillus subtilis hoặc Pseudomonas fluorescens giúp hạn chế sự phát triển của vi khuẩn bạc lá.", 
+ "category": "disease"}
+{"instruction": "Tại sao bệnh bạc lá thường nặng vào vụ Hè Thu?", 
+ "context": "", 
+ "response": "Vì vụ Hè Thu có mưa nhiều, nhiệt độ cao, gió lớn và ẩm độ cao, đây là điều kiện thuận lợi cho vi khuẩn bạc lá phát triển và lây lan nhanh.", 
+ "category": "disease"}
+{"instruction": "Có thể thu hoạch ruộng lúa bị bạc lá nặng không?", 
+ "context": "Ruộng lúa bị nhiễm bạc lá nặng ở giai đoạn trổ", 
+ "response": "Vẫn có thể thu hoạch nhưng năng suất và chất lượng giảm mạnh. Hạt thường lép nhiều, gạo kém chất lượng và dễ bị hư hỏng trong bảo quản.", 
+ "category": "disease"}
+{"instruction": "Bệnh bạc lá có ảnh hưởng đến phẩm chất gạo không?", 
+ "context": "", 
+ "response": "Có. Hạt lúa từ ruộng bị bạc lá thường lép, nhỏ, gạo kém dẻo, dễ nấm mốc khi bảo quản và chất lượng gạo thương phẩm giảm rõ rệt.", 
+ "category": "disease"}
+{"instruction": "Phân bón có ảnh hưởng thế nào đến bệnh bạc lá lúa?", 
+ "context": "", 
+ "response": "Bón nhiều đạm làm lúa xanh tốt nhưng dễ bị vi khuẩn tấn công. Ngược lại, bón cân đối đạm, lân, kali và bổ sung silic sẽ giúp cây khỏe, giảm nguy cơ bệnh.", 
+ "category": "disease"}
+{"instruction": "Có nên dùng thuốc nấm để trị bệnh bạc lá không?", 
+ "context": "", 
+ "response": "Không. Bạc lá là bệnh do vi khuẩn, thuốc nấm không có tác dụng. Cần dùng thuốc đặc trị vi khuẩn như Copper hydroxide, Kasugamycin hoặc Streptomycin.", 
+ "category": "disease"}
+{"instruction": "Thời điểm nào bệnh bạc lá gây hại nặng nhất?", 
+ "context": "", 
+ "response": "Bệnh gây hại nặng nhất vào giai đoạn lúa đẻ nhánh và làm đòng. Nếu tấn công ở giai đoạn trổ bông thì năng suất và chất lượng gạo giảm nghiêm trọng.", 
+ "category": "disease"}
+{"instruction": "Bệnh bạc lá có thể tồn tại qua vụ sau không?", 
+ "context": "", 
+ "response": "Có. Vi khuẩn tồn tại trên tàn dư cây trồng, hạt giống nhiễm bệnh và cỏ dại ký chủ, là nguồn lây lan cho vụ tiếp theo.", 
+ "category": "disease"}
+{"instruction": "Có thể kết hợp biện pháp nào để quản lý bệnh bạc lá hiệu quả?", 
+ "context": "", 
+ "response": "Cần kết hợp biện pháp canh tác (gieo sạ thưa, bón phân cân đối), giống kháng bệnh, vệ sinh đồng ruộng và sử dụng thuốc hóa học, sinh học đúng lúc để quản lý bệnh bạc lá hiệu quả.", 
+ "category": "disease"}
+{"instruction": "Dấu hiệu nhận biết ruộng bị bạc lá nặng là gì?", 
+ "context": "", 
+ "response": "Ruộng lúa bị bạc lá nặng có nhiều lá bạc trắng, khô rũ hàng loạt, cây còi cọc, và tỷ lệ lá bị bệnh có thể chiếm phần lớn diện tích lá quang hợp.", 
+ "category": "disease"}
+{"instruction": "Bệnh bạc lá lây lan nhanh nhất trong điều kiện nào?", 
+ "context": "", 
+ "response": "Bệnh lây lan nhanh nhất trong điều kiện mưa bão liên tục, gió mạnh và ruộng sạ dày, bón nhiều đạm.", 
+ "category": "disease"}
+{"instruction": "Có nên phun thuốc phòng định kỳ để tránh bạc lá không?", 
+ "context": "", 
+ "response": "Không nên lạm dụng phun định kỳ. Chỉ nên phun khi có nguy cơ cao hoặc khi bệnh chớm xuất hiện, kết hợp với biện pháp canh tác hợp lý để tránh kháng thuốc.", 
+ "category": "disease"}
