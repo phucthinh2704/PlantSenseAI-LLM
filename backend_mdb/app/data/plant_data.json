@@ -174,7 +174,7 @@
 		"origin": "Trung Quốc (nhập nội), được sản xuất và cải tiến tại Việt Nam",
 		"category": "Cây lương thực",
 		"growth_duration": "Vụ Xuân 125 - 135 ngày; Vụ Mùa 100 - 110 ngày",
-		"morphology": "Chiều cao cây 90 - 105 cm, đẻ nhánh khá; hạt thon, vỏ trấu màu nâu vàng; khối lượng 1000 hạt 18,5 – 20 g; chiều dài hạt trung bình 5,86 mm; tỷ lệ chiều dài/rộng 2,95.",
+		"morphology": "Chiều cao cây 90 - 105 cm, đẻ nhánh khá; hạt thon, vỏ trấu màu nâu vàng; khối lượng 1000 hạt 18,5 - 20 g; chiều dài hạt trung bình 5,86 mm; tỷ lệ chiều dài/rộng 2,95.",
 		"yields": "4,5 - 6,5 tấn/ha",
 		"description": "Lúa Bắc Thơm số 7 là giống lúa thơm chất lượng cao, được nhập nội từ Trung Quốc và cải tiến tại Việt Nam. Đây là giống cảm ôn, gieo cấy được cả hai vụ, cơm trắng, mềm, dẻo, thơm đặc trưng. Giống có khả năng chịu rét khá, chống đổ trung bình, chống chịu trung bình với rầy nâu, đạo ôn, khô vằn và nhiễm bạc lá trong vụ Mùa.",
 		"image_url": null
@@ -197,6 +197,566 @@
 		"morphology": "Cây cao trung bình 90 - 110 cm, thân cứng, lá đứng xanh bền, bông dài 21 - 24 cm, hạt dài thon, gạo trong.",
 		"yields": "2,8 - 3,5 tấn/ha, có thể đạt 5 tấn/ha khi thâm canh tốt.",
 		"description": "LC93-1 là giống lúa cạn năng suất khá, chịu hạn tốt, thích ứng rộng, có thể trồng trên đất đồi, ruộng bậc thang hoặc xen với cây công nghiệp. Gạo dài, trong, cơm dẻo, phù hợp canh tác ở vùng khó khăn, giúp tăng thu nhập và đảm bảo an ninh lương thực.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa HDR7",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "126 - 138 ngày (vụ Xuân), 101 - 112 ngày (vụ Mùa)",
+		"morphology": "Cây cao 92 - 128 cm, sinh trưởng khỏe, đẻ nhánh khá, lá xanh, bông trung bình, hạt thóc thon dài, vàng sáng, hạt chắc cao. Gạo thon dài, trong, cơm trắng bóng, mềm dẻo, thơm nhẹ. Hàm lượng amylose 15 - 16%.",
+		"yields": "Trung bình 5,4 - 7,1 tấn/ha",
+		"description": "HDR7 là giống lúa thuần, cản ôn, phù hợp gieo cấy cả vụ Xuân và vụ Mùa/Hè Thu tại các tỉnh phía Bắc trên chân đất vàn, vàn cao chủ động tưới tiêu. Có khả năng chống chịu khá, chỉ nhiễm nhẹ bệnh đạo ôn, nhiễm nhẹ đến vừa bạc lá và rầy nâu. Thích hợp canh tác thâm canh, dễ chăm sóc, chất lượng gạo ngon, cơm dẻo, đạt tiêu chuẩn hàng hóa.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa HD16",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "129 - 137 ngày (vụ Xuân), 103 - 113 ngày (vụ Mùa)",
+		"morphology": "Chiều cao 110 - 120 cm, cây cứng chống đổ khá; hạt thóc thon dài (6,8 mm), vàng sáng; khối lượng 1000 hạt 24,1 - 25,6 g; gạo trong, tỷ lệ xay xát 67 - 72%; cơm trắng, mềm, vị đậm, có mùi thơm đặc trưng.",
+		"yields": "5,2 - 7,0 tấn/ha (vụ Mùa); 6,2 - 8,0 tấn/ha (vụ Xuân)",
+		"description": "HD16 là giống lúa thuần chất lượng cao, cảm ôn, phù hợp gieo trồng cả vụ Xuân/Đông Xuân và vụ Mùa/Hè Thu tại các tỉnh phía Bắc, trên chân đất vàn và vàn cao chủ động tưới tiêu. Có khả năng kháng bệnh bạc lá tốt, kháng đến nhiễm vừa đạo ôn, nhiễm vừa rầy nâu. Gạo thon dài, trong, cơm ngon, mềm dẻo, thơm nhẹ, đáp ứng nhu cầu hàng hóa chất lượng cao.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa U17",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Mùa 150 - 155 ngày; Vụ Đông Xuân 175 - 180 ngày",
+		"morphology": "Chiều cao 115 - 130 cm, cây cứng chống đổ tốt, bông dài 22 - 24 cm, trung bình 125 - 140 hạt/bông; hạt to hơi bầu, màu vàng sáng; khối lượng 1000 hạt 25 - 26 g.",
+		"yields": "Trung bình 4,5 - 5,0 tấn/ha; thâm canh có thể đạt 6,0 - 7,0 tấn/ha",
+		"description": "Giống lúa thuần cảm ôn, thích hợp gieo cấy cả 2 vụ Xuân và Mùa tại vùng trung du miền núi phía Bắc, đặc biệt phù hợp ở vùng trũng thường xuyên ngập úng. Cây cứng, chống đổ tốt, có khả năng chịu ngập 5 - 7 ngày ở giai đoạn mạ đến đứng cái. Kháng bạc lá, nhiễm khô vằn. Gạo tỷ lệ xay xát 65 - 68%, cơm trắng, chất lượng ăn trung bình.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Gia Lộc 25 (TĐ25)",
+		"origin": "Trung tâm Nghiên cứu và Phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 130 - 135 ngày; Vụ Mùa 110 - 115 ngày",
+		"morphology": "Dạng hình cây gọn đẹp, hạt thóc màu vàng sẫm; tỷ lệ dài/rộng hạt gạo 2,68; khối lượng 1000 hạt 21,9 - 24,5 g; tỷ lệ gạo lật 81,45%, gạo xát 63,85%, gạo nguyên 52,95%.",
+		"yields": "Vụ Xuân 6,1 - 6,9 tấn/ha; Vụ Mùa 4,7 - 6,7 tấn/ha",
+		"description": "Giống lúa thuần ngắn ngày, chịu thâm canh, gieo cấy thích hợp ở trà Xuân muộn và Mùa sớm tại vùng đồng bằng sông Hồng. Cây gọn, năng suất ổn định, chất lượng gạo khá với hạt thon dài, trong, cơm trắng mềm dẻo. Kháng đạo ôn ở mức khá, nhưng nhiễm bạc lá và nhiễm vừa rầy nâu. Thích hợp trên chân đất vàn, vàn cao chủ động tưới tiêu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Gia Lộc 601",
+		"origin": "Trung tâm Nghiên cứu và Phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 131 - 140 ngày; Vụ Mùa 99 - 109 ngày; Vụ Hè Thu ~100 - 110 ngày",
+		"morphology": "Chiều cao trung bình 96,6 - 107,4 cm, cây gọn, đẻ nhánh khá, lá xanh, bông trung bình, hạt thóc thon dài màu vàng sáng, tỷ lệ hạt chắc cao; hạt gạo thon dài, trong, cơm trắng, bóng, mềm, hơi cứng, có mùi thơm nhẹ; khối lượng 1000 hạt 22,1 - 24,9 g; hàm lượng amylose 27,7 - 30,7%.",
+		"yields": "Vụ Xuân 6,6 - 7,7 tấn/ha; Vụ Mùa 5,3 - 6,0 tấn/ha; Vụ Hè Thu 5,9 - 6,5 tấn/ha",
+		"description": "Giống lúa thuần được chọn tạo từ xử lý đột biến giống LC93-1, sinh trưởng khỏe, phù hợp cơ cấu 2 vụ/năm trên chân đất vàn và vàn cao. Cây gọn, đẻ nhánh khá, năng suất cao và ổn định, chất lượng gạo tốt, hạt gạo thon dài, cơm mềm, trắng, bóng, có mùi thơm nhẹ. Chống chịu tốt với đạo ôn và khô vằn, nhiễm nhẹ bạc lá và rầy nâu. Giống đã được công nhận lưu hành theo Quyết định số 42/QĐ-TT-CLT ngày 23/01/2024.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa BT7KBL-01",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 121 - 131 ngày; Vụ Mùa 100 - 109 ngày",
+		"morphology": "Chiều cao 96,7 - 105,8 cm, cây sinh trưởng tốt, tỷ lệ hạt chắc cao; hạt thóc thon nhỏ, màu nâu xẫm; gạo thon dài, trong, cơm mềm, vị đậm, có mùi thơm đặc trưng; khối lượng 1000 hạt 19,3 - 20,9 g.",
+		"yields": "Vụ Xuân 4,4 - 7,1 tấn/ha; Vụ Mùa 4,3 - 5,9 tấn/ha",
+		"description": "Giống lúa thơm chất lượng cao, sinh trưởng khỏe, thích hợp gieo trồng tại Đồng bằng sông Hồng và Bắc Trung Bộ trên chân đất vàn và vàn cao có điều kiện tưới tiêu chủ động. Chống chịu khá với bệnh đạo ôn, nhiễm vừa bạc lá và rầy nâu. Gạo thon dài, trắng, cơm mềm, vị đậm, thơm đặc trưng, đáp ứng tốt nhu cầu tiêu dùng chất lượng cao. Thích hợp sản xuất 2 vụ/năm.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa BT7KBL-02",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 120 - 130 ngày; Vụ Mùa 100 - 107 ngày",
+		"morphology": "Chiều cao trung bình ~110 cm, cây sinh trưởng tốt; hạt thóc thon nhỏ, màu nâu xẫm; khối lượng 1000 hạt 19 - 20 g; hạt gạo thon dài, trong, hàm lượng amylose thấp (~14%), cơm mềm, vị đậm, thơm đặc trưng.",
+		"yields": "Vụ Xuân 4,5 - 6,9 tấn/ha; Vụ Mùa 4,4 - 5,7 tấn/ha",
+		"description": "Giống lúa thơm chất lượng cao, được chọn tạo bằng phương pháp lai backcross, mang gen xa5 kháng bạc lá. Sinh trưởng khỏe, thích hợp gieo trồng tại các tỉnh phía Bắc trên chân đất vàn và vàn cao có tưới tiêu chủ động. Chống chịu tốt với bệnh bạc lá, nhiễm vừa đạo ôn và rầy nâu. Gạo thon dài, trong, amylose thấp, cơm mềm dẻo, vị đậm và thơm, đáp ứng nhu cầu gạo chất lượng cao. Có thể gieo cấy 2 vụ/năm, năng suất ổn định.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa TBR97 (Gia Lộc 97)",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Phía Bắc: Vụ Xuân 120 - 125 ngày, Vụ Mùa 100 - 105 ngày; Nam Trung Bộ & Tây Nguyên: Vụ Đông Xuân 105 - 110 ngày, Vụ Hè Thu 95 - 100 ngày; Nam Bộ: 95 - 100 ngày",
+		"morphology": "Chiều cao 90 - 100 cm, dạng hình gọn, cứng cây, đẻ nhánh khỏe, trỗ tập trung; bông dài, số hạt/bông 165 - 200, hạt chắc cao, màu vàng sáng; khối lượng 1000 hạt 21 - 22 g; tỷ lệ gạo xát 68%, gạo nguyên/gạo xát 71 - 78%, hạt gạo dài, trong, cơm trắng, bóng, mềm, đậm, ngon vừa.",
+		"yields": "70 - 75 tạ/ha (vụ Đông Xuân/Xuân), thâm canh đạt 75 - 80 tạ/ha; 60 - 65 tạ/ha (vụ Hè Thu/Mùa).",
+		"description": "Giống lúa thuần cảm ôn, thích ứng rộng, chịu thâm canh tốt. Chống chịu khá với bệnh đạo ôn và rầy nâu, nhiễm nhẹ bạc lá và đốm nâu. Gạo chất lượng cao, hạt dài trong, cơm trắng bóng, mềm, đậm vị, ngon vừa. Thích hợp gieo cấy trên nhiều chân đất ở hầu hết các vùng sinh thái từ Bắc đến Nam.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa N24",
+		"origin": "Trung tâm Nghiên cứu và Phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 136 - 146 ngày; Vụ Mùa 105 - 112 ngày",
+		"morphology": "Chiều cao 115 - 120 cm, đẻ nhánh khỏe, thân cứng, bông to, hạt xếp dày; 150 - 180 hạt chắc/bông, tỷ lệ chắc cao; khối lượng 1000 hạt 20,6 - 21,4 g; hạt gạo trắng trong, bóng đẹp.",
+		"yields": "Trung bình 5,6 - 6,5 tấn/ha vụ Xuân, ~5,2 tấn/ha vụ Mùa; thâm canh đạt 8,5 - 9,0 tấn/ha.",
+		"description": "Giống lúa thuần chất lượng cao, cơm mềm ngon, thơm nhẹ, tỷ lệ gạo nguyên cao. Chống đổ rất tốt, kháng cao với bệnh đạo ôn, chịu lạnh giai đoạn mạ khá, thích hợp với nhiều chân đất chủ động tưới tiêu. Giống có khả năng chịu thâm canh tốt, phù hợp thay thế cho các giống Bắc thơm 7, BC15, Khang dân 18 tại Đồng bằng Bắc Bộ.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Gia Lộc 35",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 130 - 135 ngày; Vụ Mùa 102 - 107 ngày",
+		"morphology": "Chiều cao 100 - 110 cm, đẻ nhánh trung bình và đều, bông to dài 25 - 29 cm, số hạt/bông cao (160 - 190 hạt), tỷ lệ hạt chắc cao. Hạt nâu vàng, thon dài, khối lượng 1000 hạt 21 - 22 g. Gạo trong, cơm mềm, bóng đẹp, vị đậm, thơm nhẹ, amylose thấp (14,7 - 16,6%), tỷ lệ gạo xát và gạo nguyên cao.",
+		"yields": "Vụ Xuân trung bình 6,5 - 7,7 tấn/ha, thâm canh đạt 8,0 tấn/ha; Vụ Mùa trung bình 6,0 - 6,5 tấn/ha, thâm canh đạt 7,0 tấn/ha.",
+		"description": "Giống lúa thuần ngắn ngày, chất lượng cao, chịu thâm canh, chống đổ khá, ít nhiễm bệnh đạo ôn, bạc lá, rầy nâu; nhiễm nhẹ khô vằn. Phù hợp gieo cấy vụ Xuân muộn và Mùa sớm trên chân đất vàn và vàn cao. Gạo thon dài, cơm mềm dẻo, trắng bóng, vị đậm, thơm nhẹ, đáp ứng nhu cầu gạo chất lượng cao.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Gia Lộc 26",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 135 - 140 ngày; Vụ Mùa 115 - 120 ngày",
+		"morphology": "Chiều cao cây trung bình, dạng hình gọn, đẻ nhánh khá (5 - 7 dảnh/khóm), bông to, số hạt/bông 150 - 170, hạt thon dài màu vàng sáng, hạt gạo dài ~7,85 mm, gạo trong, cơm mềm, thơm nhẹ, amylose ~18%, nhiệt độ hóa hồ trung bình. Lá bền, độ tàn lá chậm, chống đổ khá.",
+		"yields": "Vụ Xuân trung bình ~7,1 tấn/ha, vụ Mùa ~6,4 tấn/ha; thâm canh tốt đạt trên 7,5 tấn/ha.",
+		"description": "Giống lúa thuần chịu thâm canh khá, sinh trưởng phát triển tốt, thích hợp gieo cấy ở vụ Xuân và vụ Mùa tại Đồng bằng sông Hồng, Trung du miền núi phía Bắc và vụ Xuân tại Bắc Trung Bộ. Có khả năng chịu rét tốt, chống đổ khá, kháng khá bệnh đạo ôn, nhiễm nhẹ khô vằn. Gạo thon dài, cơm mềm, thơm nhẹ, chất lượng tốt, phù hợp thị trường gạo chất lượng cao.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa BC15-02",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam (lai BC15/IRBL12 bằng phương pháp Backcross)",
+		"category": "Cây lương thực",
+		"growth_duration": "Miền Bắc: Vụ Xuân 130 - 138 ngày, Vụ Mùa 110 - 115 ngày; Nam Trung Bộ & Tây Nguyên: Vụ Đông Xuân 115 - 120 ngày, Vụ Hè Thu 105 - 110 ngày",
+		"morphology": "Chiều cao 110 - 115 cm, đẻ nhánh khỏe, tái sinh mạnh, bông to dài nhiều hạt; hạt thon, khối lượng 1000 hạt 24 - 24,5 g; gạo trong, tỷ lệ xay xát cao (68 - 72%), cơm mềm, vị đậm.",
+		"yields": "Năng suất trung bình 7,0 - 7,5 tấn/ha; thâm canh tốt đạt 9,0 - 10,0 tấn/ha.",
+		"description": "Giống lúa thuần cảm ôn, thích ứng rộng, sinh trưởng khỏe, chống chịu tốt với bệnh đạo ôn (cấp 3), phù hợp gieo cấy trên chân vàn và vàn cao. Chất lượng gạo tốt, hạt trong, cơm mềm ngon, thích hợp sản xuất hàng hóa quy mô lớn ở cả miền Bắc và Nam Trung Bộ - Tây Nguyên.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa HD11",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam (lai HDT8/Tequing)",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 134 - 135 ngày; Vụ Mùa ~110 ngày",
+		"morphology": "Chiều cao 116 - 121 cm, đẻ nhánh khá; số bông hữu hiệu/khóm 4,6 - 5,3; số hạt/bông 166 - 185; khối lượng 1000 hạt 23,0 - 24,7 g; hạt gạo dài 6,34 - 6,44 mm; tỷ lệ gạo xát 69 - 72%; gạo trắng trong 88 - 90%; hàm lượng amylose 17 - 18%; cơm thơm nhẹ, mềm ngon.",
+		"yields": "Vụ Xuân 6,3 - 7,0 tấn/ha; Vụ Mùa 5,5 - 6,0 tấn/ha.",
+		"description": "Giống lúa thuần cảm ôn, thích ứng rộng, sinh trưởng khỏe, chống đổ tốt, chống chịu sâu bệnh khá, chỉ nhiễm nhẹ đốm nâu. Thích hợp gieo cấy trên chân đất vàn và vàn cao tại các tỉnh phía Bắc. Chất lượng gạo tốt, hạt dài trong, cơm mềm, thơm nhẹ, được đánh giá ngon, phù hợp sản xuất hàng hóa.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Gia Lộc 37",
+		"origin": "Trung tâm Nghiên cứu và Phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân ~120 ngày; Vụ Mùa ~90 ngày; Vụ Hè Thu ~85 ngày",
+		"morphology": "Cây thân gọn, cao trung bình, sinh trưởng nhanh, đẻ nhánh tập trung; bông to, dài, đạt 150 - 160 hạt/bông; tỷ lệ hạt chắc >90%; hạt thóc vàng sáng; khối lượng 1000 hạt 29 - 30 g; hàm lượng amylose ~14,8%; gạo trong, tỷ lệ xay xát cao, cơm trắng bóng, mềm, đậm, thơm nhẹ.",
+		"yields": "Vụ Xuân 6,0 - 6,5 tấn/ha; Vụ Mùa 5,5 - 6,0 tấn/ha.",
+		"description": "Giống lúa thuần cực ngắn ngày, thích hợp gieo cấy 2 vụ/năm, phù hợp với chân đất vàn và vàn cao, cơ cấu luân canh 2 lúa - 1 màu hoặc 1 lúa - 3 đến 4 màu. Giống cứng cây, chịu thâm canh, chống chịu khá với rầy nâu, chống chịu trung bình với bệnh đạo ôn và bạc lá. Gạo chất lượng tốt, trong, cơm mềm, đậm, thơm nhẹ, được thị trường ưa chuộng.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Gia Lộc 516",
+		"origin": "Trung tâm Nghiên cứu và Phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 126 - 133 ngày; Vụ Mùa 101 - 108 ngày; Vụ Hè Thu 100 - 101 ngày",
+		"morphology": "Dạng hình gọn, cao trung bình, sinh trưởng nhanh, đẻ nhánh trung bình và đều; lá xanh, mật độ bông khá, tỷ lệ bông hữu hiệu cao; bông trung bình, hạt thóc dài, vàng sáng; khối lượng 1000 hạt 28 - 31 g; tỷ lệ gạo xay xát cao, hạt gạo dài trong, cơm trắng bóng, mềm, đậm, thơm nhẹ, chất lượng tương đương Bắc Thơm 7.",
+		"yields": "Vụ Xuân 6,3 - 7,3 tấn/ha; Vụ Mùa 5,7 - 6,4 tấn/ha; Vụ Hè Thu 5,5 - 5,7 tấn/ha",
+		"description": "Giống lúa thuần ngắn ngày, thích hợp gieo cấy 2 vụ/năm trên chân đất vàn thấp, vàn và vàn cao, cơ cấu chuyên canh hoặc luân canh 2 lúa - 1 màu. Cứng cây, chịu thâm canh, chống đổ tốt. Chống chịu trung bình với bệnh đạo ôn, bạc lá và rầy nâu, nhiễm nhẹ khô vằn. Gạo chất lượng cao, cơm ngon, được thị trường ưa chuộng, có thể thay thế Bắc Thơm 7 trong sản xuất.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa LTh31",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam (lai HT1/IA CUBA28)",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân muộn 128 - 130 ngày; Vụ Mùa 105 - 107 ngày; Vụ Hè Thu 105 - 107 ngày",
+		"morphology": "Chiều cao 110 - 115 cm, dạng hình gọn, đẻ nhánh trung bình (5 - 6 bông hữu hiệu/khóm); cây cứng, chống đổ tốt; tỷ lệ hạt chắc ~90%; gạo trắng trong, hạt thon dài; cơm mềm, đậm, dẻo (amylose 18,5%, protein 9%, gel 74 mm, nhiệt độ hóa hồ thấp).",
+		"yields": "Trung bình 6,5 - 6,8 tấn/ha; thâm canh có thể đạt >8,0 tấn/ha",
+		"description": "Giống lúa thơm chất lượng cao, cơm mềm, đậm và dẻo, đạt tiêu chuẩn gạo ngon, được thị trường ưa chuộng. Cứng cây, chống đổ tốt, chống chịu khá với đạo ôn, bạc lá, khô vằn và rầy nâu. Phù hợp gieo trồng vụ xuân muộn, vụ mùa sớm và vụ hè thu tại các tỉnh phía Bắc trên chân vàn thấp, vàn và vàn cao chủ động tưới. Đã được áp dụng thành công tại nhiều tỉnh như Bắc Ninh, Vĩnh Phúc, Thái Nguyên, Quảng Bình, Hà Tĩnh, Nghệ An, Thanh Hóa, Ninh Bình, Nam Định, Hà Nam, Hà Nội, Hưng Yên, Hải Dương.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa HDT10",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam (lai hữu tính, chọn gen thơm bằng chỉ thị phân tử ADN",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân ~135 ngày; Vụ Mùa ~105 ngày",
+		"morphology": "Chiều cao trung bình 110 cm; hạt ngắn, nhỏ, màu nâu xẫm; khối lượng 1000 hạt 21 g; cây cứng, chống đổ khá, sức sống tốt.",
+		"yields": "Trung bình 6,0 - 6,5 tấn/ha",
+		"description": "Giống lúa thơm chất lượng cao, cơm mềm, đậm, có mùi thơm nhẹ, được thị trường ưa chuộng. Cứng cây, chống đổ tốt, kháng vừa với bệnh bạc lá và đạo ôn. Phù hợp gieo cấy ở vụ Xuân và vụ Mùa trên chân đất vàn và vàn cao thuộc các tỉnh Đồng bằng, Trung du miền núi phía Bắc và Bắc Trung Bộ. Có thể gieo cấy bằng mạ dược, mạ sân hoặc gieo thẳng.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa N26",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 115 - 120 ngày; Vụ Mùa: gieo thẳng 85 - 90 ngày, cấy 90 - 95 ngày; Vụ Hè Thu: gieo thẳng 83 - 85 ngày, cấy 88 - 92 ngày",
+		"morphology": "Chiều cao 100 - 110 cm, cây sinh trưởng nhanh, lá màu xanh nhạt. Hạt nhỏ, dài, gạo trong, tỷ lệ gạo nguyên cao. Khối lượng 1000 hạt 21 - 22 g. Cơm ngon, mềm dẻo, vị đậm.",
+		"yields": "Trung bình 5,8 - 6,0 tấn/ha; thâm canh tốt đạt trên 7,0 tấn/ha",
+		"description": "Giống lúa thuần cực ngắn ngày, sinh trưởng khỏe, thích hợp làm vụ Xuân muộn, Mùa sớm và Hè Thu cực sớm. Chống chịu tốt với bệnh bạc lá (điểm 1 - 3), kháng vừa với đạo ôn (điểm 3), chống chịu tốt bệnh khô vằn, nhiễm vừa rầy nâu. Phù hợp gieo cấy trên chân đất vàn và vàn cao tại các tỉnh đồng bằng, miền núi phía Bắc và Bắc Trung Bộ. Cho cơm dẻo, mềm, đậm vị, gạo trong, tỷ lệ gạo nguyên cao, phù hợp sản xuất hàng hóa.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa PC26",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 135 - 140 ngày; Vụ Mùa 105 - 110 ngày",
+		"morphology": "Chiều cao 100 - 105 cm, cây cứng, chống đổ tốt, chịu rét khá. Hạt tròn, chắc, tỷ lệ hạt chắc >90%. Cơm mềm, ngon, chất lượng cao.",
+		"yields": "Vụ Xuân 6,5 - 7,6 tấn/ha, thâm canh đạt 8,0 tấn/ha; Vụ Mùa 5,3 - 5,8 tấn/ha",
+		"description": "Giống lúa thuần japonica chất lượng cao, không cảm quang, gieo trồng được cả 2 vụ/năm. Thích nghi trên chân vàn và vàn thấp chủ động tưới tiêu, đặc biệt phù hợp các tỉnh phía Bắc. Khả năng chống chịu sâu bệnh tốt, ít đổ ngã, chịu rét tốt. Gạo tròn, không bạc bụng, tỷ lệ gạo nguyên >85%, cơm mềm ngon, đáp ứng thị hiếu của thị trường Nhật Bản, Hàn Quốc, Đài Loan và Bắc Trung Quốc. Cần lưu ý khử lẫn để nâng cao giá trị hàng hóa, thu hoạch khi chín hoàn toàn để đảm bảo chất lượng gạo.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa nếp N202",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Mùa 105 - 110 ngày; Vụ Xuân 126 - 138 ngày",
+		"morphology": "Chiều cao trung bình, khả năng đẻ nhánh khá, chống đổ khá. Hạt gạo bán tròn, xôi mềm dẻo, bóng, có hương thơm nhẹ.",
+		"yields": "Trung bình 5,0 - 5,6 tấn/ha, thâm canh tốt có thể đạt trên 6,0 tấn/ha",
+		"description": "Giống lúa nếp thơm ngắn ngày, thích hợp gieo trồng vụ Xuân muộn, Mùa sớm, Hè Thu ở các tỉnh phía Bắc. Thích nghi trên đất vàn và vàn cao chủ động tưới tiêu. Khả năng chống chịu khá với rầy nâu, đạo ôn, bạc lá và khô vằn, nhưng nếu thâm canh không cân đối hoặc gieo trồng trên đất trũng dễ bị sâu bệnh, đặc biệt khô vằn và bạc lá. Gạo bán tròn, xôi mềm, dẻo, thơm nhẹ, đáp ứng nhu cầu tiêu dùng trong nước. Cần gieo đúng trà để tránh hiện tượng thui đầu bông ở vụ Xuân muộn.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa LTh35",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Mùa 105 - 106 ngày; Vụ Xuân 122 - 135 ngày",
+		"morphology": "Cây cao 110 - 115 cm, cứng cây, chống đổ tốt, hạt gạo trắng trong, cơm mềm dẻo, thơm nhẹ.",
+		"yields": "6,2 - 6,8 tấn/ha; thâm canh trên 8,0 tấn/ha",
+		"description": "Giống lúa thơm chất lượng cao, thời gian sinh trưởng ngắn, cứng cây chống đổ tốt, tỷ lệ hạt chắc cao. Thích hợp gieo trồng vụ Xuân muộn, Mùa sớm (Hè Thu) ở các tỉnh phía Bắc. Phù hợp trên đất vàn hơi trũng, vàn và vàn cao chủ động tưới tiêu. Có khả năng chống chịu khá với bệnh đạo ôn, bạc lá, khô vằn và rầy nâu. Gạo trắng trong, cơm mềm dẻo, đậm, thơm nhẹ, đáp ứng nhu cầu tiêu dùng trong nước. Nếu gieo trên đất trũng hoặc bón không cân đối dễ nhiễm sâu bệnh làm giảm năng suất.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa N25",
+		"origin": "Chọn lọc từ giống gốc 9311 được xử lý bằng tia gamma nguồn Co60.",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 115 - 120 ngày; Vụ Mùa 87 - 93 ngày",
+		"morphology": "Chiều cao 110 - 120 cm, sinh trưởng nhanh, lá màu xanh nhạt; hạt nhỏ dài, gạo trong, tỷ lệ gạo nguyên cao, cơm mềm dẻo, đậm. Khối lượng 1000 hạt 21 - 23 g.",
+		"yields": "Vụ Xuân 6,2 - 6,7 tấn/ha; Vụ Mùa 5,5 - 6,3 tấn/ha",
+		"description": "Giống lúa ngắn ngày, chịu nóng rất tốt, cứng cây trung bình, kháng đạo ôn, nhiễm nhẹ rầy nâu và bạc lá. Phù hợp gieo cấy trà xuân muộn, mùa sớm và hè thu tại các tỉnh phía Bắc, nhất là trên đất vàn cao và các công thức luân canh 2 lúa - 2 màu hoặc 1 lúa - 2 - 3 màu. Gạo trong, cơm ngon, mềm dẻo, được thị trường ưa chuộng. Cần chú ý gieo cấy, bón phân sớm và đúng kỹ thuật để đạt năng suất cao.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Gia Lộc 105 (GL105)",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Mùa 105 - 110 ngày; Vụ Xuân 130 - 140 ngày",
+		"morphology": "Chiều cao ~100 cm, sinh trưởng nhanh, đẻ nhánh khỏe, bộ lá xanh đậm; bông to, hạt thon dài, xếp hạt trung bình, màu vàng sáng; hạt chắc, mẩy; khối lượng 1000 hạt 22 - 23 g. Khả năng chống đổ tốt, ít nhiễm đạo ôn, rầy nâu và bạc lá.",
+		"yields": "Vụ Xuân: 7,0 - 7,5 tấn/ha, thâm canh đạt 8,0 - 8,5 tấn/ha. Vụ Mùa: 6,0 - 6,5 tấn/ha, thâm canh đạt ~7,5 tấn/ha.",
+		"description": "Giống lúa Gia Lộc 105 (GL105) là giống lúa thuần có thời gian sinh trưởng trung ngày, chịu rét giai đoạn mạ, cứng cây, chống đổ tốt. Ít nhiễm một số sâu bệnh hại chính như đạo ôn, bạc lá, rầy nâu. Gạo thon dài, trong, cơm mềm, đậm, giòn, chất lượng tốt, được thị trường ưa chuộng. Thích hợp gieo cấy cả 2 vụ/năm, phù hợp trên chân đất vàn, vàn cao, vàn thấp, trong cơ cấu luân canh 2 lúa - 1 màu hoặc 1 lúa - 2-3 màu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa P9",
+		"origin": "Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Mùa 105 - 110 ngày; Vụ Xuân 133 - 137 ngày",
+		"morphology": "Cây cao 100 - 105 cm, bông to dài, hạt thon dài vỏ nâu vàng, tỷ lệ hạt chắc cao (~90%).",
+		"yields": "6,0 - 7,0 tấn/ha, thâm canh đạt trên 7,0 tấn/ha.",
+		"description": "Giống lúa thuần chất lượng khá, cơm mềm ngon, ít nhiễm sâu bệnh, thích hợp gieo cấy cả 2 vụ/năm trên chân vàn và đất chua mặn nhẹ.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa HDT8",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam.",
+		"category": "Cây lương thực",
+		"growth_duration": "140 - 145 ngày (vụ Xuân), 105 - 110 ngày (vụ Mùa)",
+		"morphology": "Cao cây ~110 cm, hạt dài màu nâu sẫm, khối lượng 1000 hạt ~23 g. Cứng cây trung bình, chịu rét tốt, nhiễm nhẹ bạc lá, đạo ôn, rầy nâu. Gạo ngon, cơm mềm, đậm, thơm.",
+		"yields": "5,5 - 6,0 tấn/ha",
+		"description": "Giống lúa thơm, chất lượng cao, có thể gieo cấy 2 vụ/năm, thích hợp trên đất vàn và vàn cao ở Đồng bằng, Trung du miền núi phía Bắc và Bắc Trung Bộ. Đã được áp dụng thành công tại nhiều tỉnh như Thái Nguyên, Hải Dương, Hà Nội, Hưng Yên, Nam Định, Nghệ An. Cần gieo đúng thời vụ và thu hoạch khi lúa chín 90% để đảm bảo chất lượng gạo.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa CH16",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam.",
+		"category": "Cây lương thực",
+		"growth_duration": "140 - 145 ngày (vụ Xuân), 105 - 110 ngày (vụ Mùa)",
+		"morphology": "Cây cao trung bình, đẻ nhánh khá, bông dài 20 - 22 cm, 145 - 160 hạt/bông, khối lượng 1000 hạt 21 - 22 g. Hạt nhỏ, màu vàng. Chống đổ và chịu rét khá, chịu hạn tốt, phục hồi nhanh sau hạn.",
+		"yields": "3,5 - 4,0 tấn/ha trong điều kiện hạn; 5,5 - 6,5 tấn/ha khi đủ nước",
+		"description": "CH16 là giống lúa chịu hạn, thích hợp cho vùng miền núi, trung du phía Bắc và các khu vực khó khăn về nước tưới. Thời gian sinh trưởng ngắn, dễ luân canh tăng vụ hoặc gieo né hạn. Nhiễm nhẹ sâu bệnh thông thường, nhiễm vừa khô vằn. Gạo chất lượng khá, năng suất ổn định, đã được áp dụng tại nhiều địa phương như Lạng Sơn, Thái Nguyên, Hòa Bình, Hải Dương.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Sơn Lâm 2 (LCH37)",
+		"origin": "Trung tâm nghiên cứu và phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam.",
+		"category": "Cây lương thực",
+		"growth_duration": "105 - 135 ngày tùy vụ và vùng: Vụ mùa sớm 105 - 107 ngày, vụ xuân muộn 130 - 135 ngày (phía Bắc); vụ đông xuân 113 - 118 ngày, vụ hè thu 98 ngày (Miền Trung và Tây Nguyên).",
+		"morphology": "Cao cây 105 - 115 cm, đẻ nhánh trung bình (5 - 6 bông hữu hiệu/khóm), cứng cây chống đổ tốt. Hạt dạng trung bình, vỏ trấu vàng, khối lượng 1000 hạt 21 - 22 g. Gạo trong, cơm mềm, đậm, có mùi thơm nhẹ.",
+		"yields": "Năng suất 6,5 - 6,8 tấn/ha trong điều kiện thâm canh; 5,5 - 6,0 tấn/ha trong điều kiện hạn bấp bênh; tiềm năng trên 8 tấn/ha.",
+		"description": "Sơn Lâm 2 (LCH37) là giống lúa thuần ngắn ngày, có khả năng chịu hạn khá, thích hợp gieo trồng ở vụ xuân muộn và mùa sớm tại các tỉnh phía Bắc, cũng như vụ đông xuân và hè thu ở Duyên hải Nam Trung Bộ và Tây Nguyên. Giống có khả năng thích ứng trên nhiều loại chân đất (vàn, vàn cao, ruộng bậc thang, đất pha cát chủ động nước), tuy nhiên hạn chế ở đất trũng dễ nhiễm sâu bệnh. Chống chịu khá với bệnh đạo ôn, khô vằn, bạc lá và rầy nâu. Đã áp dụng thành công tại nhiều tỉnh từ Bắc đến Trung và Tây Nguyên.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Gia Lộc 159 (GL159)",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam.",
+		"category": "Cây lương thực",
+		"growth_duration": "130 - 135 ngày (vụ Xuân), 110 - 115 ngày (vụ Mùa)",
+		"morphology": "Chiều cao 110 - 115 cm, sinh trưởng nhanh, đẻ nhánh trung bình, lá xanh đậm, bông to, hạt dài xếp sít, vỏ nâu sọc sẫm. Khối lượng 1000 hạt 23 - 25 g. Gạo dài, trong, cơm mềm, đậm, giòn, có mùi thơm nhẹ.",
+		"yields": "Vụ Xuân: 7,0 - 7,5 tấn/ha, thâm canh đạt 8,0 - 8,5 tấn/ha. Vụ Mùa: 5,5 - 6,0 tấn/ha, thâm canh đạt 6,5 - 7,0 tấn/ha.",
+		"description": "GL159 là giống lúa thơm cảm ôn, thích hợp gieo trồng cả vụ Xuân và vụ Mùa tại vùng đồng bằng sông Hồng, miền núi phía Bắc, đồng bằng ven biển các tỉnh phía Bắc và Bắc Trung Bộ. Giống có khả năng chống đổ trung bình, chống chịu khá với đạo ôn và rầy nâu, nhiễm trung bình bạc lá. Thích ứng rộng, phù hợp chân đất vàn, vàn cao. Chất lượng gạo ngon, cơm dẻo thơm nhẹ, đáp ứng nhu cầu tiêu dùng.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa PĐ211",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "115 - 120 ngày (vụ Mùa), 160 - 170 ngày (vụ Xuân chính vụ), 140 - 145 ngày (vụ Xuân muộn)",
+		"morphology": "Cây cao 95 - 100 cm, dáng gọn, lá đứng, đẻ nhánh khỏe, tàn lá muộn. Bông hữu hiệu 300 - 320 bông/m2, số hạt/bông khoảng 120 nhưng tỉ lệ hạt chắc rất cao (94 - 95%). Hạt gạo dài 6,8 mm, tỷ lệ dài/rộng > 3, gạo trong, không bạc bụng, tỷ lệ gạo nguyên 85 - 90%. Cơm mềm, đậm. Hàm lượng protein 9,5%, amylose 20 - 21%.",
+		"yields": "Vụ Xuân: 6,5 - 7,0 tấn/ha. Vụ Mùa: 5,5 - 6,2 tấn/ha.",
+		"description": "PĐ211 là giống lúa thuần chất lượng cao, thích hợp gieo cấy 2 vụ/năm tại đồng bằng sông Hồng, Trung du miền núi phía Bắc và Bắc Trung Bộ. Giống có khả năng chịu rét tốt, chống đổ, kháng vừa với đạo ôn và rầy nâu, nhiễm nhẹ khô vằn và bạc lá. Phù hợp với chân đất vàn, vàn cao, không gieo cấy ở đất sâu trũng. Có thể tham gia các công thức luân canh lúa - khoai tây, lúa - dưa hấu. Thích hợp cho sản xuất lúa chất lượng cao, gạo đẹp, cơm ngon.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa LTh1.34",
+		"origin": "Trung tâm Nghiên cứu và Phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "95 - 100 ngày (vụ Mùa, Hè Thu); 115 - 120 ngày (vụ Xuân)",
+		"morphology": "Cao cây 85 - 90 cm, chiều dài bông 22 - 25 cm, số hạt chắc/bông 200 - 220, hạt xếp xít, khối lượng 1000 hạt 17,5 - 18,5 g. Đẻ nhánh khỏe, cứng cây hơn BT7, lá xanh gọn. Gạo trong, hạt thon dài, tỷ lệ gạo xát 70%, amylose 16%. Cơm mềm ngon, không dính, chan canh không nát, cơm nguội không cứng.",
+		"yields": "Trung bình 6,0 - 6,5 tấn/ha, thâm canh tốt đạt 7,0 tấn/ha",
+		"description": "LTh1.34 là giống lúa thuần ngắn ngày, chất lượng gạo ngon, thích ứng rộng, có thể gieo cấy ở vụ Xuân muộn, Mùa sớm, Mùa trung tại nhiều địa phương. Giống có khả năng chịu rét khá, chống chịu sâu bệnh khá, chịu thâm canh hơn BT7. Thích hợp canh tác trên chân đất vàn và vàn cao. Đã được áp dụng thành công tại Hải Phòng, Hà Nội, Vĩnh Phúc, Nam Định, Thái Nguyên, Quảng Bình, Sơn La, Nghệ An, Hà Tĩnh, Kon Tum.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa N100",
+		"origin": "Trung tâm nghiên cứu và phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "105 - 110 ngày (vụ Mùa); 130 - 135 ngày (vụ Xuân)",
+		"morphology": "Cao cây 95 - 105 cm, lá đòng đứng, cứng cây, đẻ khỏe 4 - 6 dảnh/khóm, tập trung, tỷ lệ dảnh và bông hữu hiệu cao. Số hạt/bông trung bình 130 - 250. Hạt bầu, khối lượng 1000 hạt 25 - 26 g, tỷ lệ hạt chắc cao (90 - 95%). Gạo trắng đục, cơm dẻo, hàm lượng amylose 4,5%, ngon hơn N97, N98.",
+		"yields": "Trung bình 6,5 - 7,8 tấn/ha, tiềm năng 7 - 10 tấn/ha",
+		"description": "N100 là giống lúa thuần ngắn ngày, năng suất cao, thích ứng rộng, có thể gieo cấy cả 2 vụ mùa sớm và xuân muộn trên các chân ruộng cao, vàn. Chống chịu tốt với bệnh bạc lá, đạo ôn, khô vằn, sâu đục thân, rầy nâu, chịu lạnh và chịu thâm canh. Thích hợp với công thức luân canh 2 lúa + 1 màu. Đã áp dụng thành công tại Hải Phòng, Hà Nội, Vĩnh Phúc, Nam Định, Thái Nguyên, Quảng Bình, Sơn La…",
+		"image_url": null
+	},
+	{
+		"name": "Lúa T10",
+		"origin": "Viện Cây lương thực và Cây thực phẩm - Viện Khoa học kỹ thuật Nông nghiệp Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "105 - 110 ngày (vụ Mùa), 130 - 135 ngày (vụ Xuân)",
+		"morphology": "Cao cây 95 - 100 cm, thân cứng trung bình, bộ lá xanh, tán lá gọn, đẻ nhánh trung bình. Hạt thóc màu nâu thẫm, thon nhỏ; gạo trong, hơi đục; cơm dẻo, có mùi thơm, vị đậm, chan canh không nát, cơm để nguội không cứng.",
+		"yields": "Trung bình 5,0 - 5,5 tấn/ha; thâm canh cao đạt 6 - 6,5 tấn/ha",
+		"description": "T10 là giống lúa thơm chất lượng cao, thích hợp gieo trồng trên các chân đất vàn, vàn hơi thấp và hơi cao chủ động nước tại các tỉnh miền Bắc. Chống chịu trung bình với điều kiện ngoại cảnh, khô vằn trung bình, nhiễm bạc lá nhẹ hơn BT7. Kỹ thuật canh tác bao gồm gieo mạ trà xuân muộn từ 25/1 - 10/2, trà mùa sớm từ 5/6 - 15/6; mật độ cấy 45 - 50 khóm/m2, mỗi khóm 2 - 3 dảnh; bón phân chuồng, urê, lân và kali theo hướng dẫn. Thu hoạch khi lúa đạt độ chín 85 - 90% để giữ mùi thơm lâu. Đã áp dụng thành công tại Thái Bình, Hưng Yên, Hải Dương, Nam Định, Ninh Bình, Vĩnh Phúc, Yên Bái, Điện Biên…",
+		"image_url": null
+	},
+	{
+		"name": "Lúa P6ĐB",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "75 - 85 ngày (vụ Mùa), 105 - 110 ngày (vụ Xuân)",
+		"morphology": "Cao cây 85 - 90 cm, dạng hình gọn, thân đứng, lá xanh đậm. Số hạt/bông 115 - 150, tỷ lệ lép thấp 8 - 10%, khối lượng 1000 hạt 26 - 27 g. Chất lượng gạo khá, chiều dài hạt gạo 7,12 mm, hàm lượng amylose 15,5%.",
+		"yields": "Trung bình 50 - 55 tạ/ha, thâm canh tốt đạt 60 tạ/ha",
+		"description": "P6ĐB là giống lúa cực ngắn ngày, thích hợp gieo cấy trên các chân đất vàn, vàn cao, đất làm vụ đông sớm hoặc vùng hay bị lũ sớm ở miền Trung. Kỹ thuật canh tác: gieo mạ sau lập xuân 10 - 30 ngày, vụ mùa gieo từ 25/5 - 25/7; mật độ cấy 50 - 55 khóm/m2, mỗi khóm 2 - 3 dảnh; bón phân chuồng, ure, lân, kali hoặc NPK theo hướng dẫn; phòng trừ sâu bệnh kịp thời, chú ý đạo ôn vụ xuân; thu hoạch sau 28 ngày kể từ lúc lúa trỗ hoàn toàn. Đã áp dụng thành công tại Hải Dương, Hải Phòng, Bắc Giang, Thái Bình, Quảng Bình.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Gia Lộc 102",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "85 - 90 ngày (vụ Hè Thu), 90 - 95 ngày (vụ Mùa), 120 - 125 ngày (vụ Xuân)",
+		"morphology": "Cao cây 90 - 95 cm, lá xanh, bông trung bình, góc độ lá đòng nhỏ. Hạt vàng sáng, thon dài, chiều dài hạt gạo 7,2 mm, tỷ lệ dài/rộng 3,7. Khối lượng 1000 hạt 21 - 22 g, số hạt/bông 150 ± 10, tỷ lệ lép 12 - 18%.",
+		"yields": "Trung bình 50 - 57 tạ/ha (vụ Mùa, Xuân), 50 - 55 tạ/ha (vụ Mùa)",
+		"description": "Gia Lộc 102 là giống lúa cực ngắn ngày, thích hợp gieo cấy tại trà mùa sớm vùng Đồng bằng sông Hồng, trà xuân muộn và hè thu tại Bắc Trung bộ và Nam Trung bộ. Chất lượng gạo tốt, hạt gạo trong, không bạc bụng, cơm mềm, dẻo, có mùi thơm. Kỹ thuật canh tác: gieo mạ sân hoặc gieo thẳng theo thời vụ; mật độ cấy 55 khóm/m2, lượng hạt gieo 40 - 80 kg/ha; bón phân hữu cơ, ure, lân, kali theo hướng dẫn; theo dõi phòng trừ sâu bệnh IPM; sau khi lúa kết thúc đẻ nhánh nên tháo cạn ruộng 4 - 5 ngày. Áp dụng thành công tại các tỉnh Đồng bằng sông Hồng và Bắc Trung bộ.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa P376",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "140 - 145 ngày (vụ Xuân), 115 - 120 ngày (vụ Mùa)",
+		"morphology": "Cây cao 115-120 cm, thân lá đứng cứng, uốn lòng mo, bông to dài 28-30 cm, số hạt/bông 160-170, tỷ lệ hạt chắc >90%. Hạt gạo nhỏ dài 6,8 mm, trong, ít bạc bụng, hàm lượng amylose 18-20%, cơm mềm, đậm.",
+		"yields": "Vụ Mùa 55-60 tạ/ha, Vụ Xuân 60-65 tạ/ha, thâm canh tốt có thể đạt 70 tạ/ha",
+		"description": "P376 là giống lúa thuần chịu thâm canh, phù hợp gieo cấy cả hai vụ/năm trên các chân đất vàn, vàn hơi thấp, chủ động tưới tiêu tại các tỉnh phía Bắc. Kỹ thuật canh tác: gieo mạ dược hoặc mạ sân theo thời vụ; cấy mật độ 55-60 khóm/m2, 2-3 dảnh/khóm; bón phân đầy đủ N, P, K và phân chuồng/vi sinh; bón phân chăm sóc sớm, kết thúc đẻ nhánh tháo cạn nước 5-7 ngày; phòng trừ sâu bệnh kịp thời. Giống thích hợp tham gia chương trình sản xuất lúa chất lượng cao và luân canh cây màu đông chính vụ. Áp dụng thành công tại Hải Dương, Hải Phòng, Bắc Ninh, Bắc Giang.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa Trân Châu Hương (SH8)",
+		"origin": "Trung tâm Nghiên cứu và phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 130-140 ngày, Vụ Mùa 108-112 ngày",
+		"morphology": "Cây cao 95-115 cm, kiểu hình đẹp, bông nhiều hạt xếp sít, hạt vàng sáng, số hạt/bông 220-250, tỷ lệ lép 13-15%. Hạt gạo thon nhỏ, trắng trong, cơm mềm, đậm, thơm, không dính.",
+		"yields": "Trung bình 60-65 tạ/ha; ruộng tốt đạt 75-80 tạ/ha",
+		"description": "SH8 là giống lúa chất lượng cao, ngắn ngày, thay thế Bắc thơm số 7. Phù hợp gieo cấy trên đất vàn, vàn cao, các trà Xuân muộn, Mùa sớm và Hè thu. Kỹ thuật: gieo mạ, cấy mạ 3-4 lá, mật độ phù hợp, bón phân cân đối, phòng trừ sâu bệnh. Đã áp dụng thành công tại nhiều tỉnh phía Bắc và Trung Bộ.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa PC6",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 102-125 ngày, Vụ Mùa 90-95 ngày",
+		"morphology": "Cây cao 95-100 cm, bông dài 23,5 cm, số hạt chắc trung bình 110 hạt/bông, khối lượng 1000 hạt 22,3 g, tỷ lệ gạo xát 68,5%, gạo trong, hạt gạo dài 6,7 mm, hàm lượng amylose 18-19%.",
+		"yields": "Trung bình 55-60 tạ/ha",
+		"description": "PC6 là giống lúa chất lượng, thích hợp gieo cấy trà xuân muộn, mùa sớm và hè thu, phù hợp với luân canh 2 lúa + màu hoặc 1 lúa + 3 màu. Mật độ 40-50 khóm/m2, bón phân cân đối, chăm sóc đúng kỹ thuật. Chịu rét khá, nhiễm nhẹ đạo ôn, năng suất ổn định. Đã áp dụng thành công tại nhiều tỉnh phía Bắc và Trung Bộ.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa HT9",
+		"origin": "Trung tâm Nghiên cứu và phát triển lúa thuần, Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 130-135 ngày, Vụ Mùa 105-110 ngày",
+		"morphology": "Cây cao 100-110 cm, đẻ nhánh trung bình 5-6 bông hữu hiệu/khóm, tỷ lệ hạt chắc 90%, gạo thơm, trong, cơm mềm, đậm. Thích hợp thâm canh trên đất vàn, vàn cao, ruộng chủ động tưới tiêu.",
+		"yields": "Trung bình 55-65 tạ/ha, năng suất có thể >7 tấn/ha",
+		"description": "HT9 là giống lúa chất lượng cao, chống chịu sâu bệnh tốt, chống đổ tốt. Thời vụ gieo cấy và mật độ hợp lý, bón phân cân đối, kết hợp làm cỏ và phòng trừ sâu bệnh. Thích hợp gieo cấy cả vụ Xuân và vụ Mùa. Đã áp dụng thành công tại nhiều tỉnh phía Bắc.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa CH208",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, chọn tạo từ tổ hợp lai Mố/C22//IR38803-1, công nhận sản xuất thử năm 2011.",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Mùa 120-125 ngày, Vụ Đông Xuân 165-170 ngày",
+		"morphology": "Cây cao 120-125 cm, đẻ nhánh trung bình, bông dài, hạt nhỏ dài, cơm dẻo, amylose 18-20%.",
+		"yields": "45-50 tạ/ha điều kiện hạn, 55-60 tạ/ha khi chủ động nước, 32-35 tạ/ha khi hạn nặng",
+		"description": "CH208 là giống lúa chịu hạn, thích hợp đất bấp bênh và ruộng bậc thang, mật độ 45-50 khóm/m2, 3-4 dảnh/khóm, bón phân cân đối, chăm sóc đúng kỹ thuật. Đã áp dụng thành công tại nhiều tỉnh, năng suất ổn định.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa P6",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "115-170 ngày tùy vụ",
+		"morphology": "Cây cao 85-90 cm, bụi gọn, lá đứng, đẻ nhánh khá, hạt gạo dài, cơm mềm đậm, amylose 21% (P6)",
+		"yields": "Trung bình 60-67 tạ/ha, thâm canh tốt có thể đạt 70 tạ/ha; P6ĐB 51-55 tạ/ha, cao nhất 58-61 tạ/ha",
+		"description": "P6 là giống lúa chất lượng, chịu rét, chống đổ, thích hợp gieo cấy 2 vụ/năm trên đất vàn, vàn cao, luân canh lúa + màu. P6ĐB rất ngắn ngày, sinh trưởng nhanh, thích hợp vụ xuân muộn, mùa sớm và hè thu tránh lũ; bón phân cân đối, chăm sóc đúng kỹ thuật, phòng trừ sâu bệnh. Đã áp dụng thành công tại nhiều tỉnh phía Bắc.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa CH5",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "120 ngày (vụ Mùa), 160-165 ngày (vụ Đông Xuân)",
+		"morphology": "Cây cứng, gọn, lá đứng, màu xanh đậm; bông 22-23 cm, hạt to dài, gạo trong, amylose 25,5%, cơm ngon.",
+		"yields": "Trung bình 50-55 tạ/ha, tối đa 65 tạ/ha",
+		"description": "CH5 là giống lúa chịu hạn, thích hợp gieo cấy trên đất bấp bênh nước và thâm canh có chủ động tưới. Mật độ 60-65 khóm/m2, bón phân cân đối, chăm sóc và phòng trừ sâu bệnh theo kỹ thuật chuẩn. Kháng vừa với đạo ôn, khô vằn, bạc lá và rầy nâu, năng suất ổn định, phù hợp 2 vụ/năm.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa ĐB1",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam.",
+		"category": "Cây lương thực",
+		"growth_duration": "110-115 ngày (vụ Mùa), 140-145 ngày (vụ Xuân)",
+		"morphology": "Cây cao 100-105 cm, bông 23-24 cm, hạt dài 5,71 mm, khối lượng 1000 hạt 25,5-26 g, gạo chắc, cơm ngon, tỷ lệ lép 7-12%.",
+		"yields": "Trung bình 60-65 tạ/ha, cao 80-85 tạ/ha",
+		"description": "ĐB1 là giống lúa ngắn ngày, chịu rét khá, kháng đạo ôn và chống đổ tốt. Thích hợp gieo mạ hoặc gieo vãi, mật độ 55-60 khóm/m2, chăm sóc cân đối, phòng trừ sâu bệnh kịp thời. Phù hợp trà xuân muộn, mùa sớm và công thức luân canh 2 lúa + 1 màu. Đã áp dụng thành công tại các tỉnh ĐBSH và Trung bộ.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa M6",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam.",
+		"category": "Cây lương thực",
+		"growth_duration": "125-130 ngày (vụ Mùa), 170-180 ngày (vụ ĐX)",
+		"morphology": "Cây cao 100-105 cm, đẻ nhánh trung bình, lá đứng ngắn xanh nhạt, bông 20-25 cm, hạt hơi bầu, khối lượng 1000 hạt 25-26 g. Chịu mặn và phèn khá, gạo chắc, cơm ngon.",
+		"yields": "Trung bình 50-60 tạ/ha, có thể đạt 55-60 tạ/ha tại vùng nhiễm mặn nhẹ",
+		"description": "M6 là giống lúa trung ngày, thích hợp gieo cấy cả vụ Xuân và mùa chính vụ trên đất phèn mặn và chân đất vàn. Chịu mặn khá, ít nhiễm sâu bệnh, kháng đạo ôn, chịu rét tốt. Mật độ 30-40 khóm/m2, 2-3 dảnh/khóm, bón phân cân đối, phòng trừ sâu bệnh kịp thời. Thích hợp vùng đồng bằng ven biển Bắc và Trung bộ, đã áp dụng thành công tại Hải Phòng, Thái Bình, Nam Định, Thanh Hóa, Quảng Ninh, Ninh Bình.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa P290",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "185-190 ngày (vụ Xuân), 130-135 ngày (vụ Mùa)",
+		"morphology": "Cây cao 95-100 cm, lá gọn xanh đậm, bông 27-28 cm, hạt dài 6,8 mm, tỉ lệ dài/rộng >3, khối lượng 1000 hạt 24-25 g, cơm ngon, mềm, không quá dẻo, hàm lượng amylose 22%, protein 10%.",
+		"yields": "Vụ Xuân 58-60 tạ/ha, Vụ Mùa 55-56 tạ/ha",
+		"description": "P290 là giống lúa trung ngày, thích hợp gieo cấy cả vụ Xuân và Mùa trên chân đất 2 vụ lúa. Chịu rét và chống đổ khá, kháng vừa đạo ôn, nhiễm nhẹ bạc lá và khô vằn. Mật độ 55-60 khóm/m2, 3-4 dảnh/khóm, bón phân cân đối, chú ý phòng sâu bệnh. Thích hợp canh tác thâm canh trên vùng đồng bằng Bắc Bộ, không nên trồng trên đất 2 lúa + 1 màu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa X26",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Mùa 110-115 ngày, Vụ Xuân 130-135 ngày",
+		"morphology": "Cây cao 90-100 cm, lá đòng đứng cứng, đẻ 5-6 dảnh/khóm, bông 100-250 hạt, hạt bầu, trọng lượng 1000 hạt 29-30 g, gạo trong, cơm dẻo, amylose 22,5%.",
+		"yields": "Trung bình 5,5-6,0 tấn/ha, tiềm năng 8-10 tấn/ha",
+		"description": "X26 là giống lúa ngắn ngày, năng suất cao, thích hợp gieo cấy vụ xuân muộn và mùa sớm trên chân đất 2 lúa + 1 màu, chịu thâm canh và chống đổ tốt. Kháng bạc lá vi khuẩn, chịu lạnh khá, gạo ngon, cơm dẻo. Mật độ 45-50 khóm/m2, 2-3 dảnh/khóm, bón phân đầy đủ để đạt năng suất tối ưu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa BM202",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Mùa 130-135 ngày, Vụ Xuân 189-190 ngày",
+		"morphology": "Cây cao 100-110 cm, đẻ nhánh 5-6 bông hữu hiệu/khóm, bông to 350-400 hạt, hạt dài, trọng lượng 1000 hạt 24-25 g, hạt chắc 90%, gạo ngon, cơm dẻo.",
+		"yields": "Trung bình 6-7,5 tấn/ha, tiềm năng trên 10 tấn/ha",
+		"description": "BM202 là giống lúa thuần, năng suất cao, thích hợp gieo cấy vụ xuân muộn và mùa trung trên chân đất vàn thấp, chua mặn và vùng lúa cá. Chịu thâm canh tốt, chống chịu đạo ôn, bạc lá, rầy nâu. Mật độ 45-50 khóm/m2, 2-3 dảnh/khóm, bón phân đầy đủ để đạt năng suất tối ưu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa BM9820",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Mùa 110-115 ngày, Vụ Xuân 130-135 ngày",
+		"morphology": "Cây cao 94-105 cm, bông to, hạt dài, trọng lượng 1000 hạt 29-30 g, hạt chắc, gạo amiloza thấp, cơm mềm, năng suất cao, cứng cây, chống chịu tốt sâu bệnh.",
+		"yields": "Trung bình 5,5-6,5 tấn/ha, tiềm năng cao hơn Q5 5-7%",
+		"description": "BM9820 là giống lúa thuần, năng suất cao, thích hợp gieo cấy trên chân đất vàn. Chịu thâm canh tốt, chống đổ, kháng bệnh đạo ôn, bọ trĩ, rầy nâu, sâu đục thân và sâu cuốn lá. Mật độ 50-55 khóm/m2, 3-4 dảnh/khóm, bón phân cân đối để đạt năng suất tối ưu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa CH207",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 160-165 ngày, Vụ Mùa 120-125 ngày",
+		"morphology": "Cây cao 97-100 cm, bông 22-24 cm, số hạt chắc 120/bông, trọng lượng 1000 hạt 26-27 g, tỷ lệ gạo xát 68,5%, hạt gạo 6,5 mm, amiloza 23-24%, năng suất ổn định, chịu hạn, chống đổ tốt.",
+		"yields": "Trung bình 4,5-6,5 tấn/ha, năng suất tối đa 6,5 tấn/ha khi chủ động nước",
+		"description": "CH207 là giống lúa chịu hạn, thích hợp gieo cấy trên chân ruộng bấp bênh về nước, Trung du miền núi phía Bắc, Trung bộ và Tây Nguyên. Năng suất ổn định, chịu đổ, chịu rét tốt, khả năng kháng sâu bệnh chính khá. Mật độ 60-65 khóm/m2, 3-4 dảnh/khóm, bón phân cân đối để đạt hiệu quả tối ưu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa HT6",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân muộn 130-135 ngày, Vụ Mùa 102-105 ngày",
+		"morphology": "Cây cao 100-110 cm, cứng cây, chống đổ khá, bông dài, số hạt/bông 150-250, trọng lượng 1000 hạt 22,7-22,9 g, đẻ nhánh trung bình, kháng đạo ôn, khô vằn, bạc lá, lúa thơm, cơm dẻo và ngọt.",
+		"yields": "Trung bình 6 tấn/ha, thâm canh đạt 7 tấn/ha",
+		"description": "HT6 là giống lúa thơm, năng suất cao, chịu sâu bệnh và đổ tốt, thích hợp gieo cấy vụ Xuân muộn, Mùa sớm, Hè thu trên chân đất vàn và vàn cao, chủ động tưới tiêu. Bón phân cân đối kết hợp quản lý nước và cỏ để đạt hiệu quả tối ưu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa nếp N98 (N87-2)",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân muộn 135-145 ngày, Vụ Mùa 113-118 ngày",
+		"morphology": "Cây cao 105-110 cm, cứng cây, chống đổ, kháng đạo ôn, khô vằn, bạc lá, đẻ nhánh khoẻ, bông dài, số hạt/bông 190-230, trọng lượng 1000 hạt 23,5-24,5 g, cơm dẻo, năng suất cao hơn nếp Iri352 và N97.",
+		"yields": "Trung bình 6 tấn/ha, thâm canh đạt 8 tấn/ha",
+		"description": "N98 là giống nếp năng suất cao, thích ứng rộng, chống đổ, kháng bệnh, cơm dẻo, gieo cấy vụ Xuân muộn, Mùa sớm, Hè thu trên chân đất vàn, vàn cao và vàn thấp, cần quản lý phân bón, nước và cỏ hợp lý để đạt hiệu quả tối ưu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa AC5",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 145-150 ngày, Vụ Mùa 115-120 ngày",
+		"morphology": "Cây hình chữ V, lá to trung bình, màu xanh nhạt, cây cao trung bình, đẻ khoẻ, bông to, hạt thóc dài vàng sậm, khối lượng 1000 hạt 24g, gạo dài, trắng trong, bóng đẹp, hàm lượng amylose <18%, cơm thơm ngon, dẻo.",
+		"yields": "55-70 tạ/ha",
+		"description": "AC5 là giống lúa ngắn ngày, năng suất cao, chống đổ, chịu rét tốt, nhiễm nhẹ rầy nâu và đạo ôn, thích hợp gieo cấy vụ Xuân và vụ Mùa tại ĐBSH và Bắc Trung bộ trên chân đất vàn, vàn trũng, đất cát pha hoặc đất thịt, chủ yếu dùng cho sản xuất lúa gạo chất lượng cao.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa ĐB5",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 135-140 ngày, Vụ Mùa 105-110 ngày, Vụ Đông Xuân 110-115 ngày, Vụ Hè Thu 95-100 ngày",
+		"morphology": "Cây gọn, cứng, sinh trưởng khoẻ, đẻ nhánh trung bình 4-5 dảnh/khóm, bông to, hạt xếp xít, hơi bầu, màu vàng cam, số hạt/bông 165-195, tỷ lệ hạt lép 12-15%, khối lượng 1000 hạt 20-21 g.",
+		"yields": "Trung bình 65-70 tạ/ha, cao nhất 75-80 tạ/ha",
+		"description": "ĐB5 là giống lúa ngắn ngày, cảm ôn, thích ứng rộng, cứng cây, chống đổ tốt, chịu rét, nhiễm nhẹ đến trung bình bệnh đạo ôn cổ bông, bạc lá, rầy nâu. Thích hợp gieo cấy trà Xuân muộn và mùa sớm trên chân đất cao, vàn, phát huy hiệu quả trong các công thức luân canh 2 lúa + 1 màu.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa PC10",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam.",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 130-135 ngày, Vụ Mùa 100-105 ngày",
+		"morphology": "Cây cao 90-95 cm, bông dài 22.5 cm, số hạt/bông 120, khối lượng 1000 hạt 24.1 g, tỷ lệ gạo xát 69%, chiều dài hạt gạo 6,5 mm, hàm lượng amylose 21-22%.",
+		"yields": "Trung bình 55-65 tạ/ha",
+		"description": "PC10 là giống lúa ngắn ngày, kháng rầy cao, kháng vừa đạo ôn và bạc lá, chống đổ và chịu rét khá. Thích hợp gieo cấy trà Xuân muộn và mùa sớm tại chân ruộng cao, hiệu quả trong các công thức luân canh 2 lúa + 1-2 màu/năm.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa ĐB6",
+		"origin": "Trung tâm Khảo kiểm nghiệm giống kết hợp với Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "Vụ Xuân 140-145 ngày, Vụ Mùa 110-115 ngày",
+		"morphology": "Cây gọn, cứng, lá đứng dày, bông to dài, hạt xếp sít, tỷ lệ hạt lép thấp. Khả năng đẻ nhánh trung bình, chống đổ và chịu rét tốt.",
+		"yields": "Trung bình 65 tạ/ha, điều kiện thâm canh cao đạt 80-90 tạ/ha",
+		"description": "ĐB6 là giống lúa ngắn ngày, sinh trưởng khỏe, chống đổ và chịu rét tốt, kháng sâu bệnh khá. Thích hợp gieo cấy trà Xuân muộn và mùa sớm tại các chân ruộng cao, hiệu quả trong luân canh 2 lúa + 1 màu/năm.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa SH14",
+		"origin": "Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "105 - 110 ngày (vụ Mùa), 135 - 140 ngày (vụ Xuân muộn)",
+		"morphology": "Cây cao ~105 cm, thân lá gọn đẹp, sinh trưởng nhanh, bông to xếp hạt sít, 170 - 200 hạt chắc/bông, hạt gạo trắng trong, cơm mềm ngon.",
+		"yields": "Trung bình 6 tấn/ha, thâm canh đạt 7 - 8 tấn/ha",
+		"description": "SH14 là giống lúa thuần ngắn ngày, chống đổ và chịu rét khá, kháng rầy nâu, khô vằn và thích ứng rộng trên nhiều chân đất. Giống phù hợp gieo cấy vụ Xuân muộn và Mùa sớm, đặc biệt hiệu quả trong công thức luân canh 2 lúa + 1 màu/năm, cho chất lượng gạo ngon, cơm mềm, tỷ lệ gạo nguyên cao.",
+		"image_url": null
+	},
+	{
+		"name": "Lúa TL6",
+		"origin": "Trung tâm Nghiên cứu & Phát triển lúa lai - Viện Cây lương thực và Cây thực phẩm, Việt Nam",
+		"category": "Cây lương thực",
+		"growth_duration": "130 - 135 ngày (vụ Xuân), 105 - 110 ngày (vụ Mùa)",
+		"morphology": "Cây cao 95 - 100 cm, đẻ nhánh trung bình, 5 - 7 bông hữu hiệu/khóm, tỷ lệ hạt chắc >90%. Gạo trong, cơm dẻo, thơm, mềm nhưng không dính.",
+		"yields": "Trung bình 5,5 - 6,5 tấn/ha; thâm canh có thể đạt >8 tấn/ha",
+		"description": "TL6 là giống lúa thơm, thuần, có khả năng chịu thâm canh khá, kháng tốt đạo ôn, khô vằn, bạc lá. Giống thích ứng rộng, có thể gieo cấy 2 vụ/năm, cho chất lượng gạo ngon, cơm mềm thơm và năng suất ổn định cao.",
 		"image_url": null
 	},
 	{
