@@ -26,7 +26,8 @@ async def get_cultivation_by_id(cultivation_id: str):
     return serialize_doc(doc) if doc else None
 
 async def get_cultivations_by_plant(plant_id: str):
-    cursor = db.cultivation_techniques.find({"plant_id": plant_id})
+    # vì model mới dùng plant_ids (list) nên phải query bằng $in
+    cursor = db.cultivation_techniques.find({"plant_ids": {"$in": [plant_id]}})
     docs = await cursor.to_list(length=None)
     return [serialize_doc(d) for d in docs]
 
