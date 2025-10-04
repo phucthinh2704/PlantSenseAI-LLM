@@ -1,6 +1,8 @@
 import asyncio
+from bson import ObjectId
 from app.core.database import db
 from app.services.qdrant_service import upsert_full_text, upsert_text
+
 
 async def ingest():
     # (a) Plants
@@ -23,19 +25,31 @@ async def ingest():
             },
         )
 
-    # (b) Diseases
+    # (b) Diseases (populate plant_names)
     async for disease in db.diseases.find({}):
+        plant_ids = disease.get("plant_ids", [])
+        plants = []
+        plant_names = []
+
+        if plant_ids:
+            plants = await db.plants.find(
+                {"_id": {"$in": [ObjectId(pid) for pid in plant_ids]}}
+            ).to_list(None)
+            plant_names = [p["name"] for p in plants]
+
         text = (
-            f"Bệnh {disease['name']} ảnh hưởng đến cây {disease.get('plant_ids','')}."
+            f"Bệnh {disease['name']} ảnh hưởng đến cây {', '.join(plant_names) if plant_names else 'không rõ'}."
             f" Nguyên nhân: {disease.get('cause','')}."
         )
+
         upsert_full_text(
             text,
             {
                 "type": "disease",
                 "disease_id": str(disease["_id"]),
                 "name": disease["name"],
-                "plant_ids": disease.get("plant_ids", []),
+                "plant_ids": plant_ids,
+                "plant_names": plant_names,  # ✅ thêm plant_names vào payload
                 "image_url": disease.get("image_url"),
             },
         )
@@ -71,6 +85,7 @@ async def ingest():
         )
 
     print("✅ Ingestion hoàn tất! Dữ liệu đã được đưa vào Qdrant.")
+
 
 def run_ingest():
     asyncio.run(ingest())

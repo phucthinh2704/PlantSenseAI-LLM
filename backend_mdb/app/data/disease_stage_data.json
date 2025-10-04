@@ -1,29 +1,1766 @@
 [
-  {
-    "disease_id": "68be6cc3d6ce295f1fc1abcb",
-    "stage": "Giai đoạn sớm",
-    "symptom": "Lá vàng, xuất hiện đốm nâu nhỏ.",
-    "prevention": [
-      {
-        "step": 1,
-        "name": "Vệ sinh ruộng",
-        "description": "Dọn sạch cỏ dại, rác thải.",
-        "chemical": null,
-        "dosage": null,
-        "note": "Tiến hành trước gieo trồng."
-      }
-    ],
-    "treatment": [
-      {
-        "step": 1,
-        "name": "Phun thuốc",
-        "description": "Sử dụng thuốc trừ nấm loại X.",
-        "chemical": "Thuốc X",
-        "dosage": "1ml/1 lít nước",
-        "note": "Phun vào buổi sáng."
-      }
-    ],
-    "created_at": "2025-09-08T05:00:00Z",
-    "updated_at": "2025-09-08T05:00:00Z"
-  }
+	{
+		"disease_id": "bệnh bạc lá",
+		"stage": "Tất cả",
+		"symptom": "Vết bệnh bắt đầu giống như những sọc thấm nước ở rìa lá, có màu vàng đến màu trắng. Vết bệnh có thể bắt đầu ở một hoặc cả hai bên mép lá, hoặc bất kỳ điểm nào trên lá, sau đó lan ra phủ toàn bộ lá. Trên giống nhiễm, vết bệnh có thể lan tới tận bẹ lá. Khi bệnh nặng làm lúa chết từng đám.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Chọn giống kháng",
+				"description": "Sử dụng giống lúa có khả năng chống chịu tốt với bệnh bạc lá, hạn chế gieo trồng giống nhiễm nặng như BT7, Tạp giao, giống chất lượng mẫn cảm.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Ưu tiên giống kháng ở vùng thường xuyên có bệnh."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Bố trí thời vụ hợp lý",
+				"description": "Điều chỉnh lịch gieo cấy sao cho giai đoạn trổ - chín không rơi vào thời kỳ mưa bão ẩm ướt.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Ở giống chất lượng nên gieo muộn hơn (cuối tháng 7) để lúa trỗ vào tiết hàn lộ, giảm bệnh."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Quản lý phân bón",
+				"description": "Bón phân NPK cân đối, giảm đạm, tăng kali và lân để cây khỏe. Bón nặng đầu, nhẹ cuối, bón lót sâu, thúc sớm.",
+				"chemical": "Đạm, lân, kali, vôi",
+				"dosage": "Theo khuyến cáo bón phân từng vùng",
+				"note": "Đặc biệt ruộng hẩu, cuối vụ nên giảm đạm, tăng lân và kali."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Quản lý nước hợp lý",
+				"description": "Tưới tiêu khoa học, giữ mực nước 3–5 cm, tránh để ruộng trũng hẩu hoặc ngập úng kéo dài.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Giúp cây lúa cứng cây, lá dày, giảm nhiễm bệnh."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Kỹ thuật canh tác",
+				"description": "Áp dụng SRI, 3 giảm 3 tăng, 1 phải 5 giảm, IPM. Cấy thưa, mỗi khóm 1–2 dảnh, chăm bón sớm và cân đối.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tránh cấy dày và bón phân muộn."
+			},
+			{
+				"_id": null,
+				"step": 6,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Dọn sạch tàn dư cây bệnh, xử lý hạt giống trước khi gieo, khử trùng dụng cụ sản xuất.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Xử lý hạt giống bằng nước nóng hoặc thuốc sát khuẩn."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Xử lý hạt giống",
+				"description": "Ngâm hạt giống trong nước nóng 52°C trong 30 phút hoặc dùng thuốc sát khuẩn trước khi gieo.",
+				"chemical": "Thuốc sát khuẩn hạt giống",
+				"dosage": "Theo hướng dẫn trên bao bì",
+				"note": "Phải đảm bảo đúng nhiệt độ và thời gian."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc hóa học",
+				"description": "Khi bệnh mới chớm, phun thuốc có hoạt chất Bismerthiazol, Copper hydroxide, Oxolinic acid, Thiodiazole zinc, Thiodiazole copper, hoặc các loại gốc đồng và kháng sinh như Streptomycin, đồng oxychloride.",
+				"chemical": "Bismerthiazol, Copper hydroxide, Oxolinic acid, Thiodiazole zinc, Streptomycin, đồng oxychloride",
+				"dosage": "Theo khuyến cáo của nhà sản xuất",
+				"note": "Phun trước và sau mưa giông, tuân thủ nguyên tắc 4 đúng."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Quản lý đồng ruộng",
+				"description": "Theo dõi ruộng thường xuyên, giữ nước 3–5 cm, ngừng bón phân khi bệnh xuất hiện.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Phun phòng bệnh ngay sau mưa dông nếu điều kiện thuận lợi."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Sử dụng chế phẩm sinh học",
+				"description": "Bổ sung chế phẩm chứa vi sinh vật đối kháng để hạn chế sự phát triển của vi khuẩn.",
+				"chemical": "Pseudomonas fluorescens",
+				"dosage": "Theo khuyến cáo nhà sản xuất",
+				"note": "Có thể kết hợp với biện pháp hóa học để tăng hiệu quả."
+			}
+		]
+	},
+	{
+		"disease_id": "đốm nâu",
+		"stage": "Tất cả",
+		"symptom": "Vết bệnh trên lá ban đầu là những chấm nhỏ màu nâu nhạt, sau đó phát triển thành các vết bệnh màu nâu đậm hơn. Ở giống lúa kháng bệnh, đốm bệnh hẹp, ngắn, màu nâu đậm có kích thước từ 2-10 x 1 mm; với những giống nhiễm bệnh, đốm bệnh dài và rộng hơn, có màu nâu nhạt hơn và ở giữa có màu sáng. Tổng thể đốm bệnh thường có màu nâu đỏ, ở mép lá màu nhạt hơn nên ruộng bị nhiễm nặng có màu đỏ rực. Vết bệnh gây hại trên hạt có màu nâu, sau biến màu đen. Nấm bệnh tồn tại trên hạt và là nguồn bệnh cho vụ sau.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Chọn giống sạch bệnh, ít nhiễm",
+				"description": "Sử dụng giống lúa kháng hoặc ít nhiễm bệnh, không dùng hạt từ ruộng đã bị bệnh để gieo.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Chọn giống từ cơ sở sản xuất uy tín."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Xử lý hạt giống",
+				"description": "Trước khi ngâm ủ cần xử lý hạt giống bằng thuốc trừ nấm hoặc nấm đối kháng để diệt mầm bệnh trên vỏ hạt.",
+				"chemical": "Thuốc chứa hoạt chất benzimidazole hoặc Trichoderma",
+				"dosage": "Theo hướng dẫn trên bao bì",
+				"note": "Loại bỏ hạt lép, hạt lửng trước khi gieo."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Gieo sạ mật độ hợp lý",
+				"description": "Gieo sạ thưa, mật độ 100–120 kg/ha để ruộng thoáng khí, cây khỏe ít bệnh.",
+				"chemical": null,
+				"dosage": "100–120 kg/ha",
+				"note": "Tránh gieo sạ dày vì dễ phát sinh bệnh."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Quản lý đất và dinh dưỡng",
+				"description": "Cải tạo đất, bón phân cân đối, giảm đạm, tăng kali, bổ sung silic và trung vi lượng để tăng sức đề kháng.",
+				"chemical": "Đạm, Kali, Silic, Vôi",
+				"dosage": "Theo khuyến cáo bón phân của địa phương",
+				"note": "Đặc biệt quan tâm đất phèn, mặn, ngộ độc hữu cơ."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Thu gom, xử lý rơm rạ và tàn dư cây bệnh sau thu hoạch, luân canh cây trồng để cắt nguồn bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Có thể dùng chế phẩm phân hủy rơm rạ sinh học để cải tạo đất."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Phun thuốc hóa học đặc trị",
+				"description": "Khi bệnh mới chớm xuất hiện, phun thuốc trừ nấm thuộc nhóm triazole hoặc strobilurin.",
+				"chemical": "Thuốc nhóm Triazole, Strobilurin, Master Plus 225SC, Masterone 26SC, Tado Doctor",
+				"dosage": "Theo khuyến cáo trên nhãn thuốc",
+				"note": "Phun vào sáng sớm hoặc chiều mát, tuân thủ nguyên tắc 4 đúng."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Sử dụng chế phẩm sinh học",
+				"description": "Bổ sung chế phẩm sinh học chứa vi sinh vật đối kháng để hạn chế sự phát triển của nấm gây bệnh.",
+				"chemical": "Trichoderma spp.",
+				"dosage": "Theo hướng dẫn của nhà sản xuất",
+				"note": "Kết hợp biện pháp hóa học và sinh học để đạt hiệu quả cao."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Quản lý nước hợp lý",
+				"description": "Giữ mực nước ổn định, tránh ruộng khô hạn hoặc ngập úng kéo dài.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Rút nước kịp thời khi ruộng bị ngập."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Thăm đồng thường xuyên",
+				"description": "Kiểm tra ruộng lúa để phát hiện sớm triệu chứng và xử lý kịp thời.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Áp dụng phòng trừ tổng hợp khi có dấu hiệu bệnh."
+			}
+		]
+	},
+	{
+		"disease_id": "đạo ôn",
+		"stage": "Tất cả",
+		"symptom": "Trên lá, vết bệnh ban đầu nhỏ, hình chấm nước, sau lớn dần thành hình thoi với tâm xám trắng, viền nâu đỏ. Khi bệnh nặng, các vết liên kết lại thành mảng cháy làm lá khô quăn. Trên giống kháng, vết bệnh thường nhỏ, tròn hoặc bằng đầu kim. Nấm còn gây hại trên bẹ lá, cổ bông, cổ gié làm bông lép trắng, hạt không chắc, năng suất giảm mạnh. Ruộng bị nặng có thể cháy lá từng đám, lúa sinh trưởng kém, thậm chí chết cả bụi.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Chọn giống kháng và xử lý hạt giống",
+				"description": "Sử dụng giống ít nhiễm hoặc kháng như IR1820, IR17494, OM3536, OM2517, C70, C71, ITA212... Không dùng giống từ ruộng bệnh. Xử lý hạt giống bằng nước nóng 54°C trong 10 phút hoặc dùng thuốc Rovral 50WP, Copper B-WP, Agrilife 100SL.",
+				"chemical": "Rovral 50WP, Copper B-WP, Agrilife 100SL",
+				"dosage": "Theo hướng dẫn trên bao bì",
+				"note": "Ngâm giống đúng nhiệt độ, thời gian để diệt bào tử nấm."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Làm đất và vệ sinh đồng ruộng",
+				"description": "Luân canh cây trồng cạn, cày vùi rơm rạ, dọn cỏ dại, lúa chét, ký chủ phụ để diệt nguồn nấm. San phẳng mặt ruộng, làm rãnh thoát nước cách 4–5m.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Không làm đất quá cập rập; để ruộng nghỉ giữa hai vụ."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Điều chỉnh mật độ gieo sạ",
+				"description": "Sạ thưa với mật độ không quá 120 kg/ha để ruộng thông thoáng, giảm ẩm độ, hạn chế bệnh.",
+				"chemical": null,
+				"dosage": "≤ 120 kg/ha",
+				"note": "Mật độ dày làm bệnh phát triển sớm và mạnh."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bón phân cân đối",
+				"description": "Bón NPK cân đối, giảm đạm, tăng kali và lân. Không bón đạm muộn ở giai đoạn cuối đẻ nhánh, làm đòng, trước và sau trổ. Ngừng bón đạm khi ruộng đã có bệnh.",
+				"chemical": "Đạm, lân, kali",
+				"dosage": "Theo khuyến cáo bón phân từng vùng",
+				"note": "Lá xanh đậm quá mức (khung 4 bảng so màu lá) là dấu hiệu thừa đạm."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Quản lý nước",
+				"description": "Giữ nước nông, không để ruộng khô nứt hoặc úng ngập lâu ngày. Duy trì tưới luân phiên (ngập – khô) để hạn chế độ ẩm cao kéo dài.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Nơi ruộng trũng, bóng râm thường bị bệnh nặng hơn."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Phun thuốc hóa học đặc trị",
+				"description": "Sử dụng các thuốc đặc hiệu chứa Tricyclazol, Propiconazole, Kasugamycin hoặc hỗn hợp. Các thuốc khác: New Hinosan 30EC, Kitazin 50EC, Kasai 21,2%, Fujione 40EC, Beam 75WP, Trizol 20WP/75WP, Rabcide 30WP.",
+				"chemical": "Tricyclazol, Propiconazole, Kasugamycin, New Hinosan, Kitazin, Fujione, Beam, Trizol, Rabcide",
+				"dosage": "Theo khuyến cáo nhà sản xuất",
+				"note": "Phun khi bệnh chớm xuất hiện, nhắc lại sau 7–10 ngày nếu thời tiết thuận lợi cho bệnh."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc sinh học",
+				"description": "Sử dụng chế phẩm sinh học chứa nấm đối kháng như Chaetomium cupreum để ức chế nấm bệnh, tăng sức đề kháng cho cây.",
+				"chemical": "Chaetomium cupreum",
+				"dosage": "Theo khuyến cáo",
+				"note": "Có thể kết hợp cùng biện pháp hóa học."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Thăm đồng và phun phòng",
+				"description": "Theo dõi thời tiết, nếu có sương mù, mưa ẩm kéo dài thì phun phòng bằng thuốc đặc trị ngay cả khi chưa thấy vết bệnh.",
+				"chemical": "Taiyou 20SC",
+				"dosage": "25 ml/16 lít nước",
+				"note": "Phun 2 lần, cách nhau 7–10 ngày."
+			}
+		]
+	},
+	{
+		"disease_id": "sâu bọ gai",
+		"stage": "Tất cả, gây hại mạnh nhất ở giai đoạn đẻ nhánh đến làm đòng",
+		"symptom": "Sâu bọ gai hại lúa gây hại cả giai đoạn mạ, đẻ nhánh đến làm đòng. Sâu non ăn phần diệp lục giữa hai lớp biểu bì, tạo thành những đường hầm ngoằn ngoèo không đều nhau, để lại lớp biểu bì mỏng. Con trưởng thành gặm mặt trên phiến lá, làm lá bạc trắng, khô quăn, cây vàng úa, còi cọc, thậm chí chết. Vết hại thường bắt đầu từ ngọn lá – nơi sâu đẻ trứng, rồi lan dần xuống. Ruộng bị nặng nhìn từ xa như bị cháy bạc, lúa sinh trưởng kém và giảm năng suất.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Chọn giống khỏe",
+				"description": "Sử dụng giống lúa khỏe, sạch bệnh để tăng khả năng chống chịu sâu hại.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Làm đất kỹ, phát quang bờ bụi, dọn sạch cỏ dại để loại bỏ nơi trú ngụ và ký chủ phụ của sâu.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Nên kết hợp thu gom, đốt bỏ lá bị sâu và ngắt phần ngọn lá có trứng."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Gieo cấy hợp lý",
+				"description": "Gieo sạ với mật độ vừa phải, tránh gieo quá dày để ruộng thông thoáng, hạn chế sâu phát triển.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bón phân cân đối",
+				"description": "Bón phân NPK hợp lý, hạn chế bón thừa đạm, bổ sung kali và phân hữu cơ để cây khỏe mạnh.",
+				"chemical": "Đạm, lân, kali",
+				"dosage": "Theo khuyến cáo bón phân",
+				"note": "Bón thừa đạm làm lúa dễ bị sâu tấn công."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Bảo vệ thiên địch",
+				"description": "Khuyến khích, bảo vệ các loài thiên địch như bọ rùa, nhện ăn mồi, kiến ba khoang, ong ký sinh để khống chế sâu tự nhiên.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tránh lạm dụng thuốc hóa học phổ rộng vì sẽ tiêu diệt cả thiên địch."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Biện pháp sinh học",
+				"description": "Ưu tiên sử dụng chế phẩm sinh học như nấm ký sinh Metarhizium anisopliae, Beauveria bassiana hoặc vi khuẩn Bacillus thuringiensis (Bt) để tiêu diệt ấu trùng và nhộng.",
+				"chemical": "Metarhizium anisopliae, Beauveria bassiana, Bacillus thuringiensis",
+				"dosage": "Theo hướng dẫn trên chế phẩm",
+				"note": "Một số chế phẩm thương mại như Mebe Pa, Leven có tác dụng diệt từ trứng đến sâu trưởng thành."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Bảo vệ thiên địch",
+				"description": "Giữ lại và phát triển các loài thiên địch tự nhiên như bọ rùa, nhện ăn mồi, ong ký sinh trứng để giảm mật số sâu hại.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Có thể thả bổ sung thiên địch nếu nguồn tại chỗ ít."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Phun thuốc sinh học",
+				"description": "Phun các chế phẩm sinh học khi sâu non mới nở để đạt hiệu quả cao, phun ướt đều hai mặt lá.",
+				"chemical": "Bt, nấm xanh, nấm trắng",
+				"dosage": "Theo hướng dẫn trên nhãn chế phẩm",
+				"note": "Phun vào sáng sớm hoặc chiều mát để tránh nắng gắt."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Phun thuốc hóa học (khi mật số cao)",
+				"description": "Chỉ dùng khi mật độ sâu vượt ngưỡng kinh tế và biện pháp sinh học không hiệu quả. Các hoạt chất thường dùng gồm Fipronil, Abamectin, Cartap, Chlorpyrifos, Lambda-cyhalothrin.",
+				"chemical": "Fipronil, Abamectin, Cartap, Chlorpyrifos, Lambda-cyhalothrin",
+				"dosage": "Theo khuyến cáo của nhà sản xuất",
+				"note": "Phun khi sâu còn nhỏ, phun ướt đều hai mặt lá, tuân thủ nguyên tắc 4 đúng. Không lạm dụng để tránh kháng thuốc và bảo vệ môi trường."
+			}
+		]
+	},
+	{
+		"disease_id": "rầy lưng trắng",
+		"stage": "Tất cả",
+		"symptom": "Rầy lưng trắng gây hại trên tất cả các giai đoạn sinh trưởng của lúa. Trứng được đẻ chìm trong bẹ hoặc gân lá, mới trong suốt, sắp nở có điểm mắt đỏ. Rầy non màu trắng đục, xuất hiện vệt vằn trên lưng từ tuổi 3, tập trung ở gốc lúa hút nhựa. Rầy trưởng thành nâu đen, có vệt trắng trên lưng, cánh trong suốt; con cái có cánh dài và cánh ngắn. Cây bị hại vàng lá, úa, còi cọc; thân có vết chích; bông và hạt lúa lép hoặc lửng, vỏ trấu nâu; năng suất giảm, thời gian chín kéo dài. Dịch ngọt rầy làm nấm muội đen phát triển và rầy còn truyền virus vàng lùn, lùn sọc đen.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Chọn giống kháng",
+				"description": "Sử dụng các giống lúa có khả năng kháng rầy lưng trắng như OM5451, IR64, các giống ít nhiễm rầy và có sức chống chịu cao.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Quản lý thời vụ",
+				"description": "Gieo cấy đồng loạt, tránh gieo cấy lệch vụ để hạn chế lứa rầy xuất hiện và tránh thời điểm rầy phát triển mạnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Không gieo cấy quá dày, sạ 100-120kg/ha hoặc sạ hàng 70-80kg/ha."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Bón phân cân đối",
+				"description": "Bón cân đối giữa đạm, lân, kali; tránh bón thừa đạm để cây khỏe mạnh, hạn chế rầy phát triển.",
+				"chemical": "Đạm, lân, kali",
+				"dosage": "Theo khuyến cáo kỹ thuật",
+				"note": "Phân bón cân đối giúp tăng sức đề kháng cho cây."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Quản lý nước hợp lý",
+				"description": "Duy trì mực nước thích hợp, tránh ruộng ngập hoặc khô hạn kéo dài để hạn chế rầy trú ngụ và sinh sản.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Dọn sạch cỏ dại, lúa dại, xử lý tàn dư thực vật, làm cỏ, tỉa mạ để ruộng thông thoáng và hạn chế nơi rầy trú ngụ.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Kết hợp xử lý hạt giống bằng nước nóng hoặc thuốc sát khuẩn."
+			},
+			{
+				"_id": null,
+				"step": 6,
+				"name": "Sử dụng thiên địch",
+				"description": "Bảo vệ và phát triển thiên địch tự nhiên như nhện ăn thịt, bọ rùa, bọ xít và ong ký sinh để khống chế mật số rầy.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 7,
+				"name": "Bẫy đèn",
+				"description": "Dùng bẫy đèn vào ban đêm khi rầy hoạt động mạnh (20-22h) để giảm mật độ rầy trưởng thành.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Hiệu quả chủ yếu với rầy cánh dài, không hiệu quả với rầy cánh ngắn."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Phun thuốc hóa học",
+				"description": "Sử dụng thuốc trừ rầy khi mật độ rầy cám đạt 18-20 con/khóm hoặc >50 con/khóm khi trứng nở 80%.",
+				"chemical": "Imidacloprid, Thiamethoxam, Acetamiprid, Bassa 50EC, Regent 800WP, Trebon 20ND, Mipcin 20WP, Actara 25WG",
+				"dosage": "Theo hướng dẫn trên bao bì hoặc khuyến cáo của cơ quan quản lý",
+				"note": "Phun vào sáng sớm hoặc chiều mát, đảm bảo phun đều trên toàn bộ cây."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Sử dụng chế phẩm sinh học",
+				"description": "Bổ sung chế phẩm vi sinh như Ba Màu 500G để ức chế rầy mà không ảnh hưởng cây trồng và môi trường.",
+				"chemical": "Chế phẩm sinh học Ba Màu 500G",
+				"dosage": "Theo khuyến cáo của nhà sản xuất",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Thả vịt hoặc cá vào ruộng",
+				"description": "Thả vịt hoặc cá rô phi, cá mè để diệt rầy cám và rầy non, giảm mật số rầy tự nhiên.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Áp dụng ở giai đoạn mạ, lúa 4-5 tuần tuổi."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Theo dõi và quản lý đồng ruộng",
+				"description": "Thường xuyên kiểm tra mật độ rầy, phát hiện sớm rầy trưởng thành và rầy non để phun thuốc kịp thời.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Phun phòng khi có điều kiện thuận lợi cho rầy phát sinh."
+			}
+		]
+	},
+	{
+		"disease_id": "sâu phao",
+		"stage": "Tất cả",
+		"symptom": "Sâu phao hại lúa gây hại từ mạ đến chín, đặc biệt ở ruộng trũng, ngập nước. Lá lúa bị cắn đứt đầu, xuất hiện các vệt trắng không đều. Quan sát thấy các đoạn lá hình ống bám trên cây hoặc nổi trên mặt nước như chiếc phao. Cây bị còi cọc, ra ít chồi, năng suất giảm, thời gian chín kéo dài 7-10 ngày. Sâu non màu trắng hoặc xanh lục trong suốt, trưởng thành có cánh trắng bóng với chấm nâu, hoạt động về đêm. Trứng hình tròn hơi dẹt, vàng nhạt đến vàng đậm khi sắp nở, nhộng hình trụ màu vàng nâu đến nâu sẫm.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Cày ải, phơi đất và dọn sạch tàn dư cây trồng để loại bỏ trứng và nhộng sâu phao còn sót lại.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Kết hợp xử lý hạt giống nếu cần."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Chọn giống kháng sâu",
+				"description": "Sử dụng các giống lúa có khả năng kháng sâu phao để giảm mức độ gây hại.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Quản lý nước hợp lý",
+				"description": "Thoát nước hợp lý để giảm nơi sinh sống của sâu phao, tránh ngập lâu và ruộng trũng.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Ngập nước tạm thời có thể vớt phao sâu để giảm quần thể."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bón phân cân đối",
+				"description": "Bón phân hợp lý, cân đối giữa đạm, lân, kali để cây khỏe mạnh, tăng khả năng chống chịu sâu bệnh.",
+				"chemical": "Đạm, lân, kali",
+				"dosage": "Theo khuyến cáo",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Thời vụ gieo trồng hợp lý",
+				"description": "Gieo trồng đúng thời vụ để hạn chế điều kiện thuận lợi cho sâu phao phát triển.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 6,
+				"name": "Sử dụng thiên địch và chế phẩm sinh học",
+				"description": "Áp dụng các loài thiên địch như ong ký sinh Trichogramma hoặc chế phẩm Bacillus thuringiensis để kiểm soát sâu non và nhộng.",
+				"chemical": "Bacillus thuringiensis",
+				"dosage": "Theo khuyến cáo",
+				"note": null
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Vớt phao sâu",
+				"description": "Cho nước vào ngập ruộng và dùng rổ vớt các đoạn lá hình ống chứa sâu phao nổi trên mặt nước.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Giữ mạ không bị ngập nước quá lâu."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Thoát nước ruộng",
+				"description": "Thoát nước nhiều ngày để tiêu diệt sâu phao còn sót lại.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Lưu ý cỏ dại có thể phát triển khi thoát nước lâu."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Phun thuốc hóa học khi mật độ cao",
+				"description": "Sử dụng thuốc trừ sâu như Padan, Netoxin, Regent hoặc nhóm Pyrethroid khi mật độ sâu phao vượt ngưỡng.",
+				"chemical": "Padan, Netoxin, Regent, Pyrethroid",
+				"dosage": "Theo hướng dẫn nhà sản xuất",
+				"note": "Luân phiên các loại thuốc để tránh sâu kháng thuốc."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Theo dõi ruộng thường xuyên",
+				"description": "Thường xuyên kiểm tra ruộng để phát hiện sớm và xử lý kịp thời.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Phun phòng ngay khi điều kiện thuận lợi cho sâu phát sinh."
+			}
+		]
+	},
+	{
+		"disease_id": "gạch nâu",
+		"stage": "Trổ bông và nở hoa",
+		"symptom": "Vết bệnh dạng sọc hẹp, thẳng, màu nâu nhạt đến nâu sẫm, trông giống như nét bút chì gạch. Các sọc này có kích thước dài khoảng 2–10 mm và rộng 1–2 mm, chạy dọc theo gân lá. Ở các giống lúa có sức đề kháng cao, vết bệnh thường hẹp và ngắn, trong khi ở các giống mẫn cảm, chúng sẽ dài và lan rộng hơn. Bệnh nặng có thể làm hạt lúa chín sớm, đổi sang màu nâu tím, dẫn đến giảm chất lượng và sức nảy mầm.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Chọn giống kháng bệnh",
+				"description": "Chọn giống có khả năng kháng hoặc chống chịu bệnh tốt, không sử dụng hạt giống từ ruộng đã nhiễm bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Xử lý hạt giống",
+				"description": "Trước khi gieo cần xử lý hạt giống bằng phương pháp truyền thống hoặc hóa chất xử lý hạt.",
+				"chemical": "Nước muối 15%, nước nóng 54°C, thuốc xử lý hạt",
+				"dosage": "Ngâm trong nước muối 15% để loại bỏ hạt lép; ngâm nước nóng 54°C; hoặc xử lý bằng hóa chất theo khuyến cáo",
+				"note": "Đảm bảo đúng nhiệt độ khi xử lý bằng nước nóng để không làm chết hạt."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Gieo cấy hợp lý",
+				"description": "Gieo cấy với mật độ hợp lý, không gieo sạ dày để ruộng thông thoáng, giảm điều kiện thuận lợi cho bệnh phát sinh.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bón phân cân đối",
+				"description": "Bón phân NPK hợp lý, đặc biệt bổ sung Kali và hạn chế bón thừa đạm.",
+				"chemical": "NPK, Kali",
+				"dosage": "Theo khuyến cáo bón phân cho từng giống và giai đoạn sinh trưởng",
+				"note": "Không bón thừa đạm vì sẽ làm tăng tính mẫn cảm của cây đối với bệnh."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Vệ sinh đồng ruộng sạch sẽ, dọn bỏ tàn dư cây bệnh, luân canh cây trồng để cắt nguồn bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 6,
+				"name": "Kiểm soát nguồn giống và dụng cụ",
+				"description": "Kiểm soát chặt chẽ nguồn giống nhập khẩu; khử trùng dụng cụ, giày dép khi di chuyển giữa các ruộng.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tránh lây lan bệnh qua con người và thiết bị sản xuất."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Phun thuốc hóa học",
+				"description": "Khi bệnh xuất hiện, sử dụng thuốc hóa học theo nguyên tắc 4 đúng.",
+				"chemical": "Azoxystrobin (Amistar 250SC, Vitrobin 320SC), Mancozeb + Metalaxyl (Ridomil Gold 69WG), Propiconazole + Difenoconazole (Tilt Super 300EC)",
+				"dosage": "Phun nhắc lại 2–3 lần, mỗi lần cách nhau 5–7 ngày nếu bệnh nặng",
+				"note": "Tuân thủ nguyên tắc 4 đúng (đúng thuốc, đúng liều, đúng lúc, đúng cách)."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Bổ sung dinh dưỡng qua lá",
+				"description": "Kết hợp sử dụng phân bón lá, chế phẩm sinh học giúp cây phục hồi nhanh và tăng sức chống chịu.",
+				"chemical": "Phân bón lá, chế phẩm sinh học",
+				"dosage": "Theo khuyến cáo trên bao bì sản phẩm",
+				"note": null
+			}
+		]
+	},
+	{
+		"disease_id": "đạo ôn cổ bông",
+		"stage": "Tất cả",
+		"symptom": "Trên lá có vết bệnh hình thoi, tâm xám trắng, viền nâu; nặng thì cháy lá từng mảng. Trên cổ bông và thân xuất hiện vết thâm nâu làm cổ bông gãy, bông bạc trắng hoặc lép lửng. Hạt bị bệnh có đốm nâu, lép, làm giảm năng suất và chất lượng gạo.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Dọn sạch rơm rạ, cỏ dại sau thu hoạch; cày vùi tàn dư để cắt nguồn bệnh từ vụ trước.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Nên kết hợp xử lý đất và vệ sinh kênh mương dẫn nước."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Chọn giống kháng bệnh",
+				"description": "Ưu tiên sử dụng giống lúa kháng bệnh hoặc ít nhiễm; tránh trồng đại trà một giống duy nhất.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Giống từng bị đạo ôn lá dễ bị đạo ôn cổ bông."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Xử lý hạt giống",
+				"description": "Ngâm xử lý hạt bằng nước muối, nước ấm hoặc thuốc trừ nấm trước khi gieo để tiêu diệt mầm bệnh.",
+				"chemical": "Thuốc xử lý hạt giống gốc trừ nấm",
+				"dosage": "Theo khuyến cáo trên bao bì",
+				"note": "Ngâm trong nước ấm 54–56°C khoảng 10–15 phút cũng có hiệu quả."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Canh tác hợp lý",
+				"description": "Gieo sạ mật độ vừa phải, tạo ruộng thông thoáng; bón phân cân đối (nặng đầu vụ, nhẹ cuối vụ), bổ sung kali, phân hữu cơ.",
+				"chemical": "Đạm, lân, kali, phân hữu cơ",
+				"dosage": "Theo hướng dẫn bón phân cho từng giống/vụ",
+				"note": "Tránh bón thừa đạm vì làm tăng nguy cơ bệnh."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Thăm đồng thường xuyên",
+				"description": "Theo dõi giai đoạn đòng – trỗ, đặc biệt khi trên lá đòng có vết bệnh hoặc ruộng từng bị đạo ôn lá.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Phát hiện sớm để chủ động phòng bệnh cổ bông."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Ngừng bón đạm khi có vết bệnh",
+				"description": "Khi phát hiện vết bệnh đầu tiên, dừng ngay việc bón đạm và phân bón qua lá.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Chỉ bón lại khi có lá mới khỏe, không còn vết bệnh."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc phòng bệnh trước trổ",
+				"description": "Phun thuốc khi lúa trổ lác đác vài bông (giai đoạn nứt đòng, rạn áo the) để bảo vệ cổ bông.",
+				"chemical": "Tricyclazole, Fenoxanil, Azoxystrobin, Trifloxystrobin, Propiconazole + Difenoconazole",
+				"dosage": "Theo khuyến cáo của nhà sản xuất",
+				"note": "Áp dụng nguyên tắc 4 đúng: đúng thuốc, đúng lúc, đúng liều, đúng cách."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Phun nhắc lại sau 5–7 ngày",
+				"description": "Nếu thời tiết thuận lợi cho bệnh hoặc ruộng nhiễm nặng, cần phun thuốc lần 2 để bảo vệ toàn bộ ruộng.",
+				"chemical": "Các nhóm thuốc khác hoạt chất để tránh kháng thuốc",
+				"dosage": "Theo khuyến cáo",
+				"note": "Luân phiên nhóm thuốc để tránh hiện tượng kháng."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Kỹ thuật phun",
+				"description": "Phun ướt đều lá và cổ bông, đảm bảo thuốc phủ kín bề mặt.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Lượng nước nên gấp 1,5–2 lần so với phun đạo ôn lá."
+			}
+		]
+	},
+	{
+		"disease_id": "nghẹt rễ lúa",
+		"stage": "Hồi xanh, đẻ nhánh",
+		"symptom": "Nhổ cả khóm lúa lên sẽ thấy rễ lúa có màu đen, có mùi hôi tanh; chót lá vàng dần rồi cả lá có màu nâu đỏ, khô cứng; đẻ nhánh ít hoặc không đẻ; cây còi cọc, sinh trưởng chậm hoặc đứng yên; nếu nặng cây và cả khóm lúa chết lụi dần. Đây là bệnh sinh lý, không lây lan, chủ yếu do thiếu oxy trong đất.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Cày bừa và bón vôi sau thu hoạch",
+				"description": "Cày bừa kỹ, bón 10 – 15kg vôi/sào để phân hủy rơm rạ nhanh hơn, cải tạo đất, hạ phèn và giải độc hữu cơ.",
+				"chemical": "Vôi bột",
+				"dosage": "10 – 15kg/sào",
+				"note": "Có thể kết hợp chế phẩm sinh học King 26 để tăng hiệu quả cải tạo đất."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Sử dụng chế phẩm sinh học",
+				"description": "Dùng chế phẩm sinh học để xử lý gốc rạ, hạn chế nghẹt rễ và vàng lá sinh lý.",
+				"chemical": "Chế phẩm sinh học (VD: King 26)",
+				"dosage": "Theo khuyến cáo",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Quản lý phân bón hợp lý",
+				"description": "Không bón phân hữu cơ chưa hoai mục; bón cân đối đạm, lân, kali; tránh dư đạm hoặc thiếu lân, kali.",
+				"chemical": "Đạm, lân, kali",
+				"dosage": "Theo khuyến cáo",
+				"note": "Ưu tiên phân chuồng hoai mục."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Cấy nông tay, dùng mạ khay",
+				"description": "Cấy nông tay hoặc dùng mạ khay để giúp rễ tiếp xúc nhiều oxy, sinh trưởng tốt hơn.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Chọn thời vụ gieo cấy phù hợp",
+				"description": "Tránh cấy lúa vào những ngày rét đậm, rét hại (<16°C) hoặc ruộng bị trũng ngập lâu ngày.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Cấy vào ngày nắng ấm, ruộng đã được tiêu nước và cày bừa nhiều lần."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Xử lý ban đầu khi phát hiện bệnh",
+				"description": "Không bón phân đạm hoặc NPK, không phun thuốc BVTV; làm cỏ, sục bùn để giải phóng khí độc quanh rễ.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Giúp rễ có điều kiện hô hấp tốt hơn."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Điều chỉnh nước và cải tạo đất",
+				"description": "Tháo nước ruộng nếu ngập úng; bón 8 – 12kg vôi bột + 12 – 15kg lân/sào; nếu ruộng trũng khó tháo nước thì sục bùn nhiều lần kết hợp bón vôi, lân, tro bếp.",
+				"chemical": "Vôi bột, lân, tro bếp",
+				"dosage": "8 – 12kg vôi + 12 – 15kg lân/sào",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Phơi ruộng luân phiên",
+				"description": "Rút cạn nước, phơi ruộng 2 – 3 ngày cho nẻ chân chim, sau đó cho nước trở lại.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bón bổ sung phân",
+				"description": "Bón phân lân 12 – 15kg/sào hoặc phân chuồng hoai mục để phục hồi sinh trưởng.",
+				"chemical": "Lân, phân chuồng hoai mục",
+				"dosage": "12 – 15kg lân/sào hoặc càng nhiều phân chuồng hoai mục càng tốt",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Phun thuốc khi có dấu hiệu nấm bệnh",
+				"description": "Khi bệnh nặng kèm thối thân, thối bẹ có thể phun thuốc gốc đồng, Antracol 700WG, Kasumin 2L hoặc Kasu 2L.",
+				"chemical": "Antracol 700WG, Kasumin 2L, Kasu 2L",
+				"dosage": "Theo hướng dẫn của nhà sản xuất",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 6,
+				"name": "Theo dõi phục hồi",
+				"description": "Sau 7 – 8 ngày, kiểm tra rễ mới (màu trắng) và lá xanh trở lại; khi đó mới tiến hành chăm sóc và bón phân bình thường.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Phân biệt với bệnh vàng lá do đạo ôn hoặc vi khuẩn gây ra để tránh nhầm lẫn."
+			}
+		]
+	},
+	{
+		"disease_id": "lùn sọc đen",
+		"stage": "Tất cả",
+		"symptom": "Cây lúa bị bệnh lùn sọc đen thường thấp lùn, lá xanh đậm hơn bình thường, đầu lá hoặc cả lá bị xoăn, gân lá mặt sau sưng phồng. Trên bẹ và lóng thân xuất hiện nhiều u sáp trắng, sau chuyển nâu đen và thành sọc đen. Ở giai đoạn làm đòng, cây mọc nhiều chồi bất thường và rễ bất định. Cây bị nặng không trỗ hoặc trỗ nghẹn, hạt lép đen, chất lượng gạo kém.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Cày vùi gốc rạ, dọn lúa chét, lúa tái sinh, cỏ dại, mương dẫn nước để tiêu hủy ký chủ phụ của rầy lưng trắng và nguồn bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Nên phun thuốc trừ rầy trước khi cày vùi diện tích bị bệnh nặng."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Xử lý hạt giống",
+				"description": "Xử lý hạt giống bằng thuốc trừ rầy và virut để bảo vệ mạ.",
+				"chemical": "COLA 600FS, GAUCHO 600FS, Sakura 40WP",
+				"dosage": "7,5 g Sakura 40WP pha với 0,5–1 lít nước cho 20 kg hạt; ngâm ủ thêm 6–12 giờ trước khi gieo.",
+				"note": "Có thể phủ nilon cho mạ sau gieo để ngăn rầy xâm nhập."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Quản lý rầy lưng trắng",
+				"description": "Theo dõi rầy bằng bẫy đèn, lấy mẫu giám định tỷ lệ rầy mang virut, xử lý kịp thời khi mật độ cao.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Rầy tuổi nhỏ (1–3) dễ phòng trừ hơn."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Chọn giống và bố trí thời vụ",
+				"description": "Không gieo trồng các giống lúa nhiễm nặng; ưu tiên giống kháng rầy và ít nhiễm LSĐ; bố trí mùa vụ hợp lý để vệ sinh đồng ruộng.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Hạn chế gieo ở ruộng có dịch vụ trước."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Bón phân cân đối",
+				"description": "Bón cân đối đạm, lân, kali để tăng sức chống chịu cho cây.",
+				"chemical": "Đạm, lân, kali",
+				"dosage": "Theo khuyến cáo bón phân từng giai đoạn",
+				"note": "Không bón thừa đạm để hạn chế bệnh."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Nhổ tiêu hủy cây bệnh",
+				"description": "Ở giai đoạn mạ đến đứng cái: nhổ, vùi cây lúa bệnh và cấy dặm cây khỏe thay thế. Giai đoạn làm đòng trở đi: nhổ và tiêu hủy cây bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tiêu hủy ngay để tránh lây lan."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc trừ rầy",
+				"description": "Phun thuốc trừ rầy khi phát hiện rầy lưng trắng mang virut trên ruộng.",
+				"chemical": "NIBAS 50EC, SHERTOX 100WP, ANVADO 100WP, VICTORY 585EC (tiếp xúc); CHEESTA 50WP, SUTIN 5EC, APTA 300WP, SHERTIN 50EC, DANTOT SU 16XSG (nội hấp)",
+				"dosage": "Theo khuyến cáo của nhà sản xuất",
+				"note": "Tuân thủ nguyên tắc 4 đúng: đúng lúc, đúng thuốc, đúng liều lượng, đúng kỹ thuật."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Tiêu hủy ruộng bị nhiễm nặng",
+				"description": "Nếu ruộng bị bệnh nặng trên 30% số dảnh, khó hồi phục, tiến hành tiêu hủy toàn bộ bằng cày vùi.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Phải phun thuốc trừ rầy trước khi cày vùi để diệt nguồn lây."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Thăm đồng và xử lý kịp thời",
+				"description": "Theo dõi thường xuyên, phát hiện sớm rầy và triệu chứng LSĐ để xử lý kịp thời.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Cấy dặm lại bằng cây khỏe nếu đã nhổ cây bệnh."
+			}
+		]
+	},
+	{
+		"disease_id": "đốm vằn",
+		"stage": "Tất cả, gây hại mạnh nhất từ giai đoạn làm đòng đến trổ bông và chín sáp",
+		"symptom": "Triệu chứng đặc trưng là vết vằn da hổ trên bẹ và lá, có hạch nấm. Bệnh ban đầu xuất hiện trên bẹ lá với các vết hình bầu dục, màu xanh xám, sũng nước. Khi phát triển, các vết bệnh này dài ra, lan dọc theo thân và bẹ, tâm chuyển thành màu trắng xám với viền nâu. Vết bệnh có thể nối liền nhau tạo thành những mảng lớn loang lổ như da hổ. Khi bệnh nặng, bẹ và lá sẽ khô trắng, khiến cây chết từng chòm. Đặc biệt, ở giai đoạn trổ bông, vết bệnh có thể bao quanh cổ bông, làm cho hạt bị lép và giảm năng suất nghiêm trọng. Dấu hiệu đặc trưng của bệnh là sự xuất hiện của các hạch nấm màu nâu, tròn dẹt, dễ rơi xuống nước và lây lan sang cây khác.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Vệ sinh và xử lý đồng ruộng",
+				"description": "Thu gom rơm rạ, cỏ dại, đốt hoặc vùi sâu để tiêu diệt hạch nấm tồn dư. Cày ải, phơi đất, luân canh cây trồng để cắt nguồn bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Làm sạch cỏ và đốt rơm rạ sau thu hoạch để hạn chế nguồn lây bệnh."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Chọn giống và gieo cấy hợp lý",
+				"description": "Sử dụng giống sạch bệnh, ít nhiễm. Gieo sạ mật độ vừa phải (80–120 kg/ha), không gieo cấy quá dày.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Bón phân cân đối",
+				"description": "Bón NPK hợp lý, hạn chế bón thừa đạm và bón thúc muộn. Tăng cường bón kali và silic để tăng sức đề kháng.",
+				"chemical": "N, P, K, Si",
+				"dosage": "Theo khuyến cáo bón phân",
+				"note": "Không nên bón đạm quá nhiều, nhất là giai đoạn làm đòng."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Quản lý nước hợp lý",
+				"description": "Duy trì mực nước vừa phải, tránh để ngập sâu khi bệnh phát triển. Rút nước tạm thời khi bệnh bộc phát.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Mực nước cao tạo điều kiện cho bệnh lây lan nhanh."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Theo dõi đồng ruộng",
+				"description": "Thường xuyên thăm đồng, phát hiện sớm dấu hiệu bệnh trên bẹ lá và cổ bông để xử lý kịp thời.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Điều chỉnh đồng ruộng khi có bệnh",
+				"description": "Khi bệnh chớm xuất hiện, rút nước tạm thời để hạn chế lây lan. Rẽ lối để đảm bảo thuốc phun tiếp xúc với bẹ lá.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Cần phun thuốc ngay khi thấy 5–7% số dảnh bị bệnh."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc sinh học",
+				"description": "Sử dụng các chế phẩm sinh học để ức chế nấm, thân thiện môi trường.",
+				"chemical": "Vivadamy",
+				"dosage": "Theo hướng dẫn của nhà sản xuất",
+				"note": "Nên phun sớm khi bệnh mới xuất hiện."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Phun thuốc hóa học đặc trị",
+				"description": "Sử dụng các thuốc hóa học khi bệnh lan rộng.",
+				"chemical": "Vivil 5SC, Viroval 50BTN, Vitin-New 250EC, Vixazol 275SC, Happy Gold 500SC",
+				"dosage": "Theo khuyến cáo của nhà sản xuất",
+				"note": "Tuân thủ nguyên tắc 4 đúng (đúng thuốc, đúng liều, đúng lúc, đúng cách)."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Phun định kỳ",
+				"description": "Phun thuốc ở 2 thời điểm quan trọng: 40 ngày sau sạ (làm đòng) và 55 ngày sau sạ (trước trổ).",
+				"chemical": null,
+				"dosage": null,
+				"note": "Phun đúng thời điểm giúp bảo vệ lá đòng và cổ bông, hạn chế lép hạt."
+			}
+		]
+	},
+	{
+		"disease_id": "lem lép hạt",
+		"stage": "Trổ bông – Chín sữa",
+		"symptom": "Hạt lúa bị lép, lửng hoặc không có gạo; vỏ trấu đổi màu từ nâu đến đen, có thể đen lốm đốm hoặc đen toàn bộ. Hạt bị biến màu, giảm phẩm chất và giá trị kinh tế. Bệnh phát sinh mạnh trong điều kiện ẩm độ cao, mưa nhiều, đất phèn mặn, hoặc khi cây lúa bị sâu bệnh khác gây hại ở giai đoạn đòng – trổ.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Sử dụng giống sạch bệnh",
+				"description": "Chọn hạt giống khỏe, sạch bệnh, không lấy từ ruộng bị lem lép hạt. Sạ thưa với mật độ 100–120 kg/ha.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tuyệt đối không dùng giống ở ruộng từng bị lem lép."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Xử lý hạt giống",
+				"description": "Phơi khô, rê sạch loại bỏ hạt lép lửng, biến màu. Ngâm 24–36 giờ trong dung dịch thuốc trước khi gieo.",
+				"chemical": "Carban 50SC, Benomyl (Viben 50BTN), Carbendazim (Vicarben 50HP)",
+				"dosage": "Nồng độ 3‰ cho hạt đã phơi khô",
+				"note": "Có thể xử lý bằng nước nóng 52°C trong 30 phút."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Bố trí mùa vụ hợp lý",
+				"description": "Gieo sạ tránh thời kỳ trổ gặp mưa nhiều, độ ẩm cao. Giữ ruộng đủ ẩm giai đoạn đòng – trổ, không để khô hạn.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tránh để lúa trổ vào cao điểm mưa gió."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bón phân cân đối",
+				"description": "Bón phân đầy đủ, cân đối đạm, lân, kali. Giúp cây lúa khỏe, không đổ ngã và chống chịu bệnh tốt hơn.",
+				"chemical": "Đạm, Lân, Kali",
+				"dosage": "Theo khuyến cáo từng vùng",
+				"note": "Không bón thừa đạm."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Quản lý đồng ruộng và cỏ dại",
+				"description": "Vệ sinh đồng ruộng, diệt cỏ dại là ký chủ trung gian. Dọn bỏ tàn dư cây bệnh, khử trùng dụng cụ.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Cỏ dại trên ruộng và bờ là nguồn bệnh nguy hiểm."
+			},
+			{
+				"_id": null,
+				"step": 6,
+				"name": "Phòng trừ sâu bệnh khác",
+				"description": "Kiểm soát tốt đạo ôn cổ bông, rầy nâu, sâu cuốn lá nhỏ, bọ xít… để hạn chế bệnh lem lép hạt phát triển.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Thăm đồng thường xuyên giai đoạn làm đòng – trổ."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Phun thuốc phòng bệnh",
+				"description": "Phun thuốc trừ bệnh phổ rộng vào giai đoạn lúa bắt đầu trổ và trổ đều nhằm ngăn nấm xâm nhập vào hạt.",
+				"chemical": "Tilt Super 300EC, Vicarben 50HP (Carbendazim), Vivil 5SC (Hexaconazole), Vixazol 275SC (Carbendazim + Hexaconazole), Vitin-New 250EC (Propiconazole), Viroval 50BTN (Iprodione), Workup 9SL (Metconazole)",
+				"dosage": "Theo khuyến cáo trên bao bì",
+				"note": "Phun khi bệnh chưa xuất hiện cho hiệu quả cao nhất."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Kết hợp thuốc trừ vi khuẩn",
+				"description": "Dùng thuốc có hoạt chất Azoxystrobin + Difenoconazole, Difenoconazole + Tricyclazole, Propiconazole để diệt cả nấm và vi khuẩn gây bệnh.",
+				"chemical": "Azoxystrobin + Difenoconazole, Difenoconazole + Tricyclazole, Propiconazole",
+				"dosage": "Theo hướng dẫn của nhà sản xuất",
+				"note": "Phun kết hợp giúp hạn chế thêm các bệnh đốm vằn, đạo ôn cổ bông."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Quản lý đồng ruộng kết hợp",
+				"description": "Kết hợp biện pháp hóa học và quản lý đồng ruộng: giữ nước hợp lý, vệ sinh ruộng sạch sẽ.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Thăm đồng thường xuyên để xử lý kịp thời."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Sử dụng chế phẩm sinh học",
+				"description": "Bổ sung chế phẩm vi sinh đối kháng để hạn chế sự phát triển của nấm bệnh.",
+				"chemical": "Pseudomonas fluorescens",
+				"dosage": "Theo khuyến cáo",
+				"note": null
+			}
+		]
+	},
+	{
+		"disease_id": "tungro",
+		"stage": "Tất cả",
+		"symptom": "Cây bị bệnh lùn, lá biến vàng từ chóp lan xuống, lá có đốm hoặc vệt, cây còi cọc, đẻ nhánh ít, trổ bông chậm hoặc không trổ, gié nhỏ, lép, màu nâu tối. Cây bệnh thường rụi thành từng đám, có thể mất năng suất hoàn toàn nếu bị nhiễm sớm.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Sử dụng giống kháng",
+				"description": "Chọn giống lúa có khả năng kháng bệnh Tungro hoặc giống kháng rầy xanh, rầy bông.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Đây là biện pháp kinh tế nhất trong quản lý bệnh Tungro."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Điều chỉnh thời vụ",
+				"description": "Gieo sạ tập trung, né rầy và phơi đất ít nhất một tháng sau thu hoạch để cắt nguồn ký chủ và mầm bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Cày bừa, vùi lấp gốc rạ và loại bỏ cỏ dại ký chủ, tiêu diệt nguồn bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Kết hợp luân canh với hoa màu hoặc cây họ đậu."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Quản lý rầy xanh",
+				"description": "Sử dụng thiên địch như ong ký sinh, nhện, chuồn chuồn để hạn chế quần thể rầy.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tránh phun thuốc tràn lan vì không hiệu quả trong việc ngăn virus."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Nhổ bỏ cây bệnh nặng",
+				"description": "Tiêu hủy cây bị bệnh nặng, ruộng không còn khả năng phục hồi để ngăn lây lan.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Phun thuốc trừ rầy trước khi tiêu hủy để tránh lây sang ruộng khác."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Quản lý rầy",
+				"description": "Nếu mật độ rầy cao, phun thuốc trừ rầy chọn lọc.",
+				"chemical": "Bassa 50EC, Trebon 20ND, Admire 50EC, Actara 25WG",
+				"dosage": "Theo hướng dẫn nhà sản xuất",
+				"note": "Chỉ phun khi mật độ rầy cao và có nguy cơ bùng phát bệnh."
+			}
+		]
+	},
+	{
+		"disease_id": "vàng lùn",
+		"stage": "Giai đoạn sinh dưỡng và làm đòng",
+		"symptom": "Cây lúa thấp lùn, lá vàng cam từ gốc lên ngọn, lá xòe ngang. Rễ kém phát triển, cứng và thối đen. Bụi lúa ít nhánh, ruộng vàng loang lổ, cây cằn cỗi và chết nếu nặng.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Sử dụng giống kháng rầy",
+				"description": "Trồng các giống lúa có khả năng chống chịu rầy nâu như OM4498, OM4495, AS996...",
+				"chemical": null,
+				"dosage": null,
+				"note": "Không nên độc canh một giống để tránh thích nghi của rầy."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Điều chỉnh gieo sạ",
+				"description": "Gieo sạ đồng loạt, không quá dày, tối đa 3 vụ/năm, cách nhau 25-30 ngày.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tránh gieo sạ liên tục vì tạo điều kiện cho rầy nâu lưu tồn."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Cày bừa, dọn cỏ dại, loại bỏ cây bệnh để giảm nguồn lây.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Nhổ bỏ kịp thời bụi lúa bệnh để ngăn lan rộng."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Tiêu hủy ruộng nặng",
+				"description": "Đối với ruộng nhiễm nặng và lúa dưới 40 ngày tuổi, cần cày trục tiêu hủy.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Phun thuốc trừ rầy trước khi cày để tránh phát tán."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc trừ rầy",
+				"description": "Trên ruộng nhiễm nhẹ hoặc trung bình, phun thuốc trừ rầy khi mật độ ≥ 3 con/dảnh.",
+				"chemical": "Bassa 50EC, Trebon 20ND, Admire 50EC, Actara 25WG",
+				"dosage": "Theo hướng dẫn nhà sản xuất",
+				"note": null
+			}
+		]
+	},
+	{
+		"disease_id": "lùn xoắn lá",
+		"stage": "Tất cả",
+		"symptom": "Cây thấp lùn, lá xanh đậm, gợn sóng, rìa lá rách, chóp xoăn lại. Dọc gân lá có u bướu nhỏ. Cây nghẹn đòng, ít hoặc không trỗ, hạt lép nhiều. Trường hợp nặng, cây co ngắn 40-60%, ruộng thất thu nặng.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Gieo cấy đồng loạt",
+				"description": "Thực hiện gieo sạ tập trung, né rầy theo dự báo dịch hại.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Theo dõi bẫy đèn để chọn thời điểm gieo né rầy."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Vệ sinh đồng ruộng",
+				"description": "Tiêu diệt cỏ ký chủ trung gian như cỏ lồng vực, cỏ đuôi phượng.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Sử dụng giống kháng",
+				"description": "Chọn giống lúa cứng cây, kháng rầy nâu.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Nhổ bỏ cây bệnh",
+				"description": "Loại bỏ các bụi lúa bệnh nặng để tránh lây lan.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Thực hiện sớm, nhất là khi bệnh mới phát."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc trừ rầy",
+				"description": "Khi mật độ rầy cao cần phun thuốc để hạn chế sự lan truyền virus.",
+				"chemical": "Bassa 50EC, Trebon 20ND, Admire 50EC, Actara 25WG",
+				"dosage": "Theo hướng dẫn nhà sản xuất",
+				"note": "Kết hợp biện pháp IPM, ưu tiên thuốc nội hấp và sinh học."
+			}
+		]
+	},
+	{
+		"disease_id": "đốm đen trên cây xoài",
+		"stage": "Tất cả",
+		"symptom": "Bệnh đốm đen trên cây xoài có thể xuất hiện ở tất cả các giai đoạn sinh trưởng. Trên lá, xuất hiện các đốm nhỏ màu nâu đen, viền vàng, hơi lõm, phần giữa khô, không có mủ, có thể làm lá vàng và rụng sớm. Trên cành non, vết bệnh màu đen, có thể chảy nhựa, hoa, chồi non và trái non bị héo hoặc chết. Trên trái, vết bệnh màu đen sậm, gồ ghề, dễ nứt vỏ, chảy nhựa chứa vi khuẩn, gây thối và rụng trái hàng loạt. Bệnh có thể nhầm với thán thư nhưng khác ở chỗ vết bệnh thường ướt, chảy nhựa và lan nhanh.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Chọn giống kháng bệnh",
+				"description": "Lựa chọn các giống xoài có khả năng kháng bệnh đốm đen cao trước khi trồng.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Quản lý mật độ trồng",
+				"description": "Trồng cây với mật độ hợp lý, tránh trồng quá dày để tăng khả năng thông thoáng, giảm độ ẩm và hạn chế sự phát triển của nấm, vi khuẩn.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Vệ sinh vườn cây",
+				"description": "Thường xuyên cắt tỉa cành lá già, lá và trái bị bệnh, thu gom và tiêu hủy tàn dư cây bệnh để hạn chế nguồn bệnh lây lan.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Có thể kết hợp tiêu hủy bằng đốt hoặc chôn sâu."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bón phân cân đối",
+				"description": "Cung cấp đầy đủ dinh dưỡng, đặc biệt là kali và canxi, hạn chế bón thừa đạm để tăng sức đề kháng cho cây.",
+				"chemical": "Kali, Canxi, Đạm, Lân",
+				"dosage": "Theo hướng dẫn kỹ thuật",
+				"note": "Tránh bón thừa đạm làm cây dễ nhiễm bệnh."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Bao trái bằng túi chuyên dụng",
+				"description": "Bao trái ngay sau khi đậu trái non giúp giảm nguy cơ lây bệnh và hạn chế côn trùng chích hút.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Đặc biệt hữu ích cho các giống xoài xuất khẩu như Cát Chu, Cát Hòa Lộc."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Cắt tỉa và tiêu hủy bộ phận bị bệnh",
+				"description": "Cắt bỏ và tiêu hủy các lá, cành hoặc quả bị bệnh nặng để ngăn chặn nguồn lây.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Nên tiêu hủy bằng đốt hoặc chôn sâu."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Sử dụng thuốc hóa học",
+				"description": "Phun các thuốc gốc đồng như Copper Oxychloride hoặc kháng sinh như Streptomycin, Kasugamycin. Khi có dấu hiệu nấm, dùng Carbendazim hoặc Hexaconazole.",
+				"chemical": "Copper Oxychloride, Streptomycin, Kasugamycin, Carbendazim, Hexaconazole",
+				"dosage": "Theo khuyến cáo nhà sản xuất",
+				"note": "Tuân thủ nguyên tắc '4 đúng' và thời gian cách ly trước thu hoạch."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Biện pháp sinh học",
+				"description": "Sử dụng chế phẩm chứa vi sinh vật đối kháng như Trichoderma, Bacillus subtilis, Pseudomonas fluorescens để ức chế sự phát triển của vi khuẩn và nấm gây bệnh.",
+				"chemical": "Trichoderma, Bacillus subtilis, Pseudomonas fluorescens",
+				"dosage": "Theo hướng dẫn trên bao bì",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Phòng bệnh mùa mưa",
+				"description": "Phun phòng trước mùa mưa để hạn chế sự bùng phát của bệnh, đặc biệt khi điều kiện ẩm ướt thuận lợi cho vi khuẩn và nấm phát triển.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Thực hiện đều đặn và kết hợp với biện pháp canh tác."
+			}
+		]
+	},
+	{
+		"disease_id": "thán thư",
+		"stage": "Tất cả, nặng nhất là giai đoạn ra hoa và trái non",
+		"symptom": "Bệnh có thể xuất hiện trên nhiều bộ phận của cây xoài. Trên lá, bệnh bắt đầu bằng các đốm nhỏ, hình tròn hoặc góc cạnh, màu xám nâu với viền vàng nhạt. Trên lá già, các đốm có thể khô và rách ở giữa, nhiều đốm liên kết thành mảng lớn làm lá xoăn, nhăn và rụng sớm. Trên cành và đọt non, các đốm bệnh không đều có thể bao quanh cành, gây chết đọt. Bệnh đặc biệt nguy hiểm khi cây ra hoa và trái: hoa bị khô đen, không nở, không thụ phấn và rụng hàng loạt; trên trái non, bệnh gây các đốm đen tròn, lõm, có vân đồng tâm, thối chóp hoặc sọc đen từ chóp đến cuống, làm trái rụng hàng loạt hoặc biến dạng. Trên trái già, bào tử nấm thâm nhập qua sẹo cuống và có thể thấy bào tử màu hồng trên vết bệnh. Bệnh phát triển mạnh khi độ ẩm cao >85% và nhiệt độ <25°C, có sương mù và mưa nhiều, bào tử nấm lan truyền qua nước mưa hoặc nước tưới.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Vệ sinh vườn",
+				"description": "Thu gom lá, cành khô và quả rụng để loại bỏ nguồn lây nhiễm; dọn sạch cỏ dại dưới tán để giữ vườn thông thoáng.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Tỉa cành tạo tán",
+				"description": "Cắt tỉa cành vô hiệu, cành vượt, cành sâu bệnh và tạo tán để cây thông thoáng, kiểm soát chiều cao, giúp ánh sáng chiếu vào toàn bộ cây.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Bón phân cân đối",
+				"description": "Bón phân hợp lý, tăng cường kali và canxi, hạn chế bón thừa đạm, kết hợp phân chuồng hoai và NPK giúp cây sinh trưởng khỏe, tăng sức đề kháng nấm bệnh.",
+				"chemical": "Kali, Canxi, NPK, phân chuồng hoai",
+				"dosage": "Theo hướng dẫn kỹ thuật",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bao trái",
+				"description": "Bao trái bằng túi chuyên dụng từ khi trái còn nhỏ (bằng quả trứng gà) để bảo vệ khỏi nấm bệnh và côn trùng gây hại.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Áp dụng khi trái đạt kích thước quả trứng gà."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Quản lý tưới tiêu",
+				"description": "Tránh tưới phun mưa vào chiều tối, hạn chế vết thương cơ giới trên cây trong điều kiện ẩm ướt để giảm nguy cơ bùng phát bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Loại bỏ bộ phận bị bệnh",
+				"description": "Cắt và loại bỏ các cành, lá, hoa và trái bị nhiễm bệnh để giảm nguồn lây lan.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Sử dụng thuốc gốc đồng",
+				"description": "Phun thuốc gốc đồng như Copper Hydroxide để phòng và trị bệnh thán thư khi bệnh xuất hiện.",
+				"chemical": "Copper Hydroxide",
+				"dosage": "Theo khuyến cáo nhà sản xuất",
+				"note": "Phun trước khi hoa nở, khi hoa nở rộ, khi trái non vừa đậu và trước khi thu hoạch."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Sử dụng thuốc nội hấp",
+				"description": "Sử dụng các thuốc nội hấp như Azoxystrobin, Propiconazole, Thiophanate-methyl, Carbendazim, luân phiên để tránh kháng thuốc.",
+				"chemical": "Azoxystrobin, Propiconazole, Thiophanate-methyl, Carbendazim",
+				"dosage": "Theo hướng dẫn trên nhãn",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Áp dụng biện pháp sinh học",
+				"description": "Sử dụng chế phẩm sinh học chứa Bacillus subtilis hoặc Trichoderma spp. để ức chế nấm gây bệnh.",
+				"chemical": "Bacillus subtilis, Trichoderma spp.",
+				"dosage": "Theo khuyến cáo nhà sản xuất",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Xử lý quả sau thu hoạch",
+				"description": "Nhúng quả vào nước nóng 51–53°C trong 10 phút, sau đó lau khô và bao bằng giấy sạch để hạn chế nấm gây hại trong quá trình bảo quản.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			}
+		]
+	},
+	{
+		"disease_id": "bệnh loét vi khuẩn trên cây xòai",
+		"stage": "Tất cả, đặc biệt nghiêm trọng khi cây ra hoa, đậu quả và nuôi quả",
+		"symptom": "Bệnh loét vi khuẩn có thể xuất hiện trên thân, cành, lá và quả. Trên thân và cành, bệnh gây ra các vết loét lõm, màu nâu sẫm, đôi khi tiết ra dịch nhựa màu vàng. Lâu ngày, các cành bị bệnh có thể khô và chết. Trên lá, bệnh xuất hiện dưới dạng các đốm tròn nhỏ, sẫm màu, có viền vàng. Khi đốm lớn dần, chúng có thể làm thủng lá và gây rụng lá sớm. Trên quả, triệu chứng ban đầu là những vết nhỏ, lõm, sau đó loét to ra, có thể làm nứt vỏ và rỉ nhựa vàng. Quả non bị bệnh nặng sẽ rụng sớm, trong khi quả già bị biến dạng, làm giảm giá trị thương phẩm. Bệnh phát triển mạnh vào mùa mưa, cây trồng dày, thiếu ánh sáng, độ ẩm cao là điều kiện thuận lợi.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Vệ sinh vườn",
+				"description": "Cắt bỏ, thu gom và tiêu hủy các cành, lá, quả bị bệnh; dọn sạch cỏ dưới tán cây để giảm độ ẩm và nguồn bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Đảm bảo tất cả vật liệu bệnh đều được xử lý triệt để."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Tỉa cành tạo tán",
+				"description": "Tỉa cành để vườn thông thoáng, giúp giảm độ ẩm và hạn chế vi khuẩn phát triển.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tạo khoảng cách giữa các cành để ánh sáng xuyên vào toàn bộ cây."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Quản lý tưới tiêu",
+				"description": "Tránh tưới phun lên tán lá; ưu tiên tưới nhỏ giọt hoặc tưới gốc để giảm điều kiện thuận lợi cho vi khuẩn.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bón phân cân đối",
+				"description": "Bón phân N-P-K cân đối, tránh bón thừa đạm; bổ sung phân hữu cơ, vôi bột hoặc chế phẩm vi sinh để cải thiện sức khỏe đất.",
+				"chemical": "N-P-K, phân hữu cơ, vôi bột, chế phẩm vi sinh",
+				"dosage": "Theo hướng dẫn sử dụng và khuyến cáo của chuyên gia",
+				"note": "Phân bón cân đối giúp cây khỏe, tăng sức đề kháng với vi khuẩn."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Phòng trừ sâu hại tạo vết thương",
+				"description": "Kiểm soát các loại sâu, côn trùng gây vết thương trên cây để ngăn vi khuẩn xâm nhập.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Cắt tỉa và tiêu hủy bộ phận bệnh",
+				"description": "Nhanh chóng cắt bỏ và đốt các cành, lá, hoa, quả bị nhiễm để giảm nguồn lây lan vi khuẩn.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Thực hiện ngay khi phát hiện các bộ phận bệnh."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc hóa học",
+				"description": "Sử dụng các loại thuốc gốc đồng hoặc kháng sinh nông nghiệp để tiêu diệt vi khuẩn; phun luân phiên để tránh kháng thuốc.",
+				"chemical": "Copper hydroxide, Copper oxychloride, Bordeaux 1%, Streptomycin, Oxytetracycline",
+				"dosage": "Theo khuyến cáo nhà sản xuất; phun 7-10 ngày/lần tùy mức độ bệnh",
+				"note": "Thời điểm quan trọng: khi lá non ra, trước và sau khi ra hoa, khi quả non hình thành."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Sử dụng chế phẩm sinh học",
+				"description": "Bổ sung các chế phẩm chứa vi sinh vật đối kháng để ức chế sự phát triển của vi khuẩn.",
+				"chemical": "Bacillus subtilis, Pseudomonas fluorescens",
+				"dosage": "Theo hướng dẫn khuyến cáo",
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Quản lý vườn chặt chẽ",
+				"description": "Thường xuyên kiểm tra vườn, đặc biệt vào mùa mưa; phát hiện bệnh sớm để phun thuốc và xử lý kịp thời.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tránh phun nước lên toàn bộ cây, kể cả các loại phân bón lá trên cây đã nhiễm."
+			}
+		]
+	},
+	{
+		"disease_id": "bệnh ghẻ trên cây xoài",
+		"stage": "Tất cả, giai đoạn đọt non và quả non là nghiêm trọng nhất",
+		"symptom": "Bệnh ghẻ xuất hiện trên lá, cành và quả. Trên lá, bệnh biểu hiện các đốm nâu xám, tròn hoặc không đều, bề mặt sần sùi, thô ráp. Trên lá non có thể xuất hiện các mụt do rầy Psyllidae, chuyển sang màu đen, lá biến dạng, khô mép và rụng sớm. Trên cành non, xuất hiện các vết sần sùi, nứt nẻ, cành phát triển kém và dễ gãy. Trên quả non, bệnh tạo các đốm đen thô ráp, nổi cộm; khi nặng liên kết thành mảng lớn, làm vỏ quả chai cứng, nứt nẻ, giảm giá trị thương phẩm. Rầy Psyllidae gây mụt đen trên lá non, khi rầy vũ hóa sẽ tạo lỗ nhỏ trên mụt.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Tỉa cành và tạo vườn thông thoáng",
+				"description": "Tỉa cành hợp lý, không trồng quá dày để giảm độ ẩm và ngăn chặn sự phát triển của nấm ghẻ.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Đảm bảo ánh sáng chiếu vào toàn bộ cây."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Vệ sinh vườn",
+				"description": "Thu gom và tiêu hủy các bộ phận cây bị bệnh để hạn chế nguồn bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Thường xuyên kiểm tra và dọn sạch tàn dư cây bệnh."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Quản lý nước",
+				"description": "Đảm bảo hệ thống thoát nước tốt; hạn chế tưới phun lên tán lá, đặc biệt trong mùa mưa.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Chọn giống ít mẫn cảm",
+				"description": "Sử dụng các giống xoài ít nhạy cảm với bệnh ghẻ để giảm nguy cơ lây lan.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Sử dụng chế phẩm sinh học",
+				"description": "Bổ sung các chế phẩm sinh học chứa Trichoderma hoặc Bacillus subtilis để cải thiện đất và hạn chế nấm phát triển.",
+				"chemical": "Trichoderma, Bacillus subtilis",
+				"dosage": "Theo hướng dẫn sử dụng",
+				"note": null
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Phun thuốc trừ nấm",
+				"description": "Sử dụng thuốc trừ nấm gốc đồng hoặc nhóm Dithiocarbamate khi bệnh ghẻ xuất hiện mạnh, định kỳ trong mùa mưa.",
+				"chemical": "Copper hydroxide, Copper oxychloride, Mancozeb",
+				"dosage": "Theo khuyến cáo nhà sản xuất",
+				"note": "Đặc biệt quan trọng khi cây ra đọt non và quả non."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc trừ rầy",
+				"description": "Đối với ghẻ giả do rầy Psyllidae, phun thuốc nhóm Imidacloprid hoặc Thiamethoxam ngay khi đọt non vừa nhú để ngăn rầy đẻ trứng.",
+				"chemical": "Imidacloprid, Thiamethoxam",
+				"dosage": "Theo hướng dẫn nhà sản xuất",
+				"note": "Nếu mụt đen đã có lỗ thoát, không cần phun vì rầy đã bay đi."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Loại bỏ và tiêu hủy bộ phận bệnh",
+				"description": "Cắt bỏ và tiêu hủy các lá, cành và quả bị nhiễm để hạn chế lây lan.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Thực hiện ngay khi phát hiện bệnh."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Sử dụng giống kháng",
+				"description": "Trồng các giống xoài kháng bệnh nếu có để giảm nguy cơ bệnh lây lan và phát triển.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			}
+		]
+	},
+	{
+		"disease_id": "bệnh phấn trắng trên cây xoài",
+		"stage": "Tất cả",
+		"symptom": "Bệnh phấn trắng trên xoài gây hại trong điều kiện thời tiết nóng ẩm hoặc có sương đêm, thường xuất hiện trên lá non, nụ hoa và trái non dưới dạng một lớp bột phấn trắng. Bệnh phát triển từ ngọn của phát hoa, lan dần đến cuống hoa, trái non, lá non và cành. Hoa bị nhiễm trước khi thụ phấn. Trái bị nhiễm sẽ biến dạng, méo mó, mất màu, khô và rụng sớm. Lá nhăn nheo, khô, làm giảm khả năng quang hợp và ảnh hưởng đến sức khỏe tổng thể của cây. Trong điều kiện vườn rậm rạp, ẩm thấp, nấm lan sang lá già làm chậm sinh trưởng hoặc có thể gây chết cây ở vườn kiến thiết cơ bản, vườn nhân và vườn ươm giống nếu không phòng trừ.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Chọn giống ít nhiễm bệnh",
+				"description": "Trồng các giống xoài ít nhạy cảm với bệnh phấn trắng để giảm nguy cơ phát sinh bệnh.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Vệ sinh vườn cây",
+				"description": "Thu gom các bộ phận cây bị rụng, cành lá, chùm hoa và quả đã nhiễm bệnh rồi tiêu hủy bằng cách đốt hoặc chôn lấp.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Giúp giảm nguồn lây nhiễm và hạn chế bùng phát bệnh."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Cải thiện thông gió và ánh sáng",
+				"description": "Cắt tỉa tạo tán thông thoáng để giảm độ ẩm và tránh tạo điều kiện thuận lợi cho nấm phát triển.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Thực hiện đều đặn định kỳ."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Bón phân cân đối",
+				"description": "Bón đầy đủ dinh dưỡng, bao gồm phân hữu cơ, Kali và Canxi (SPC-Cal) để cây khỏe mạnh, tăng sức đề kháng.",
+				"chemical": "Kali, Canxi (SPC-Cal)",
+				"dosage": "Theo khuyến cáo của nhà cung cấp phân bón",
+				"note": "Tăng cường vi lượng và amino acid nếu cần."
+			},
+			{
+				"_id": null,
+				"step": 5,
+				"name": "Theo dõi và thăm vườn thường xuyên",
+				"description": "Kiểm tra cây trong giai đoạn ra lộc, nụ, hoa và quả non để phát hiện sớm bệnh và phòng trừ kịp thời.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 6,
+				"name": "Sử dụng các biện pháp sinh học tự nhiên",
+				"description": "Phun các chất tự nhiên như tinh dầu cây trà để ức chế nấm bệnh trên lá, hoa và quả non.",
+				"chemical": "Tinh dầu cây trà",
+				"dosage": "Theo hướng dẫn sử dụng",
+				"note": "Áp dụng định kỳ, đặc biệt vào sáng sớm và buổi tối khi độ ẩm cao."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Cắt tỉa và loại bỏ bộ phận nhiễm bệnh",
+				"description": "Cắt bỏ cành, lá, chùm hoa và quả non đã bị nhiễm bệnh và đưa ra khỏi vườn để tiêu hủy.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Giảm nguồn bệnh trong vườn và hạn chế lây lan."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc nấm",
+				"description": "Sử dụng thuốc trừ nấm như Sulox 80WP, Carbenzim 500FL, Tilt Super, Score, Bayfidan hoặc Benomyl để phòng trị khi bệnh xuất hiện.",
+				"chemical": "Sulox 80WP, Carbenzim 500FL, Tilt Super, Score, Bayfidan, Benomyl",
+				"dosage": "Phun 2-3 lần/đợt, mỗi lần cách nhau 7-10 ngày theo liều lượng khuyến cáo",
+				"note": "Phun đều tơi sương tới ngọn cây để đạt hiệu quả cao."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Thăm vườn và kiểm soát định kỳ",
+				"description": "Theo dõi vườn thường xuyên trong giai đoạn ra lộc, nụ, hoa, quả non để phát hiện bệnh kịp thời và tiến hành phun phòng ngay.",
+				"chemical": null,
+				"dosage": null,
+				"note": null
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Kết hợp biện pháp sinh học",
+				"description": "Sử dụng chế phẩm sinh học hoặc tinh dầu cây trà để tăng cường khả năng chống nấm của cây và hạn chế lây lan.",
+				"chemical": "Tinh dầu cây trà hoặc chế phẩm sinh học phù hợp",
+				"dosage": "Theo khuyến cáo",
+				"note": null
+			}
+		]
+	}
 ]

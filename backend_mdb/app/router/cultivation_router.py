@@ -9,8 +9,9 @@ router = APIRouter()
 @router.post("/", response_model=APIResponse)
 async def create_cultivation(cultivation: CultivationTechnique):
     inserted_id = await cultivation_service.create_cultivation(
-        cultivation.model_dump(by_alias=True)
+        cultivation.model_dump(by_alias=True, exclude_none=True)
     )
+
     return APIResponse(
         success=True, message="Cultivation created", data={"inserted_id": inserted_id}
     )
@@ -43,7 +44,7 @@ async def get_cultivation(cultivation_id: str):
 @router.put("/{cultivation_id}", response_model=APIResponse)
 async def update_cultivation(cultivation_id: str, cultivation: CultivationTechnique):
     updated = await cultivation_service.update_cultivation(
-        cultivation_id, cultivation.model_dump(exclude_unset=True)
+        cultivation_id, cultivation.model_dump(exclude_unset=True, by_alias=True)
     )
     if not updated:
         raise HTTPException(

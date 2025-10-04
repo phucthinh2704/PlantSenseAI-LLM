@@ -1,77 +1,107 @@
 [
 	{
-		"name": "Bệnh đốm đen",
-		"cause": "Vi khuẩn Xanthomonas oryzae",
+		"name": "Bệnh Đốm đen xoài",
+		"cause": "Tác nhân chính gây bệnh là vi khuẩn Xanthomonas campestris pv. Mangiferae. Một số tài liệu cũng đề cập đến nấm Alternaria alternata và Colletotrichum gloeosporioides là tác nhân thứ cấp hoặc gây triệu chứng tương tự (thán thư). Vi khuẩn lây lan chủ yếu qua nước mưa, gió, và các hoạt động chăm sóc cây trồng. Vi khuẩn xâm nhập qua vết thương hở trên lá, thân, cành hoặc vết chích hút của côn trùng. Bệnh phát triển mạnh trong điều kiện ẩm ướt cao và mưa nhiều (nhiệt độ 24-28°C).",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh thán thư",
-		"cause": "Nấm Colletotrichum gloeosporioides",
+		"name": "Bệnh Thán thư",
+		"cause": "Tác nhân gây bệnh là nấm Colletotrichum gloeosporioides (và C. acutatum). Bào tử nấm có sẵn trên các bộ phận đã nhiễm bệnh hoặc tàn dư cây trồng, lây lan qua nước mưa, nước tưới, và sương mù. Bệnh phát triển mạnh mẽ trong điều kiện ẩm độ cao (>85%) và nhiệt độ tương đối thấp (dưới 25°C). Nấm xâm nhập qua lớp biểu bì của mô non hoặc vết thương cơ giới. Việc bón thừa đạm và tán cây rậm rạp tạo điều kiện thuận lợi cho nấm phát triển.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh loét vi khuẩn",
-		"cause": "Vi khuẩn Xanthomonas canpestris pv. citri",
+		"name": "Bệnh Loét vi khuẩn",
+		"cause": "Tác nhân gây bệnh là vi khuẩn Xanthomonas campestris pv. Mangiferae. Vi khuẩn lây lan chủ yếu qua nước mưa, nước tưới và gió, xâm nhập vào cây thông qua vết thương hở (nứt sinh học, xây xát cơ học) hoặc vết chích của côn trùng trên cành, lá, quả. Vi khuẩn có khả năng tồn tại trên cành, lá và trái bệnh. Bệnh phát triển thuận lợi trong điều kiện ẩm độ cao, mưa nhiều và vườn trồng dày, thiếu ánh sáng.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh thối mốc đen",
-		"cause": "Vi khuẩn Xanthomonas campestris pv. Mangiferae",
+		"name": "Bệnh Phấn trắng",
+		"cause": "Tác nhân gây bệnh là nấm Oidium sp. (còn gọi là Oidium mangiferae). Nấm phát triển mạnh trong điều kiện khô ráo, mát lạnh, có độ ẩm cao vào sáng sớm và buổi tối, hoặc có sương mù nhiều. Bệnh lây lan nhanh trong vườn rậm rạp, ẩm thấp. Nấm gây hại cây xoài ở mọi lứa tuổi, thường bùng phát vào giai đoạn ra lộc, nụ, hoa và quả non (từ cuối năm đến đầu năm sau).",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh ghẻ",
-		"cause": "Nấm Elsinoë mangiferae",
+		"name": "Bệnh Ghẻ / Ghẻ giả do Rầy (Psyllid Gall)",
+		"cause": "Bệnh ghẻ thực sự là do nấm Elsinoë mangiferae hoặc Fusicladium mangiferae gây ra các tổn thương thô ráp, nứt nẻ. Tuy nhiên, ở xoài, triệu chứng ghẻ thường được nhắc đến là Ghẻ giả do Rầy Psyllidae gây ra. Rầy Psyllidae trưởng thành đẻ trứng vào mô lá non. Rầy non nở ra nằm trong mô lá và chích hút nhựa, khiến các tế bào lá phình to tạo thành các mụt u (gọi là ghẻ). Rầy non sau đó vũ hóa và đục lỗ nhỏ để chui ra ngoài, để lại di chứng là các mụt sần sùi trên lá. Giai đoạn đọt non và quả non là nghiêm trọng nhất.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh thối cuống",
-		"cause": "Nấm Lasiodiplodia theobromae",
+		"name": "Bệnh Khô đọt thối trái",
+		"cause": "Tác nhân chính gây bệnh là nấm Lasiodiplodia theobromae (còn gọi là Diplodia natalensis). Nấm phát triển mạnh trong điều kiện nhiệt độ cao (28-30°C) và ẩm độ cao (>80%), đặc biệt trong mùa mưa. Nấm lây lan qua gió, nước mưa/tưới, và qua các vết thương (do côn trùng chích, ghép cành) hoặc cuống trái bị dập khi thu hoạch. Cây giống bị nhiễm bệnh hoặc dụng cụ ghép không vệ sinh cũng là nguồn lây.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh bạc lá lúa",
-		"cause": "Vi khuẩn Xanthomonas oryzae pv. oryzae",
+		"name": "Bệnh Bạc lá lúa (Cháy bìa lá)",
+		"cause": "Tác nhân gây bệnh là vi khuẩn Xanthomonas Oryzae. Bệnh thường xảy ra khi thời tiết nóng ẩm, mưa to và gió lớn, đặc biệt trong thời kỳ lúa cần quang hợp cao (giai đoạn đòng – trổ – chín). Các yếu tố làm tăng nguy cơ: Giống mẫn cảm (BT7, Tạp giao, giống chất lượng), bón thừa đạm (bón nhiều, bón muộn, bón lai rai, không cân đối NPK), làm đất không ngấu, và chăm bón không đúng kỹ thuật.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh đốm nâu",
-		"cause": "Nấm Bipolaris oryzae (Cochliobolus miyabeanus)",
+		"name": "Bệnh Đốm nâu lúa",
+		"cause": "Tác nhân gây bệnh là nấm Cochliobolus miyabeanus (trước đây là Helminthosporium oryzae), và một biến thể là Bipolaris oryzae. Bệnh cũng có thể do nấm Helminthosporium oryzae và nấm Curvularia lunata gây ra. Nấm tồn tại trên hạt giống, tàn dư cây bệnh và phát triển mạnh trong điều kiện nóng ẩm, thiếu ánh nắng. Ruộng lúa nghèo dinh dưỡng, thiếu Kali/Silic, nhiễm phèn/mặn, hoặc ngộ độc hữu cơ là điều kiện thuận lợi nhất cho nấm phát sinh và gây hại.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh đạo ôn lá",
-		"cause": "Nấm Magnaporthe oryzae (tên cũ Pyricularia oryzae)",
+		"name": "Bệnh Đạo ôn lúa",
+		"cause": "Tác nhân gây bệnh là nấm Magnaporthe oryzae (tên cũ Pyricularia oryzae) hay Magnaporthe grisea ở giai đoạn sinh sản hữu tính. Nấm tồn tại dưới dạng bào tử và sợi nấm trong rơm rạ, lúa chét và trên các ký chủ phụ như cỏ lồng vực. Nấm phát tán chủ yếu qua gió và phát triển mạnh khi thời tiết mát mẻ, ẩm độ cao, có sương mù hoặc mưa. Nấm xâm nhập vào tế bào lá lúa bằng cách tiết ra các độc tố gây chết tế bào, tạo thành các vết bệnh đặc trưng.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh cháy lá",
-		"cause": "Nấm Rhizoctonia solani",
+		"name": "Rầy lưng trắng",
+		"cause": "Tác nhân gây hại là côn trùng thuộc Họ Delphacidae, Bộ Homoptera. Rầy trưởng thành có màu đen nâu với một dải trắng rõ rệt trên lưng. Chúng sinh sản nhanh chóng và có khả năng di chuyển, du nhập rất cao, thích hợp với điều kiện khí hậu ấm nóng, ẩm độ cao, mưa nắng xen kẽ. Rầy non và trưởng thành chích hút nhựa cây từ dảnh và lá lúa. Sự phát triển mạnh của rầy liên quan đến việc sử dụng giống lúa nhiễm rầy/lúa lai, thâm canh cao, bón thừa phân đạm, và gieo cấy dày đặc làm ruộng rậm rạp. Rầy là môi giới truyền bệnh virus nguy hiểm, điển hình là bệnh lùn sọc đen.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh gạch nâu",
-		"cause": "Nấm Cochliobolus miyabeanus",
+		"name": "Sâu phao",
+		"cause": "Tác nhân gây hại là côn trùng thuộc Bộ Lepidoptera, Họ Pyralidae. Sâu phao trưởng thành là loài bướm đêm màu trắng ngà, thích ánh sáng và hoạt động về đêm. Bướm đẻ trứng rải rác hoặc thành ổ trên lá/bẹ lúa gần mặt nước. Sâu non có khả năng kháng thuốc cao và phát triển mạnh trong điều kiện mưa nhiều, ngập úng hoặc những chỗ trũng nước sâu. Sâu non sống trong một đoạn lá cuốn tròn hình ống (gọi là 'phao'), di chuyển trên mặt nước để cắn phá lá lúa.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh đạo ôn cổ bông",
-		"cause": "Nấm Magnaporthe oryzae",
+		"name": "Bệnh Gạch nâu lúa",
+		"cause": "Tác nhân gây bệnh là nấm Cercospora Janseana (Racib) O. Const, còn được gọi là Sphaerulina oryzina. Nấm bảo tồn trên hạt giống và tồn tại dưới dạng bào tử phân sinh hình dùi trống dài. Bệnh phát triển mạnh ở nhiệt độ 25 – 28°C. Các yếu tố làm tăng nguy cơ: Giống mẫn cảm, bón phân không cân đối (đặc biệt thiếu Kali), và lúa đang ở thời kỳ trỗ, nở hoa.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh sâu bọ gai",
-		"cause": "Côn trùng Stenchaetothrips biformis",
+		"name": "Bệnh Đạo Ôn Cổ Bông",
+		"cause": "Bệnh do nấm Magnaporthe oryzae (tên cũ Pyricularia oryzae) gây ra. Đây là cùng một loại nấm gây ra bệnh đạo ôn lá (cháy lá). Bào tử nấm xâm nhập qua vết nứt hoặc vết thương trên lá, thân, và đặc biệt là cổ bông. Bệnh bùng phát mạnh mẽ khi có thời tiết âm u, sương mù, mưa phùn, độ ẩm không khí trên 90%, nhiệt độ từ 22–26°C, và ruộng lúa bón thừa đạm hoặc thiếu kali.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh đốm vằn",
-		"cause": "Nấm Rhizoctonia solani",
+		"name": "Sâu bọ gai",
+		"cause": "Tác nhân gây hại là côn trùng thuộc Bộ Coleoptera, Họ Chyrysomelidae. Sâu non và con trưởng thành đều gây hại trên lúa. Con trưởng thành có cơ thể nhỏ, màu đen bóng, có nhiều gai, thường xuất hiện vào sáng sớm và đẻ trứng ở ngọn lá lúa. Vòng đời sâu gai kéo dài khoảng 18-26 ngày. Sự phát triển của sâu gai phụ thuộc vào số vụ lúa và điều kiện tự nhiên, thường tăng quần thể và gây hại nặng trên lúa non vào khoảng tháng 6-7. Điều kiện thuận lợi cho bệnh là ruộng có cỏ dại, bón quá nhiều phân đạm, mưa lớn và độ ẩm cao.",
 		"plant_ids": []
 	},
 	{
-		"name": "Bệnh vàng lùn tungro",
-		"cause": "Virus tungro (truyền qua rầy nâu Nilaparvata lugens)",
+		"name": "Bệnh Khô Vằn (Đốm Vằn)",
+		"cause": "Bệnh do nấm Rhizoctonia solani gây ra. Nấm tồn tại chủ yếu dưới dạng khuẩn hạch (hạch nấm) trong đất, rơm rạ, và tàn dư thực vật. Nấm này cũng gây hại trên nhiều loại cây trồng khác như ngô, đậu tương, mía. Bệnh phát triển mạnh trong điều kiện nhiệt độ cao (24–32°C), ẩm độ cao, ruộng cấy dày, và bón thừa phân đạm.",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh Tungro virus trên lúa",
+		"cause": "Tác nhân gây bệnh là sự phối hợp giữa hai loại virus: Tungro Bacilliform Virus (RTBV) và Tungro Spherical Virus (RTSV). Virus được truyền bởi rầy xanh (Nephotettix spp.) và rầy bông. RTBV chỉ có thể được truyền khi có sự hiện diện của RTSV. Virus lây truyền theo kiểu bán bền vững trong cơ thể rầy (tối đa 5-7 ngày), không lây qua hạt giống, đất, nước hay vết thương cơ giới.",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh Vàng lùn (Rice Grassy Stunt Virus - RGSV)",
+		"cause": "Tác nhân gây bệnh là virus Rice Grassy Stunt Virus (RGSV) thuộc nhóm tenuivirus. Môi giới truyền bệnh là rầy nâu (Nilaparvata lugens). Virus lây truyền theo kiểu bền vững (rầy truyền bệnh đến khi chết), không lây qua hạt giống, đất, nước hay vết thương cơ giới.",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh Lùn xoắn lá (Rice Ragged Stunt Virus - RRSV)",
+		"cause": "Tác nhân gây bệnh là virus Rice Ragged Stunt Virus (RRSV). Môi giới truyền bệnh là rầy nâu (Nilaparvata lugens). Virus lây truyền theo kiểu bền vững, không truyền lan qua hạt giống, đất, nước, tiếp xúc cơ giới dịch cây và qua trứng rầy nâu. Ký chủ trung gian quan trọng là cỏ lồng vực và cỏ đuôi phượng.",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh nghẹt rễ lúa (Thối đen rễ)",
+		"cause": "Bệnh sinh lý (không phải do mầm bệnh lây truyền) gây ra bởi tình trạng thiếu oxy nghiêm trọng trong đất và sự tích tụ, ngộ độc các chất độc hại (H₂S, CO₂, SO₂, axit hữu cơ) tại vùng rễ. Nguyên nhân sâu xa là do: đất sét nặng, ngập úng kéo dài, tàn dư hữu cơ chưa phân hủy hoàn toàn, hoặc bón phân mất cân đối (dư đạm, thiếu lân/kali)",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh Lùn Sọc Đen (LSĐ) hại lúa",
+		"cause": "Tác nhân chính gây bệnh là Virut Lùn sọc đen phương Nam (Southern Rice Black Streaked Dwart Virus - SRBSDV). Môi giới lây truyền và lan rộng bệnh là rầy lưng trắng (Sogatella furcifera). Rầy chích hút cây bệnh nhiễm virus và truyền sang cây khỏe. Bệnh không lây qua hạt giống, đất hoặc tiếp xúc.",
+		"plant_ids": []
+	},
+	{
+		"name": "Bệnh lem lép hạt lúa",
+		"cause": "Bệnh do rất nhiều nguyên nhân, trong đó quan trọng nhất là do nấm (hiện có đến 12 loại nấm khác nhau như Alternaria padwickii, Bipolaris oryzae, Fusarium sp., v.v.). Ngoài ra, bệnh còn do vi khuẩn (Pseudomonas glumae hay Bukhoderia glumae) và nhện gié gây ra. Các yếu tố làm gia tăng nguy cơ bệnh gồm: đất nhiễm phèn, nhiễm mặn; cỏ dại (là ký chủ cho nấm); và các loại sâu bệnh tấn công lúa vào giai đoạn đòng trổ như bệnh đạo ôn cổ bông, rầy nâu, sâu cuốn lá nhỏ, bọ xít.",
 		"plant_ids": []
 	}
 ]
