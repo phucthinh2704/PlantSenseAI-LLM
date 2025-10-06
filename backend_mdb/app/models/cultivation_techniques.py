@@ -43,6 +43,9 @@ class CultivationTechnique(BaseModel):
 
     image_url: Optional[str] = Field(default=None, description="URL hình minh họa")
     notes: Optional[str] = Field(default=None, description="Ghi chú thêm")
+    
+    # === Thêm trường để phân biệt giữa lúa và xoài ===
+    crop_type: str = Field(..., description="Loại cây trồng (VD: 'Lúa', 'Xoài')")
 
     # === Metadata ===
     created_at: datetime = Field(default_factory=datetime.utcnow)

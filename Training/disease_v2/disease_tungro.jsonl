@@ -1,0 +1,124 @@
+{"instruction": "Nguyên nhân gây bệnh vàng lùn, lùn xoắn lá trên lúa?", 
+ "context": "Ruộng lúa 25 ngày tuổi có cây lúa lá vàng, xoắn và thấp lùn", 
+ "response": "Nguyên nhân gây bệnh vàng lùn, lùn xoắn lá là do virus Tungro. Virus này được truyền bởi rầy nâu khi chích hút nhựa cây lúa mang mầm bệnh rồi lan sang cây khỏe. Thời tiết nóng ẩm, xen kẽ mưa nắng và mật độ rầy nâu cao làm bệnh bùng phát mạnh.", 
+ "category": "disease"}
+{"instruction": "Lúa xuất hiện lá vàng, xoắn lại, cây lùn bất thường là bệnh gì?", 
+ "context": "", 
+ "response": "Lúa bị bệnh vàng lùn, lùn xoắn lá do virus Tungro gây ra. Virus lây lan nhờ rầy nâu. Cây bị bệnh thường lá vàng từ chóp xuống, xoắn lại, thấp lùn và đẻ nhánh kém.", 
+ "category": "disease"}
+{"instruction": "Bệnh vàng lùn, lùn xoắn lá trên lúa?", 
+ "context": "", 
+ "response": "Bệnh vàng lùn, lùn xoắn lá là do virus Tungro gây ra, lây truyền qua rầy nâu. Khi nhiễm bệnh, cây lúa thấp lùn, lá vàng, xoắn lại, sinh trưởng kém và có thể không trổ bông.", 
+ "category": "disease"}
+{"instruction": "Làm sao xử lý bệnh vàng lùn, lùn xoắn lá trên lúa?", 
+ "context": "Ruộng lúa 30 ngày tuổi có nhiều cây lá vàng và xoắn", 
+ "response": "Cần tiêu hủy sớm các cây lúa bị bệnh nặng để hạn chế nguồn lây. Đồng thời phun thuốc đặc trị rầy nâu – môi giới truyền bệnh. Về lâu dài, nên gieo sạ né rầy, vệ sinh đồng ruộng và không để lúa chét.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị vàng lùn, lùn xoắn lá thì xử lý thế nào?", 
+ "context": "", 
+ "response": "Người nông dân cần nhổ bỏ và tiêu hủy những cây bệnh nặng, phun thuốc trừ rầy nâu theo nguyên tắc 4 đúng để ngăn bệnh lây lan. Nên luân canh cây trồng hoặc có thời gian cách ly giữa các vụ để cắt nguồn bệnh.", 
+ "category": "disease"}
+{"instruction": "Cách trị vàng lùn, lùn xoắn lá trên lúa?", 
+ "context": "", 
+ "response": "Biện pháp chính là quản lý rầy nâu – tác nhân truyền bệnh. Cần tiêu hủy cây bệnh, không để lúa chét, gieo sạ đồng loạt né rầy, dùng giống kháng rầy và phun thuốc trừ rầy kịp thời.", 
+ "category": "disease"}
+{"instruction": "Triệu chứng ban đầu của bệnh vàng lùn, lùn xoắn lá trên lúa là gì?", 
+ "context": "", 
+ "response": "Triệu chứng ban đầu là lá lúa vàng từ chóp lá, phiến lá hẹp và ngắn, đôi khi có hiện tượng xoắn nhẹ. Cây sinh trưởng chậm, thấp lùn hơn so với lúa khỏe.", 
+ "category": "disease"}
+{"instruction": "Bệnh vàng lùn, lùn xoắn lá thường phát sinh trong điều kiện thời tiết nào?", 
+ "context": "", 
+ "response": "Bệnh thường bùng phát khi thời tiết nóng ẩm, xen kẽ mưa nắng, mật độ rầy nâu cao. Gieo sạ dày hoặc gieo sạ liên tục nhiều vụ cũng làm bệnh dễ lan rộng.", 
+ "category": "disease"}
+{"instruction": "Những giai đoạn nào của cây lúa dễ bị bệnh vàng lùn, lùn xoắn lá tấn công nhất?", 
+ "context": "", 
+ "response": "Cây lúa dễ bị hại ở giai đoạn mạ đến đẻ nhánh. Nếu nhiễm sớm, cây còi cọc, đẻ ít hoặc không trổ bông, gây mất trắng năng suất.", 
+ "category": "disease"}
+{"instruction": "Nguồn lây lan bệnh vàng lùn, lùn xoắn lá từ đâu?", 
+ "context": "", 
+ "response": "Nguồn lây lan chính là rầy nâu mang virus từ cây bệnh sang cây khỏe. Ngoài ra, lúa chét, lúa tình trạng gieo liên tục nhiều vụ không có cách ly cũng duy trì nguồn bệnh.", 
+ "category": "disease"}
+{"instruction": "Làm sao để phòng ngừa bệnh vàng lùn, lùn xoắn lá hiệu quả?", 
+ "context": "", 
+ "response": "Nên gieo sạ né rầy, gieo đồng loạt, mật độ vừa phải, vệ sinh đồng ruộng và tiêu hủy lúa chét. Dùng giống kháng rầy, theo dõi mật số rầy để phun thuốc kịp thời nhằm hạn chế bệnh.", 
+ "category": "disease"}
+{"instruction": "Có nên phun thuốc phòng bệnh vàng lùn, lùn xoắn lá không?", 
+ "context": "", 
+ "response": "Không có thuốc đặc trị virus gây vàng lùn, lùn xoắn lá, nhưng có thể phòng bằng cách quản lý rầy nâu – tác nhân truyền bệnh. Do đó, phun thuốc trừ rầy vào thời điểm mật độ cao là biện pháp gián tiếp hữu hiệu.", 
+ "category": "disease"}
+{"instruction": "Bệnh vàng lùn, lùn xoắn lá gây hại như thế nào đến năng suất?", 
+ "context": "", 
+ "response": "Bệnh làm cây lúa thấp lùn, lá vàng xoắn, bông nhỏ, ít hạt hoặc không trổ bông. Nếu nhiễm sớm có thể gây mất năng suất từ 70-100%.", 
+ "category": "disease"}
+{"instruction": "Có giống lúa nào chống chịu bệnh vàng lùn, lùn xoắn lá không?", 
+ "context": "", 
+ "response": "Một số giống lúa có khả năng chống chịu rầy nâu tốt như OM5451, OM6976, OM4900 sẽ hạn chế nguy cơ mắc bệnh vàng lùn, lùn xoắn lá. Tuy nhiên hiệu quả kháng bệnh còn phụ thuộc vào điều kiện canh tác và thời tiết.", 
+ "category": "disease"}
+{"instruction": "Thời điểm nào cần phun thuốc phòng bệnh vàng lùn, lùn xoắn lá hiệu quả nhất?", 
+ "context": "", 
+ "response": "Cần phun thuốc trừ rầy nâu sớm khi mật số cao và trước khi rầy di trú hàng loạt, đặc biệt ở giai đoạn mạ và đẻ nhánh – giai đoạn cây dễ bị lây nhiễm bệnh nhất.", 
+ "category": "disease"}
+{"instruction": "Phân bón có ảnh hưởng thế nào đến bệnh vàng lùn, lùn xoắn lá?", 
+ "context": "", 
+ "response": "Bón thừa đạm làm lúa xanh tốt, rầy nâu phát triển nhanh, từ đó tăng nguy cơ lây truyền bệnh. Cần bón phân cân đối đạm, lân, kali để cây khỏe và giảm áp lực dịch hại.", 
+ "category": "disease"}
+{"instruction": "Lúa bị vàng lùn, lùn xoắn lá có nên bón thêm phân đạm không?", 
+ "context": "", 
+ "response": "Không nên bón thêm đạm khi lúa đã bị vàng lùn, lùn xoắn lá, vì đạm làm rầy nâu gia tăng và bệnh nặng thêm. Thay vào đó nên bón kali để tăng sức chống chịu.", 
+ "category": "disease"}
+{"instruction": "Có biện pháp sinh học nào phòng bệnh vàng lùn, lùn xoắn lá không?", 
+ "context": "", 
+ "response": "Có thể sử dụng thiên địch như nấm xanh, nấm trắng, ong ký sinh để khống chế mật độ rầy nâu, qua đó gián tiếp hạn chế bệnh. Đồng thời kết hợp gieo sạ né rầy và canh tác hợp lý.", 
+ "category": "disease"}
+{"instruction": "Năng suất lúa giảm bao nhiêu khi bị bệnh vàng lùn, lùn xoắn lá?", 
+ "context": "", 
+ "response": "Nếu nhiễm bệnh sớm, lúa có thể mất trắng, năng suất giảm 70-100%. Nếu nhiễm muộn thì năng suất vẫn giảm 30-50% do bông ít hạt và lép nhiều.", 
+ "category": "disease"}
+{"instruction": "Tại sao bệnh vàng lùn, lùn xoắn lá thường bùng phát vào vụ Hè Thu?", 
+ "context": "", 
+ "response": "Vụ Hè Thu thường có thời tiết nắng nóng, mưa nhiều, tạo điều kiện cho rầy nâu bùng phát mạnh. Khi mật độ rầy cao, bệnh vàng lùn, lùn xoắn lá dễ lây lan nhanh.", 
+ "category": "disease"}
+{"instruction": "Có thể nhận biết ruộng lúa bị vàng lùn, lùn xoắn lá nặng bằng dấu hiệu nào?", 
+ "context": "", 
+ "response": "Ruộng lúa bị nặng sẽ có nhiều cây thấp lùn, lá vàng toàn bộ, xoắn và hầu như không trổ bông. Tỷ lệ cây bệnh cao khiến ruộng bị thưa thớt, loang lổ rõ rệt.", 
+ "category": "disease"}
+{"instruction": "Người nông dân thường mắc sai lầm gì khi trị bệnh vàng lùn, lùn xoắn lá?", 
+ "context": "", 
+ "response": "Sai lầm phổ biến là chỉ phun thuốc mà không tiêu hủy cây bệnh, không quản lý rầy nâu tổng hợp, tiếp tục gieo sạ liên tục không cách ly, dẫn đến bệnh lan rộng và khó kiểm soát.", 
+ "category": "disease"}
+{"instruction": "Nếu không trị bệnh vàng lùn, lùn xoắn lá kịp thời thì hậu quả thế nào?", 
+ "context": "", 
+ "response": "Nếu không phòng trị kịp thời, bệnh sẽ lan rộng khắp ruộng, làm lúa còi cọc, không trổ bông hoặc bông nhỏ, gây thất thu nặng nề, có thể mất trắng.", 
+ "category": "disease"}
+{"instruction": "Có nên sử dụng thuốc hóa học liên tục để phòng bệnh vàng lùn, lùn xoắn lá không?", 
+ "context": "", 
+ "response": "Không nên lạm dụng thuốc hóa học liên tục vì có thể làm rầy nâu kháng thuốc. Nên kết hợp biện pháp quản lý rầy tổng hợp, phun thuốc đúng lúc và luân phiên hoạt chất.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị vàng lùn, lùn xoắn lá có thể thu hoạch được không?", 
+ "context": "Ruộng lúa bị bệnh vàng lùn, lùn xoắn lá nặng ở giai đoạn trổ bông", 
+ "response": "Ruộng lúa vẫn có thể thu hoạch nhưng năng suất giảm mạnh, hạt ít và chất lượng kém. Nếu bệnh xuất hiện sớm, cây hầu như không trổ bông và có thể mất trắng.", 
+ "category": "disease"}
+{"instruction": "Cần làm gì sau khi phun thuốc trừ rầy để hạn chế vàng lùn, lùn xoắn lá?", 
+ "context": "", 
+ "response": "Sau khi phun thuốc trừ rầy, cần theo dõi mật số rầy trong ruộng thường xuyên. Đồng thời loại bỏ cây bệnh nặng và không để lúa chét trong đồng để cắt nguồn lây virus.", 
+ "category": "disease"}
+{"instruction": "Bệnh vàng lùn, lùn xoắn lá có ảnh hưởng đến phẩm chất gạo không?", 
+ "context": "", 
+ "response": "Có. Khi cây bệnh nặng, lúa không trổ bông hoặc trổ ít, hạt lép nhiều, gạo nhỏ và chất lượng thấp. Cơm nấu từ gạo bị bệnh thường khô, kém ngon.", 
+ "category": "disease"}
+{"instruction": "Bệnh vàng lùn, lùn xoắn lá lây lan nhanh bằng cách nào?", 
+ "context": "", 
+ "response": "Virus gây bệnh được rầy nâu truyền từ cây bệnh sang cây khỏe khi chích hút nhựa. Rầy có thể di trú xa nên bệnh lây lan rất nhanh trên diện rộng.", 
+ "category": "disease"}
+{"instruction": "Cách nhận biết bệnh vàng lùn, lùn xoắn lá?", 
+ "context": "", 
+ "response": "Cây lúa bị bệnh thường lá vàng từ chóp xuống, phiến lá hẹp và xoắn lại, cây thấp lùn, sinh trưởng kém, đẻ nhánh ít hoặc không trổ bông.", 
+ "category": "disease"}
+{"instruction": "Bệnh vàng lùn, lùn xoắn lá có thể xuất hiện trên những bộ phận nào của cây lúa?", 
+ "context": "", 
+ "response": "Bệnh vàng lùn, lùn xoắn lá ảnh hưởng đến toàn bộ cây lúa: lá bị vàng và xoắn, thân cây thấp lùn, bông ít hoặc không trổ, hạt lép nhiều.", 
+ "category": "disease"}
+{"instruction": "Có nên dùng cùng một loại thuốc nhiều lần để trị rầy nâu tác nhân truyền bệnh vàng lùn, lùn xoắn lá không?", 
+ "context": "", 
+ "response": "Không nên dùng một loại thuốc liên tục vì rầy nâu dễ kháng thuốc. Cần luân phiên các loại thuốc có hoạt chất khác nhau và kết hợp biện pháp canh tác để hiệu quả hơn.", 
+ "category": "disease"}
