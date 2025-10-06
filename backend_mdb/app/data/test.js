@@ -1,4 +1,4 @@
-[
+let a=[
 	{
 		"name": "Bón phân cho ruộng lúa cấy",
 		"plant_ids": [],
@@ -36,6 +36,7 @@
 		"notes": "Công thức tổng: 100N-60P2O5-90K2O (tương đương 200-220kg Urea + 350kg lân nung chảy + 180kg KCl/ha). Tùy theo chân đất có thể điều chỉnh lượng phân cho phù hợp.",
 		"crop_type": "Lúa"
 	},
+
 	{
 		"name": "Bón phân cho lúa sạ Đồng bằng sông Cửu Long",
 		"plant_ids": [],
@@ -365,6 +366,7 @@
 		"notes": "Phương pháp tưới phun mưa giúp quản lý nước hiệu quả, đồng thời giảm thiểu sự phát triển của sâu bệnh và cỏ dại trong ruộng lúa.",
 		"crop_type": "Lúa"
 	},
+
 	{
 		"name": "Làm đất trồng xoài",
 		"plant_ids": [],
@@ -466,3 +468,12 @@
 		"crop_type": "Xoài"
 	}
 ]
+
+
+
+
+
+console.log(a.length)
+const b = a.map(item => item.category);
+const uniqueCategories = [...new Set(b)];
+console.log(uniqueCategories);

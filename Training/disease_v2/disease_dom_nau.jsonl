@@ -1,0 +1,124 @@
+{"instruction": "Nguyên nhân gây bệnh đốm nâu trên lúa?",
+"context": "Ruộng lúa 35 ngày tuổi xuất hiện nhiều vết đốm tròn nhỏ màu nâu trên lá",
+"response": "Nguyên nhân gây bệnh đốm nâu là do nấm Bipolaris oryzae. Nấm phát triển mạnh khi thời tiết nóng ẩm, mưa nhiều, đất chua, nghèo dinh dưỡng, đặc biệt thiếu kali và silic. Nguồn bệnh tồn tại trên tàn dư rơm rạ, hạt giống nhiễm bệnh và có thể lây lan nhờ gió, nước.",
+"category": "disease"}
+{"instruction": "Lúa xuất hiện đốm tròn màu nâu trên lá là bệnh gì?",
+"context": "",
+"response": "Đó là bệnh đốm nâu (Brown spot) do nấm Bipolaris oryzae gây ra. Vết bệnh lúc đầu là những chấm nhỏ màu nâu, sau đó lan rộng thành đốm tròn hoặc bầu dục màu nâu, có quầng vàng xung quanh.",
+"category": "disease"}
+{"instruction": "Bệnh đốm nâu lá trên lúa?",
+"context": "",
+"response": "Bệnh đốm nâu trên lá lúa do nấm Bipolaris oryzae gây ra. Vết bệnh có dạng chấm hoặc đốm tròn màu nâu, sau đó lan rộng, làm lá vàng khô, ảnh hưởng đến quang hợp và sinh trưởng của cây.",
+"category": "disease"}
+{"instruction": "Làm sao xử lý bệnh đốm nâu trên lúa?",
+"context": "Ruộng lúa 40 ngày tuổi lá vàng nhiều vết đốm nâu",
+"response": "Ngưng bón đạm, bổ sung kali và phân vi lượng (silic, kẽm). Kết hợp phun thuốc có hoạt chất như Propiconazole, Hexaconazole hoặc Trifloxystrobin + Tebuconazole theo nguyên tắc 4 đúng. Sau 5–7 ngày kiểm tra lại, nếu bệnh còn phát triển thì phun lại.",
+"category": "disease"}
+{"instruction": "Ruộng lúa bị đốm nâu thì xử lý thế nào?",
+"context": "",
+"response": "Để xử lý bệnh đốm nâu, cần bón cân đối NPK, hạn chế thừa đạm, tăng cường kali và silic. Dùng thuốc trừ nấm đặc trị như Propiconazole, Hexaconazole hoặc hỗn hợp Trifloxystrobin + Tebuconazole, phun đều trên ruộng theo nguyên tắc 4 đúng.",
+"category": "disease"}
+{"instruction": "Cách trị đốm nâu lá trên lúa?",
+"context": "",
+"response": "Để trị bệnh đốm nâu, cần ngưng bón phân đạm, bổ sung kali và silic để tăng sức đề kháng cho cây. Phun thuốc trừ nấm có hoạt chất đặc trị như Propiconazole, Hexaconazole hoặc hỗn hợp Trifloxystrobin + Tebuconazole. Nếu ruộng bị nặng, phun nhắc lại sau 5–7 ngày.",
+"category": "disease"}
+{"instruction": "Triệu chứng ban đầu của bệnh đốm nâu trên lúa là gì?",
+"context": "",
+"response": "Triệu chứng ban đầu là các chấm nhỏ màu nâu đen hoặc đỏ nâu trên lá. Sau đó vết bệnh lan rộng, có dạng bầu dục hoặc tròn, tâm màu xám nâu, viền nâu đậm, xung quanh có quầng vàng.",
+"category": "disease"}
+{"instruction": "Bệnh đốm nâu thường phát sinh trong điều kiện thời tiết nào?",
+"context": "",
+"response": "Bệnh đốm nâu thường phát triển mạnh trong điều kiện thời tiết nóng ẩm, mưa nhiều, đất chua, thiếu dinh dưỡng (đặc biệt là kali, silic) và khi cây lúa bị yếu, sinh trưởng kém.",
+"category": "disease"}
+{"instruction": "Những giai đoạn nào của cây lúa dễ bị bệnh đốm nâu tấn công nhất?",
+"context": "",
+"response": "Bệnh đốm nâu có thể gây hại ở mọi giai đoạn, nhưng thường nặng nhất ở giai đoạn lúa làm đòng và trổ bông, khi cây suy yếu do thiếu dinh dưỡng hoặc gặp điều kiện bất lợi.",
+"category": "disease"}
+{"instruction": "Nguồn lây lan bệnh đốm nâu lúa từ đâu?",
+"context": "",
+"response": "Nguồn lây lan chính là hạt giống bị nhiễm nấm, tàn dư rơm rạ mang mầm bệnh và cỏ dại. Ngoài ra, bào tử nấm có thể phát tán theo gió, nước mưa và qua công cụ canh tác.",
+"category": "disease"}
+{"instruction": "Làm sao để phòng ngừa bệnh đốm nâu lúa hiệu quả?",
+"context": "",
+"response": "Để phòng ngừa bệnh đốm nâu, cần sử dụng giống sạch bệnh, gieo sạ thưa, bón phân cân đối (không bón thừa đạm), bổ sung kali và silic, quản lý tốt cỏ dại và vệ sinh đồng ruộng sau thu hoạch.",
+"category": "disease"}
+{"instruction": "Có nên phun thuốc phòng bệnh đốm nâu không?",
+"context": "",
+"response": "Có thể phun thuốc phòng khi thời tiết nóng ẩm kéo dài, ruộng thiếu dinh dưỡng hoặc đã từng bị bệnh nặng ở vụ trước. Nên phun ở giai đoạn lúa làm đòng đến trổ bông để bảo vệ lá đòng và bông lúa.",
+"category": "disease"}
+{"instruction": "Bệnh đốm nâu lúa gây hại như thế nào đến năng suất?",
+"context": "",
+"response": "Bệnh đốm nâu làm lá bị cháy vàng, giảm khả năng quang hợp, khiến lúa trổ bông yếu, ít hạt và hạt nhỏ. Năng suất có thể giảm từ 20–50% nếu bệnh nặng.",
+"category": "disease"}
+{"instruction": "Có giống lúa nào kháng bệnh đốm nâu không?",
+"context": "",
+"response": "Một số giống lúa có khả năng chống chịu bệnh đốm nâu khá tốt như OM5451, OM6976, OM4900, Jasmine 85. Tuy nhiên, mức độ kháng có thể thay đổi tùy vùng và điều kiện canh tác.",
+"category": "disease"}
+{"instruction": "Thời điểm nào cần phun thuốc phòng bệnh đốm nâu hiệu quả nhất?",
+"context": "",
+"response": "Thời điểm phun thuốc phòng bệnh đốm nâu hiệu quả là giai đoạn lúa làm đòng đến trổ bông, đặc biệt khi điều kiện thời tiết nóng ẩm, mưa nhiều, ruộng thiếu dinh dưỡng.",
+"category": "disease"}
+{"instruction": "Phân bón có ảnh hưởng thế nào đến bệnh đốm nâu lúa?",
+"context": "",
+"response": "Bón thừa đạm và thiếu kali sẽ làm cây lúa yếu, dễ bị bệnh đốm nâu tấn công. Bón cân đối NPK, bổ sung silic giúp cây khỏe, lá dày và hạn chế bệnh.",
+"category": "disease"}
+{"instruction": "Lúa bị đốm nâu lá có nên bón thêm phân đạm không?",
+"context": "",
+"response": "Không nên bón thêm đạm khi lúa bị bệnh đốm nâu. Thay vào đó, nên bổ sung kali và silic để tăng sức đề kháng và hạn chế sự phát triển của bệnh.",
+"category": "disease"}
+{"instruction": "Có biện pháp sinh học nào phòng bệnh đốm nâu lúa không?",
+"context": "",
+"response": "Có thể dùng chế phẩm sinh học như Trichoderma, vi khuẩn đối kháng hoặc phân bón sinh học giàu silic để hạn chế bệnh. Kết hợp với canh tác hợp lý sẽ giúp phòng bệnh hiệu quả hơn.",
+"category": "disease"}
+{"instruction": "Năng suất lúa giảm bao nhiêu khi bị bệnh đốm nâu nặng?",
+"context": "",
+"response": "Nếu bệnh đốm nâu tấn công nặng ở giai đoạn trổ bông – chắc hạt, năng suất có thể giảm từ 30–50%, hạt nhỏ, lép nhiều, gạo kém chất lượng.",
+"category": "disease"}
+{"instruction": "Tại sao bệnh đốm nâu thường bùng phát mạnh ở đất xấu?",
+"context": "",
+"response": "Vì đất xấu thường chua, nghèo dinh dưỡng, thiếu kali và silic, cây lúa yếu, dễ bị nấm tấn công. Đây là điều kiện thuận lợi để bệnh đốm nâu phát triển mạnh.",
+"category": "disease"}
+{"instruction": "Có thể nhận biết ruộng lúa bị đốm nâu nặng bằng dấu hiệu nào?",
+"context": "",
+"response": "Ruộng lúa bị đốm nâu nặng có nhiều lá vàng, khô, vết bệnh lan rộng trên toàn bộ lá, lá đòng bị cháy sớm. Hạt lép nhiều, bông lúa nhỏ, năng suất giảm rõ rệt.",
+"category": "disease"}
+{"instruction": "Người nông dân thường mắc sai lầm gì khi trị bệnh đốm nâu?",
+"context": "",
+"response": "Một số sai lầm là tiếp tục bón đạm khi cây bị bệnh, phun thuốc quá trễ khi bệnh đã lan rộng, hoặc chỉ dùng một loại thuốc lặp lại nhiều lần khiến nấm kháng thuốc.",
+"category": "disease"}
+{"instruction": "Nếu không trị bệnh đốm nâu kịp thời thì hậu quả thế nào?",
+"context": "",
+"response": "Nếu không trị kịp thời, bệnh đốm nâu sẽ làm cháy lá diện rộng, giảm quang hợp, cây suy yếu. Khi bệnh nặng ở giai đoạn trổ bông sẽ gây lép nhiều, năng suất có thể giảm 50%.",
+"category": "disease"}
+{"instruction": "Có nên sử dụng thuốc hóa học liên tục để phòng bệnh đốm nâu không?",
+"context": "",
+"response": "Không nên phun thuốc hóa học liên tục vì sẽ gây kháng thuốc. Cần kết hợp biện pháp canh tác, bón phân hợp lý và luân phiên thuốc có hoạt chất khác nhau để phòng bệnh hiệu quả.",
+"category": "disease"}
+{"instruction": "Ruộng lúa bị đốm nâu có thể thu hoạch được không?",
+"context": "Ruộng bị nhiễm đốm nâu nặng, lá đòng cháy vàng trước trổ",
+"response": "Ruộng vẫn có thể thu hoạch nhưng năng suất và chất lượng gạo giảm rõ rệt. Nếu lá đòng cháy sớm, hạt bị lép nhiều, gạo nhỏ, phẩm chất kém và khó bảo quản.",
+"category": "disease"}
+{"instruction": "Cần làm gì sau khi phun thuốc trị đốm nâu?",
+"context": "",
+"response": "Sau khi phun thuốc trị đốm nâu, cần theo dõi ruộng sau 5–7 ngày. Nếu bệnh còn phát triển thì phun lại bằng hoạt chất khác. Đồng thời bổ sung kali, silic và không bón thêm đạm.",
+"category": "disease"}
+{"instruction": "Bệnh đốm nâu có ảnh hưởng đến phẩm chất gạo không?",
+"context": "",
+"response": "Có. Bệnh đốm nâu làm hạt nhỏ, lép nhiều, gạo bị bạc bụng, chất lượng gạo và độ dẻo cơm giảm. Nếu nhiễm nặng, hạt dễ bị thối và khó bảo quản.",
+"category": "disease"}
+{"instruction": "Bệnh đốm nâu lây lan nhanh bằng cách nào?",
+"context": "",
+"response": "Bào tử nấm đốm nâu phát tán theo gió, nước mưa, qua hạt giống, rơm rạ còn sót lại và công cụ canh tác. Đây là lý do bệnh dễ lây lan trên diện rộng.",
+"category": "disease"}
+{"instruction": "Cách nhận biết bệnh đốm nâu?",
+"context": "",
+"response": "Lá lúa bị đốm nâu thường có vết tròn hoặc bầu dục màu nâu, tâm xám nâu, viền nâu đậm, xung quanh có quầng vàng. Vết bệnh có thể liên kết lại thành mảng làm lá cháy vàng.",
+"category": "disease"}
+{"instruction": "Bệnh đốm nâu có thể xuất hiện trên những bộ phận nào của cây lúa?",
+"context": "",
+"response": "Bệnh đốm nâu có thể xuất hiện trên lá, bẹ lá, cổ lá và hạt lúa. Hạt bị nhiễm bệnh sẽ có vết nâu, lem lúa, làm giảm khả năng nảy mầm và chất lượng gạo.",
+"category": "disease"}
+{"instruction": "Có nên dùng cùng một loại thuốc nhiều lần để trị bệnh đốm nâu không?",
+"context": "",
+"response": "Không nên dùng một loại thuốc nhiều lần liên tiếp vì nấm dễ kháng thuốc. Nên luân phiên các loại thuốc có hoạt chất khác nhau để đạt hiệu quả cao và hạn chế kháng thuốc.",
+"category": "disease"}

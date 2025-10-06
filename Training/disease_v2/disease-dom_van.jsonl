@@ -1,0 +1,124 @@
+{"instruction": "Nguyên nhân gây bệnh đốm vằn trên lúa?", 
+ "context": "Ruộng lúa giai đoạn đẻ nhánh xuất hiện các vết bệnh hình bầu dục trên bẹ lá, màu xanh xám rồi nâu dần", 
+ "response": "Nguyên nhân gây bệnh đốm vằn là do nấm Rhizoctonia solani. Nấm tấn công bẹ lá, lan lên phiến lá và làm cây yếu, dễ đổ ngã.", 
+ "category": "disease"}
+{"instruction": "Lúa xuất hiện các vết bầu dục màu xanh xám trên bẹ lá, sau lan ra phiến lá là bệnh gì?", 
+ "context": "", 
+ "response": "Đó là triệu chứng điển hình của bệnh đốm vằn do nấm Rhizoctonia solani gây ra.", 
+ "category": "disease"}
+{"instruction": "Bệnh đốm vằn trên lúa?", 
+ "context": "", 
+ "response": "Bệnh đốm vằn là một trong những bệnh hại phổ biến trên lúa, do nấm Rhizoctonia solani gây ra. Bệnh xuất hiện trên bẹ lá, lan lên phiến lá và làm giảm năng suất.", 
+ "category": "disease"}
+{"instruction": "Làm sao xử lý bệnh đốm vằn trên lúa?", 
+ "context": "Ruộng lúa bị nhiều vết bệnh nâu trên bẹ lá và phiến lá", 
+ "response": "Cần vệ sinh đồng ruộng, gieo sạ mật độ hợp lý, bón phân cân đối. Khi bệnh phát triển mạnh, có thể phun thuốc trừ nấm như Validamycin, Hexaconazole hoặc Azoxystrobin theo nguyên tắc 4 đúng.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị bệnh đốm vằn thì xử lý thế nào?", 
+ "context": "", 
+ "response": "Nên giữ ruộng thông thoáng, giảm bón đạm, tăng kali, vệ sinh đồng ruộng. Khi bệnh nặng, cần phun thuốc đặc trị nấm để khống chế sự lây lan.", 
+ "category": "disease"}
+{"instruction": "Cách trị bệnh đốm vằn trên lúa?", 
+ "context": "", 
+ "response": "Có thể dùng biện pháp canh tác như gieo sạ thưa, bón phân hợp lý, tiêu hủy tàn dư cây bệnh. Khi cần thiết, phun thuốc trừ nấm Validamycin hoặc Tricyclazole để trị bệnh.", 
+ "category": "disease"}
+{"instruction": "Triệu chứng ban đầu của bệnh đốm vằn trên lúa là gì?", 
+ "context": "", 
+ "response": "Ban đầu xuất hiện các vết bầu dục nhỏ, màu xanh xám trên bẹ lá sát mặt nước. Sau đó vết bệnh lan rộng, màu nâu và có vằn giống da hổ.", 
+ "category": "disease"}
+{"instruction": "Bệnh đốm vằn thường phát sinh trong điều kiện thời tiết nào?", 
+ "context": "", 
+ "response": "Bệnh phát sinh mạnh trong điều kiện nóng ẩm, ruộng gieo dày, bón nhiều đạm và nước đọng. Vụ Hè Thu là thời kỳ bệnh thường bùng phát mạnh.", 
+ "category": "disease"}
+{"instruction": "Những giai đoạn nào của cây lúa dễ bị bệnh đốm vằn tấn công nhất?", 
+ "context": "", 
+ "response": "Lúa dễ bị bệnh đốm vằn nhất ở giai đoạn đẻ nhánh đến làm đòng, khi tán lá dày và ẩm độ cao.", 
+ "category": "disease"}
+{"instruction": "Nguồn lây lan bệnh đốm vằn trên lúa từ đâu?", 
+ "context": "", 
+ "response": "Nguồn bệnh tồn tại trong đất, rơm rạ và tàn dư cây trồng. Nấm lây lan qua tiếp xúc trực tiếp giữa các bẹ lá và nhờ điều kiện ẩm ướt.", 
+ "category": "disease"}
+{"instruction": "Làm sao để phòng ngừa bệnh đốm vằn lúa hiệu quả?", 
+ "context": "", 
+ "response": "Phòng ngừa bệnh bằng cách gieo sạ mật độ thưa, bón phân cân đối, không bón thừa đạm, tiêu hủy rơm rạ và giữ ruộng thông thoáng.", 
+ "category": "disease"}
+{"instruction": "Có nên phun thuốc phòng bệnh đốm vằn không?", 
+ "context": "", 
+ "response": "Không nên phun thuốc phòng tràn lan. Chỉ phun khi bệnh xuất hiện và có nguy cơ lây lan nhanh, nhằm tiết kiệm chi phí và bảo vệ môi trường.", 
+ "category": "disease"}
+{"instruction": "Bệnh đốm vằn lúa gây hại như thế nào đến năng suất?", 
+ "context": "", 
+ "response": "Bệnh làm giảm diện tích lá quang hợp, cây dễ đổ ngã, hạt lép nhiều. Nếu bị nặng, năng suất có thể giảm từ 20-50%.", 
+ "category": "disease"}
+{"instruction": "Có giống lúa nào kháng bệnh đốm vằn không?", 
+ "context": "", 
+ "response": "Hiện chưa có giống nào kháng hoàn toàn, nhưng một số giống có khả năng chống chịu tốt hơn nhờ thân lá cứng và thoáng.", 
+ "category": "disease"}
+{"instruction": "Thời điểm nào cần phun thuốc trị bệnh đốm vằn hiệu quả nhất?", 
+ "context": "", 
+ "response": "Phun thuốc khi bệnh mới xuất hiện trên bẹ lá giai đoạn đẻ nhánh hoặc làm đòng. Phun sớm sẽ hạn chế bệnh lan rộng.", 
+ "category": "disease"}
+{"instruction": "Phân bón có ảnh hưởng thế nào đến bệnh đốm vằn lúa?", 
+ "context": "", 
+ "response": "Bón thừa đạm sẽ làm bệnh phát triển mạnh. Bón cân đối NPK, đặc biệt tăng kali sẽ giúp cây cứng cáp, giảm bệnh.", 
+ "category": "disease"}
+{"instruction": "Lúa bị bệnh đốm vằn có nên bón thêm phân đạm không?", 
+ "context": "", 
+ "response": "Không nên bón thêm đạm, vì sẽ làm bệnh nặng hơn. Thay vào đó, bổ sung kali để tăng sức chống chịu cho cây.", 
+ "category": "disease"}
+{"instruction": "Có biện pháp sinh học nào phòng bệnh đốm vằn lúa không?", 
+ "context": "", 
+ "response": "Có thể dùng chế phẩm sinh học chứa nấm đối kháng Trichoderma spp. để ức chế nấm Rhizoctonia solani trong đất.", 
+ "category": "disease"}
+{"instruction": "Năng suất lúa giảm bao nhiêu khi bị bệnh đốm vằn nặng?", 
+ "context": "", 
+ "response": "Khi bị bệnh đốm vằn nặng, năng suất có thể giảm 30-50%, cây dễ đổ ngã và hạt lép nhiều.", 
+ "category": "disease"}
+{"instruction": "Tại sao bệnh đốm vằn thường bùng phát vào vụ Hè Thu?", 
+ "context": "", 
+ "response": "Vụ Hè Thu có thời tiết nóng ẩm, mưa nhiều, ruộng bón nhiều đạm và gieo dày, rất thuận lợi cho bệnh phát triển.", 
+ "category": "disease"}
+{"instruction": "Có thể nhận biết ruộng lúa bị bệnh đốm vằn nặng bằng dấu hiệu nào?", 
+ "context": "", 
+ "response": "Ruộng bị bệnh nặng sẽ có nhiều bẹ lá và phiến lá xuất hiện vết nâu lớn, lan cao, nhiều lá khô cháy, cây yếu dễ đổ ngã.", 
+ "category": "disease"}
+{"instruction": "Người nông dân thường mắc sai lầm gì khi trị bệnh đốm vằn?", 
+ "context": "", 
+ "response": "Sai lầm thường gặp là bón nhiều đạm, phun thuốc muộn khi bệnh đã lan rộng, hoặc lạm dụng thuốc hóa học một cách liên tục.", 
+ "category": "disease"}
+{"instruction": "Nếu không trị bệnh đốm vằn kịp thời thì hậu quả thế nào?", 
+ "context": "", 
+ "response": "Nếu không trị kịp, bệnh lan rộng làm lá và bẹ khô chết, cây đổ ngã, hạt lép nhiều, năng suất giảm mạnh.", 
+ "category": "disease"}
+{"instruction": "Có nên sử dụng thuốc hóa học liên tục để phòng bệnh đốm vằn không?", 
+ "context": "", 
+ "response": "Không nên sử dụng liên tục một loại thuốc vì sẽ làm nấm kháng thuốc. Cần luân phiên hoạt chất và kết hợp biện pháp canh tác.", 
+ "category": "disease"}
+{"instruction": "Ruộng lúa bị bệnh đốm vằn có thể thu hoạch được không?", 
+ "context": "Ruộng bị nhiễm đốm vằn nặng, nhiều lá cháy khô, cây yếu", 
+ "response": "Ruộng vẫn có thể thu hoạch, nhưng năng suất và chất lượng hạt giảm đáng kể, nhiều hạt lép và dễ đổ ngã trước thu hoạch.", 
+ "category": "disease"}
+{"instruction": "Cần làm gì sau khi phun thuốc trị bệnh đốm vằn?", 
+ "context": "", 
+ "response": "Sau khi phun, cần theo dõi bệnh 5-7 ngày. Nếu còn lan rộng, phun nhắc lại bằng thuốc khác hoạt chất. Đồng thời, điều chỉnh lượng phân cho hợp lý.", 
+ "category": "disease"}
+{"instruction": "Bệnh đốm vằn có ảnh hưởng đến phẩm chất gạo không?", 
+ "context": "", 
+ "response": "Có. Khi bệnh nặng, cây yếu, hạt lép và nhỏ nhiều, chất lượng gạo kém, cơm ít dẻo và khó bảo quản.", 
+ "category": "disease"}
+{"instruction": "Bệnh đốm vằn lây lan nhanh bằng cách nào?", 
+ "context": "", 
+ "response": "Bệnh lây lan do tiếp xúc trực tiếp giữa các bẹ lá và nhờ tàn dư cây bệnh trong đất, kết hợp với điều kiện ẩm ướt.", 
+ "category": "disease"}
+{"instruction": "Cách nhận biết bệnh đốm vằn?", 
+ "context": "", 
+ "response": "Dấu hiệu nhận biết là các vết bệnh hình bầu dục hoặc vằn da hổ trên bẹ và phiến lá, ban đầu xanh xám, sau nâu, lan nhanh trong điều kiện ẩm.", 
+ "category": "disease"}
+{"instruction": "Bệnh đốm vằn có thể gây hại trên những bộ phận nào của cây lúa?", 
+ "context": "", 
+ "response": "Chủ yếu gây hại ở bẹ lá, sau đó lan lên phiến lá, cổ lá và đôi khi lên cả bông lúa.", 
+ "category": "disease"}
+{"instruction": "Có nên dùng cùng một loại thuốc nhiều lần để trị bệnh đốm vằn không?", 
+ "context": "", 
+ "response": "Không nên, vì nấm dễ kháng thuốc. Cần luân phiên thuốc khác nhóm hoạt chất để đạt hiệu quả cao.", 
+ "category": "disease"}
