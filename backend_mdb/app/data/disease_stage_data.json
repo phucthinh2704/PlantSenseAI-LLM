@@ -1762,5 +1762,77 @@
 				"note": null
 			}
 		]
+	},
+	{
+		"disease_id": "bệnh khô đọt thối trái trên cây xoài",
+		"stage": "Tất cả, thiệt hại nặng nhất khi cây ra đọt non và giai đoạn mang trái",
+		"symptom": "Trên cành non, triệu chứng điển hình là chảy gôm (xì mủ), sau đó làm cành bị khô héo, lá chuyển vàng và vẫn bám vào cành. Khi chẻ dọc cành, sẽ thấy mạch dẫn bị nâu đen. Nếu bị nặng, cả đọt sẽ khô, dẫn đến hiện tượng mà nông dân thường gọi là 'khô đọt'. Trên quả, nấm tấn công từ cuống, làm cuống quả thâm đen, sau đó lan dần vào thịt quả tạo thành các sọc đen chạy dọc theo hạt. Quả bị bệnh sẽ thối nhũn, mềm và dễ rụng hoặc hỏng trong quá trình bảo quản.",
+		"prevention": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Chọn giống sạch bệnh",
+				"description": "Lựa chọn giống sạch bệnh, có gốc ghép và mắt ghép khỏe.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Lựa chọn giống kháng bệnh sẽ giúp giảm nguy cơ mắc bệnh."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Tạo tán và tỉa cành",
+				"description": "Tạo tán và tỉa cành để vườn luôn thông thoáng, có đủ ánh sáng và tránh bị úng nước.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Tạo môi trường thông thoáng giúp giảm độ ẩm và ngăn ngừa sự phát triển của nấm."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Vệ sinh vườn và dụng cụ",
+				"description": "Cần thường xuyên cắt bỏ và tiêu hủy các cành, lá, trái bị bệnh, đồng thời vệ sinh dụng cụ cắt tỉa bằng dung dịch sát khuẩn.",
+				"chemical": null,
+				"dosage": null,
+				"note": "Vệ sinh vườn sẽ giúp ngăn chặn mầm bệnh lây lan."
+			},
+			{
+				"_id": null,
+				"step": 4,
+				"name": "Áp dụng biện pháp sinh học",
+				"description": "Sử dụng nấm đối kháng Trichoderma để xử lý đất hoặc phun các chế phẩm vi sinh Bacillus subtilis để tăng sức đề kháng cho cây.",
+				"chemical": "Trichoderma, Bacillus subtilis",
+				"dosage": "2-3 g/lít nước (Trichoderma), 2 g/lít nước (Bacillus subtilis)",
+				"note": "Biện pháp sinh học giúp kiểm soát nấm và vi khuẩn gây bệnh một cách an toàn."
+			}
+		],
+		"treatment": [
+			{
+				"_id": null,
+				"step": 1,
+				"name": "Phun thuốc trừ nấm",
+				"description": "Phun thuốc trừ nấm có hoạt chất thuộc nhóm Dithiocarbamate (như Mancozeb) hoặc gốc đồng (như Copper hydroxide). Trong trường hợp bệnh nặng, có thể kết hợp thêm thuốc có hoạt chất Azoxystrobin hoặc Metalaxyl để kiểm soát sự lây lan.",
+				"chemical": "Mancozeb, Copper hydroxide, Azoxystrobin, Metalaxyl",
+				"dosage": "Theo khuyến cáo",
+				"note": "Phun định kỳ để ngăn ngừa bệnh bùng phát, đặc biệt trong mùa mưa và các giai đoạn cây ra đọt non, ra hoa và nuôi quả non."
+			},
+			{
+				"_id": null,
+				"step": 2,
+				"name": "Phun thuốc trừ vi khuẩn",
+				"description": "Phun thuốc trừ vi khuẩn như Kasugamycin hoặc Copper hydroxide để điều trị khi bệnh do vi khuẩn gây ra.",
+				"chemical": "Kasugamycin, Copper hydroxide",
+				"dosage": "Theo khuyến cáo",
+				"note": "Thuốc trừ vi khuẩn có tác dụng ngăn ngừa sự phát triển của vi khuẩn trên cây."
+			},
+			{
+				"_id": null,
+				"step": 3,
+				"name": "Phun phòng định kỳ",
+				"description": "Phun phòng bệnh định kỳ 7-10 ngày một lần trong mùa mưa để giảm nguy cơ bệnh khô đọt thối trái, đặc biệt khi cây ra đọt non, ra hoa và nuôi quả non.",
+				"chemical": "Mancozeb, Azoxystrobin, Metalaxyl",
+				"dosage": "Theo khuyến cáo",
+				"note": "Phun phòng giúp kiểm soát sự phát triển của bệnh trước khi nó lan rộng."
+			}
+		]
 	}
 ]
