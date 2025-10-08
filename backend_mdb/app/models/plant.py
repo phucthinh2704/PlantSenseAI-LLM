@@ -7,6 +7,7 @@ class Plant(BaseModel):
     id: Optional[str] = Field(default=None, alias="_id")
     name: str
     origin: str
+    plant_type: str
     category: str
     growth_duration: str          
     morphology: str               
