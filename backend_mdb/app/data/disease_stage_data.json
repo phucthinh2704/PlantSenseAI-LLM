@@ -96,6 +96,20 @@
 				"dosage": "Theo khuyến cáo nhà sản xuất",
 				"note": "Có thể kết hợp với biện pháp hóa học để tăng hiệu quả."
 			}
+		],
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/10/074_bacla.htm"
+			},
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/benh-bac-la-lua/"
+			},
+			{
+				"name": "Bảo hiểm xã hội tỉnh Ninh Thuận",
+				"url": "https://ninhthuan.baohiemxahoi.gov.vn/tintuc/Pages/tin-trong-t%E1%BB%8Bnh.aspx?CateID=242&ItemID=4405"
+			}
 		]
 	},
 	{
@@ -186,6 +200,20 @@
 				"dosage": null,
 				"note": "Áp dụng phòng trừ tổng hợp khi có dấu hiệu bệnh."
 			}
+		],
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/10/077_domnau.htm"
+			},
+			{
+				"name": "Công ty TNHH Công nghệ Tanixa",
+				"url": "https://tanixa.com/benh-dom-nau-tren-lua/"
+			},
+			{
+				"name": "Công ty Cổ phần Vật tư Tây Đô Long An",
+				"url": "https://taydojsc.com.vn/benh-dom-nau-tren-lua/"
+			}
 		]
 	},
 	{
@@ -266,6 +294,20 @@
 				"chemical": "Taiyou 20SC",
 				"dosage": "25 ml/16 lít nước",
 				"note": "Phun 2 lần, cách nhau 7–10 ngày."
+			}
+		],
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/10/069_benhdaoon.htm"
+			},
+			{
+				"name": "Công ty Cổ phần Ứng dụng Công nghệ Xanh",
+				"url": "https://congnghexanhgroup.vn/blogs/kien-thuc-nha-nong/dau-hieu-benh-dao-on-tren-lua"
+			},
+			{
+				"name": "Công ty Cổ phần Đại Thành",
+				"url": "https://globalcheck.com.vn/benh-dao-on-hai-lua-trong-vu-dong-xuan-2025-1425"
 			}
 		]
 	},
@@ -356,6 +398,20 @@
 				"chemical": "Fipronil, Abamectin, Cartap, Chlorpyrifos, Lambda-cyhalothrin",
 				"dosage": "Theo khuyến cáo của nhà sản xuất",
 				"note": "Phun khi sâu còn nhỏ, phun ướt đều hai mặt lá, tuân thủ nguyên tắc 4 đúng. Không lạm dụng để tránh kháng thuốc và bảo vệ môi trường."
+			}
+		],
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/10/058_saugai.htm"
+			},
+			{
+				"name": "Công ty Cổ phần Nông nghiệp VNFARM",
+				"url": "https://vnfarm.com.vn/sau-gai-hai-lua"
+			},
+			{
+				"name": "Công ty Cổ phần Nông nghiệp Nghi Anh",
+				"url": "https://nongnghiepnghianh.vn/"
 			}
 		]
 	},
@@ -456,6 +512,20 @@
 				"dosage": null,
 				"note": "Phun phòng ngay khi điều kiện thuận lợi cho sâu phát sinh."
 			}
+		],
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/10/063_sauphao.htm"
+			},
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/sau-phao-hai-lua/"
+			},
+			{
+				"name": "Plantix - Bác sĩ cây trồng",
+				"url": "https://plantix.net/vi/library/plant-diseases/600109/rice-case-worm/"
+			}
 		]
 	},
 	{
@@ -536,6 +606,20 @@
 				"chemical": "Phân bón lá, chế phẩm sinh học",
 				"dosage": "Theo khuyến cáo trên bao bì sản phẩm",
 				"note": null
+			}
+		],
+		"sources": [
+			{
+				"name": "CÔNG TY TNHH SINH HỌC CHÂU Á",
+				"url": "https://sinhhocchaua.com/quan-ly-benh-gach-nau-tren-lua/"
+			},
+			{
+				"name": "Công Ty Cổ Phần Đầu Tư Thế Giới Nông Nghiệp",
+				"url": "https://thegioinongnghiep.com/blogs/cam-nang-cay-lua/cach-phong-va-tri-benh-gach-nau-gay-hai-tren-cay-lua"
+			},
+			{
+				"name": "Công ty Cổ phần Nông nghiệp Nghi Anh",
+				"url": "https://nongnghiepnghianh.vn/benh-gach-nau-hai-lua/"
 			}
 		]
 	},
@@ -626,6 +710,20 @@
 				"chemical": null,
 				"dosage": null,
 				"note": "Lượng nước nên gấp 1,5–2 lần so với phun đạo ôn lá."
+			}
+		],
+		"sources": [
+			{
+				"name": "CÔNG TY TNHH BVTV ĐỒNG THÁP SEN HỒNG",
+				"url": "https://dongthapsenhong.com/quan-ly-dao-on-giai-doan-lua-tro/"
+			},
+			{
+				"name": "Công ty Cổ phần Vật tư Tây Đô Long An",
+				"url": "https://taydojsc.com.vn/benh-dao-on-co-bong-lua/"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/doi-pho-benh-dao-on-co-bong-hai-lua-d240286.html"
 			}
 		]
 	},
@@ -735,6 +833,20 @@
 				"dosage": null,
 				"note": "Phân biệt với bệnh vàng lá do đạo ôn hoặc vi khuẩn gây ra để tránh nhầm lẫn."
 			}
+		],
+		"sources": [
+			{
+				"name": "Công ty Cổ phần Kingbioworld",
+				"url": "https://www.kingbio.vn/phong-tri-benh-nghet-re-lua-hieu-qua"
+			},
+			{
+				"name": "Sở Nông nghiệp và Môi trường tỉnh Sơn La",
+				"url": "https://sonnmt.sonla.gov.vn/nganh-trong-trot/benh-nghet-re-va-bien-phap-quan-ly-919063"
+			},
+			{
+				"name": "Trung tâm khuyến nông Nghệ An",
+				"url": "https://khuyennongnghean.com.vn/index.php/trong-trot/phong-chong-benh-nghet-re-lua-trong-vu-xuan-2023-1391.html"
+			}
 		]
 	},
 	{
@@ -825,6 +937,20 @@
 				"dosage": null,
 				"note": "Cấy dặm lại bằng cây khỏe nếu đã nhổ cây bệnh."
 			}
+		],
+		"sources": [
+			{
+				"name": "Sở Nông nghiệp và Môi trường tỉnh Quảng Trị",
+				"url": "https://khuyennong.quangtri.gov.vn/tai-lieu-khuyen-nong/benh-lun-soc-den-hai-lua-va-cac-bien-phap-phong-tru-739.html"
+			},
+			{
+				"name": "Trung tâm khuyến nông Hải Phòng",
+				"url": "https://khuyennonghaiphong.gov.vn/benh-lun-soc-den-hai-lua-va-cac-bien-phap-phong-tru-tt14223.html"
+			},
+			{
+				"name": "Chi cục Trồng trọt và Bảo vệ thực vật Hải Phòng",
+				"url": "https://chicuctrongtrotvabaovethucvat.haiphong.gov.vn/SiteFolders/ccttbvtvhaiphong/2471/Documents/15.6%20L%C3%B9n%20s%E1%BB%8Dc%20%C4%91en.pdf"
+			}
 		]
 	},
 	{
@@ -914,6 +1040,20 @@
 				"chemical": null,
 				"dosage": null,
 				"note": "Phun đúng thời điểm giúp bảo vệ lá đòng và cổ bông, hạn chế lép hạt."
+			}
+		],
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/10/070_khovan.htm"
+			},
+			{
+				"name": "Trường Đại học Nông Lâm, Đại học Huế",
+				"url": "https://huaf.edu.vn/phong-tri-benh-dom-van-hai-lua/"
+			},
+			{
+				"name": "CÔNG TY TNHH THƯƠNG MẠI AN PHÁT NÔNG",
+				"url": "https://anphatnong.com.vn/quan-ly-benh-dom-van"
 			}
 		]
 	},
@@ -1014,6 +1154,20 @@
 				"dosage": "Theo khuyến cáo",
 				"note": null
 			}
+		],
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/10/079_lemlephat.htm"
+			},
+			{
+				"name": "Sở Nông nghiệp và Môi trường tỉnh Vĩnh Long",
+				"url": "https://snnmt.vinhlong.gov.vn/xem-chi-tiet-tin-tuc/id/193190"
+			},
+			{
+				"name": "Chi cục Trồng trọt và Bảo vệ thực vật Ninh Bình",
+				"url": "https://chicucttbvtv.ninhbinh.gov.vn/ky-thuat-phong-tru-dich-hai/benh-lem-lep-hat-va-cac-bien-phap-phong-tru-173.html"
+			}
 		]
 	},
 	{
@@ -1077,6 +1231,20 @@
 				"dosage": "Theo hướng dẫn nhà sản xuất",
 				"note": "Chỉ phun khi mật độ rầy cao và có nguy cơ bùng phát bệnh."
 			}
+		],
+		"sources": [
+			{
+				"name": "Công ty Cổ Phần Phân Bón Bình Điền",
+				"url": "https://binhdien.com/dong-hanh-cung-nha-nong/chuong-trinh-canh-tac-thong-minh/benh-tungro-virus-tren-lua.html"
+			},
+			{
+				"name": "Công ty Cổ phần Bảo vệ thực vật Delta",
+				"url": "https://congtydelta.com/bai-viet/171/benh-tungro-tren-cay-lua"
+			},
+			{
+				"name": "Plantix - Bác sĩ cây trồng",
+				"url": "https://plantix.net/vi/library/plant-diseases/200033/tungro/"
+			}
 		]
 	},
 	{
@@ -1131,6 +1299,20 @@
 				"dosage": "Theo hướng dẫn nhà sản xuất",
 				"note": null
 			}
+		],
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/10/073_vanglun.htm"
+			},
+			{
+				"name": "Công ty TNHH SẢN XUẤT & THƯƠNG MẠI ĐẠI NAM",
+				"url": "https://ongbien.vn/kien-thuc-nong-nghiep/benh-vang-lun-va-lun-xoan-la-tren-cay-lua-165921dt.html"
+			},
+			{
+				"name": "Công ty Cổ phần BMC Việt Nam",
+				"url": "https://www.bmcgroup.com.vn/vi/blog/bai-viet/120/"
+			}
 		]
 	},
 	{
@@ -1184,6 +1366,20 @@
 				"chemical": "Bassa 50EC, Trebon 20ND, Admire 50EC, Actara 25WG",
 				"dosage": "Theo hướng dẫn nhà sản xuất",
 				"note": "Kết hợp biện pháp IPM, ưu tiên thuốc nội hấp và sinh học."
+			}
+		],
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/10/073_vanglun.htm"
+			},
+			{
+				"name": "Công ty TNHH SẢN XUẤT & THƯƠNG MẠI ĐẠI NAM",
+				"url": "https://ongbien.vn/kien-thuc-nong-nghiep/benh-vang-lun-va-lun-xoan-la-tren-cay-lua-165921dt.html"
+			},
+			{
+				"name": "Công ty Cổ phần BMC Việt Nam",
+				"url": "https://www.bmcgroup.com.vn/vi/blog/bai-viet/120/"
 			}
 		]
 	},
@@ -1274,6 +1470,20 @@
 				"chemical": null,
 				"dosage": null,
 				"note": "Thực hiện đều đặn và kết hợp với biện pháp canh tác."
+			}
+		],
+		"sources": [
+			{
+				"name": "Công ty TNHH HAPPY AGRI",
+				"url": "https://happyagri.com.vn/benh-dom-den-tren-cay-xoai/"
+			},
+			{
+				"name": "CÔNG TY TNHH THỰC PHẨM P&T VIỆT NAM",
+				"url": "https://xoaisaydeo.com/blog/xoai-bi-dom-den/"
+			},
+			{
+				"name": "Công ty Cổ phần Vật tư Tây Đô Long An",
+				"url": "https://www.taydojsc.com.vn/benh-dom-den-tren-xoai/"
 			}
 		]
 	},
@@ -1374,6 +1584,20 @@
 				"dosage": null,
 				"note": null
 			}
+		],
+		"sources": [
+			{
+				"name": "CÔNG TY CỔ PHẦN HỢP TRÍ SUMMIT",
+				"url": "https://www.hoptrisummit.com/quy-trinh-giai-phap/cay-trong-khac/phong-tri-benh-than-thu-va-dom-den-cay-xoai"
+			},
+			{
+				"name": "Khoa Nông – Lâm, Trường Đại học Tây Bắc",
+				"url": "https://faf.utb.edu.vn/benh-than-thu-hai-xoai-colletotrichum-spp-va-bien-phap-phong-tru/"
+			},
+			{
+				"name": "Công ty Cổ phần Vật tư Tây Đô Long An",
+				"url": "https://www.taydojsc.com.vn/benh-than-thu-tren-xoai/"
+			}
 		]
 	},
 	{
@@ -1464,6 +1688,16 @@
 				"dosage": null,
 				"note": "Tránh phun nước lên toàn bộ cây, kể cả các loại phân bón lá trên cây đã nhiễm."
 			}
+		],
+		"sources": [
+			{
+				"name": "CABI BioProtection Portal",
+				"url": "https://bioprotectionportal.com/vi/resources/4-mango-disorders-that-affect-yields/#bacterial-canker"
+			},
+			{
+				"name": "TẠP CHÍ KHOA HỌC PHỔ THÔNG",
+				"url": "https://khoahocphothong.vn/xu-ly-cay-xoai-nhiem-vi-khuan-205481.html"
+			}
 		]
 	},
 	{
@@ -1553,6 +1787,20 @@
 				"chemical": null,
 				"dosage": null,
 				"note": null
+			}
+		],
+		"sources": [
+			{
+				"name": "Công ty Cổ phần HLC Hà Nội",
+				"url": "https://hlc.net.vn/ky-thuat-trong-trot/benh-ghe-xoai-la-gi-va-cach-phong-tru-benh-ghe-tren-cay-xoai-2251-32685-article.html"
+			},
+			{
+				"name": "Plantix - Bác sĩ cây trồng",
+				"url": "https://plantix.net/vi/library/plant-diseases/100330/mango-scab/"
+			},
+			{
+				"name": "Công ty Cổ phẩn Trung Tâm Sản phẩm Sinh học AQ",
+				"url": "https://nguyenlieusinhhoc.com/benh-ghe-tren-xoai/?srsltid=AfmBOopqRURGBGmqdbYcl89T_Xmplse5M1wwHNQN9vcwSRUOD0DPE5_j"
 			}
 		]
 	},
@@ -1653,6 +1901,20 @@
 				"dosage": "Theo khuyến cáo",
 				"note": null
 			}
+		],
+		"sources": [
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/benh-phan-trang-hai-cay-xoai-d252419.html"
+			},
+			{
+				"name": "Công ty TNHH HAPPY AGRI",
+				"url": "https://happyagri.com.vn/benh-phan-trang-tren-cay-xoai/"
+			},
+			{
+				"name": "Bác Sĩ Cây Xanh",
+				"url": "https://bacsicayxanh.vn/cay-trong/xoai/benh/benh-phan-trang-tren-xoai/31?srsltid=AfmBOoplTi_GjFhIavEiUOIR9J5czwcgAYw2SUcgYu5hMR-NgMhUvi-6"
+			}
 		]
 	},
 	{
@@ -1724,6 +1986,20 @@
 				"chemical": "Mancozeb, Azoxystrobin, Metalaxyl",
 				"dosage": "Theo khuyến cáo",
 				"note": "Phun phòng giúp kiểm soát sự phát triển của bệnh trước khi nó lan rộng."
+			}
+		],
+		"sources": [
+			{
+				"name": "Nông Nghiệp AVN",
+				"url": "https://nongnghiepavn.com/phong-tru-benh-kho-dot-thoi-trai-tren-cay-xoai/#:~:text=Tri%E1%BB%87u%20ch%E1%BB%A9ng%20b%E1%BB%87nh%20kh%C3%B4%20%C4%91%E1%BB%8Dt%20th%E1%BB%91i%20tr%C3%A1i%20tr%C3%AAn%20c%C3%A2y%20xo%C3%A0i&text=V%E1%BA%BFt%20b%E1%BB%87nh%20xu%E1%BA%A5t%20hi%E1%BB%87n%20d%C6%B0%E1%BB%9Bi,%C4%91%C3%A3%20chuy%E1%BB%83n%20sang%20m%C3%A0u%20n%C3%A2u."
+			},
+			{
+				"name": "Nông nghiệp N2 Agro Việt Nam",
+				"url": "https://n2agro.vn/giai-phap-cay-trong/benh-thoi-trai-xoai/"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN NÔNG DƯỢC VIỆT NAM",
+				"url": "https://nongduocvietnam.com.vn/bac-sy-cay-trong/kho-ngon-thoi-trai-710.html"
 			}
 		]
 	}

@@ -8,10 +8,24 @@
 		"morphology": "Chiều cao trung bình 100-105 cm, lá xanh bền, bông dài, hạt gạo thon dài, trắng trong. Hạt gạo dài khoảng 7-9 mm, hạt trắng trong, ít bạc bụng, không có vết bạc bên trong. Hạt mảnh, hạt gạo thon, đều màu. Cơm mềm, dẻo, giữ độ mềm ngay cả khi cơm nguội.",
 		"yields": "6 - 7 tấn/ha",
 		"description": "ST25 hay còn được gọi là Trà thơm Sóc Trăng, là kết quả nghiên cứu suốt 20 năm của kỹ sư Hồ Quang Cua. Giống ST25 là thế hệ mới nhất của dòng lúa thơm lừng danh với nhiều sản phẩm được xếp vào hàng “thượng hạng”. Giống có khả năng chịu mặn tốt, chống chịu nhiều bệnh hại, thích nghi rộng. Gạo có mùi thơm lá dứa và cốm non, cơm dẻo, vị ngọt, chất lượng xuất khẩu cao. Chất lượng của ST25 đã được công nhận trên trường quốc tế khi xuất sắc đạt danh hiệu \"Gạo ngon nhất thế giới\" tại Hội nghị Thương mại Gạo thế giới lần thứ 11 tại Manila (Philippines) và giành giải nhì tại cuộc thi \"Gạo ngon nhất thế giới 2020\" tổ chức tại Mỹ.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Công Ty Cổ Phần AGRIJAPAN",
+				"url": "https://agrijapanvn.com/giong-lua-st25-dac-diem-va-giai-phap-canh-tac-hieu-qua/"
+			},
+			{
+				"name": "Công Ty Cổ Phần Sundrone Việt Nam",
+				"url": "https://sundrone.vn/giong-lua-st25/"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN AIRNANO VIỆT NAM",
+				"url": "https://airnano.vn/giong-lua-st25/"
+			}
+		]
 	},
 	{
-		"name": "Lúa OM 5451",
+		"name": "Lúa OM5451",
 		"origin": "Việt Nam",
 		"category": "Cây lương thực",
 		"plant_type": "Lúa",
@@ -19,18 +33,21 @@
 		"morphology": "Giống cứng cây, kháng đổ ngã, khả năng đẻ nhánh khỏe, chiều cao cây từ 100-110 cm, bông dài trung bình (23-25 cm), số hạt chắc/bông 70-80. Trọng lượng 1000 hạt 25-26g. Hạt gạo đẹp, thon dài ít bạc bụng, chiều dài hạt gạo 7,01 -7,05 mm. Có khả năng kháng trung bình rầy nâu và bệnh đạo ôn, ít bị bệnh vàng lùn - lùn xoắn lá.",
 		"yields": "6 - 8 tấn/ha",
 		"description": "Giống lúa OM5451 được chọn tạo theo mục tiêu lúa giàu sắt và chất lượng cao từ tổ hợp lai Jasmine 85 x OM2490 từ năm 2003 theo phương pháp phả hệ. Giống được trồng thử nghiệm ở nhiều tỉnh ĐBSCL. Giống lúa OM5451 được công nhận sản xuất thử theo Quyết định số 456/QĐ-TTCLT của Cục Trồng trọt ngày 05/11/2010.",
-		"image_url": null
-	},
-	{
-		"name": "Lúa Đài Thơm 8",
-		"origin": "Việt Nam",
-		"category": "Cây lương thực",
-		"plant_type": "Lúa",
-		"growth_duration": "90 - 95 ngày",
-		"morphology": "Chiều cao cây 95 - 100 cm, đẻ nhánh khỏe. Bộ lá đứng, xanh, hạt thon dài, màu vàng sáng. Chống chịu trung bình với một số loại sâu bệnh hại chính, chịu thâm canh, cứng cây chống đổ tốt. Bông to, dài, độ thuần đồng ruộng cao. Hạt gạo thon dài, trắng trong, ít bạc bụng. Vỏ trấu vàng sáng. Khối lượng 1000 hạt 23-24g, chiều dài hạt gạo ~6,7 mm. Chống chịu trung bình với một số loại sâu bệnh hại chính, chịu thâm canh, cứng cây chống đổ tốt.",
-		"yields": "7 - 9 tấn/ha",
-		"description": "Đài Thơm 8 (DT8) là giống lúa thuần chất lượng cao, được lai tạo từ tổ hợp giữa giống BVN và OM 4900 bằng phương pháp lai truyền thống. Giống có khả năng chống đổ, chịu thâm canh, ít bị đạo ôn và bạc lá. Gạo Đài Thơm 8 có cơm trắng bóng, dẻo, thơm nhẹ, giữ được độ dẻo và mùi thơm ngay cả khi bảo quản thóc lâu trước khi xay xát. Sau nhiều vụ chọn lọc, dòng thuần CT286-17-1-1-1 đã được xác định và đặt tên Đài Thơm 8.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Công ty Cổ phần Vật tư Tây Đô Long An",
+				"url": "https://taydojsc.com.vn/nhung-dieu-can-biet-truoc-khi-sa-giong-lua-om-5451/"
+			},
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/giong-lua-om-5451/"
+			},
+			{
+				"name": "Công ty Cổ phần CropTex",
+				"url": "https://croptex.vn/giong-lua-om-5451-dac-diem-va-ky-thuat-canh-tac/?srsltid=AfmBOoryjQzrvmtbQCs4WGLNzCUOuIxrqxMfRD5wkCnxcfSgvujnzGST"
+			}
+		]
 	},
 	{
 		"name": "Lúa Jasmine 85",
@@ -41,7 +58,21 @@
 		"morphology": "Cây cao 80 - 100 cm, dạng hình đẹp, khá cứng cây, chịu phân, 90 - 105 hạt chắc/bông, tỷ lệ lép 14 - 15%",
 		"yields": "Trung bình 7 - 9 tấn/ha, tiềm năng 9 - 10 tấn/ha",
 		"description": "Giống Jasmine 85 có khả năng thích nghi rộng, canh tác tốt ở cả vụ Đông Xuân và Hè Thu. Hạt gạo dài 7,2 - 7,8 mm, trắng trong, không bạc bụng, có mùi thơm dừa đặc trưng, cơm dẻo, ngọt, kết dính, để nguội vẫn mềm. Đạt tiêu chuẩn xuất khẩu loại cao cấp. Tuy nhiên, giống này không kháng rầy nâu, nhiễm nhẹ bệnh khô vằn và bệnh lùn xoắn lá, chịu phèn mặn nhẹ, ít đổ ngã. Các địa phương gieo trồng chủ lực là An Giang và Đồng Tháp.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Hiệp hội lương thực Việt Nam",
+				"url": "https://vietfood.org.vn/jasmine-85/"
+			},
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/giong-lua-jasmine-85-dac-tinh-cach-phong-tru-sau-benh/"
+			},
+			{
+				"name": "Báo Dân Việt",
+				"url": "https://danviet.vn/lua-thom-jasmine-85-doc-dao-the-nao-ma-gay-sot-tren-dat-thai-7777965489-d704724.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa OM442",
@@ -52,7 +83,17 @@
 		"morphology": "Cây sinh trưởng ngắn ngày, thân khỏe, ít đổ ngã, chịu mặn 2-4‰ và phèn nhẹ. Hạt thon dài 7,7 - 7,8 mm, hạt gạo trắng, đẹp. Cơm mềm, trắng, xốp.",
 		"yields": "Trung bình 6 - 8 tấn/ha, tiềm năng 8 - 9 tấn/ha",
 		"description": "OM442 là giống lúa thuần ngắn ngày, năng suất cao, thích nghi rộng với điều kiện sinh thái ĐBSCL, kể cả vùng đất phèn, mặn nhẹ. Có khả năng chống chịu khá với đạo ôn và rầy nâu (cấp 3-5), đồng thời giảm chi phí sản xuất nhờ ít sử dụng thuốc bảo vệ thực vật. Gạo OM442 thon dài, trắng đẹp, có giá trị dinh dưỡng cao, protein và khoáng chất phong phú. Đây là giống lúa có giá trị kinh tế và xuất khẩu, đóng góp lớn cho thương hiệu gạo Việt Nam.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Hiệp hội lương thực Việt Nam",
+				"url": "https://vietfood.org.vn/giong-lua-om442/"
+			},
+			{
+				"name": "Nông Sản Mekong",
+				"url": "https://nongsanmekong.com/lua-om442-thich-nghi-voi-dbscl/"
+			}
+		]
 	},
 	{
 		"name": "Lúa OM7347",
@@ -63,7 +104,21 @@
 		"morphology": "Thân cây cứng cáp, khả năng đẻ nhánh khỏe. Hạt gạo thon dài, hương thơm nhẹ.",
 		"yields": "6 - 8 tấn/ha",
 		"description": "Giống lúa OM7347 do Bộ môn Di truyền - Viện Lúa Đồng bằng sông Cửu Long lai tạo thành công năm 2005. Giống được trồng chủ yếu ở các tỉnh Đồng bằng sông Cửu Long, Đông Nam Bộ và duyên hải miền Trung, đặc biệt thích hợp vùng đất phèn, chua, mặn. Hạt gạo OM7347 có hương thơm nhẹ, hàm lượng dinh dưỡng cao.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện lúa Đồng bằng sông Cửu Long",
+				"url": "https://clrri.org/giong-lua-om-7347/"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/lua-om-7347-tren-dat-phong-dien-d193151.html"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepnhietdoi.com.vn/quy-trinh-ki-thuat-gieo-cay-giong-lua-om7347-tam-nhiet-doi"
+			}
+		]
 	},
 	{
 		"name": "Lúa Đài Thơm 8",
@@ -71,10 +126,24 @@
 		"category": "Cây lương thực",
 		"plant_type": "Lúa",
 		"growth_duration": "Vụ Xuân 125 - 130 ngày; Vụ Mùa 100 - 105 ngày",
-		"morphology": "Chiều cao cây trung bình 95 - 100 cm, đẻ nhánh khỏe, bộ lá đứng xanh, hạt thon dài, màu vàng sáng.",
+		"morphology": "Chiều cao cây 95 - 100 cm, đẻ nhánh khỏe. Bộ lá đứng, xanh, hạt thon dài, màu vàng sáng. Chống chịu trung bình với một số loại sâu bệnh hại chính, chịu thâm canh, cứng cây chống đổ tốt. Bông to, dài, độ thuần đồng ruộng cao. Hạt gạo thon dài, trắng trong, ít bạc bụng. Vỏ trấu vàng sáng. Khối lượng 1000 hạt 23-24g, chiều dài hạt gạo ~6,7 mm. Chống chịu trung bình với một số loại sâu bệnh hại chính, chịu thâm canh, cứng cây chống đổ tốt.",
 		"yields": "6,5 - 7,0 tấn/ha (thâm canh đạt 8 - 9 tấn/ha)",
-		"description": "Đài Thơm 8 là giống lúa thuần chất lượng cao, được chọn lọc và phát triển tại Việt Nam. Giống có khả năng chống chịu trung bình với sâu bệnh hại chính, chịu thâm canh, cứng cây, chống đổ tốt. Hạt gạo trong, không bạc bụng, cơm trắng bóng, dẻo, thơm nhẹ, giữ được độ dẻo và mùi thơm ngay cả khi bảo quản thóc lâu trước khi xay xát. Hiện được trồng rộng rãi tại ĐBSCL và Đông Nam Bộ.",
-		"image_url": null
+		"description": "Đài Thơm 8 là giống lúa thuần chất lượng cao, được chọn lọc và phát triển tại Việt Nam. Giống có khả năng chống chịu trung bình với sâu bệnh hại chính, chịu thâm canh, cứng cây, chống đổ tốt. ít bị đạo ôn và bạc lá. Hạt gạo trong, không bạc bụng, cơm trắng bóng, dẻo, thơm nhẹ, giữ được độ dẻo và mùi thơm ngay cả khi bảo quản thóc lâu trước khi xay xát. Hiện được trồng rộng rãi tại ĐBSCL và Đông Nam Bộ.",
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Hiệp hội lương thực Việt Nam",
+				"url": "https://vietfood.org.vn/giong-lua-dai-thom-8/"
+			},
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/giong-lua-dai-thom-8/"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/dai-thom-8-the-he-moi-khac-phuc-do-bong-lep-hat-d323068.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa lai KC06-1",
@@ -84,8 +153,22 @@
 		"growth_duration": "95 - 105 ngày",
 		"morphology": "Chiều cao cây 90 - 105 cm, đẻ nhánh khỏe, cứng cây, hạt dài, trong, bóng, không bạc bụng.",
 		"yields": "8 - 10 tấn/ha",
-		"description": "KC06-1 là giống lúa lai thơm do nhóm nghiên cứu của kỹ sư Hồ Quang Cua lai tạo. Giống có khả năng thích nghi rộng, chịu phèn, úng, chống chịu sâu bệnh tốt, đặc biệt kháng đạo ôn. Gạo trắng, cơm mềm dẻo, thơm nhẹ, ngon hơn giống Nhị ưu 838. Thích hợp sản xuất các vụ Đông Xuân, Hè Thu và Thu Đông.",
-		"image_url": null
+		"description": "KC06-1 là giống lúa lai thơm do nhóm nghiên cứu của kỹ sư Hồ Quang Cua lai tạo. Giống có khả năng thích nghi rộng, chịu phèn, úng, chống chịu sâu bệnh tốt, đặc biệt kháng đạo ôn. Gạo trắng, cơm mềm dẻo, thơm nhẹ, ngon. Thích hợp sản xuất các vụ Đông Xuân, Hè Thu và Thu Đông.",
+		"image_url": null,
+		"sources": [
+			{
+				"name": "TRUNG TÂM KHUYẾN NÔNG VÀ DỊCH VỤ NÔNG NGHIỆP TỈNH HẬU GIANG",
+				"url": "https://nongsanhaugiang.com.vn/vn/seed/NSHG884165"
+			},
+			{
+				"name": "Báo Dân Việt",
+				"url": "https://danviet.vn/kc061-giong-lua-lai-thom-nang-suat-cao-7777732625-d486802.html"
+			},
+			{
+				"name": "Tập đoàn giống cây trồng Việt Nam – Vinaseed",
+				"url": "https://vinaseed.com.vn/vi/product/m8/giong-lua-lai-f1-kc06-1-122.htm"
+			}
+		]
 	},
 	{
 		"name": "Lúa ST24",
@@ -96,7 +179,21 @@
 		"morphology": "Cây cao 110 - 115 cm, bản lá xanh bền, thân cứng, bông to và dày, ít lép.",
 		"yields": "8,5 tấn/ha (điều kiện tốt)",
 		"description": "ST24 là giống lúa thơm đặc sản Sóc Trăng do kỹ sư Hồ Quang Cua và cộng sự lai tạo. Giống có khả năng chống chịu phèn, mặn, phù hợp đất lúa - tôm. Ít nhiễm bệnh sọc trong, đạo ôn, khoan cổ bông, đốm vằn; nhiễm nhẹ cháy bìa lá khi thừa phân. Hạt gạo dài, trắng đẹp, cơm thơm, mềm, ngọt. ST24 từng được công nhận là một trong những loại gạo ngon nhất Việt Nam.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/giong-lua-st24/"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN PHÂN BÓN HÀ LAN",
+				"url": "https://halan.net/giong-lua-st24/"
+			},
+			{
+				"name": "Công ty Cổ phần CropTex",
+				"url": "https://croptex.vn/giong-lua-st24/?srsltid=AfmBOoo8fM8kulZAQAzaRSHqw9LGgFvAd8p7yO3lskkzLAxQFFm_j_mS"
+			}
+		]
 	},
 	{
 		"name": "Lúa ST21",
@@ -107,7 +204,17 @@
 		"morphology": "Chiều cao cây 110 - 115 cm, cây nở chồi trung bình 8 - 10 bông/bụi (~230 bông/m2), bản lá xanh ngà, lá đòng hơi to, thân thẳng, ít đổ ngã. Hạt gạo nhỏ, thanh mảnh, trắng trong, dài và nhẹ",
 		"yields": "5 - 6 tấn/ha",
 		"description": "ST21 là giống lúa thơm đặc sản Sóc Trăng, do kỹ sư Hồ Quang Cua và cộng sự chọn tạo. Giống có hạt nhỏ, chất lượng cao, cơm dẻo dai, vị ngọt đậm, hương thơm đặc trưng. Khi nấu chín, hạt gạo nở dài, xếp đều, ngon kể cả khi để nguội. Giống có khả năng chống chịu trung bình với sâu bệnh, cứng cây, chống đổ ngã tốt. Hạt gạo có mùi thơm nhẹ kết hợp giữa cốm và dứa, cơm ngọt, dễ tiêu, ngon hơn sau khi bảo quản >3 tháng. Được trồng phổ biến ở ĐBSCL và các tỉnh ven biển.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "TRUNG TÂM KHUYẾN NÔNG VÀ DỊCH VỤ NÔNG NGHIỆP TỈNH HẬU GIANG",
+				"url": "https://nongsanhaugiang.com.vn/vn/trace-code/NSHG2536"
+			},
+			{
+				"name": "CÔNG TY CP SX TM LÚA VÀNG VIỆT",
+				"url": "https://luavangviet.com/giong-lua-pho-bien-tai-thi-truong-viet-nam/?srsltid=AfmBOoq5ppXz0PcP-vI6PZ1yvN1lxqyLwywdlvnElZ0mUgbkOKhkpx-F"
+			}
+		]
 	},
 	{
 		"name": "Lúa OM18",
@@ -118,7 +225,21 @@
 		"morphology": "Chiều cao trung bình 100 - 110 cm, thân cứng cáp, đẻ nhánh khỏe, lá xanh bền. Hạt gạo thon dài 7,0 - 7,1 mm, trắng trong, cơm mềm, ngọt, thơm nhẹ.",
 		"yields": "Vụ Đông Xuân 7 - 8 tấn/ha, vụ Hè Thu 5 - 6 tấn/ha",
 		"description": "Giống lúa OM18 được lai tạo bởi Bộ môn Công nghệ sinh học - Viện Lúa Đồng bằng sông Cửu Long, chính thức đưa vào canh tác từ năm 2017. Đây là giống lúa ngắn ngày, năng suất cao, có thể trồng 2 - 3 vụ/năm. OM18 có khả năng kháng đạo ôn, hơi nhiễm rầy nâu, chịu mặn ở mức 3 - 4‰, thích nghi tốt với vùng ĐBSCL và vùng nhiễm mặn. Nhờ chất lượng hạt gạo trắng trong, cơm dẻo, thơm nhẹ, OM18 đạt chuẩn xuất khẩu và được thị trường ưa chuộng, nhiều thương lái đặt mua ngay từ đầu vụ.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Công ty Cổ phần Vật tư Tây Đô Long An",
+				"url": "https://taydojsc.com.vn/cach-cham-soc-giong-lua-om-18-va-ky-thuat-canh-tac/"
+			},
+			{
+				"name": "Công Ty Cổ Phần AGRIJAPAN",
+				"url": "https://agrijapanvn.com/giong-lua-om18-giai-phap-ben-vung-cho-ba-con-dbscl/"
+			},
+			{
+				"name": "Công ty Cổ phần CropTex",
+				"url": "https://croptex.vn/giong-lua-om-18/?srsltid=AfmBOoqn26oPNuhZxGt_MwXJb_FxvHnMBK4WSiZewpP1SkiNNbODoy0G"
+			}
+		]
 	},
 	{
 		"name": "Lúa OM6976",
@@ -129,7 +250,21 @@
 		"morphology": "Cây cao 95 - 110 cm, dạng hình đẹp, thân rất cứng, đẻ nhánh khỏe. Bông dài trung bình 25 - 28 cm, to chùm, đóng hạt dày, số hạt chắc/bông đạt 150 - 200. Hạt gạo thon dài, trong, ít bạc bụng.",
 		"yields": "Năng suất trung bình 6,5 - 7,0 tấn/ha; thâm canh đạt 8,0 - 8,5 tấn/ha; vụ Đông Xuân có thể đạt 9 - 10 tấn/ha, vụ Hè Thu 7,0 - 7,5 tấn/ha",
 		"description": "OM6976 là giống lúa thuần chất lượng cao, được lai tạo trong chương trình chọn giống lúa giàu vi chất sắt do ADB tài trợ (2001 - 2007) và Viện Lúa ĐBSCL thực hiện (2008 - 2010). Cơm gạo OM6976 mềm, ngon, vẫn giữ độ dẻo khi nguội, đạt tiêu chuẩn xuất khẩu. Giống có khả năng thích nghi rộng khắp cả 3 miền Bắc - Trung - Nam, chống chịu trung bình đến khá với rầy nâu và đạo ôn, ít bị vàng lùn - lùn xoắn lá, chịu mặn và chống chịu phèn tốt. OM6976 được công nhận giống quốc gia năm 2011 (QĐ số 711/QĐ-TT-CLT) và đạt giải thưởng Bông lúa vàng Việt Nam 2012.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện lúa Đồng bằng sông Cửu Long",
+				"url": "https://clrri.org/giong-lua-om-6976/"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/giong-lua-chat-luong-om6976-d89048.html"
+			},
+			{
+				"name": "Tập đoàn giống cây trồng Việt Nam – Vinaseed",
+				"url": "https://vinaseed.com.vn/vi/product/m8/giong-lua-thuan-om6976-145.htm"
+			}
+		]
 	},
 	{
 		"name": "Lúa OM4900",
@@ -140,7 +275,21 @@
 		"morphology": "Cây cao 100 - 114 cm, thân cứng, ít đổ ngã, đẻ nhánh khá (8 - 12 bông/khóm). Bông to, tỷ lệ hạt lép 13 - 14%. Hạt thon dài 7,0 - 7,3 mm, vỏ trấu mỏng, hạt gạo trong, rất ít bạc bụng.",
 		"yields": "Năng suất trung bình 5 - 7 tấn/ha; vụ Đông Xuân có thể đạt 6,5 - 7,5 tấn/ha; vụ Hè Thu 4,5 - 5,5 tấn/ha",
 		"description": "OM4900 là giống lúa thuần chất lượng cao, ngắn ngày, thích nghi rộng, được chọn tạo bằng phương pháp lai cổ truyền kết hợp chọn lọc có trợ giúp chỉ thị phân tử (MAS). Giống có cơm dẻo, mềm, thơm nhẹ, gạo trắng sáng đạt tiêu chuẩn xuất khẩu cao cấp. Khả năng chống chịu khá tốt với rầy nâu, bạc lá, chịu mặn ổn, thích hợp vùng đất phèn, mặn và phù sa. Được công nhận giống chính thức năm 2009 và đạt giải thưởng Bông lúa vàng Việt Nam 2012.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện lúa Đồng bằng sông Cửu Long",
+				"url": "https://clrri.org/giong-lua-om-4900/"
+			},
+			{
+				"name": "Hiệp hội lương thực Việt Nam",
+				"url": "https://vietfood.org.vn/giong-lua-om4900/"
+			},
+			{
+				"name": "Công ty Cổ phần Vật tư Tây Đô Long An",
+				"url": "https://taydojsc.com.vn/giong-lua-om-4900-dac-tinh-va-ky-thuat-canh-tac/"
+			}
+		]
 	},
 	{
 		"name": "Lúa OM9577",
@@ -151,7 +300,17 @@
 		"morphology": "Cây cứng, chiều cao 95 - 110 cm, lá xanh, đẻ nhánh khá, không đổ ngã. Hạt gạo thon dài, trong, ít bạc bụng, cơm trắng mềm.",
 		"yields": "Đông Xuân: 7 - 9 tấn/ha; Hè Thu: 5 - 7 tấn/ha; Vụ Lúa - Tôm: 6,5 - 8 tấn/ha",
 		"description": "OM9577 là giống lúa cao sản, ngắn ngày, do Viện Lúa ĐBSCL chọn tạo từ tổ hợp OM6976/OM5472, được công nhận chính thức năm 2017. Giống có khả năng chống chịu mặn 3 - 4‰, chịu phèn khá, thích nghi rộng, phù hợp nhiều vùng đất (phù sa, phèn, mặn). Kháng rầy nâu khá, hơi nhiễm đạo ôn, chống chịu bệnh vàng lùn - lùn xoắn lá. Giống được canh tác tốt trong 3 vụ (Đông Xuân, Hè Thu, vụ Lúa - Tôm). Hạt gạo dài, trắng đẹp, cơm mềm, đạt tiêu chuẩn xuất khẩu. OM9577 được đưa vào cơ cấu sản xuất để thay thế dần các giống lúa kém chịu mặn, góp phần thích ứng biến đổi khí hậu ở ĐBSCL.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/chuyen-giao-hai-giong-lua-om18-va-om9577-d216653.html"
+			},
+			{
+				"name": "Cổng thông tin điện tử Nông Thôn Mới tỉnh Hà Tĩnh",
+				"url": "https://nongthonmoi.hatinh.gov.vn/thong-tin-khac/OM9577-duoc-binh-chon-giong-lua-moi-trien-vong-nhat-75842.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa RVT (Thơm RVT)",
@@ -162,7 +321,21 @@
 		"morphology": "Cây cao 100 - 110 cm, phiến lá đứng, dày, lá đòng lòng mo, đẻ nhánh khá, khóm gọn, chống đổ tốt. Bông dài vừa, hạt nhỏ, thon dài, màu vàng sáng. Hạt gạo trong, không bạc bụng, khối lượng 1000 hạt 18 - 19 g. Hạt cơm trắng, mềm, thơm nhẹ.",
 		"yields": "5,5 - 6,0 tấn/ha; thâm canh tốt đạt 6,5 - 7,0 tấn/ha",
 		"description": "RVT là giống lúa thơm, cơm dẻo ngon, đạt tiêu chuẩn xuất khẩu, được người tiêu dùng trong và ngoài nước ưa chuộng. Giống có thời gian sinh trưởng dài hơn các giống BC15, Đài Thơm 8, nhưng cho chất lượng gạo vượt trội: cơm trắng, mềm, vị đậm, có mùi thơm nhẹ. RVT có khả năng chống đổ tốt, chống chịu trung bình với một số sâu bệnh chính (đạo ôn, khô vằn, bạc lá, rầy nâu), thích ứng rộng từ Bắc đến Nam, kể cả vùng đất nhiễm phèn, mặn nhẹ. Hiện đang được xuất khẩu sang nhiều thị trường như Mỹ, Pháp, Úc, Trung Quốc và các nước châu Âu.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/giong-lua-thom-rvt/"
+			},
+			{
+				"name": "Tập đoàn giống cây trồng Việt Nam – Vinaseed",
+				"url": "https://vinaseed.com.vn/vi/product/m8/giong-lua-thuan-chat-luong-thom-rvt-146.htm"
+			},
+			{
+				"name": "Công Ty Cổ Phần AGRIJAPAN",
+				"url": "https://agrijapanvn.com/giong-lua-rvt-lua-thom-chat-luong-cao-phuc-vu-xuat-khau/"
+			}
+		]
 	},
 	{
 		"name": "Lúa Bắc Thơm 7",
@@ -173,7 +346,21 @@
 		"morphology": "Chiều cao cây 90 - 105 cm, đẻ nhánh khá; hạt thon, vỏ trấu màu nâu vàng; khối lượng 1000 hạt 18,5 - 20 g; chiều dài hạt trung bình 5,86 mm; tỷ lệ chiều dài/rộng 2,95.",
 		"yields": "4,5 - 6,5 tấn/ha",
 		"description": "Lúa Bắc Thơm số 7 là giống lúa thơm chất lượng cao, được nhập nội từ Trung Quốc và cải tiến tại Việt Nam. Đây là giống cảm ôn, gieo cấy được cả hai vụ, cơm trắng, mềm, dẻo, thơm đặc trưng. Giống có khả năng chịu rét khá, chống đổ trung bình, chống chịu trung bình với rầy nâu, đạo ôn, khô vằn và nhiễm bạc lá trong vụ Mùa.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/kienthuc/Caylua/08/04_giongbacthom7.htm"
+			},
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/giong-lua-bac-thom-so-7/"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN AIRNANO VIỆT NAM",
+				"url": "https://airnano.vn/giong-lua-bac-thom-so-7/"
+			}
+		]
 	},
 	{
 		"name": "Lúa Hương Châu 6",
@@ -184,7 +371,21 @@
 		"morphology": "Chiều cao 95 - 100 cm, lá đòng đứng dài, bộ lá phẳng xanh nhạt; bông dài >20 cm, có 12 - 14 nhánh gié, hạt đóng khít, chín đồng loạt, hạt thon dài màu vàng sáng; gạo trong không bạc bụng, tỷ lệ xay xát 66 - 67%; khối lượng 1000 hạt 24 - 25 g; cây cứng chống đổ khá.",
 		"yields": "Trung bình 6,0 - 6,5 tấn/ha; thâm canh đạt 7,0 - 7,5 tấn/ha; vụ Đông Xuân có thể đạt 8 - 9 tấn/ha, vụ Hè Thu ~7 tấn/ha",
 		"description": "Giống lúa thuần chất lượng cao, chịu thâm canh tốt, chống đổ khá, chống chịu trung bình với một số sâu bệnh hại chính, ít nhiễm đạo ôn và vàng lá lùn xoắn lá. Thích nghi rộng, sinh trưởng tốt trên nhiều loại đất, đặc biệt chịu mặn khá (3 - 4‰), chịu phèn tốt, phù hợp với điều kiện biến đổi khí hậu ở Đồng bằng Sông Cửu Long. Có thể gieo cấy được cả 2 vụ, cho năng suất cao và ổn định. Gạo thon dài, trong, không bạc bụng, cơm trắng bóng, mềm dẻo, vị đậm, có hương thơm nhẹ đặc trưng, tỷ lệ xay xát cao (66 - 67%), đạt tiêu chuẩn xuất khẩu, được thị trường trong và ngoài nước ưa chuộng.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Tập đoàn giống cây trồng Việt Nam – Vinaseed",
+				"url": "https://vinaseed.com.vn/vi/product/m7/giong-lua-thuan-nang-suat-chat-luong-huong-chau-6-121.htm"
+			},
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/dac-tinh-giong-lua-huong-chau-6/"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN AIRNANO VIỆT NAM",
+				"url": "https://airnano.vn/giong-lua-huong-chau-6/"
+			}
+		]
 	},
 	{
 		"name": "Lúa HDR7",
@@ -195,7 +396,13 @@
 		"morphology": "Cây cao 92 - 128 cm, sinh trưởng khỏe, đẻ nhánh khá, lá xanh, bông trung bình, hạt thóc thon dài, vàng sáng, hạt chắc cao. Gạo thon dài, trong, cơm trắng bóng, mềm dẻo, thơm nhẹ. Hàm lượng amylose 15 - 16%.",
 		"yields": "Trung bình 5,4 - 7,1 tấn/ha",
 		"description": "HDR7 là giống lúa thuần, cản ôn, phù hợp gieo cấy cả vụ Xuân và vụ Mùa/Hè Thu tại các tỉnh phía Bắc trên chân đất vàn, vàn cao chủ động tưới tiêu. Có khả năng chống chịu khá, chỉ nhiễm nhẹ bệnh đạo ôn, nhiễm nhẹ đến vừa bạc lá và rầy nâu. Thích hợp canh tác thâm canh, dễ chăm sóc, chất lượng gạo ngon, cơm dẻo, đạt tiêu chuẩn hàng hóa.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-hdr7/"
+			}
+		]
 	},
 	{
 		"name": "Lúa HD16",
@@ -206,7 +413,13 @@
 		"morphology": "Chiều cao 110 - 120 cm, cây cứng chống đổ khá; hạt thóc thon dài (6,8 mm), vàng sáng; khối lượng 1000 hạt 24,1 - 25,6 g; gạo trong, tỷ lệ xay xát 67 - 72%; cơm trắng, mềm, vị đậm, có mùi thơm đặc trưng.",
 		"yields": "5,2 - 7,0 tấn/ha (vụ Mùa); 6,2 - 8,0 tấn/ha (vụ Xuân)",
 		"description": "HD16 là giống lúa thuần chất lượng cao, cảm ôn, phù hợp gieo trồng cả vụ Xuân/Đông Xuân và vụ Mùa/Hè Thu tại các tỉnh phía Bắc, trên chân đất vàn và vàn cao chủ động tưới tiêu. Có khả năng kháng bệnh bạc lá tốt, kháng đến nhiễm vừa đạo ôn, nhiễm vừa rầy nâu. Gạo thon dài, trong, cơm ngon, mềm dẻo, thơm nhẹ, đáp ứng nhu cầu hàng hóa chất lượng cao.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-hd16/"
+			}
+		]
 	},
 	{
 		"name": "Lúa U17",
@@ -217,7 +430,21 @@
 		"morphology": "Chiều cao 115 - 130 cm, cây cứng chống đổ tốt, bông dài 22 - 24 cm, trung bình 125 - 140 hạt/bông; hạt to hơi bầu, màu vàng sáng; khối lượng 1000 hạt 25 - 26 g.",
 		"yields": "Trung bình 4,5 - 5,0 tấn/ha; thâm canh có thể đạt 6,0 - 7,0 tấn/ha",
 		"description": "Giống lúa thuần cảm ôn, thích hợp gieo cấy cả 2 vụ Xuân và Mùa tại vùng trung du miền núi phía Bắc, đặc biệt phù hợp ở vùng trũng thường xuyên ngập úng. Cây cứng, chống đổ tốt, có khả năng chịu ngập 5 - 7 ngày ở giai đoạn mạ đến đứng cái. Kháng bạc lá, nhiễm khô vằn. Gạo tỷ lệ xay xát 65 - 68%, cơm trắng, chất lượng ăn trung bình.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-u17/"
+			},
+			{
+				"name": "Trung tâm Giống cây trồng Vật nuôi & Thuỷ sản tỉnh Thái Nguyên",
+				"url": "http://giong.thainguyen.gov.vn/vi/shops/hat-cay-con-giong/giong-lua-lai-u17.html"
+			},
+			{
+				"name": "Tạp chí Khoa học Nông nghiệp Việt Nam",
+				"url": "https://tapchi.vaas.vn/vi/giong/giong-lua-u17"
+			}
+		]
 	},
 	{
 		"name": "Lúa N24",
@@ -228,7 +455,21 @@
 		"morphology": "Chiều cao 115 - 120 cm, đẻ nhánh khỏe, thân cứng, bông to, hạt xếp dày; 150 - 180 hạt chắc/bông, tỷ lệ chắc cao; khối lượng 1000 hạt 20,6 - 21,4 g; hạt gạo trắng trong, bóng đẹp.",
 		"yields": "Trung bình 5,6 - 6,5 tấn/ha vụ Xuân, ~5,2 tấn/ha vụ Mùa; thâm canh đạt 8,5 - 9,0 tấn/ha.",
 		"description": "Giống lúa thuần chất lượng cao, cơm mềm ngon, thơm nhẹ, tỷ lệ gạo nguyên cao. Chống đổ rất tốt, kháng cao với bệnh đạo ôn, chịu lạnh giai đoạn mạ khá, thích hợp với nhiều chân đất chủ động tưới tiêu. Giống có khả năng chịu thâm canh tốt, phù hợp thay thế cho các giống Bắc thơm 7, BC15, Khang dân 18 tại Đồng bằng Bắc Bộ.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-n24/"
+			},
+			{
+				"name": "Công ty Cổ phần Nông nghiệp và Thương mại Quốc tế",
+				"url": "https://quocte.net.vn/lua-giong-n24.html"
+			},
+			{
+				"name": "Hội Nông dân Việt Nam",
+				"url": "http://www.khoahocchonhanong.com.vn/kinh-nghiem-san-xuat-giong-lua-n24.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa Gia Lộc 35",
@@ -239,7 +480,21 @@
 		"morphology": "Chiều cao 100 - 110 cm, đẻ nhánh trung bình và đều, bông to dài 25 - 29 cm, số hạt/bông cao (160 - 190 hạt), tỷ lệ hạt chắc cao. Hạt nâu vàng, thon dài, khối lượng 1000 hạt 21 - 22 g. Gạo trong, cơm mềm, bóng đẹp, vị đậm, thơm nhẹ, amylose thấp (14,7 - 16,6%), tỷ lệ gạo xát và gạo nguyên cao.",
 		"yields": "Vụ Xuân trung bình 6,5 - 7,7 tấn/ha, thâm canh đạt 8,0 tấn/ha; Vụ Mùa trung bình 6,0 - 6,5 tấn/ha, thâm canh đạt 7,0 tấn/ha.",
 		"description": "Giống lúa thuần ngắn ngày, chất lượng cao, chịu thâm canh, chống đổ khá, ít nhiễm bệnh đạo ôn, bạc lá, rầy nâu; nhiễm nhẹ khô vằn. Phù hợp gieo cấy vụ Xuân muộn và Mùa sớm trên chân đất vàn và vàn cao. Gạo thon dài, cơm mềm dẻo, trắng bóng, vị đậm, thơm nhẹ, đáp ứng nhu cầu gạo chất lượng cao.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/gia-loc-35/"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/trong-giong-lua-gia-loc-35-loi-nhuan-30--35-trieu-dong-d383866.html"
+			},
+			{
+				"name": "Chi Cục Tiêu Chuẩn Đo Lường Chất Lượng tỉnh Sóc Trăng",
+				"url": "https://sttech.soctrang.gov.vn/cungsanpham/505/giong-lua-thuan-gia-loc-35.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa Gia Lộc 26",
@@ -250,7 +505,17 @@
 		"morphology": "Chiều cao cây trung bình, dạng hình gọn, đẻ nhánh khá (5 - 7 dảnh/khóm), bông to, số hạt/bông 150 - 170, hạt thon dài màu vàng sáng, hạt gạo dài ~7,85 mm, gạo trong, cơm mềm, thơm nhẹ, amylose ~18%, nhiệt độ hóa hồ trung bình. Lá bền, độ tàn lá chậm, chống đổ khá.",
 		"yields": "Vụ Xuân trung bình ~7,1 tấn/ha, vụ Mùa ~6,4 tấn/ha; thâm canh tốt đạt trên 7,5 tấn/ha.",
 		"description": "Giống lúa thuần chịu thâm canh khá, sinh trưởng phát triển tốt, thích hợp gieo cấy ở vụ Xuân và vụ Mùa tại Đồng bằng sông Hồng, Trung du miền núi phía Bắc và vụ Xuân tại Bắc Trung Bộ. Có khả năng chịu rét tốt, chống đổ khá, kháng khá bệnh đạo ôn, nhiễm nhẹ khô vằn. Gạo thon dài, cơm mềm, thơm nhẹ, chất lượng tốt, phù hợp thị trường gạo chất lượng cao.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/gia-loc-26/"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/giong-lua-gia-loc-26-va-gia-loc-35-phat-trien-tot-o-quang-tri-d380122.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa HD11",
@@ -261,7 +526,21 @@
 		"morphology": "Chiều cao 116 - 121 cm, đẻ nhánh khá; số bông hữu hiệu/khóm 4,6 - 5,3; số hạt/bông 166 - 185; khối lượng 1000 hạt 23,0 - 24,7 g; hạt gạo dài 6,34 - 6,44 mm; tỷ lệ gạo xát 69 - 72%; gạo trắng trong 88 - 90%; hàm lượng amylose 17 - 18%; cơm thơm nhẹ, mềm ngon.",
 		"yields": "Vụ Xuân 6,3 - 7,0 tấn/ha; Vụ Mùa 5,5 - 6,0 tấn/ha.",
 		"description": "Giống lúa thuần cảm ôn, thích ứng rộng, sinh trưởng khỏe, chống đổ tốt, chống chịu sâu bệnh khá, chỉ nhiễm nhẹ đốm nâu. Thích hợp gieo cấy trên chân đất vàn và vàn cao tại các tỉnh phía Bắc. Chất lượng gạo tốt, hạt dài trong, cơm mềm, thơm nhẹ, được đánh giá ngon, phù hợp sản xuất hàng hóa.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-hd11/"
+			},
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/vi/giong/giong-lua-hd11"
+			},
+			{
+				"name": "Báo Hà Nội Mới",
+				"url": "https://hanoimoi.vn/giong-lua-chat-luong-cao-hd11-phat-huy-hieu-qua-tren-dong-dat-my-duc-667199.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa HDT10",
@@ -272,7 +551,21 @@
 		"morphology": "Chiều cao trung bình 110 cm; hạt ngắn, nhỏ, màu nâu xẫm; khối lượng 1000 hạt 21 g; cây cứng, chống đổ khá, sức sống tốt.",
 		"yields": "Trung bình 6,0 - 6,5 tấn/ha",
 		"description": "Giống lúa thơm chất lượng cao, cơm mềm, đậm, có mùi thơm nhẹ, được thị trường ưa chuộng. Cứng cây, chống đổ tốt, kháng vừa với bệnh bạc lá và đạo ôn. Phù hợp gieo cấy ở vụ Xuân và vụ Mùa trên chân đất vàn và vàn cao thuộc các tỉnh Đồng bằng, Trung du miền núi phía Bắc và Bắc Trung Bộ. Có thể gieo cấy bằng mạ dược, mạ sân hoặc gieo thẳng.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-hdt10/"
+			},
+			{
+				"name": "SỞ NÔNG NGHIỆP VÀ MÔI TRƯỜNG THÀNH PHỐ HÀ NỘI",
+				"url": "https://sonnmt.hanoi.gov.vn/cat141/3902/Giong-lua-thuan-moi-HDT-Boi-thu-cua-nha-nong"
+			},
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/giong-lua-hdt10/"
+			}
+		]
 	},
 	{
 		"name": "Lúa N26",
@@ -283,7 +576,13 @@
 		"morphology": "Chiều cao 100 - 110 cm, cây sinh trưởng nhanh, lá màu xanh nhạt. Hạt nhỏ, dài, gạo trong, tỷ lệ gạo nguyên cao. Khối lượng 1000 hạt 21 - 22 g. Cơm ngon, mềm dẻo, vị đậm.",
 		"yields": "Trung bình 5,8 - 6,0 tấn/ha; thâm canh tốt đạt trên 7,0 tấn/ha",
 		"description": "Giống lúa thuần cực ngắn ngày, sinh trưởng khỏe, thích hợp làm vụ Xuân muộn, Mùa sớm và Hè Thu cực sớm. Chống chịu tốt với bệnh bạc lá (điểm 1 - 3), kháng vừa với đạo ôn (điểm 3), chống chịu tốt bệnh khô vằn, nhiễm vừa rầy nâu. Phù hợp gieo cấy trên chân đất vàn và vàn cao tại các tỉnh đồng bằng, miền núi phía Bắc và Bắc Trung Bộ. Cho cơm dẻo, mềm, đậm vị, gạo trong, tỷ lệ gạo nguyên cao, phù hợp sản xuất hàng hóa.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-n26/"
+			}
+		]
 	},
 	{
 		"name": "Lúa PC26",
@@ -294,7 +593,17 @@
 		"morphology": "Chiều cao 100 - 105 cm, cây cứng, chống đổ tốt, chịu rét khá. Hạt tròn, chắc, tỷ lệ hạt chắc >90%. Cơm mềm, ngon, chất lượng cao.",
 		"yields": "Vụ Xuân 6,5 - 7,6 tấn/ha, thâm canh đạt 8,0 tấn/ha; Vụ Mùa 5,3 - 5,8 tấn/ha",
 		"description": "Giống lúa thuần japonica chất lượng cao, không cảm quang, gieo trồng được cả 2 vụ/năm. Thích nghi trên chân vàn và vàn thấp chủ động tưới tiêu, đặc biệt phù hợp các tỉnh phía Bắc. Khả năng chống chịu sâu bệnh tốt, ít đổ ngã, chịu rét tốt. Gạo tròn, không bạc bụng, tỷ lệ gạo nguyên >85%, cơm mềm ngon, đáp ứng thị hiếu của thị trường Nhật Bản, Hàn Quốc, Đài Loan và Bắc Trung Quốc. Cần lưu ý khử lẫn để nâng cao giá trị hàng hóa, thu hoạch khi chín hoàn toàn để đảm bảo chất lượng gạo.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-pc26/"
+			},
+			{
+				"name": "Báo điện tử Cao Bằng",
+				"url": "https://baocaobang.vn/Quang-Uyen-Tong-ket-mo-hinh-lien-ket-san-xuat-va-tieu-thu-giong-lua-PC26-15300.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa N25",
@@ -305,7 +614,21 @@
 		"morphology": "Chiều cao 110 - 120 cm, sinh trưởng nhanh, lá màu xanh nhạt; hạt nhỏ dài, gạo trong, tỷ lệ gạo nguyên cao, cơm mềm dẻo, đậm. Khối lượng 1000 hạt 21 - 23 g.",
 		"yields": "Vụ Xuân 6,2 - 6,7 tấn/ha; Vụ Mùa 5,5 - 6,3 tấn/ha",
 		"description": "Giống lúa ngắn ngày, chịu nóng rất tốt, cứng cây trung bình, kháng đạo ôn, nhiễm nhẹ rầy nâu và bạc lá. Phù hợp gieo cấy trà xuân muộn, mùa sớm và hè thu tại các tỉnh phía Bắc, nhất là trên đất vàn cao và các công thức luân canh 2 lúa - 2 màu hoặc 1 lúa - 2 - 3 màu. Gạo trong, cơm ngon, mềm dẻo, được thị trường ưa chuộng. Cần chú ý gieo cấy, bón phân sớm và đúng kỹ thuật để đạt năng suất cao.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/giong-lua-ngan-ngay-nang-suat-chat-luong-n25/"
+			},
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/vi/giong/giong-lua-n25"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN MỘC ĐIỀN",
+				"url": "https://mocdien.com.vn/linh-vuc-kinh-doanh/giong-lua-n25/"
+			}
+		]
 	},
 	{
 		"name": "Lúa P9",
@@ -316,7 +639,21 @@
 		"morphology": "Cây cao 100 - 105 cm, bông to dài, hạt thon dài vỏ nâu vàng, tỷ lệ hạt chắc cao (~90%).",
 		"yields": "6,0 - 7,0 tấn/ha, thâm canh đạt trên 7,0 tấn/ha.",
 		"description": "Giống lúa thuần chất lượng khá, cơm mềm ngon, ít nhiễm sâu bệnh, thích hợp gieo cấy cả 2 vụ/năm trên chân vàn và đất chua mặn nhẹ.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-p9/"
+			},
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/vi/giong/giong-lua-p9"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/giong-lua-thuan-moi-co-ham-luong-protein-cao-d80693.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa HDT8",
@@ -327,7 +664,21 @@
 		"morphology": "Cao cây ~110 cm, hạt dài màu nâu sẫm, khối lượng 1000 hạt ~23 g. Cứng cây trung bình, chịu rét tốt, nhiễm nhẹ bạc lá, đạo ôn, rầy nâu. Gạo ngon, cơm mềm, đậm, thơm.",
 		"yields": "5,5 - 6,0 tấn/ha",
 		"description": "Giống lúa thơm, chất lượng cao, có thể gieo cấy 2 vụ/năm, thích hợp trên đất vàn và vàn cao ở Đồng bằng, Trung du miền núi phía Bắc và Bắc Trung Bộ. Đã được áp dụng thành công tại nhiều tỉnh như Thái Nguyên, Hải Dương, Hà Nội, Hưng Yên, Nam Định, Nghệ An. Cần gieo đúng thời vụ và thu hoạch khi lúa chín 90% để đảm bảo chất lượng gạo.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-hdt8/"
+			},
+			{
+				"name": "Báo Dân Việt",
+				"url": "https://danviet.vn/gioi-thieu-giong-lua-hdt-8-nang-suat-cao-777712099-d173933.html"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/hdt8---giong-lua-thuan-vuot-troi-d123224.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa CH16",
@@ -338,7 +689,13 @@
 		"morphology": "Cây cao trung bình, đẻ nhánh khá, bông dài 20 - 22 cm, 145 - 160 hạt/bông, khối lượng 1000 hạt 21 - 22 g. Hạt nhỏ, màu vàng. Chống đổ và chịu rét khá, chịu hạn tốt, phục hồi nhanh sau hạn.",
 		"yields": "3,5 - 4,0 tấn/ha trong điều kiện hạn; 5,5 - 6,5 tấn/ha khi đủ nước",
 		"description": "CH16 là giống lúa chịu hạn, thích hợp cho vùng miền núi, trung du phía Bắc và các khu vực khó khăn về nước tưới. Thời gian sinh trưởng ngắn, dễ luân canh tăng vụ hoặc gieo né hạn. Nhiễm nhẹ sâu bệnh thông thường, nhiễm vừa khô vằn. Gạo chất lượng khá, năng suất ổn định, đã được áp dụng tại nhiều địa phương như Lạng Sơn, Thái Nguyên, Hòa Bình, Hải Dương.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-ch16/"
+			}
+		]
 	},
 	{
 		"name": "Lúa T10",
@@ -349,7 +706,25 @@
 		"morphology": "Cao cây 95 - 100 cm, thân cứng trung bình, bộ lá xanh, tán lá gọn, đẻ nhánh trung bình. Hạt thóc màu nâu thẫm, thon nhỏ; gạo trong, hơi đục; cơm dẻo, có mùi thơm, vị đậm, chan canh không nát, cơm để nguội không cứng.",
 		"yields": "Trung bình 5,0 - 5,5 tấn/ha; thâm canh cao đạt 6 - 6,5 tấn/ha",
 		"description": "T10 là giống lúa thơm chất lượng cao, thích hợp gieo trồng trên các chân đất vàn, vàn hơi thấp và hơi cao chủ động nước tại các tỉnh miền Bắc. Chống chịu trung bình với điều kiện ngoại cảnh, khô vằn trung bình, nhiễm bạc lá nhẹ hơn BT7. Kỹ thuật canh tác bao gồm gieo mạ trà xuân muộn từ 25/1 - 10/2, trà mùa sớm từ 5/6 - 15/6; mật độ cấy 45 - 50 khóm/m2, mỗi khóm 2 - 3 dảnh; bón phân chuồng, urê, lân và kali theo hướng dẫn. Thu hoạch khi lúa đạt độ chín 85 - 90% để giữ mùi thơm lâu. Đã áp dụng thành công tại Thái Bình, Hưng Yên, Hải Dương, Nam Định, Ninh Bình, Vĩnh Phúc, Yên Bái, Điện Biên…",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-thom-t10/"
+			},
+			{
+				"name": "Tập đoàn giống cây trồng Việt Nam – Vinaseed",
+				"url": "https://vinaseed.com.vn/vi/product/m8/giong-lua-thuan-chat-luong-t10-140.htm"
+			},
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/vi/giong/giong-lua-t10"
+			},
+			{
+				"name": "Báo Thái Bình",
+				"url": "https://baothaibinh.com.vn/tin-tuc/0/61339/giong-lua-t10-su-lua-chon-cua-nhieu-nong-dan"
+			}
+		]
 	},
 	{
 		"name": "Lúa P6ĐB",
@@ -360,7 +735,21 @@
 		"morphology": "Cao cây 85 - 90 cm, dạng hình gọn, thân đứng, lá xanh đậm. Số hạt/bông 115 - 150, tỷ lệ lép thấp 8 - 10%, khối lượng 1000 hạt 26 - 27 g. Chất lượng gạo khá, chiều dài hạt gạo 7,12 mm, hàm lượng amylose 15,5%.",
 		"yields": "Trung bình 50 - 55 tạ/ha, thâm canh tốt đạt 60 tạ/ha",
 		"description": "P6ĐB là giống lúa cực ngắn ngày, thích hợp gieo cấy trên các chân đất vàn, vàn cao, đất làm vụ đông sớm hoặc vùng hay bị lũ sớm ở miền Trung. Kỹ thuật canh tác: gieo mạ sau lập xuân 10 - 30 ngày, vụ mùa gieo từ 25/5 - 25/7; mật độ cấy 50 - 55 khóm/m2, mỗi khóm 2 - 3 dảnh; bón phân chuồng, ure, lân, kali hoặc NPK theo hướng dẫn; phòng trừ sâu bệnh kịp thời, chú ý đạo ôn vụ xuân; thu hoạch sau 28 ngày kể từ lúc lúa trỗ hoàn toàn. Đã áp dụng thành công tại Hải Dương, Hải Phòng, Bắc Giang, Thái Bình, Quảng Bình.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-p6db/"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/giong-lua-cuc-ngan-ngay-p6-dot-bien-d84564.html"
+			},
+			{
+				"name": "Báo Dân Việt",
+				"url": "https://danviet.vn/p6db-giong-lua-cuc-ngan-ngay-7777109093-d250872.html"
+			}
+		]
 	},
 	{
 		"name": "Lúa Trân Châu Hương (SH8)",
@@ -371,7 +760,21 @@
 		"morphology": "Cây cao 95-115 cm, kiểu hình đẹp, bông nhiều hạt xếp sít, hạt vàng sáng, số hạt/bông 220-250, tỷ lệ lép 13-15%. Hạt gạo thon nhỏ, trắng trong, cơm mềm, đậm, thơm, không dính.",
 		"yields": "Trung bình 60-65 tạ/ha; ruộng tốt đạt 75-80 tạ/ha",
 		"description": "SH8 là giống lúa chất lượng cao, ngắn ngày, thay thế Bắc thơm số 7. Phù hợp gieo cấy trên đất vàn, vàn cao, các trà Xuân muộn, Mùa sớm và Hè thu. Kỹ thuật: gieo mạ, cấy mạ 3-4 lá, mật độ phù hợp, bón phân cân đối, phòng trừ sâu bệnh. Đã áp dụng thành công tại nhiều tỉnh phía Bắc và Trung Bộ.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-chan-chau-huong-sh8/"
+			},
+			{
+				"name": "Nông Sản Mekong",
+				"url": "https://nongsanmekong.com/kham-pha-giong-lua-tran-chau-huong/"
+			},
+			{
+				"name": "Tập đoàn giống cây trồng Việt Nam – Vinaseed",
+				"url": "https://vinaseed.com.vn/vi/news/m25/huong-dan-gieo-trong-giong-lua-tran-chau-huong-256.htm"
+			}
+		]
 	},
 	{
 		"name": "Lúa CH5",
@@ -382,7 +785,17 @@
 		"morphology": "Cây cứng, gọn, lá đứng, màu xanh đậm; bông 22-23 cm, hạt to dài, gạo trong, amylose 25,5%, cơm ngon.",
 		"yields": "Trung bình 50-55 tạ/ha, tối đa 65 tạ/ha",
 		"description": "CH5 là giống lúa chịu hạn, thích hợp gieo cấy trên đất bấp bênh nước và thâm canh có chủ động tưới. Mật độ 60-65 khóm/m2, bón phân cân đối, chăm sóc và phòng trừ sâu bệnh theo kỹ thuật chuẩn. Kháng vừa với đạo ôn, khô vằn, bạc lá và rầy nâu, năng suất ổn định, phù hợp 2 vụ/năm.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-ch5/"
+			},
+			{
+				"name": "Viện Khoa học Nông nghiệp Việt Nam",
+				"url": "https://vaas.vn/vi/giong/giong-lua-ch5"
+			}
+		]
 	},
 	{
 		"name": "Lúa M6",
@@ -393,7 +806,13 @@
 		"morphology": "Cây cao 100-105 cm, đẻ nhánh trung bình, lá đứng ngắn xanh nhạt, bông 20-25 cm, hạt hơi bầu, khối lượng 1000 hạt 25-26 g. Chịu mặn và phèn khá, gạo chắc, cơm ngon.",
 		"yields": "Trung bình 50-60 tạ/ha, có thể đạt 55-60 tạ/ha tại vùng nhiễm mặn nhẹ",
 		"description": "M6 là giống lúa trung ngày, thích hợp gieo cấy cả vụ Xuân và mùa chính vụ trên đất phèn mặn và chân đất vàn. Chịu mặn khá, ít nhiễm sâu bệnh, kháng đạo ôn, chịu rét tốt. Mật độ 30-40 khóm/m2, 2-3 dảnh/khóm, bón phân cân đối, phòng trừ sâu bệnh kịp thời. Thích hợp vùng đồng bằng ven biển Bắc và Trung bộ, đã áp dụng thành công tại Hải Phòng, Thái Bình, Nam Định, Thanh Hóa, Quảng Ninh, Ninh Bình.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-m6/"
+			}
+		]
 	},
 	{
 		"name": "Lúa P290",
@@ -404,7 +823,17 @@
 		"morphology": "Cây cao 95-100 cm, lá gọn xanh đậm, bông 27-28 cm, hạt dài 6,8 mm, tỉ lệ dài/rộng >3, khối lượng 1000 hạt 24-25 g, cơm ngon, mềm, không quá dẻo, hàm lượng amylose 22%, protein 10%.",
 		"yields": "Vụ Xuân 58-60 tạ/ha, Vụ Mùa 55-56 tạ/ha",
 		"description": "P290 là giống lúa trung ngày, thích hợp gieo cấy cả vụ Xuân và Mùa trên chân đất 2 vụ lúa. Chịu rét và chống đổ khá, kháng vừa đạo ôn, nhiễm nhẹ bạc lá và khô vằn. Mật độ 55-60 khóm/m2, 3-4 dảnh/khóm, bón phân cân đối, chú ý phòng sâu bệnh. Thích hợp canh tác thâm canh trên vùng đồng bằng Bắc Bộ, không nên trồng trên đất 2 lúa + 1 màu.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Viện Cây lương thực và Cây thực phẩm",
+				"url": "https://fcri.com.vn/sanpham/giong-lua-p290/"
+			},
+			{
+				"name": "Báo Nông nghiệp & Môi trường",
+				"url": "https://nongnghiepmoitruong.vn/ket-qua-phat-trien-giong-lua-p6-p290-tai-cac-tinh-bac-trung-bo-d38600.html"
+			}
+		]
 	},
 	{
 		"name": "Xoài Cát Hòa Lộc",
@@ -415,7 +844,17 @@
 		"morphology": "Trọng lượng 450-700g. Quả dày, thuôn, bụng tròn, đầu quả hơi nhọn, núm cuống nhỏ, phần đuôi có dún nhẹ. Thịt vàng ươm ngay khi chín, mịn, rất ít xơ, vỏ mỏng, da quả mịn.",
 		"yields": "12-18 tấn/ha",
 		"description": "Xoài Cát Hòa Lộc là giống đặc sản có xuất xứ từ xã Hòa Lộc, huyện Cái Bè, Tiền Giang. Cho quả sau khoảng 3,5-4 tháng kể từ khi ra hoa. Được cấp chỉ dẫn địa lý, nổi tiếng nhờ vị ngọt thanh, thơm đặc trưng và chất lượng hàng xuất khẩu. Thịt quả dẻo, ngọt, hậu ngọt rõ rệt. Mùa vụ từ tháng 3 đến tháng 7.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Công ty TNHH Morning Fruit",
+				"url": "https://morningfruit.com.vn/blogs/news/tat-tan-tat-ve-xoai-cat-hoa-loc"
+			},
+			{
+				"name": "Xoài cát Hòa Lộc - Wikipedia",
+				"url": "https://vi.wikipedia.org/wiki/Xo%C3%A0i_c%C3%A1t_H%C3%B2a_L%E1%BB%99c"
+			}
+		]
 	},
 	{
 		"name": "Xoài Cát Chu",
@@ -426,7 +865,17 @@
 		"morphology": "Quả tròn hơi thuôn dài về phía đuôi, thịt quả vàng cam. Cân nặng trung bình 300-500g/quả. Vỏ xanh vàng nhạt khi xanh, vàng đậm khi chín, mỏng, dễ bóc. Thịt vàng cam, mềm, mịn, dai vừa, ít xơ, mùi thơm đặc trưng.",
 		"yields": "15-20 tấn/ha",
 		"description": "Xoài Cát Chu là giống xoài truyền thống nổi tiếng vùng Đồng Tháp, được thị trường trong và ngoài nước ưa chuộng. Thích đất phù sa, đất thịt pha cát, cây dễ chăm sóc. Vị xoài ngọt đậm hòa chút chua nhẹ, thơm nhẹ đặc trưng, thịt quả ít xơ. Xoài ngọt đậm, thơm quyến rũ, thích hợp ăn tươi hoặc chế biến sinh tố, nước ép. Mùa vụ từ tháng 4 đến tháng 6.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Công Ty Cổ Phần Nông Nghiệp Sạch Viefarm",
+				"url": "https://viefarm.vn/nhan-biet-xoai-cat-chu?srsltid=AfmBOooVaaZrAtDhu-2vRW2KDPPerAyaxy9LZ9zu_JiUrzSjQFo55efz"
+			},
+			{
+				"name": "Vina T&T Group",
+				"url": "https://vinatt.com/xoai-cat-chu"
+			}
+		]
 	},
 	{
 		"name": "Xoài Keo",
@@ -437,7 +886,21 @@
 		"morphology": "Cây cao trung bình 5m. Quả tròn to, thuôn dài, phần giữa phình, 2 đầu thon, đuôi tròn, nặng từ 250-400g. Vỏ mỏng, màu xanh đậm, dày và cứng khi non, khi chín vàng nhạt. Thịt dày, màu vàng nhạt, ít xơ, hạt nhỏ, khi xanh giòn - chua nhẹ, khi chín ngọt đậm và thơm.",
 		"yields": "15 - 20 tấn/ha",
 		"description": "Giống xoài nhập từ Campuchia, trồng phổ biến ở miền Nam Việt Nam. Vụ chính từ tháng 10 - 12 và 2 - 4. Quả dễ ăn, ít chua kể cả khi non, ít mủ, mùi thơm dễ chịu. Dùng đa dạng: ăn xanh, gỏi, ăn chín, sinh tố. Xoài chua thanh, thích hợp ăn sống, làm gỏi hoặc ngâm chua. Mùa vụ từ tháng 3 đến tháng 6.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "VINFRUITS",
+				"url": "https://vinfruits.com/xoai-keo?srsltid=AfmBOorbtArzKr5bIk93ywLDl-IsLqxZqRC-HQdcb_L7kBVPXNoHXRU9"
+			},
+			{
+				"name": "NATA Garden",
+				"url": "https://natagarden.com/san-pham/xoai-keo/"
+			},
+			{
+				"name": "Công ty TNHH Hoàng Phát Fruit",
+				"url": "https://hoangphatfruit.com/vn/xoai-keo.html"
+			}
+		]
 	},
 	{
 		"name": "Xoài Tượng",
@@ -447,7 +910,21 @@
 		"growth_duration": "Cây lâu năm",
 		"morphology": "Quả thuôn dài, trọng lượng 0.5-1kg, có quả nặng đến 1.5kg. Vỏ dày, màu xanh đậm khi xanh, vàng nhạt pha xanh khi chín, vỏ mịn và bóng. Thịt vàng nhạt, dày, chắc, giòn, ít xơ, hạt mỏng. Hương thơm nhẹ khi chín, có vị ngọt đậm và mềm mại.",
 		"yields": "10 - 15 tấn/ha",
-		"description": "Giống xoài quả to, được nhiều nhà vườn trồng vì khả năng cho quả to đẹp, mẫu mã bắt mắt. Được dùng cả khi quả chín và khi quả xanh; quả xanh ăn vẫn có độ giòn nhẹ. Xoài chua giòn đặc trưng, vị ngọt nhẹ, thích hợp ăn sống hoặc ngâm chua. Bắt đầu cho trái từ khoảng 3 năm tuổi, năng suất đạt đỉnh vào giai đoạn 7-15 năm. Thích hợp cho thị trường trái cây cao cấp, xuất khẩu, chế biến mứt, nước ép. Mùa vụ từ tháng 4 đến tháng 7."
+		"description": "Giống xoài quả to, được nhiều nhà vườn trồng vì khả năng cho quả to đẹp, mẫu mã bắt mắt. Được dùng cả khi quả chín và khi quả xanh; quả xanh ăn vẫn có độ giòn nhẹ. Xoài chua giòn đặc trưng, vị ngọt nhẹ, thích hợp ăn sống hoặc ngâm chua. Bắt đầu cho trái từ khoảng 3 năm tuổi, năng suất đạt đỉnh vào giai đoạn 7-15 năm. Thích hợp cho thị trường trái cây cao cấp, xuất khẩu, chế biến mứt, nước ép. Mùa vụ từ tháng 4 đến tháng 7.",
+		"sources": [
+			{
+				"name": "Công ty TNHH Hoàng Phát Fruit",
+				"url": "https://hoangphatfruit.com/vn/xoai-tuong-vang-xanh.html"
+			},
+			{
+				"name": "CÔNG TY TNHH THỰC PHẨM P&T VIỆT NAM",
+				"url": "https://xoaisaydeo.com/blog/10-giong-xoai-pho-bien-nhat-viet-nam/"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN ICHECK TRACE",
+				"url": "https://trace.icheck.vn/vn/seed/VNT54601"
+			}
+		]
 	},
 	{
 		"name": "Xoài Cát Bưởi",
@@ -457,7 +934,21 @@
 		"growth_duration": "Cây lâu năm",
 		"morphology": "Quả trung bình 400-600 g/quả; vỏ vàng khi chín; thịt quả vàng, dày, mềm, ít xơ; hương thơm thanh nhẹ.",
 		"yields": "12 - 15 tấn/ha",
-		"description": "Giống được thị trường nội địa ưa chuộng vì vị ngọt thanh và mùi thơm dịu; thích hợp ăn chín, làm tráng miệng. Thu hoạch khi quả vàng đều để giữ được vị thơm tự nhiên; không chịu tốt vận chuyển xa nếu chín quá mềm."
+		"description": "Giống được thị trường nội địa ưa chuộng vì vị ngọt thanh và mùi thơm dịu; thích hợp ăn chín, làm tráng miệng. Thu hoạch khi quả vàng đều để giữ được vị thơm tự nhiên; không chịu tốt vận chuyển xa nếu chín quá mềm.",
+		"sources": [
+			{
+				"name": "Công ty Cổ phần Đồng Xanh",
+				"url": "https://dongxanh.io.vn/cac-giong-xoai-trong-pho-bien-o-viet-nam/#:~:text=Xo%C3%A0i%20B%C6%B0%E1%BB%9Fi%20(c%C3%B2n%20g%E1%BB%8Di%20l%C3%A0,xo%C3%A0i%20c%C3%A1t%20nh%C6%B0ng%20nh%E1%BB%8F%20h%C6%A1n."
+			},
+			{
+				"name": "CÔNG TY TNHH THỰC PHẨM P&T VIỆT NAM",
+				"url": "https://xoaisaydeo.com/blog/10-giong-xoai-pho-bien-nhat-viet-nam/"
+			},
+			{
+				"name": "CTY TNHH ĐẦU TƯ VÀ PHÁT TRIỂN NÔNG NGHIỆP XUÂN NÔNG",
+				"url": "https://caygiongcantho.vn/cac-giong-xoai-pho-bien-o-viet-nam"
+			}
+		]
 	},
 	{
 		"name": "Xoài Thái",
@@ -467,7 +958,21 @@
 		"growth_duration": "Cây lâu năm",
 		"morphology": "Quả thuôn dài, hơi cong ở phần đuôi; vỏ xanh đậm khi trái chưa chín, chuyển vàng khi chín. Trọng lượng khoảng 300-500 g/quả. Thịt mềm khi chín, ngọt đậm, ít xơ, mùi thơm rõ; khi còn xanh có độ giòn nhất định, chua nhẹ vừa phải. Cây cao 8-15 m, tán rộng, lá to, mép lá hơi gợn sóng.",
 		"yields": "20 - 25 tấn/ha",
-		"description": "Giống xoài thích nghi nhanh, sinh trưởng mạnh, cho quả tương đối sớm; có khả năng ra trái nhiều vụ trong năm tùy vùng. Do thịt quả ngọt đậm và mẫu mã đẹp nên được ưa chuộng cả thị trường trong nước lẫn xuất khẩu. Cần đất thoát nước tốt, chăm sóc tỉ mỉ để tránh bệnh do ẩm."
+		"description": "Giống xoài thích nghi nhanh, sinh trưởng mạnh, cho quả tương đối sớm; có khả năng ra trái nhiều vụ trong năm tùy vùng. Do thịt quả ngọt đậm và mẫu mã đẹp nên được ưa chuộng cả thị trường trong nước lẫn xuất khẩu. Cần đất thoát nước tốt, chăm sóc tỉ mỉ để tránh bệnh do ẩm.",
+		"sources": [
+			{
+				"name": "TRUNG TÂM CHUYỂN GIAO CÔNG NGHỆ VÀ HỢP TÁC TRANG TRẠI VIETGRAP",
+				"url": "https://viencaytrongtrunguong.com/san-pham/cay-xoai-thai-lan/"
+			},
+			{
+				"name": "TRUNG TÂM CÂY GIỐNG - HỌC VIỆN NÔNG NGHIỆP VIỆT NAM",
+				"url": "https://hocviennongnghiep.com/san-pham/xoai-thai/"
+			},
+			{
+				"name": "Công ty Cổ Phần Giống cây trồng",
+				"url": "https://giongcaytrongdacsan.vn/cay-xoai-thai-lan"
+			}
+		]
 	},
 	{
 		"name": "Xoài Thanh Ca",
@@ -478,7 +983,21 @@
 		"morphology": "Quả trung bình 250-450g, thuôn dài, hơi dẹt về phần đuôi. Vỏ xanh khi chưa chín, vàng tươi khi chín. Thịt vàng tươi, mịn. Quả khi sống màu xanh, khi chín chuyển vàng hoặc vàng-cam, thịt mềm, mùi thơm, ít xơ. ",
 		"yields": "20-25 tấn/ha",
 		"description": "Xoài Thanh Ca là giống xoài đặc sản của vùng An Giang, nổi tiếng với mùi thơm đặc trưng, vị ngọt dịu và độ ngọt khi chín rất rõ. Thích hợp trồng nơi đất tốt, ưa sáng, chịu hạn tương đối, cây khi ghép sau ~2 năm có thể cho trái. Xoài Thanh Ca nổi bật với vị ngọt đậm đà và hương thơm đặc trưng. Mùa vụ từ tháng 4 đến tháng 6.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "Công Ty Cổ Phần Nông Nghiệp Sạch Viefarm",
+				"url": "https://viefarm.vn/xoai-thanh-ca-chau-doc?srsltid=AfmBOoosopo3IeF4rHEkzCRUo4049gKmW3KOHCKDNBpVBh8d3TxK-lau"
+			},
+			{
+				"name": "Công ty TNHH Trúc Vũ Farm",
+				"url": "https://trucvufarm.com.vn/san-pham/cay-giong-xoai-thanh-ca-xua/"
+			},
+			{
+				"name": "CÔNG TY TNHH THỰC PHẨM P&T VIỆT NAM",
+				"url": "https://xoaisaydeo.com/blog/10-giong-xoai-pho-bien-nhat-viet-nam/"
+			}
+		]
 	},
 	{
 		"name": "Xoài Tứ Quý",
@@ -489,7 +1008,21 @@
 		"morphology": "Quả lớn, hình bầu dục thuôn dài, 500-800g. Vỏ xanh nhạt khi xanh, vàng tươi khi chín; thịt dày, màu vàng cam, ít xơ, ăn giòn khi xanh và ngọt đậm khi đạt độ chín; lá cây thuôn dài, lá non hơi bóng; hoa nhỏ màu trắng ngà mọc thành chùm. Thịt vàng cam, ít xơ, dẻo và có nhiều bột hơn các giống khác.",
 		"yields": "20 - 25 tấn/ha",
 		"description": "Xoài Tứ Quý là giống đặc sản miền Tây, nổi bật với khả năng ra quả quanh năm. Giống xen phèn và chịu hạn tương đối tốt. Trồng 15-18 tháng là cho trái; quả chín có vỏ vàng nhạt, thịt vàng cam, giòn, ngọt thanh và hương thơm đặc trưng. Ưa đất cát pha thoát nước tốt. Năng suất cao, ra trái quanh năm. Mùa vụ chính từ tháng 3 đến tháng 7.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "CÔNG TY TNHH HOA BIỂN HCM",
+				"url": "https://traicayhoabien.com/xoai-tu-quy/"
+			},
+			{
+				"name": "TRUNG TÂM CÂY GIỐNG - HỌC VIỆN NÔNG NGHIỆP VIỆT NAM",
+				"url": "https://hocviennongnghiep.com/san-pham/giong-xoai-tu-quy/"
+			},
+			{
+				"name": "CÔNG TY TNHH THỰC PHẨM P&T VIỆT NAM",
+				"url": "https://xoaisaydeo.com/blog/10-giong-xoai-pho-bien-nhat-viet-nam/"
+			}
+		]
 	},
 	{
 		"name": "Xoài Ấn Độ",
@@ -500,7 +1033,21 @@
 		"morphology": "Quả lớn, hình bầu hoặc dạng xoan tùy giống, vỏ khi non xanh, chín chuyển vàng hoặc vàng cam, đôi khi pha hồng hoặc đỏ nhạt. Thịt quả vàng nghệ tây, mềm, ít hoặc không xơ, mọng nước. Vỏ mỏng, hương thơm rõ rệt khi chín.",
 		"yields": "18 - 22 tấn/ha",
 		"description": "Giống xoài ngoại nhập với nhiều biến thể nổi tiếng như Alphonso, Kesar… Ưu điểm là độ ngọt cao, thịt quả mềm, thơm, ăn rất đậm. Thường thu hoạch vào mùa nóng (tháng 5-7). Thích hợp cho thị trường xuất khẩu hoặc dùng làm hoa quả cao cấp. Yêu cầu khí hậu nóng ấm, đất thoát nước tốt để đạt chất lượng tốt nhất.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "CÔNG TY TNHH THỰC PHẨM P&T VIỆT NAM",
+				"url": "https://xoaisaydeo.com/blog/xoai-alphonso-vua-cua-cac-loai-xoai/"
+			},
+			{
+				"name": "Cần Thơ Fruit",
+				"url": "https://hoaquacantho.vn/qua-xoai-an-do/"
+			},
+			{
+				"name": "CÔNG TY TNHH THỰC PHẨM P&T VIỆT NAM",
+				"url": "https://xoaisaydeo.com/blog/10-giong-xoai-pho-bien-nhat-viet-nam/"
+			}
+		]
 	},
 	{
 		"name": "Xoài Úc",
@@ -510,7 +1057,21 @@
 		"growth_duration": "Cây lâu năm",
 		"morphology": "Quả lớn, hình tương đối tròn, thon dài, hơi cong, trọng lượng từ khoảng 600-800 g, có nơi lên tới ~1-1,5 kg. Vỏ khi non xanh, khi chín nhiều trái có phần đầu hoặc đầu cuống ửng đỏ / hồng, hoặc vàng óng, vỏ bóng đẹp. Thịt vàng cam, dày, chắc, giòn, ít xơ; vị ngọt đậm và hương thơm rõ rệt.",
 		"yields": "20 - 25 tấn/ha",
-		"description": "Giống ngoại nhập được nhiều nhà vườn thử nghiệm trồng ở miền Trung và Nam Bộ; phù hợp làm quả tươi xuất khẩu nhờ mẫu mã đẹp, kích cỡ lớn. Cần điều kiện khí hậu ấm, ít lạnh, đất thoát nước tốt. Thời gian thu hoạch mùa vụ chính từ tháng 2 đến tháng 5, chất lượng tốt khi thu hoạch lúc chín vừa đủ để giữ độ giòn. Xoài giòn ngọt đặc trưng, có thể ăn sống hoặc chế biến sinh tố, nước ép."
+		"description": "Giống ngoại nhập được nhiều nhà vườn thử nghiệm trồng ở miền Trung và Nam Bộ; phù hợp làm quả tươi xuất khẩu nhờ mẫu mã đẹp, kích cỡ lớn. Cần điều kiện khí hậu ấm, ít lạnh, đất thoát nước tốt. Thời gian thu hoạch mùa vụ chính từ tháng 2 đến tháng 5, chất lượng tốt khi thu hoạch lúc chín vừa đủ để giữ độ giòn. Xoài giòn ngọt đặc trưng, có thể ăn sống hoặc chế biến sinh tố, nước ép.",
+		"sources": [
+			{
+				"name": "TRUNG TÂM CÂY GIỐNG - HỌC VIỆN NÔNG NGHIỆP VIỆT NAM",
+				"url": "https://hocviennongnghiep.com/san-pham/xoai-uc/"
+			},
+			{
+				"name": "Trung tâm Giống cây trồng Vật nuôi & Thuỷ sản tỉnh Thái Nguyên",
+				"url": "http://giong.thainguyen.gov.vn/vi/shops/hat-cay-con-giong/xoai-uc.html"
+			},
+			{
+				"name": "CÔNG TY TNHH THỰC PHẨM P&T VIỆT NAM",
+				"url": "https://xoaisaydeo.com/blog/10-giong-xoai-pho-bien-nhat-viet-nam/"
+			}
+		]
 	},
 	{
 		"name": "Xoài Đài Loan Đỏ (xoài Ngọc Vân)",
@@ -521,6 +1082,20 @@
 		"morphology": "Cây cao 3-4m, thân khỏe, tán rộng. Lá elip thuôn dài 10-15 cm, màu xanh đậm bóng. Hoa mọc thành chùm ở ngọn cành, nhỏ, thơm nhẹ. Quả lớn 0,8-1,5kg, hình cân đối hơi thuôn nhọn. Vỏ chuyển từ xanh → hồng đỏ → đỏ lửa khi chín, vỏ bóng đẹp. Thịt quả vàng tươi, cùi dày, chắc, ít xơ, hạt nhỏ dẹt, mỏng.",
 		"yields": "8-12 tấn/ha",
 		"description": "Xoài Đài Loan Đỏ có vị ngọt đậm, mát, thơm dịu đặc trưng. Khi xanh có vị chua thanh, khi chín ngọt nồng nàn, ăn tươi đều ngon. Quả dễ vận chuyển, bảo quản được vài ngày. Thường cho 2 vụ/năm, bắt đầu thu trái từ 18-24 tháng sau trồng. Phù hợp ăn tươi, làm sinh tố hoặc chế biến món tráng miệng.",
-		"image_url": null
+		"image_url": null,
+		"sources": [
+			{
+				"name": "THẾ GIỚI CÂY TRỒNG",
+				"url": "https://thegioicaygiong.com/product/cay-giong-xoai-ngoc-van-xoai-tim#:~:text=%C4%90%E1%BA%B6C%20T%C3%8DNH%20GI%E1%BB%90NG%20XO%C3%80I%20NG%E1%BB%8CC,t%E1%BB%91t%20h%C6%A1n%20c%C3%A1c%20gi%E1%BB%91ng%20kh%C3%A1c.&text=L%C3%A1%20xo%C3%A0i%20d%C3%A0i%2C%20m%E1%BB%8Dc%20so,xanh%2C%20%C4%83n%20ch%C3%ADn%20%C4%91%E1%BB%81u%20%C4%91%C6%B0%E1%BB%A3c.&text=Gi%E1%BB%91ng%20xo%C3%A0i%20Ng%E1%BB%8Dc%20V%C3%A2n%20d%E1%BB%85,m%E1%BB%99t%20s%E1%BB%91%20gi%E1%BB%91ng%20xo%C3%A0i%20kh%C3%A1c."
+			},
+			{
+				"name": "VIỆN GIỐNG CÂY TRỒNG HỌC VIỆN NÔNG NGHIỆP VIỆT NAM",
+				"url": "https://giongcaytrongmoi.com/giong-xoai-ngoc-van/48/"
+			},
+			{
+				"name": "Công ty TNHH Xuất Nhập Khẩu Chú Chín Việt Nam",
+				"url": "https://mr9vietnam.com/xoai-ngoc-van"
+			}
+		]
 	}
 ]

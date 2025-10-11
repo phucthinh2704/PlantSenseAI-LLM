@@ -34,7 +34,17 @@
 			}
 		],
 		"notes": "Công thức tổng: 100N-60P2O5-90K2O (tương đương 200-220kg Urea + 350kg lân nung chảy + 180kg KCl/ha). Tùy theo chân đất có thể điều chỉnh lượng phân cho phù hợp.",
-		"crop_type": "Lúa"
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Sổ tay hướng dẫn quy trình kỹ thuật sản xuất lúa chất lượng cao và phát thải thấp vùng ĐBSCL",
+				"url": "https://khuyennongvn.gov.vn/data/documents/0/2024/03/29/hangweb/so-tay-huong-dan-quy-trinh-1-trieu-ha-dbscl-ngay-27-3-2024.pdf"
+			},
+			{
+				"name": "Kỹ thuật canh tác lúa - Công Ty TNHH Syngenta Việt Nam",
+				"url": "https://www.syngenta.com.vn/sites/g/files/kgtney1261/files/media/document/2017/11/20/ky_thuat_canh_tac_lua_1371.pdf"
+			}
+		]
 	},
 	{
 		"name": "Bón phân cho lúa sạ Đồng bằng sông Cửu Long",
@@ -71,7 +81,21 @@
 			}
 		],
 		"notes": "Theo hướng dẫn của Viện Lúa ĐBSCL (http://www.clrri.org/). Nhà nông thường trộn các loại phân với nhau trước khi bón (rải). Sử dụng bảng so màu lá ở 2 giai đoạn quan trọng: 22-25 NSS và 42-45 NSS.",
-		"crop_type": "Lúa"
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Sổ tay hướng dẫn quy trình kỹ thuật sản xuất lúa chất lượng cao và phát thải thấp vùng ĐBSCL",
+				"url": "https://khuyennongvn.gov.vn/data/documents/0/2024/03/29/hangweb/so-tay-huong-dan-quy-trinh-1-trieu-ha-dbscl-ngay-27-3-2024.pdf"
+			},
+			{
+				"name": "TRUNG TÂM KHUYẾN NÔNG QUỐC GIA",
+				"url": "https://khuyennongvn.gov.vn/khoa-hoc-cong-nghe/khcn-trong-nuoc/bon-phan-cho-lua-o-dong-bang-song-cuu-long-18450.html"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN VIỆT GIA MINH",
+				"url": "https://vietgiaminh.com.vn/ky-thuat-bon-phan-cho-lua/"
+			}
+		]
 	},
 	{
 		"name": "Bón phân lúa vụ mùa",
@@ -108,19 +132,30 @@
 			}
 		],
 		"notes": "Điều chỉnh lượng phân tùy theo chân đất và giống lúa, cân đối và hợp lý",
-		"crop_type": "Lúa"
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Sổ tay hướng dẫn quy trình kỹ thuật sản xuất lúa chất lượng cao và phát thải thấp vùng ĐBSCL",
+				"url": "https://khuyennongvn.gov.vn/data/documents/0/2024/03/29/hangweb/so-tay-huong-dan-quy-trinh-1-trieu-ha-dbscl-ngay-27-3-2024.pdf"
+			},
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/cach-cham-bon-lua-vu-mua/"
+			},
+			{
+				"name": "Sở Nông nghiệp và Môi trường tỉnh Ninh Bình",
+				"url": "https://sonnmt.ninhbinh.gov.vn/trong-trot-va-bvtv/mot-so-luu-y-cham-soc-lua-vu-mua-nam-2025-2293.html"
+			}
+		]
 	},
 	{
 		"name": "Gieo sạ lúa thẳng vùng Đồng bằng sông Cửu Long",
 		"plant_ids": [],
-
 		"description": "Kỹ thuật gieo sạ thẳng phổ biến tại miền Nam (>95% diện tích), tiết kiệm công lao động và phù hợp với điều kiện khí hậu nhiệt đới.",
 		"requirements": "Áp dụng tại các tỉnh phía Nam; yêu cầu mặt ruộng phẳng, hệ thống tưới tiêu tốt; giống sạch bệnh, tỷ lệ nảy mầm cao.",
 		"benefits": "Tiết kiệm công lao động, giảm chi phí, gieo nhanh, không cần làm mạ và cấy, phù hợp cơ giới hóa.",
-
 		"category": "Gieo sạ và cấy",
 		"application_period": "Đầu vụ, theo lịch thời vụ của từng vùng",
-
 		"steps": [
 			{
 				"step": 1,
@@ -141,14 +176,26 @@
 				"note": "Phun thuốc diệt cỏ Sofit 300EC trong vòng 1-3 ngày sau gieo, tốt nhất là ngày đầu."
 			}
 		],
-
-		"notes": "Cần chuẩn bị lượng mạ dự phòng để cấy giặm khi cần thiết.",
-		"crop_type": "Lúa"
+		"notes": "Cần chuẩn bị lượng mạ dự phòng để cấy dặm khi cần thiết.",
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Sổ tay hướng dẫn quy trình kỹ thuật sản xuất lúa chất lượng cao và phát thải thấp vùng ĐBSCL",
+				"url": "https://khuyennongvn.gov.vn/data/documents/0/2024/03/29/hangweb/so-tay-huong-dan-quy-trinh-1-trieu-ha-dbscl-ngay-27-3-2024.pdf"
+			},
+			{
+				"name": "Diễn đàn VietPlant",
+				"url": "https://vietplant.com.vn/threads/luu-y-khi-sa-lua-dau-vu-2024-2025-o-dbscl.5101/"
+			},
+			{
+				"name": "Báo Nông Nghiệp & Môi Trường",
+				"url": "https://nongnghiepmoitruong.vn/nhung-luu-y-khi-gieo-sa-lua-dong-xuan-2023--2024-o-dong-bang-song-cuu-long-d369325.html"
+			}
+		]
 	},
 	{
-		"name": "Cấy giặm lúa sạ bằng cào sắt",
+		"name": "Cấy dặm lúa sạ bằng cào sắt",
 		"plant_ids": [],
-
 		"description": "Kỹ thuật cấy bù lúa sạ bị thiếu khuyết tại Đồng bằng sông Cửu Long, sử dụng cào sắt giúp cấy nhanh và ít tổn thương rễ.",
 		"requirements": "Áp dụng cho ruộng lúa sạ bị thiếu khuyết; cần mạ dự phòng 10-15 ngày tuổi; công cụ cào sắt chuyên dụng.",
 		"benefits": "Dễ làm, nhanh, rễ lúa ít bị tổn thương, cây mạ phục hồi nhanh, lúa chín đồng loạt.",
@@ -165,26 +212,36 @@
 			},
 			{
 				"step": 2,
-				"name": "Chuẩn bị mạ giặm",
+				"name": "Chuẩn bị mạ dặm",
 				"description": "Sử dụng mạ dự phòng 10-15 ngày tuổi, nhổ nhẹ nhàng, giữ nguyên đất bám rễ.",
 				"note": "Mạ cần khỏe, không sâu bệnh."
 			},
 			{
 				"step": 3,
-				"name": "Cấy giặm bằng cào sắt",
-				"description": "Sử dụng cào sắt chuyên dụng (móc sắt), cắm nhẹ vào vị trí cần giặm, đưa mạ vào và nhấn chìm.",
+				"name": "Cấy dặm bằng cào sắt",
+				"description": "Sử dụng cào sắt chuyên dụng (móc sắt), cắm nhẹ vào vị trí cần dặm, đưa mạ vào và nhấn chìm.",
 				"note": "Cào sắt giúp cấy nhanh, ít tổn thương rễ so với cấy tay truyền thống."
 			},
 			{
 				"step": 4,
-				"name": "Quản lý nước sau giặm",
-				"description": "Giữ mực nước nông 2-3cm để cây mạ giặm bén rễ nhanh.",
+				"name": "Quản lý nước sau dặm",
+				"description": "Giữ mực nước nông 2-3cm để cây mạ dặm bén rễ nhanh.",
 				"note": "Tránh để nước quá sâu hoặc quá nông trong 5-7 ngày đầu."
 			}
 		],
 
-		"notes": "Nên cấy giặm sớm (7-10 ngày sau sạ) để cây phát triển đồng đều với cây chính.",
-		"crop_type": "Lúa"
+		"notes": "Nên cấy dặm sớm (7-10 ngày sau sạ) để cây phát triển đồng đều với cây chính.",
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Sổ tay hướng dẫn quy trình kỹ thuật sản xuất lúa chất lượng cao và phát thải thấp vùng ĐBSCL",
+				"url": "https://khuyennongvn.gov.vn/data/documents/0/2024/03/29/hangweb/so-tay-huong-dan-quy-trinh-1-trieu-ha-dbscl-ngay-27-3-2024.pdf"
+			},
+			{
+				"name": "Công ty Cổ phần EMI Nhật Bản",
+				"url": "https://eminhatban.vn/wp-content/uploads/2022/10/QUY-TRINH-KY-THUAT-TRONG-CAY-LUA-THEO-EMI-NHAT-BAN.pdf?srsltid=AfmBOooL4Of5qPgJXXXIwqzE-svb0H-YfKXpYyBu9lnXQXgd_2WMk1oo"
+			}
+		]
 	},
 	{
 		"name": "Làm đất vụ Đông Xuân cho lúa",
@@ -215,7 +272,21 @@
 			}
 		],
 		"notes": "Phù hợp với điều kiện khí hậu cận nhiệt đới ở miền Bắc. Nên thực hiện vào cuối mùa thu để đất kịp khô trước khi gieo sạ.",
-		"crop_type": "Lúa"
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Sổ tay hướng dẫn quy trình kỹ thuật sản xuất lúa chất lượng cao và phát thải thấp vùng ĐBSCL",
+				"url": "https://khuyennongvn.gov.vn/data/documents/0/2024/03/29/hangweb/so-tay-huong-dan-quy-trinh-1-trieu-ha-dbscl-ngay-27-3-2024.pdf"
+			},
+			{
+				"name": "CTY TNHH MTV NÔNG NGHIỆP CỜ ĐỎ",
+				"url": "https://coagrico.com.vn/vi/quy-trinh-canh-tac-lua-vu-dong-xuan/n1416.html"
+			},
+			{
+				"name": "Trang thông tin điện tử Gia Phú - Ninh Bình",
+				"url": "http://giaphu.giavien.ninhbinh.gov.vn/pho-bien-kien-thuc/huong-dan-ky-thuat-lam-dat-ngam-u-va-gieo-ma-vu-dong-xuan-nam-2024-2025-347431"
+			}
+		]
 	},
 	{
 		"name": "Làm đất vụ Hè Thu cho lúa",
@@ -252,7 +323,21 @@
 			}
 		],
 		"notes": "Không nên đốt rơm rạ, thay vào đó thu gom để ủ bằng vi sinh hoặc sản xuất than sinh học để bổ sung chất hữu cơ cho đất. Ruộng phải bằng phẳng, có hệ thống thoát nước tốt.",
-		"crop_type": "Lúa"
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Sổ tay hướng dẫn quy trình kỹ thuật sản xuất lúa chất lượng cao và phát thải thấp vùng ĐBSCL",
+				"url": "https://khuyennongvn.gov.vn/data/documents/0/2024/03/29/hangweb/so-tay-huong-dan-quy-trinh-1-trieu-ha-dbscl-ngay-27-3-2024.pdf"
+			},
+			{
+				"name": "CTY TNHH MTV NÔNG NGHIỆP CỜ ĐỎ",
+				"url": "https://coagrico.com.vn/vi/quy-trinh-canh-tac-lua-vu-he-thu/n1415.html"
+			},
+			{
+				"name": "CÔNG TY TRÁCH NHIỆM HỮU HẠN CON CÒ VÀNG",
+				"url": "https://ccv.vn/ky-thuat-cham-soc-lua-vu-he-thu-cho-nang-suat-cao"
+			}
+		]
 	},
 	{
 		"name": "Điều tiết nước lúa vụ mùa",
@@ -289,7 +374,21 @@
 			}
 		],
 		"notes": "Theo dõi thời tiết để điều chỉnh. Đảm bảo quản lý mực nước tốt để giảm sâu bệnh và tối ưu hóa chất lượng lúa.",
-		"crop_type": "Lúa"
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Sổ tay hướng dẫn quy trình kỹ thuật sản xuất lúa chất lượng cao và phát thải thấp vùng ĐBSCL",
+				"url": "https://khuyennongvn.gov.vn/data/documents/0/2024/03/29/hangweb/so-tay-huong-dan-quy-trinh-1-trieu-ha-dbscl-ngay-27-3-2024.pdf"
+			},
+			{
+				"name": "Công ty Cổ phần Đại Thành",
+				"url": "https://globalcheck.com.vn/dieu-tiet-nuoc-anh-huong-phat-trien-cay-lua-8725"
+			},
+			{
+				"name": "Công ty phân bón & Thuốc BVTV Đức Thành",
+				"url": "https://ducthanhco.vn/ky-thuat-quan-ly-muc-nuoc-cho-lua-vu-mua-dung-chuan"
+			}
+		]
 	},
 	{
 		"name": "Tưới tiêu theo phương pháp AWD (Alternate Wetting and Drying)",
@@ -326,7 +425,21 @@
 			}
 		],
 		"notes": "AWD giúp tiết kiệm 30-50% lượng nước so với phương pháp tưới truyền thống, rất hiệu quả trong việc giảm thiểu tác động tiêu cực đến môi trường.",
-		"crop_type": "Lúa"
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Tạp chí Khoa học Trường Đại học Cần Thơ",
+				"url": "https://ctujsvn.ctu.edu.vn/index.php/ctujsvn/article/download/4840/4282/10574"
+			},
+			{
+				"name": "Công ty Cổ phần Công nghệ Nano BSB",
+				"url": "https://www.biosilico.vn/post/k%E1%BB%B9-thu%E1%BA%ADt-canh-t%C3%A1c-ng%E1%BA%ADp-kh%C3%B4-xen-k%E1%BA%BD-awd-v%C3%A0-%E1%BB%A9ng-d%E1%BB%A5ng-t%E1%BA%A1i-vi%E1%BB%87t-nam?lang=vi"
+			},
+			{
+				"name": "Tạp chí Môi trường",
+				"url": "https://tapchimoitruong.vn/chuyen-muc-3/nghien-cuu-ung-dung-ky-thuat-tuoi-kho-uot-xen-ke-awd-de-giam-phat-thai-khi-me-tan-32061"
+			}
+		]
 	},
 	{
 		"name": "Tưới tiêu theo phương pháp Tưới Phun Mưa",
@@ -363,7 +476,17 @@
 			}
 		],
 		"notes": "Phương pháp tưới phun mưa giúp quản lý nước hiệu quả, đồng thời giảm thiểu sự phát triển của sâu bệnh và cỏ dại trong ruộng lúa.",
-		"crop_type": "Lúa"
+		"crop_type": "Lúa",
+		"sources": [
+			{
+				"name": "Tạp chí Khoa học Trường Đại học Cần Thơ",
+				"url": "https://sj.ctu.edu.vn/ql/docgia/download/baibao-54565/07-NN-HONG%20MINH%20HOANG(48-59)140.pdf"
+			},
+			{
+				"name": "Công ty TNHH thiết kế xây dựng Giải pháp xanh IVILA",
+				"url": "https://ivila.vn/tuoi-phun-mua-la-gi-cac-phuong-phap-tuoi-phun-mua-n257.html"
+			}
+		]
 	},
 	{
 		"name": "Làm đất trồng xoài",
@@ -388,7 +511,17 @@
 			}
 		],
 		"notes": "Lượng phân bón có thể điều chỉnh tùy theo độ phì của đất.",
-		"crop_type": "Xoài"
+		"crop_type": "Xoài",
+		"sources": [
+			{
+				"name": "Bác Sĩ Cây Xanh",
+				"url": "https://bacsicayxanh.vn/cay-trong/xoai/ky-thuat/cach-lam-dat-trong-xoai/50?srsltid=AfmBOooUEg_DeLU-2Z5Xx8TmwkfdFU4tbz_1JrZEJFmoUsE82m28ssNn"
+			},
+			{
+				"name": "Công ty Cổ phẩn Trung Tâm Sản phẩm Sinh học AQ",
+				"url": "https://nguyenlieusinhhoc.com/dat-trong-xoai/?srsltid=AfmBOoqRbjL8CPC5FpRX9Pe-u_at_ytHqqZdjD_54WfwVSq8t55424h7"
+			}
+		]
 	},
 	{
 		"name": "Kỹ thuật trồng cây xoài",
@@ -413,7 +546,21 @@
 			}
 		],
 		"notes": "Cây cần được bảo vệ khỏi côn trùng và giữ ẩm liên tục trong giai đoạn đầu.",
-		"crop_type": "Xoài"
+		"crop_type": "Xoài",
+		"sources": [
+			{
+				"name": "BÁO DÂN TỘC VÀ PHÁT TRIỂN",
+				"url": "https://baodantoc.vn/huong-dan-ky-thuat-trong-cay-xoai-sai-qua-1715933271971.htm"
+			},
+			{
+				"name": "Công ty TNHH SX TM DV Đặng Gia Trang",
+				"url": "https://sfarm.vn/ky-thuat-trong-va-cham-soc-xoai/"
+			},
+			{
+				"name": "Công ty TNHH Ứng Dụng Công Nghệ Vi Sinh Japan",
+				"url": "https://visinhjapan.com/ky-thuat-cham-cay-xoai/"
+			}
+		]
 	},
 	{
 		"name": "Chăm sóc cây xoài",
@@ -438,7 +585,17 @@
 			}
 		],
 		"notes": "Chú ý điều kiện thời tiết để điều chỉnh việc tưới nước và chăm sóc cây.",
-		"crop_type": "Xoài"
+		"crop_type": "Xoài",
+		"sources": [
+			{
+				"name": "Công ty TNHH SX TM DV Đặng Gia Trang",
+				"url": "https://sfarm.vn/ky-thuat-trong-va-cham-soc-xoai/"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN PHÂN BÓN EUR",
+				"url": "https://phanboneu.com/kien-thuc-nha-nong/ky-thuat-trong-va-cham-soc-cay-xoai-60.html"
+			}
+		]
 	},
 	{
 		"name": "Bón phân cho cây xoài",
@@ -463,6 +620,20 @@
 			}
 		],
 		"notes": "Điều chỉnh lượng phân bón tùy theo độ phì của đất và tình trạng cây.",
-		"crop_type": "Xoài"
+		"crop_type": "Xoài",
+		"sources": [
+			{
+				"name": "Agridrone Vietnam",
+				"url": "https://agridrone.vn/phuong-phap-bon-phan-cho-xoai/"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN TẬP ĐOÀN VIỆT NGA",
+				"url": "https://vietnga.vn/ky-thuat-va-phan-bon-cho-cay-xoai/"
+			},
+			{
+				"name": "CÔNG TY CỔ PHẦN NÔNG DƯỢC HAI",
+				"url": "http://www.congtyhai.com/ky-thuat-bon-phan-cho-cay-xoai"
+			}
+		]
 	}
 ]

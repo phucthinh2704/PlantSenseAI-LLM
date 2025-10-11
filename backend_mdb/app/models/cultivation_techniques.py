@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 from typing import Optional, List
+from .source import Source
 from datetime import datetime
-
 
 class TechniqueStep(BaseModel):
     step: int
@@ -46,6 +46,11 @@ class CultivationTechnique(BaseModel):
     
     # === Thêm trường để phân biệt giữa lúa và xoài ===
     crop_type: str = Field(..., description="Loại cây trồng (VD: 'Lúa', 'Xoài')")
+    
+    sources: List[Source] = Field(
+        default_factory=list, 
+        description="Danh sách các nguồn tham khảo cho kỹ thuật này"
+    )
 
     # === Metadata ===
     created_at: datetime = Field(default_factory=datetime.utcnow)
