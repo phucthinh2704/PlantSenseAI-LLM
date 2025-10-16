@@ -1,7 +1,11 @@
 import AvatarDefault from "@components/AvatarDefault";
+import MarkdownFormatter from "@components/MarkdownFormatter";
+import TypewriterMarkdown from "@components/TypewriterMarkdown";
 import useAlert from "@hooks/useAlert";
 import { logoutUser } from "@redux/auth";
+import { apiChatWithLLM } from "@services/chat";
 import {
+	AlertCircle,
 	Bot,
 	Bug,
 	ChevronDown,
@@ -347,10 +351,75 @@ const Navbar = ({ user }) => {
 	);
 };
 // Message Component
-const Message = ({ message, isBot = false, timestamp }) => {
+// const Message = ({ message, isBot = false, timestamp }) => {
+// 	return (
+// 		<div
+// 			className={`flex w-full mb-6 ${
+// 				isBot ? "justify-start" : "justify-end"
+// 			}`}>
+// 			<div className="flex max-w-4xl w-full">
+// 				{/* Avatar */}
+// 				<div
+// 					className={`flex-shrink-0 flex items-start ${
+// 						isBot ? "mr-4" : "ml-4 order-2"
+// 					}`}>
+// 					<div
+// 						className={`w-8 h-8 rounded-full flex items-center justify-center ${
+// 							isBot ? "bg-green-600" : "bg-blue-600"
+// 						}`}>
+// 						{isBot ? (
+// 							<Bot
+// 								size={16}
+// 								className="text-white"
+// 							/>
+// 						) : (
+// 							<User
+// 								size={16}
+// 								className="text-white"
+// 							/>
+// 						)}
+// 					</div>
+// 				</div>
+
+// 				{/* Message Content */}
+// 				<div
+// 					className={`flex-1 min-w-0 flex flex-col ${
+// 						isBot ? "" : "items-end"
+// 					}`}>
+// 					<div
+// 						className={`${
+// 							isBot ? "text-left" : "text-right"
+// 						} mb-1`}>
+// 						<span className="text-xs text-gray-500 font-medium">
+// 							{isBot ? "AgriBot" : "Bạn"} • {timestamp}
+// 						</span>
+// 					</div>
+// 					<div
+// 						className={`inline-block px-4 py-3 rounded-2xl max-w-[80%] break-words ${
+// 							isBot
+// 								? "bg-white border border-gray-200 text-gray-800"
+// 								: "bg-green-600 text-white"
+// 						}`}>
+// 						<div className="prose prose-sm max-w-none">
+// 							<MarkdownFormatter value={message} />
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	);
+// };
+// Message Component
+const Message = ({
+	message,
+	isBot = false,
+	timestamp,
+	streaming = false,
+	onStreamEnd,
+}) => {
 	return (
 		<div
-			className={`flex w-full mb-6 ${
+			className={`flex w-full mb-6${
 				isBot ? "justify-start" : "justify-end"
 			}`}>
 			<div className="flex max-w-4xl w-full">
@@ -360,7 +429,7 @@ const Message = ({ message, isBot = false, timestamp }) => {
 						isBot ? "mr-4" : "ml-4 order-2"
 					}`}>
 					<div
-						className={`w-8 h-8 rounded-full flex items-center justify-center ${
+						className={`w-10 h-10 rounded-full flex items-center justify-center ${
 							isBot ? "bg-green-600" : "bg-blue-600"
 						}`}>
 						{isBot ? (
@@ -377,7 +446,7 @@ const Message = ({ message, isBot = false, timestamp }) => {
 					</div>
 				</div>
 
-				{/* Message Content */}
+				{/* Body */}
 				<div
 					className={`flex-1 min-w-0 flex flex-col ${
 						isBot ? "" : "items-end"
@@ -390,14 +459,22 @@ const Message = ({ message, isBot = false, timestamp }) => {
 							{isBot ? "AgriBot" : "Bạn"} • {timestamp}
 						</span>
 					</div>
+
 					<div
-						className={`inline-block px-4 py-3 rounded-2xl max-w-[80%] break-words ${
+						className={`inline-block px-4 py-3 rounded-2xl max-w-fit break-words ${
 							isBot
 								? "bg-white border border-gray-200 text-gray-800"
 								: "bg-green-600 text-white"
 						}`}>
 						<div className="prose prose-sm max-w-none">
-							{message}
+							{isBot && streaming ? (
+								<TypewriterMarkdown
+									text={message}
+									onDone={onStreamEnd}
+								/>
+							) : (
+								<MarkdownFormatter value={message} />
+							)}
 						</div>
 					</div>
 				</div>
@@ -559,6 +636,13 @@ const ChatInput = ({ onSendMessage, disabled = false }) => {
 			return updated;
 		});
 	};
+	const handleClearText = () => {
+		setMessage("");
+		if (textareaRef.current) {
+			textareaRef.current.style.height = "auto";
+			textareaRef.current.focus();
+		}
+	};
 
 	return (
 		<div className="border-t border-gray-200 bg-white p-4">
@@ -631,6 +715,22 @@ const ChatInput = ({ onSendMessage, disabled = false }) => {
 							disabled={disabled}
 							rows={1}
 						/>
+						{message.trim() && (
+							<button
+								type="button"
+								onClick={handleClearText}
+								disabled={disabled}
+								aria-label="Xoá nội dung đang soạn"
+								className={`cursor-pointer absolute right-2 top-1/2  -translate-y-1/2 p-1.5 pb-2 rounded-md transition-colors
+        ${
+			!disabled
+				? "text-gray-500 hover:text-gray-700 hover:bg-gray-100"
+				: "text-gray-300 cursor-not-allowed"
+		}
+      `}>
+								<X size={16} />
+							</button>
+						)}
 					</div>
 
 					{/* Nút gửi */}
@@ -669,6 +769,33 @@ const HomePage = () => {
 	const messagesEndRef = useRef(null);
 	const { user } = useSelector((state) => state.auth);
 
+	const [currentStep, setCurrentStep] = useState(0);
+
+	const steps = [
+		"Phân tích câu hỏi",
+		"Tìm kiếm dữ liệu",
+		"Lọc kết quả phù hợp",
+		"Xây dựng câu trả lời",
+	];
+
+	useEffect(() => {
+		if (!isTyping) {
+			setCurrentStep(0);
+			return;
+		}
+
+		const interval = setInterval(() => {
+			setCurrentStep((prev) => {
+				if (prev === steps.length - 1) {
+					return prev;
+				}
+				return prev + 1;
+			});
+		}, 3500);
+
+		return () => clearInterval(interval);
+	}, [isTyping, steps.length]);
+
 	const scrollToBottom = () => {
 		messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
 	};
@@ -681,8 +808,37 @@ const HomePage = () => {
 		setIsSidebarOpen(!isSidebarOpen);
 	};
 
+	// const handleSendMessage = async (messageText) => {
+	// 	const newMessage = {
+	// 		id: Date.now(),
+	// 		text: messageText,
+	// 		isBot: false,
+	// 		timestamp: new Date().toLocaleTimeString("vi-VN", {
+	// 			hour: "2-digit",
+	// 			minute: "2-digit",
+	// 		}),
+	// 	};
+
+	// 	setMessages((prev) => [...prev, newMessage]);
+	// 	setIsTyping(true);
+
+	// 	const responseFromLLM = await apiChatWithLLM({ question: messageText });
+	// 	const botResponse = {
+	// 		id: Date.now() + 1,
+	// 		text:
+	// 			responseFromLLM.answer ||
+	// 			"Xin lỗi, hiện tại tôi không thể trả lời câu hỏi này.",
+	// 		isBot: true,
+	// 		timestamp: new Date().toLocaleTimeString("vi-VN", {
+	// 			hour: "2-digit",
+	// 			minute: "2-digit",
+	// 		}),
+	// 	};
+	// 	setMessages((prev) => [...prev, botResponse]);
+	// 	setIsTyping(false);
+	// };
 	const handleSendMessage = async (messageText) => {
-		const newMessage = {
+		const userMsg = {
 			id: Date.now(),
 			text: messageText,
 			isBot: false,
@@ -691,24 +847,44 @@ const HomePage = () => {
 				minute: "2-digit",
 			}),
 		};
-
-		setMessages((prev) => [...prev, newMessage]);
+		setMessages((prev) => [...prev, userMsg]);
 		setIsTyping(true);
 
-		// Simulate bot response
-		setTimeout(() => {
-			const botResponse = {
-				id: Date.now() + 1,
-				text: `Cảm ơn bạn đã hỏi về "${messageText}". Đây là một câu hỏi rất hay về nông nghiệp! Tôi sẽ cung cấp thông tin chi tiết để hỗ trợ bạn tốt nhất. Để đưa ra lời khuyên chính xác, bạn có thể cung cấp thêm thông tin về điều kiện thổ nhưỡng, khí hậu và diện tích canh tác không?`,
+		const res = await apiChatWithLLM({ question: messageText });
+		const text =
+			res?.answer ||
+			"Xin lỗi, hiện tại tôi không thể trả lời câu hỏi này.";
+
+		// thêm bot message với cờ streaming = true
+		const botMsgId = Date.now() + 1;
+		setMessages((prev) => [
+			...prev,
+			{
+				id: botMsgId,
+				text,
 				isBot: true,
+				streaming: true,
 				timestamp: new Date().toLocaleTimeString("vi-VN", {
 					hour: "2-digit",
 					minute: "2-digit",
 				}),
-			};
-			setMessages((prev) => [...prev, botResponse]);
-			setIsTyping(false);
-		}, 2000);
+			},
+		]);
+
+		// tắt “đang soạn” (vì đã bắt đầu gõ)
+		setIsTyping(false);
+
+		// khi gõ xong, cập nhật streaming=false (optional)
+		const onStreamEnd = () => {
+			setMessages((prev) =>
+				prev.map((m) =>
+					m.id === botMsgId ? { ...m, streaming: false } : m
+				)
+			);
+		};
+
+		// truyền callback vào Message
+		// -> ở chỗ render Message, nhớ truyền `onStreamEnd={onStreamEnd}` khi là message bot đó.
 	};
 
 	const handleQuickAction = (actionTitle) => {
@@ -757,12 +933,35 @@ const HomePage = () => {
 							<QuickActions onActionClick={handleQuickAction} />
 						) : (
 							<div className="space-y-4">
-								{messages.map((message) => (
+								{/* {messages.map((message) => (
 									<Message
 										key={message.id}
 										message={message.text}
 										isBot={message.isBot}
 										timestamp={message.timestamp}
+									/>
+								))} */}
+								{messages.map((m) => (
+									<Message
+										key={m.id}
+										message={m.text}
+										isBot={m.isBot}
+										timestamp={m.timestamp}
+										streaming={m.streaming}
+										onStreamEnd={() => {
+											if (m.streaming) {
+												setMessages((prev) =>
+													prev.map((x) =>
+														x.id === m.id
+															? {
+																	...x,
+																	streaming: false,
+															  }
+															: x
+													)
+												);
+											}
+										}}
 									/>
 								))}
 
@@ -784,27 +983,26 @@ const HomePage = () => {
 													</span>
 												</div>
 												<div className="inline-block px-4 py-3 rounded-2xl bg-white border border-gray-200">
-													<div className="flex space-x-2">
-														<div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-														<div
-															className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
-															style={{
-																animationDelay:
-																	"0.1s",
-															}}></div>
-														<div
-															className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
-															style={{
-																animationDelay:
-																	"0.2s",
-															}}></div>
+													<div className="flex items-center gap-2 h-6">
+														<span className="text-gray-600 text-sm font-medium min-w-fit">
+															{steps[currentStep]}
+														</span>
+														<div className="thinking flex gap-1">
+															{[0, 1, 2].map(
+																(i) => (
+																	<div
+																		key={i}
+																		className="thinking-dot w-2 h-2 bg-green-600 rounded-full"
+																	/>
+																)
+															)}
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								)}
-
 								<div ref={messagesEndRef} />
 							</div>
 						)}

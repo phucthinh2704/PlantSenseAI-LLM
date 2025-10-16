@@ -1,7 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.models.user import create_admin_user
-from contextlib import asynccontextmanager
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -15,28 +13,32 @@ from app.router import (
     disease_stage_router,
     insert_router,
     conversation_router,
-    qdrant_router,
+    chat_router,
 )
-from app.core.database import create_indexes, client
+from app.core.lifespan import lifespan
+
+# @asynccontextmanager
+# async def lifespan(app: FastAPI):
+#     # Startup
+#     print("Ứng dụng đang khởi động...")
+#     await create_indexes()  # tạo index bất đồng bộ
+
+#     await create_admin_user()
+#     print("Các chỉ mục và admin đã được tạo thành công.")
+
+#     yield
+#     # Shutdown
+#     print("Đang đóng kết nối MongoDB...")
+#     client.close()
+#     print("Kết nối đã được đóng.")
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Startup
-    print("Ứng dụng đang khởi động...")
-    await create_indexes()  # tạo index bất đồng bộ
-    print("Các chỉ mục đã được tạo thành công.")
-
-    await create_admin_user()
-    print("Các chỉ mục và admin đã được tạo thành công.")
-    yield  # đây là điểm ứng dụng "đang chạy"
-    # Shutdown
-    print("Đang đóng kết nối MongoDB...")
-    client.close()
-    print("Kết nối đã được đóng.")
-
-
-app = FastAPI(title="PlantSense API", lifespan=lifespan)
+app = FastAPI(
+    title="PlantSense API",
+    description="API cho chatbot luận văn tốt nghiệp",
+    lifespan=lifespan,
+    version="1.0.0",
+)
 
 FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
 
@@ -62,7 +64,7 @@ app.include_router(
     conversation_router.router, prefix="/conversations", tags=["Conversations"]
 )
 app.include_router(insert_router.router, prefix="/insert", tags=["Insert"])
-app.include_router(qdrant_router.router, prefix="/qdrant", tags=["Search"])
+app.include_router(chat_router.router, prefix="/chat", tags=["Chat"])
 
 # py -m app.main
 if __name__ == "__main__":
