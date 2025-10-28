@@ -1,11 +1,11 @@
 import logging
 from fastapi import APIRouter, HTTPException
-from app.schema.chat_schema import QueryRequest, QueryResponse
+from app.schema.chat_schema import QueryRequest, QueryResponse 
 from app.services import chat_service
 
 router = APIRouter()
 
-@router.post("/ask", response_model=QueryResponse)
+@router.post("/ask", response_model=QueryResponse) 
 async def chat_with_rag(request: QueryRequest):
     try:
         result = await chat_service.process_chat_request(request)

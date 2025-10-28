@@ -5,9 +5,17 @@ import useAlert from "@hooks/useAlert";
 import { logoutUser } from "@redux/auth";
 import { apiChatWithLLM } from "@services/chat";
 import {
-	AlertCircle,
+	apiDeleteConversation,
+	apiGetConversationDetails,
+	apiGetConversationHistory,
+	apiUpdateConversationTitle,
+} from "@services/conversation";
+import { formatDistanceToNow, parseISO } from "date-fns";
+import { vi } from "date-fns/locale";
+import {
 	Bot,
 	Bug,
+	Check,
 	ChevronDown,
 	Droplets,
 	Edit3,
@@ -24,44 +32,171 @@ import {
 	User,
 	X,
 } from "lucide-react";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 // Chat History Sidebar Component
-const ChatSidebar = ({ isOpen, toggleSidebar }) => {
-	const [conversations, setConversations] = useState([
-		{
-			id: 1,
-			title: "Tư vấn trồng lúa mùa khô",
-			lastMessage: "Cảm ơn bạn đã tư vấn về giống lúa IR64",
-			timestamp: "2 giờ trước",
-			active: true,
-		},
-		{
-			id: 2,
-			title: "Phòng trừ sâu bệnh cà chua",
-			lastMessage: "Thuốc nào hiệu quả cho bệnh héo xanh?",
-			timestamp: "1 ngày trước",
-			active: false,
-		},
-		{
-			id: 3,
-			title: "Kỹ thuật tưới tiêu hiệu quả",
-			lastMessage: "Lịch tưới nước cho rau màu",
-			timestamp: "3 ngày trước",
-			active: false,
-		},
-		{
-			id: 4,
-			title: "Chọn giống ngô phù hợp",
-			lastMessage: "NK7328 có phù hợp với đất chua không?",
-			timestamp: "1 tuần trước",
-			active: false,
-		},
-	]);
+const ChatSidebar = ({
+	isOpen,
+	toggleSidebar,
+	onConversationSelect,
+	currentConversationId,
+}) => {
+	const [conversations, setConversations] = useState([]);
+	const [editingConvId, setEditingConvId] = useState(null);
+	const [newTitle, setNewTitle] = useState("");
 
 	const dispatch = useDispatch();
-	const { showConfirm } = useAlert();
+	const { showConfirm, showError } = useAlert();
+	const { user } = useSelector((state) => state.auth);
+
+	useEffect(() => {
+		const getConversations = async (userId) => {
+			try {
+				const response = await apiGetConversationHistory(userId);
+				if (response.success && Array.isArray(response.data)) {
+					const formattedConversations = response.data
+						.map((conv) => {
+							const lastMessage =
+								conv.messages && conv.messages.length > 0
+									? conv.messages[conv.messages.length - 1]
+									: null;
+
+							let timestampStr = "Không rõ";
+							if (conv.updated_at) {
+								try {
+									const dateUTC = parseISO(conv.updated_at); // Dùng parseISO để đọc đúng UTC
+									timestampStr = formatDistanceToNow(
+										dateUTC,
+										{ addSuffix: true, locale: vi }
+									);
+								} catch (e) {
+									console.error(
+										"Lỗi parse ngày:",
+										conv.updated_at,
+										e
+									);
+									// Fallback nếu chuỗi ngày bị lỗi
+									timestampStr =
+										new Date(
+											conv.updated_at
+										).toLocaleTimeString("vi-VN") ||
+										"Không rõ";
+								}
+							}
+
+							return {
+								id: conv._id,
+								title:
+									conv.title ||
+									"Cuộc trò chuyện chưa có tiêu đề",
+								lastMessage: lastMessage
+									? lastMessage.content
+									: "...",
+								timestamp: timestampStr,
+								updated_at_raw: conv.updated_at,
+								active: conv._id === currentConversationId,
+							};
+						})
+						.sort(
+							(a, b) =>
+								new Date(b.updated_at_raw || 0) -
+								new Date(a.updated_at_raw || 0)
+						);
+					setConversations(formattedConversations);
+				} else {
+					console.error(
+						"API response is not successful or data is not an array:",
+						response
+					);
+					setConversations([]);
+				}
+			} catch (error) {
+				console.error("Failed to fetch conversations:", error);
+				setConversations([]);
+			}
+		};
+		if (user?.id) {
+			getConversations(user.id);
+		}
+	}, [user?.id, currentConversationId]);
+
+	const handleSelectConversation = (convId) => {
+		if (onConversationSelect) {
+			onConversationSelect(convId);
+		}
+	};
+
+	const handleNewConversation = () => {
+		if (onConversationSelect) {
+			onConversationSelect(null);
+		}
+	};
+
+	const handleEditTitleConversation = (convId, currentTitle) => {
+		setEditingConvId(convId);
+		setNewTitle(currentTitle);
+	};
+
+	const handleSaveTitle = async (convId) => {
+		if (!newTitle.trim()) {
+			console.error("Tiêu đề không được để trống");
+			showError("Tiêu đề không được để trống");
+			return;
+		}
+
+		try {
+			const response = await apiUpdateConversationTitle(convId, newTitle);
+			if (response.success) {
+				setConversations((prevConversations) =>
+					prevConversations.map((conv) =>
+						conv.id === convId ? { ...conv, title: newTitle } : conv
+					)
+				);
+				setEditingConvId(null);
+				setNewTitle("");
+			} else {
+				console.error("Cập nhật tiêu đề thất bại:", response);
+			}
+		} catch (error) {
+			console.error("Lỗi khi cập nhật tiêu đề:", error);
+		}
+	};
+
+	const handleCancelEdit = () => {
+		setEditingConvId(null);
+		setNewTitle("");
+	};
+
+	const handleDeleteConversation = (convId) => {
+		showConfirm("Bạn có chắc chắn muốn xóa cuộc trò chuyện này?").then(
+			async (result) => {
+				if (result.isConfirmed) {
+					const response = await apiDeleteConversation(convId);
+					if (response.success) {
+						setConversations((prevConversations) =>
+							prevConversations.filter(
+								(conv) => conv.id !== convId
+							)
+						);
+						// Nếu xóa cuộc trò chuyện đang active, chọn tạo mới
+						if (
+							convId === currentConversationId &&
+							onConversationSelect
+						) {
+							onConversationSelect(null);
+						}
+					} else {
+						console.error(
+							"Xóa cuộc trò chuyện thất bại:",
+							response
+						);
+					}
+				}
+			}
+		);
+	};
+
 	const handleLogout = () => {
 		showConfirm("Bạn có chắc chắn muốn đăng xuất?").then((result) => {
 			if (result.isConfirmed) {
@@ -69,6 +204,7 @@ const ChatSidebar = ({ isOpen, toggleSidebar }) => {
 			}
 		});
 	};
+
 	return (
 		<>
 			{/* Mobile Overlay */}
@@ -102,7 +238,9 @@ const ChatSidebar = ({ isOpen, toggleSidebar }) => {
 						</button>
 					</div>
 
-					<button className="w-full flex items-center justify-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white py-3 px-4 rounded-lg border border-gray-600 transition-colors">
+					<button
+						onClick={handleNewConversation}
+						className="w-full flex items-center justify-center space-x-2 bg-gray-800 hover:bg-gray-700 text-white py-3 px-4 rounded-lg border border-gray-600 transition-colors">
 						<Plus size={18} />
 						<span>Cuộc trò chuyện mới</span>
 					</button>
@@ -116,41 +254,128 @@ const ChatSidebar = ({ isOpen, toggleSidebar }) => {
 					{conversations.map((conv) => (
 						<div
 							key={conv.id}
-							className={`
-                group relative p-3 rounded-lg cursor-pointer transition-all duration-200
-                ${
-					conv.active
-						? "bg-green-600 text-white"
-						: "hover:bg-gray-800 text-gray-300"
-				}
-              `}>
+							onClick={() => {
+								// Không cho chọn lại khi đang sửa title
+								if (editingConvId !== conv.id) {
+									handleSelectConversation(conv.id);
+								}
+							}}
+							className={`group relative p-3 rounded-lg cursor-pointer transition-all duration-200 ${
+								conv.active
+									? "bg-green-700 text-white"
+									: "hover:bg-gray-700 text-gray-200"
+							}`}>
 							<div className="flex items-start justify-between">
 								<div className="flex-1 min-w-0">
-									<h4 className="font-medium text-sm truncate">
-										{conv.title}
-									</h4>
-									<p
-										className={`text-xs mt-1 truncate ${
-											conv.active
-												? "text-green-100"
-												: "text-gray-500"
-										}`}>
-										{conv.lastMessage}
-									</p>
-									<span
-										className={`text-xs mt-1 block ${
-											conv.active
-												? "text-green-200"
-												: "text-gray-600"
-										}`}>
-										{conv.timestamp}
-									</span>
+									{/* Inline Editing */}
+									{editingConvId === conv.id ? (
+										<div className="flex items-center gap-2 mb-2">
+											<input
+												type="text"
+												value={newTitle}
+												onChange={(e) =>
+													setNewTitle(e.target.value)
+												}
+												onClick={(e) =>
+													e.stopPropagation()
+												}
+												className="flex-1 px-2 py-1 text-sm bg-gray-700 text-white rounded border border-green-500 focus:outline-none focus:ring-2 focus:ring-green-400"
+												placeholder="Nhập tiêu đề mới..."
+												autoFocus
+												onKeyDown={(e) => {
+													// Lưu bằng Enter
+													if (e.key === "Enter") {
+														handleSaveTitle(
+															conv.id
+														);
+													} else if (
+														e.key === "Escape"
+													) {
+														// Hủy bằng Esc
+														handleCancelEdit();
+													}
+												}}
+											/>
+											<button
+												onClick={(e) => {
+													e.stopPropagation();
+													handleSaveTitle(conv.id);
+												}}
+												className="p-1.5 bg-green-600 hover:bg-green-700 rounded transition-colors cursor-pointer"
+												title="Lưu">
+												<Check
+													size={15}
+													className="text-white"
+												/>
+											</button>
+											<button
+												onClick={(e) => {
+													e.stopPropagation();
+													handleCancelEdit();
+												}}
+												className="p-1.5 bg-red-600 hover:bg-red-500 rounded transition-colors cursor-pointer mt-0.5"
+												title="Hủy">
+												<X
+													size={15}
+													className="text-white"
+												/>
+											</button>
+										</div>
+									) : (
+										<h4 className="font-medium text-sm truncate">
+											{conv.title}
+										</h4>
+									)}
+									{editingConvId !== conv.id && (
+										<>
+											<p
+												className={`text-xs mt-1 truncate ${
+													conv.active
+														? "text-green-100"
+														: "text-gray-300"
+												}`}>
+												{conv.lastMessage}
+											</p>
+											<span
+												className={`text-xs mt-1 block ${
+													conv.active
+														? "text-green-200"
+														: "text-gray-400"
+												}`}>
+												{" "}
+												{/* Mờ hơn */}
+												{conv.timestamp}
+											</span>
+										</>
+									)}
 								</div>
-								<div className="flex space-x-1 opacity-0 group-hover:opacity-100 transition-opacity">
-									<button className="p-1 hover:bg-gray-600 rounded">
+								<div
+									className={`${
+										// Ẩn khi đang edit item này
+										editingConvId === conv.id
+											? "hidden"
+											: "flex"
+									} space-x-1 opacity-0 group-hover:opacity-100 transition-opacity absolute top-2 right-2`} // Định vị tuyệt đối
+								>
+									<button
+										className="p-1 hover:bg-blue-600 rounded text-white bg-gray-600" // Thêm màu nền
+										onClick={(e) => {
+											e.stopPropagation();
+											handleEditTitleConversation(
+												conv.id,
+												conv.title
+											);
+										}}
+										title="Sửa tiêu đề">
 										<Edit3 size={12} />
 									</button>
-									<button className="p-1 hover:bg-red-600 rounded">
+									<button
+										className="p-1 hover:bg-red-600 rounded text-white bg-gray-600" // Thêm màu nền
+										onClick={(e) => {
+											e.stopPropagation();
+											handleDeleteConversation(conv.id);
+										}}
+										title="Xóa cuộc trò chuyện">
 										<Trash2 size={12} />
 									</button>
 								</div>
@@ -170,7 +395,7 @@ const ChatSidebar = ({ isOpen, toggleSidebar }) => {
 						<span>Cài đặt</span>
 					</button>
 					<button
-						onClick={handleLogout} // hàm xử lý đăng xuất
+						onClick={handleLogout}
 						className="w-full flex items-center space-x-3 p-3 hover:bg-red-600/20 text-red-500 rounded-lg transition-colors text-left">
 						<LogOut size={18} />
 						<span>Đăng xuất</span>
@@ -180,7 +405,6 @@ const ChatSidebar = ({ isOpen, toggleSidebar }) => {
 		</>
 	);
 };
-
 const Navbar = ({ user }) => {
 	const [showUserMenu, setShowUserMenu] = useState(false);
 	const dispatch = useDispatch();
@@ -768,8 +992,10 @@ const HomePage = () => {
 	const [isTyping, setIsTyping] = useState(false);
 	const messagesEndRef = useRef(null);
 	const { user } = useSelector((state) => state.auth);
-
 	const [currentStep, setCurrentStep] = useState(0);
+
+	const [userId] = useState(user?.id); // ID người dùng
+	const [currentConversationId, setCurrentConversationId] = useState(null); // ID cuộc trò chuyện đang hiển thị
 
 	const steps = [
 		"Phân tích câu hỏi",
@@ -804,9 +1030,65 @@ const HomePage = () => {
 		scrollToBottom();
 	}, [messages, isTyping]);
 
-	const toggleSidebar = () => {
+	const toggleSidebar = useCallback(() => {
 		setIsSidebarOpen(!isSidebarOpen);
-	};
+	}, [isSidebarOpen]);
+
+	// Xử lý khi chọn hoặc tạo cuộc trò chuyện từ Sidebar
+	const handleConversationSelect = useCallback(
+		async (convId) => {
+			setIsTyping(false); // Dừng typing nếu có
+			setCurrentConversationId(convId); // Cập nhật ID đang chọn
+
+			if (convId === null) {
+				// Người dùng muốn tạo cuộc trò chuyện MỚI
+				setMessages([]); // Xóa sạch tin nhắn cũ
+			} else {
+				// Người dùng chọn một cuộc trò chuyện CŨ
+				try {
+					const response = await apiGetConversationDetails(convId);
+					if (
+						response.success &&
+						response.data &&
+						Array.isArray(response.data.messages)
+					) {
+						// Format lại tin nhắn từ DB sang dạng state của frontend
+						const formattedMessages = response.data.messages.map(
+							(msg, index) => ({
+								id: `${convId}-${index}`, // Tạo ID duy nhất cho tin nhắn
+								text: msg.content,
+								isBot: msg.sender === "bot",
+								timestamp: new Date(
+									msg.timestamp
+								).toLocaleTimeString("vi-VN", {
+									hour: "2-digit",
+									minute: "2-digit",
+								}),
+							})
+						);
+						setMessages(formattedMessages);
+					} else {
+						console.error(
+							"Failed to load messages or invalid format:",
+							response
+						);
+						setMessages([]); // Reset nếu lỗi
+					}
+				} catch (error) {
+					console.error(
+						"Error fetching conversation details:",
+						error
+					);
+					setMessages([]); // Reset nếu lỗi
+				}
+			}
+			if (window.innerWidth < 1024 && isSidebarOpen) {
+				// Tự đóng sidebar trên mobile sau khi chọn
+				toggleSidebar();
+			}
+		},
+		[isSidebarOpen, toggleSidebar]
+	);
 
 	// const handleSendMessage = async (messageText) => {
 	// 	const newMessage = {
@@ -837,9 +1119,61 @@ const HomePage = () => {
 	// 	setMessages((prev) => [...prev, botResponse]);
 	// 	setIsTyping(false);
 	// };
+	// const handleSendMessage = async (messageText) => {
+	// 	const userMsg = {
+	// 		id: Date.now(),
+	// 		text: messageText,
+	// 		isBot: false,
+	// 		timestamp: new Date().toLocaleTimeString("vi-VN", {
+	// 			hour: "2-digit",
+	// 			minute: "2-digit",
+	// 		}),
+	// 	};
+	// 	setMessages((prev) => [...prev, userMsg]);
+	// 	setIsTyping(true);
+
+	// 	const payload = {
+	// 		question: messageText,
+	// 		user_id: userId,
+	// 		conversation_id: conversationId,
+	// 	};
+
+	// 	const res = await apiChatWithLLM(payload);
+	// 	if (res?.conversation_id && !conversationId) {
+	// 		setConversationId(res.conversation_id);
+	// 	}
+	// 	const text =
+	// 		res?.answer ||
+	// 		"Xin lỗi, hiện tại tôi không thể trả lời câu hỏi này.";
+
+	// 	// thêm bot message với cờ streaming = true
+	// 	const botMsgId = Date.now() + 1;
+	// 	setMessages((prev) => [
+	// 		...prev,
+	// 		{
+	// 			id: botMsgId,
+	// 			text,
+	// 			isBot: true,
+	// 			streaming: true,
+	// 			timestamp: new Date().toLocaleTimeString("vi-VN", {
+	// 				hour: "2-digit",
+	// 				minute: "2-digit",
+	// 			}),
+	// 		},
+	// 	]);
+
+	// 	// tắt “đang soạn” (vì đã bắt đầu gõ)
+	// 	setIsTyping(false);
+	// }; // streaming
 	const handleSendMessage = async (messageText) => {
+		if (!userId) {
+			console.error("User ID is missing!");
+			// Có thể hiển thị thông báo lỗi cho người dùng
+			return;
+		}
+
 		const userMsg = {
-			id: Date.now(),
+			id: `user-${Date.now()}`, // ID duy nhất hơn
 			text: messageText,
 			isBot: false,
 			timestamp: new Date().toLocaleTimeString("vi-VN", {
@@ -849,44 +1183,56 @@ const HomePage = () => {
 		};
 		setMessages((prev) => [...prev, userMsg]);
 		setIsTyping(true);
+		setCurrentStep(0); // Reset animation typing
 
-		const res = await apiChatWithLLM({ question: messageText });
-		const text =
-			res?.answer ||
-			"Xin lỗi, hiện tại tôi không thể trả lời câu hỏi này.";
+		// Sử dụng currentConversationId thay vì state cũ
+		const payload = {
+			question: messageText,
+			user_id: userId,
+			conversation_id: currentConversationId, // Gửi ID hiện tại (null nếu là cuộc trò chuyện mới)
+		};
 
-		// thêm bot message với cờ streaming = true
-		const botMsgId = Date.now() + 1;
-		setMessages((prev) => [
-			...prev,
-			{
-				id: botMsgId,
-				text,
+		try {
+			const res = await apiChatWithLLM(payload);
+
+			// Cập nhật currentConversationId nếu đây là tin nhắn đầu tiên của cuộc trò chuyện mới
+			if (res?.conversation_id && !currentConversationId) {
+				setCurrentConversationId(res.conversation_id);
+			}
+
+			const text =
+				res?.answer ||
+				"Xin lỗi, hiện tại tôi không thể trả lời câu hỏi này.";
+
+			const botMsg = {
+				id: `bot-${Date.now() + 1}`, // ID duy nhất hơn
+				text: text,
 				isBot: true,
 				streaming: true,
 				timestamp: new Date().toLocaleTimeString("vi-VN", {
 					hour: "2-digit",
 					minute: "2-digit",
 				}),
-			},
-		]);
+			};
 
-		// tắt “đang soạn” (vì đã bắt đầu gõ)
-		setIsTyping(false);
-
-		// khi gõ xong, cập nhật streaming=false (optional)
-		const onStreamEnd = () => {
-			setMessages((prev) =>
-				prev.map((m) =>
-					m.id === botMsgId ? { ...m, streaming: false } : m
-				)
-			);
-		};
-
-		// truyền callback vào Message
-		// -> ở chỗ render Message, nhớ truyền `onStreamEnd={onStreamEnd}` khi là message bot đó.
+			setMessages((prev) => [...prev, botMsg]);
+		} catch (error) {
+			console.error("Error sending message:", error);
+			// Hiển thị tin nhắn lỗi cho người dùng
+			const errorMsg = {
+				id: `error-${Date.now() + 2}`,
+				text: "Đã có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại.",
+				isBot: true,
+				timestamp: new Date().toLocaleTimeString("vi-VN", {
+					hour: "2-digit",
+					minute: "2-digit",
+				}),
+			};
+			setMessages((prev) => [...prev, errorMsg]);
+		} finally {
+			setIsTyping(false); // Luôn tắt typing sau khi hoàn tất hoặc lỗi
+		}
 	};
-
 	const handleQuickAction = (actionTitle) => {
 		handleSendMessage(`Tôi muốn tìm hiểu về ${actionTitle.toLowerCase()}`);
 	};
@@ -896,6 +1242,8 @@ const HomePage = () => {
 			<ChatSidebar
 				isOpen={isSidebarOpen}
 				toggleSidebar={toggleSidebar}
+				onConversationSelect={handleConversationSelect} // <-- Hàm callback
+				currentConversationId={currentConversationId} // <-- ID đang active
 			/>
 
 			{/* Main Chat Area */}
@@ -929,7 +1277,7 @@ const HomePage = () => {
 				{/* Messages Area */}
 				<div className="flex-1 overflow-y-auto">
 					<div className="max-w-4xl mx-auto p-6">
-						{messages.length === 0 ? (
+						{messages.length === 0 && !isTyping ? (
 							<QuickActions onActionClick={handleQuickAction} />
 						) : (
 							<div className="space-y-4">
@@ -964,7 +1312,12 @@ const HomePage = () => {
 										}}
 									/>
 								))}
-
+								{/* <Message
+									message={
+										"Trứng gà ta được chăn thả tự nhiên, ăn thức ăn đa dạng (ngô, thóc, rau), cho chất lượng trứng vượt trội.\n\n**Đặc điểm nổi bật:**\n- **Cảm quan:** Vỏ trứng màu nâu nhạt (hoặc trắng hồng), cứng cáp. Lòng đỏ đậm màu, lòng trắng đặc, tỷ lệ lòng đỏ cao.\n- **Hương vị:** Khi chế biến, trứng có vị béo ngậy, thơm đặc trưng, không tanh.\n- **Đóng gói:** Vỉ 10 quả tiện lợi.\n\n**Gợi ý chế biến:**\n- **Món cơ bản:** Luộc (lòng đào), ốp la, chiên, hấp (trứng hấp thịt).\n- **Làm bánh:** Dùng làm nguyên liệu cho các loại bánh ngọt, bánh bông lan.\n\n**Hướng dẫn sử dụng & bảo quản:**\nBảo quản trong ngăn mát tủ lạnh."
+									}
+									isBot={true}
+								/> */}
 								{isTyping && (
 									<div className="flex w-full mb-6">
 										<div className="flex max-w-4xl w-full">
