@@ -1,7 +1,4 @@
-# app/core/lifespan.py
-
 import os
-import logging
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from qdrant_client import QdrantClient
@@ -20,18 +17,15 @@ conversation_histories = Cache("cache/chat_histories")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logging.info("Đang tải các model...")
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-    models_cache["embedding_model"] = SentenceTransformer(os.getenv("EMBEDDING_MODEL_NAME", "intfloat/multilingual-e5-large"))
+    models_cache["embedding_model"] = SentenceTransformer(os.getenv("MODEL_EMBEDDING", "intfloat/multilingual-e5-large"))
     models_cache["qdrant_client"] = QdrantClient(
         url=os.getenv("QDRANT_URL"),
         api_key=os.getenv("QDRANT_API_KEY"),
     )
     models_cache["llm_rag"] = genai.GenerativeModel("gemini-2.5-pro")
     models_cache["llm_fast"] = genai.GenerativeModel("gemini-2.5-flash")
-    
-    logging.info("Tải model thành công!")
     
     # Startup
     print("Ứng dụng đang khởi động...")

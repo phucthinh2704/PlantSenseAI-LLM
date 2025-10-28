@@ -26,6 +26,8 @@ export default function useAlert() {
 			showCancelButton: true,
 			confirmButtonText: "Đồng ý",
 			cancelButtonText: "Hủy",
+			confirmButtonColor: "#d33",
+			cancelButtonColor: "#3085d6",
 		});
 	};
 

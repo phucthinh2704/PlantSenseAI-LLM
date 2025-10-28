@@ -1,11 +1,35 @@
 from bson import ObjectId, errors
 from datetime import datetime, timezone
 from app.core.database import db
+from datetime import datetime, timezone
+
+
+def to_iso_z(dt: datetime) -> str:
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
+def to_epoch_ms(dt: datetime) -> int:
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return int(dt.timestamp() * 1000)
 
 
 def serialize_doc(doc):
     if doc:
         doc["_id"] = str(doc["_id"])
+    for k in ("created_at", "updated_at"):
+        if k in doc and isinstance(doc[k], datetime):
+            dt = doc[k]
+            doc[k + "_ts"] = to_epoch_ms(dt)  # 1739904123456
+            doc[k] = to_iso_z(dt)  # 2025-10-19T03:02:03.456Z
+
+    if "messages" in doc:
+        for m in doc["messages"]:
+            if isinstance(m.get("timestamp"), datetime):
+                m["timestamp_ts"] = to_epoch_ms(m["timestamp"])
+                m["timestamp"] = to_iso_z(m["timestamp"])
     return doc
 
 
@@ -61,6 +85,7 @@ async def add_message(conv_id: str, message: dict) -> bool:
         },
     )
     return result.modified_count > 0
+
 
 async def update_conversation_title(conv_id: str, title: str) -> bool:
     try:

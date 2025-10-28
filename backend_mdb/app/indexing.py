@@ -1,5 +1,3 @@
-# indexing.py (Fixed for WriteTimeout issue)
-
 import os
 import pymongo
 from dotenv import load_dotenv
@@ -8,35 +6,30 @@ from sentence_transformers import SentenceTransformer
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import json
 from bson import ObjectId
-import pypdf  # Import mới
-import docx   # Import mới
+import pypdf
+import docx
 
 
 # --- 1. TẢI BIẾN MÔI TRƯỜNG & KẾT NỐI ---
 load_dotenv()
 mongo_client = pymongo.MongoClient(os.getenv("MONGO_URI"))
-db = mongo_client[os.getenv("MONGO_DB_NAME")]
+db = mongo_client[os.getenv("MONGO_DB")]
 COLLECTION_CONFIG = {
     "plant": "plants",
     "disease_stage": "disease_stages",
     "cultivation_technique": "cultivation_techniques",
 }
 
-# =================================================================
-# === THAY ĐỔI DUY NHẤT NẰM Ở ĐÂY ===
-# =================================================================
 # Kết nối Qdrant với thời gian chờ (timeout) dài hơn
 qdrant_client = QdrantClient(
     url=os.getenv("QDRANT_URL"),
     api_key=os.getenv("QDRANT_API_KEY"),
     timeout=60,  # **SỬA LỖI: Tăng thời gian chờ lên 60 giây**
 )
-# =================================================================
-
 
 # --- 2. KHỞI TẠO CÁC MÔ HÌNH ---
 print("Đang tải model embedding...")
-embedding_model = SentenceTransformer(os.getenv("MODEL_EMBEDDING"))
+embedding_model = SentenceTransformer(os.getenv("MODEL_EMBEDDING", "intfloat/multilingual-e5-large"))
 
 if hasattr(embedding_model.tokenizer, "model_max_length"):
     embedding_model.max_seq_length = embedding_model.tokenizer.model_max_length
@@ -48,11 +41,9 @@ else:
     )
 
 VECTOR_DIMENSION = embedding_model.get_sentence_embedding_dimension()
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=512, chunk_overlap=50)
 print("Tải model thành công!")
 
-
-# --- CÁC PHẦN CÒN LẠI CỦA FILE GIỮ NGUYÊN ---
 
 # --- 3. TẠO COLLECTION TRONG QDRANT ---
 collection_name = os.getenv("QDRANT_COLLECTION_NAME")
@@ -69,7 +60,51 @@ except Exception:
     )
     print("Tạo collection thành công!")
 
+# =================================================================
+# === BẮT ĐẦU: CODE MỚI ĐỂ TẠO PAYLOAD INDEX ===
+# =================================================================
+print(f"\nKiểm tra/Tạo payload index cho trường 'content' trong collection '{collection_name}'...")
+try:
+    # Lấy thông tin collection để xem index đã tồn tại chưa
+    collection_info = qdrant_client.get_collection(collection_name=collection_name)
+    # Cập nhật: Kiểm tra payload_schema có tồn tại không trước khi truy cập
+    existing_indices = {}
+    if hasattr(collection_info, 'payload_schema') and collection_info.payload_schema:
+         existing_indices = collection_info.payload_schema
 
+    # Cập nhật: Kiểm tra xem 'content' có trong schema không VÀ kiểu dữ liệu là gì
+    content_schema = existing_indices.get("content")
+    should_create_index = True
+    if content_schema:
+        # Kiểm tra xem có phải là TextIndexParams không (chính xác hơn là kiểm tra data_type)
+        if isinstance(content_schema, models.TextIndexParams) or getattr(content_schema, 'data_type', None) == models.PayloadSchemaType.TEXT:
+             print("Payload index 'TEXT' cho trường 'content' đã tồn tại.")
+             should_create_index = False
+        else:
+            print("Trường 'content' tồn tại nhưng không phải index 'TEXT'. Cần tạo lại hoặc kiểm tra.")
+            # Xóa index cũ và tạo lại nếu cần
+            # qdrant_client.delete_payload_index(collection_name=collection_name, field_name="content")
+            # print("Đã xóa index cũ cho 'content'.")
+            # should_create_index = True # Đã set ở trên
+
+    if should_create_index:
+         print("Index cho 'content' chưa tồn tại hoặc cần tạo mới. Đang tạo...")
+         qdrant_client.create_payload_index(
+            collection_name=collection_name,
+            field_name="content",  # Tên trường cần index
+            field_schema=models.TextIndexParams( # Chỉ định loại index là TEXT
+                type=models.TextIndexType.TEXT,
+                tokenizer=models.TokenizerType.MULTILINGUAL, # Sử dụng MULTILINGUAL cho tiếng Việt
+                min_token_len=2,
+                max_token_len=20, # Tăng nhẹ max_token_len
+                lowercase=True      # Chuyển thành chữ thường khi index
+            )
+         )
+         print("Đã tạo payload index 'TEXT' cho trường 'content'.")
+
+except Exception as e:
+    print(f"Lỗi khi kiểm tra/tạo payload index: {e}")
+    
 # --- 4. CÁC HÀM FORMAT ---
 def format_plant_document_to_text(
     doc: dict, db_client: pymongo.database.Database
@@ -241,9 +276,7 @@ def index_data():
                 )
     print("--- Hoàn tất xử lý dữ liệu từ MongoDB ---")
     
-    # =================================================================
-    # === BẮT ĐẦU: PHẦN CODE MỚI - INDEX TỪ FILES ===
-    # =================================================================
+    # === INDEX TỪ FILES ===
     print("\n--- Đang xử lý dữ liệu từ các file tài liệu ---")
     documents_dir = "documents" # Tên thư mục chứa file
     if not os.path.exists(documents_dir):

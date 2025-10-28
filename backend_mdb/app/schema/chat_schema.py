@@ -1,6 +1,6 @@
 import uuid
 from datetime import date
-from typing import List
+from typing import List, Optional
 from pydantic import BaseModel, Field
 
 class Source(BaseModel):
@@ -10,10 +10,11 @@ class Source(BaseModel):
 
 class QueryRequest(BaseModel):
     question: str
-    session_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    top_k: int = 10
+    user_id: str  # Xác định người dùng
+    conversation_id: Optional[str] = None # Tùy chọn, null cho tin nhắn đầu
+    top_k: int = 12
 
 class QueryResponse(BaseModel):
     answer: str
     sources: List[List[Source]]
-    session_id: str
+    conversation_id: str # Luôn trả về để frontend có thể lưu lại
