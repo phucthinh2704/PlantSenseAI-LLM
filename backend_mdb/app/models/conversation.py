@@ -16,6 +16,7 @@ class Conversation(BaseModel):
     user_id: str
     title: Optional[str] = None
     messages: List[Message] = []  # nhúng luôn tin nhắn
+    retrieved_doc_ids: List[str] = Field(default_factory=list, description="Lưu ID các tài liệu đã truy xuất để tránh lặp lại")
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 

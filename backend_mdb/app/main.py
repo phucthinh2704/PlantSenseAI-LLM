@@ -17,21 +17,6 @@ from app.router import (
 )
 from app.core.lifespan import lifespan
 
-# @asynccontextmanager
-# async def lifespan(app: FastAPI):
-#     # Startup
-#     print("Ứng dụng đang khởi động...")
-#     await create_indexes()  # tạo index bất đồng bộ
-
-#     await create_admin_user()
-#     print("Các chỉ mục và admin đã được tạo thành công.")
-
-#     yield
-#     # Shutdown
-#     print("Đang đóng kết nối MongoDB...")
-#     client.close()
-#     print("Kết nối đã được đóng.")
-
 
 app = FastAPI(
     title="PlantSense API",

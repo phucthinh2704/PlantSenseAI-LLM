@@ -1,7 +1,8 @@
 from pydantic import BaseModel, Field
 from typing import Optional, List
 from .source import Source
-from datetime import datetime
+from datetime import datetime, timezone
+
 
 class TechniqueStep(BaseModel):
     step: int
@@ -15,7 +16,6 @@ class CultivationTechnique(BaseModel):
     name: str  # Tên kỹ thuật canh tác
     plant_ids: List[str]  # Liên kết cây trồng/giống
 
-    # === Mô tả chi tiết ===
     description: Optional[str] = Field(
         default=None, description="Mô tả tổng quan kỹ thuật, mục đích và ý nghĩa"
     )
@@ -27,7 +27,7 @@ class CultivationTechnique(BaseModel):
         description="Lợi ích đạt được: tăng năng suất, giảm chi phí, chống sâu bệnh...",
     )
 
-    # === Phân loại & ứng dụng (quan trọng cho phân tích luận văn) ===
+    # === Phân loại & ứng dụng ===
     category: str = Field(
         ..., description="Phân loại kỹ thuật (VD: 'Bón phân', 'Tưới tiêu', 'Làm đất')"
     )
@@ -43,15 +43,15 @@ class CultivationTechnique(BaseModel):
 
     image_url: Optional[str] = Field(default=None, description="URL hình minh họa")
     notes: Optional[str] = Field(default=None, description="Ghi chú thêm")
-    
-    # === Thêm trường để phân biệt giữa lúa và xoài ===
+
+    # === Phân biệt giữa lúa và xoài ===
     crop_type: str = Field(..., description="Loại cây trồng (VD: 'Lúa', 'Xoài')")
-    
+
     sources: List[Source] = Field(
-        default_factory=list, 
-        description="Danh sách các nguồn tham khảo cho kỹ thuật này"
+        default_factory=list,
+        description="Danh sách các nguồn tham khảo cho kỹ thuật này",
     )
 
     # === Metadata ===
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))

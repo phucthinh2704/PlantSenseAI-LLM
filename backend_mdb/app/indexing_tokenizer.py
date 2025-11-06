@@ -3,15 +3,63 @@ import pymongo
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient, models
 from sentence_transformers import SentenceTransformer
+
+# --- THAY ĐỔI IMPORT ---
 from langchain.text_splitter import TokenTextSplitter
+from transformers import AutoTokenizer
+
+# ---------------------
 import json
 from bson import ObjectId
 import pypdf
 import docx
-from transformers import AutoTokenizer
+import argparse
+import uuid
+from datetime import datetime, timezone
+
+# --- 0. THIẾT LẬP CACHE VÀ STATE ---
+CACHE_DIR = "cache_tokenizer"
+LAST_RUN_FILE = os.path.join(CACHE_DIR, "last_run.txt")
+FILE_MANIFEST_FILE = os.path.join(CACHE_DIR, "indexed_files.json")
+
+if not os.path.exists(CACHE_DIR):
+    os.makedirs(CACHE_DIR)
+
+
+def get_last_run_time() -> datetime:
+    try:
+        with open(LAST_RUN_FILE, "r") as f:
+            return datetime.fromisoformat(f.read().strip())
+    except FileNotFoundError:
+        print("Không tìm thấy file last_run.txt, coi như chạy lần đầu.")
+        return datetime.min.replace(tzinfo=timezone.utc)
+    except Exception as e:
+        print(f"Lỗi khi đọc last_run.txt: {e}. Chạy lại từ đầu.")
+        return datetime.min.replace(tzinfo=timezone.utc)
+
+
+def set_last_run_time(run_time: datetime):
+    with open(LAST_RUN_FILE, "w") as f:
+        f.write(run_time.isoformat())
+
+
+def load_file_manifest() -> dict:
+    try:
+        with open(FILE_MANIFEST_FILE, "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+    except json.JSONDecodeError:
+        return {}
+
+
+def save_file_manifest(manifest: dict):
+    with open(FILE_MANIFEST_FILE, "w") as f:
+        json.dump(manifest, f, indent=4)
 
 
 # --- 1. TẢI BIẾN MÔI TRƯỜNG & KẾT NỐI ---
+# (Phần này giữ nguyên)
 load_dotenv()
 mongo_client = pymongo.MongoClient(os.getenv("MONGO_URI"))
 db = mongo_client[os.getenv("MONGO_DB")]
@@ -20,19 +68,16 @@ COLLECTION_CONFIG = {
     "disease_stage": "disease_stages",
     "cultivation_technique": "cultivation_techniques",
 }
-
-# Kết nối Qdrant với thời gian chờ (timeout) dài hơn
 qdrant_client = QdrantClient(
     url=os.getenv("QDRANT_URL"),
     api_key=os.getenv("QDRANT_API_KEY"),
-    timeout=60,  # **SỬA LỖI: Tăng thời gian chờ lên 60 giây**
+    timeout=60,
 )
 
-# --- 2. KHỞI TẠO CÁC MÔ HÌNH ---
-print("Đang tải model embedding và tokenizer...")
-embedding_model = SentenceTransformer(
-    os.getenv("MODEL_EMBEDDING", "intfloat/multilingual-e5-large")
-)
+# --- 2. KHỞI TẠO CÁC MÔ HÌNH (ĐÃ THAY THẾ) ---
+print("Đang tải model embedding...")
+model_name = os.getenv("MODEL_EMBEDDING", "intfloat/multilingual-e5-large")
+embedding_model = SentenceTransformer(model_name)
 
 if hasattr(embedding_model.tokenizer, "model_max_length"):
     embedding_model.max_seq_length = embedding_model.tokenizer.model_max_length
@@ -44,90 +89,127 @@ else:
     )
 
 VECTOR_DIMENSION = embedding_model.get_sentence_embedding_dimension()
-tokenizer = AutoTokenizer.from_pretrained(
-    os.getenv("MODEL_EMBEDDING", "intfloat/multilingual-e5-large")
-)  # Tải tokenizer tương ứng
-print("Khởi tạo TokenTextSplitter với tokenizer đã tải...")
+
+# --- BẮT ĐẦU THAY THẾ ---
+# Sử dụng TokenTextSplitter thay vì RecursiveCharacterTextSplitter
+print(f"Đang tải tokenizer '{model_name}' cho text splitter...")
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+print("Khởi tạo TokenTextSplitter...")
 text_splitter = TokenTextSplitter.from_huggingface_tokenizer(
-    tokenizer=tokenizer,  # Truyền tokenizer object vào đây
-    chunk_size=512,       # Giữ nguyên chunk size (theo token)
-    chunk_overlap=50      # Giữ nguyên overlap (theo token)
+    tokenizer=tokenizer,
+    chunk_size=512,  # Số token tối đa mỗi chunk (nên bằng max_seq_length)
+    chunk_overlap=50,  # Số token gối nhau
 )
-print("Khởi tạo TokenTextSplitter thành công!")
+# --- KẾT THÚC THAY THẾ ---
 
 print("Tải model và khởi tạo text splitter thành công!")
 
-
-# --- 3. TẠO COLLECTION TRONG QDRANT ---
 collection_name = os.getenv("QDRANT_COLLECTION_NAME")
-try:
-    qdrant_client.get_collection(collection_name=collection_name)
-    print(f"Collection '{collection_name}' đã tồn tại.")
-except Exception:
-    print(f"Collection '{collection_name}' chưa tồn tại. Đang tạo mới...")
-    qdrant_client.create_collection(
-        collection_name=collection_name,
-        vectors_config=models.VectorParams(
-            size=VECTOR_DIMENSION, distance=models.Distance.COSINE
-        ),
-    )
-    print("Tạo collection thành công!")
 
-# =================================================================
-# === BẮT ĐẦU: CODE MỚI ĐỂ TẠO PAYLOAD INDEX ===
-# =================================================================
-print(
-    f"\nKiểm tra/Tạo payload index cho trường 'content' trong collection '{collection_name}'..."
-)
-try:
-    # Lấy thông tin collection để xem index đã tồn tại chưa
-    collection_info = qdrant_client.get_collection(collection_name=collection_name)
-    # Cập nhật: Kiểm tra payload_schema có tồn tại không trước khi truy cập
-    existing_indices = {}
-    if hasattr(collection_info, "payload_schema") and collection_info.payload_schema:
-        existing_indices = collection_info.payload_schema
 
-    # Cập nhật: Kiểm tra xem 'content' có trong schema không VÀ kiểu dữ liệu là gì
-    content_schema = existing_indices.get("content")
-    should_create_index = True
-    if content_schema:
-        # Kiểm tra xem có phải là TextIndexParams không (chính xác hơn là kiểm tra data_type)
-        if (
-            isinstance(content_schema, models.TextIndexParams)
-            or getattr(content_schema, "data_type", None)
-            == models.PayloadSchemaType.TEXT
-        ):
-            print("Payload index 'TEXT' cho trường 'content' đã tồn tại.")
-            should_create_index = False
-        else:
-            print(
-                "Trường 'content' tồn tại nhưng không phải index 'TEXT'. Cần tạo lại hoặc kiểm tra."
-            )
-            # Xóa index cũ và tạo lại nếu cần
-            # qdrant_client.delete_payload_index(collection_name=collection_name, field_name="content")
-            # print("Đã xóa index cũ cho 'content'.")
-            # should_create_index = True # Đã set ở trên
-
-    if should_create_index:
-        print("Index cho 'content' chưa tồn tại hoặc cần tạo mới. Đang tạo...")
-        qdrant_client.create_payload_index(
+# --- 3. HÀM HELPER CHO QDRANT ---
+# (Phần này giữ nguyên)
+def ensure_qdrant_collection():
+    try:
+        qdrant_client.get_collection(collection_name=collection_name)
+        print(f"Collection '{collection_name}' đã tồn tại.")
+    except Exception:
+        print(f"Collection '{collection_name}' chưa tồn tại. Đang tạo mới...")
+        qdrant_client.create_collection(
             collection_name=collection_name,
-            field_name="content",  # Tên trường cần index
-            field_schema=models.TextIndexParams(  # Chỉ định loại index là TEXT
-                type=models.TextIndexType.TEXT,
-                tokenizer=models.TokenizerType.MULTILINGUAL,  # Sử dụng MULTILINGUAL cho tiếng Việt
-                min_token_len=2,
-                max_token_len=20,  # Tăng nhẹ max_token_len
-                lowercase=True,  # Chuyển thành chữ thường khi index
+            vectors_config=models.VectorParams(
+                size=VECTOR_DIMENSION, distance=models.Distance.COSINE
             ),
         )
-        print("Đã tạo payload index 'TEXT' cho trường 'content'.")
+        print("Tạo collection thành công!")
 
-except Exception as e:
-    print(f"Lỗi khi kiểm tra/tạo payload index: {e}")
+    # Đảm bảo Payload Index "content" được tạo
+    try:
+        collection_info = qdrant_client.get_collection(collection_name=collection_name)
+        existing_indices = {}
+        if (
+            hasattr(collection_info, "payload_schema")
+            and collection_info.payload_schema
+        ):
+            existing_indices = collection_info.payload_schema
+
+        content_schema = existing_indices.get("content")
+        should_create_index = True
+        if content_schema:
+            if (
+                isinstance(content_schema, models.TextIndexParams)
+                or getattr(content_schema, "data_type", None)
+                == models.PayloadSchemaType.TEXT
+            ):
+                print("Payload index 'TEXT' cho trường 'content' đã tồn tại.")
+                should_create_index = False
+
+        if should_create_index:
+            print("Đang tạo payload index 'TEXT' cho trường 'content'...")
+            qdrant_client.create_payload_index(
+                collection_name=collection_name,
+                field_name="content",
+                field_schema=models.TextIndexParams(
+                    type=models.TextIndexType.TEXT,
+                    tokenizer=models.TokenizerType.MULTILINGUAL,
+                    min_token_len=2,
+                    max_token_len=20,
+                    lowercase=True,
+                ),
+            )
+            print("Đã tạo payload index 'TEXT' cho trường 'content'.")
+
+    except Exception as e:
+        print(f"Lỗi khi kiểm tra/tạo payload index cho 'content': {e}")
+
+    # Đảm bảo Payload Index "doc_id" được tạo
+    print(f"\nKiểm tra/Tạo payload index cho trường 'doc_id'...")
+    try:
+        collection_info = qdrant_client.get_collection(collection_name=collection_name)
+        existing_schema = collection_info.payload_schema or {}
+
+        if (
+            "doc_id" not in existing_schema
+            or existing_schema["doc_id"].data_type != models.PayloadSchemaType.KEYWORD
+        ):
+            print("Đang tạo payload index 'KEYWORD' cho trường 'doc_id'...")
+            qdrant_client.create_payload_index(
+                collection_name=collection_name,
+                field_name="doc_id",
+                field_schema=models.PayloadSchemaType.KEYWORD,
+            )
+            print("Đã tạo payload index 'KEYWORD' cho trường 'doc_id'.")
+        else:
+            print("Payload index 'KEYWORD' cho trường 'doc_id' đã tồn tại.")
+
+    except Exception as e:
+        print(f"Lỗi khi kiểm tra/tạo payload index cho 'doc_id': {e}")
+
+
+def delete_chunks_by_doc_id(doc_id: str):
+    # (Phần này giữ nguyên)
+    print(f"Đang xóa các chunk cũ của doc_id: {doc_id}...")
+    try:
+        qdrant_client.delete(
+            collection_name=collection_name,
+            points_selector=models.FilterSelector(
+                filter=models.Filter(
+                    must=[
+                        models.FieldCondition(
+                            key="doc_id",
+                            match=models.MatchValue(value=doc_id),
+                        )
+                    ]
+                )
+            ),
+        )
+        print(f"Đã xóa chunk cũ của {doc_id}.")
+    except Exception as e:
+        print(f"Lỗi khi xóa chunk cũ của {doc_id}: {e}")
 
 
 # --- 4. CÁC HÀM FORMAT ---
+# (Toàn bộ các hàm format_... và load_text_... giữ nguyên)
 def format_plant_document_to_text(
     doc: dict, db_client: pymongo.database.Database
 ) -> str:
@@ -271,52 +353,123 @@ def load_text_from_txt(file_path: str) -> str:
 
 
 # --- 5. QUÁ TRÌNH INDEXING CHÍNH ---
-def index_data():
-    print("Bắt đầu quá trình indexing từ nhiều collection...")
-    all_chunks = []
-    point_id_counter = 0
+# (Phần này giữ nguyên)
+def index_data(full_reindex=False):
+    print("Bắt đầu quá trình indexing...")
 
+    # 1. Thiết lập trạng thái
+    last_run_time = datetime.min.replace(tzinfo=timezone.utc)
+    file_manifest = {}
+
+    if full_reindex:
+        print("!!! CHẾ ĐỘ FULL RE-INDEX: Đang xóa collection cũ...")
+        try:
+            qdrant_client.delete_collection(collection_name=collection_name)
+            print(f"Đã xóa collection '{collection_name}' cũ.")
+        except Exception as e:
+            print(f"Lỗi khi xóa collection: {e}")
+
+        ensure_qdrant_collection()
+    else:
+        print("--- CHẾ ĐỘ INDEX TĂNG CƯỜNG ---")
+        ensure_qdrant_collection()
+        last_run_time = get_last_run_time()
+        file_manifest = load_file_manifest()
+        print(f"Chỉ index dữ liệu được cập nhật sau: {last_run_time}")
+
+    new_file_manifest = file_manifest.copy()
+    all_chunks_to_upsert = []
+
+    # 2. Xử lý MongoDB
+    print("\n--- Đang xử lý dữ liệu từ MongoDB ---")
     for doc_type, mongo_collection_name in COLLECTION_CONFIG.items():
         collection = db[mongo_collection_name]
         formatter = FORMATTERS.get(doc_type)
         if not formatter:
+            continue
+
+        query = {"updated_at": {"$gt": last_run_time}}
+        documents = list(collection.find(query))
+
+        if not documents:
             print(
-                f"Cảnh báo: Bỏ qua collection '{mongo_collection_name}' do thiếu hàm format."
+                f"Không có tài liệu mới/cập nhật nào trong '{mongo_collection_name}'."
             )
             continue
-        documents = list(collection.find({}))
+
         print(
-            f"Đang xử lý {len(documents)} tài liệu từ collection '{mongo_collection_name}'..."
+            f"Đang xử lý {len(documents)} tài liệu MỚI/CẬP NHẬT từ '{mongo_collection_name}'..."
         )
+
         for doc in documents:
+            doc_id = str(doc.get("_id"))
+
+            if not full_reindex:
+                delete_chunks_by_doc_id(doc_id)
+
             formatted_text = formatter(doc, db)
             if not formatted_text:
                 continue
+
             source_info = json.dumps(
                 doc.get("sources", []), default=str, ensure_ascii=False
             )
+
+            # Sử dụng text_splitter mới (TokenTextSplitter)
             chunks = text_splitter.split_text(formatted_text)
-            for chunk_text in chunks:
-                all_chunks.append(
+
+            for i, chunk_text in enumerate(chunks):
+                chunk_id = str(
+                    uuid.uuid5(uuid.NAMESPACE_DNS, f"{doc_type}_{doc_id}_{i}")
+                )
+
+                all_chunks_to_upsert.append(
                     {
+                        "id": chunk_id,
                         "text": chunk_text,
                         "metadata": {
                             "source": source_info,
-                            "original_doc_id": str(doc.get("_id")),
+                            "original_doc_id": doc_id,
                             "doc_type": doc_type,
                         },
                     }
                 )
     print("--- Hoàn tất xử lý dữ liệu từ MongoDB ---")
 
-    # === INDEX TỪ FILES ===
+    # 3. Xử lý Files
     print("\n--- Đang xử lý dữ liệu từ các file tài liệu ---")
-    documents_dir = "documents"  # Tên thư mục chứa file
+    documents_dir = "documents"
+    doc_type = "document_file"  # <-- SỬA LỖI: Định nghĩa doc_type cho file
+
     if not os.path.exists(documents_dir):
-        print(f"Thư mục '{documents_dir}' không tồn tại. Bỏ qua việc index file.")
+        print(f"Thư mục '{documents_dir}' không tồn tại. Bỏ qua.")
     else:
         for filename in os.listdir(documents_dir):
             file_path = os.path.join(documents_dir, filename)
+            doc_id = filename
+
+            try:
+                current_mtime_dt = datetime.fromtimestamp(
+                    os.path.getmtime(file_path), tz=timezone.utc
+                )
+                last_indexed_mtime_iso = file_manifest.get(doc_id)
+
+                if last_indexed_mtime_iso:
+                    last_indexed_mtime_dt = datetime.fromisoformat(
+                        last_indexed_mtime_iso
+                    )
+                    if current_mtime_dt <= last_indexed_mtime_dt:
+                        continue
+            except Exception as e:
+                print(
+                    f"Lỗi khi kiểm tra mtime cho {filename}: {e}. Index lại cho chắc."
+                )
+
+            print(f"Đang xử lý file MỚI/CẬP NHẬT: {filename}")
+
+            if not full_reindex:
+                delete_chunks_by_doc_id(doc_id)
+
             file_content = ""
             if filename.endswith(".pdf"):
                 file_content = load_text_from_pdf(file_path)
@@ -326,35 +479,50 @@ def index_data():
                 file_content = load_text_from_txt(file_path)
 
             if file_content:
-                print(f"Đang xử lý file: {filename}")
-                # Tạo thông tin nguồn theo cấu trúc bạn đã có
                 source_info = json.dumps(
                     [{"name": filename, "url": "local_file"}],
                     default=str,
                     ensure_ascii=False,
                 )
 
+                # Sử dụng text_splitter mới (TokenTextSplitter)
                 chunks = text_splitter.split_text(file_content)
-                for chunk_text in chunks:
-                    all_chunks.append(
+
+                for i, chunk_text in enumerate(chunks):
+                    chunk_id = str(
+                        uuid.uuid5(uuid.NAMESPACE_DNS, f"{doc_type}_{doc_id}_{i}")
+                    )
+
+                    all_chunks_to_upsert.append(
                         {
+                            "id": chunk_id,
                             "text": chunk_text,
                             "metadata": {
                                 "source": source_info,
-                                "original_doc_id": filename,  # Dùng tên file làm ID
-                                "doc_type": "document_file",  # Một loại mới
+                                "original_doc_id": doc_id,
+                                "doc_type": "document_file",
                             },
                         }
                     )
+                new_file_manifest[doc_id] = current_mtime_dt.isoformat()
+
     print("--- Hoàn tất xử lý dữ liệu từ file ---")
 
-    print(f"Tổng cộng đã chia thành {len(all_chunks)} chunks từ tất cả các sources.")
+    # 4. Giai đoạn Upsert hàng loạt
+    # (Phần này giữ nguyên)
+    if not all_chunks_to_upsert:
+        print("\nKhông có chunk mới nào để index. Đã hoàn tất.")
+        set_last_run_time(datetime.now(timezone.utc))
+        save_file_manifest(new_file_manifest)
+        return
+
+    print(f"\nTổng cộng có {len(all_chunks_to_upsert)} chunks MỚI/CẬP NHẬT để upsert.")
 
     batch_size = 128
-    total_chunks = len(all_chunks)
+    total_chunks = len(all_chunks_to_upsert)
 
     for i in range(0, total_chunks, batch_size):
-        batch = all_chunks[i : i + batch_size]
+        batch = all_chunks_to_upsert[i : i + batch_size]
         texts_to_embed = ["passage: " + item["text"] for item in batch]
 
         print(
@@ -368,7 +536,7 @@ def index_data():
         for j, item in enumerate(batch):
             points_to_upsert.append(
                 models.PointStruct(
-                    id=point_id_counter,
+                    id=item["id"],
                     vector=vectors[j],
                     payload={
                         "content": item["text"],
@@ -378,27 +546,31 @@ def index_data():
                     },
                 )
             )
-            point_id_counter += 1
 
         qdrant_client.upsert(
             collection_name=collection_name, points=points_to_upsert, wait=True
         )
-        print(f"Đã index batch {i//batch_size + 1}.")
+        print(f"Đã upsert batch {i//batch_size + 1}.")
 
-    print("Hoàn tất quá trình indexing!")
+    # 5. Lưu trạng thái
+    # (Phần này giữ nguyên)
+    set_last_run_time(datetime.now(timezone.utc))
+    save_file_manifest(new_file_manifest)
+    print("Hoàn tất quá trình indexing và đã lưu trạng thái!")
 
 
+# --- 6. __main__ ---
+# (Phần này giữ nguyên)
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Indexer cho RAG Chatbot.")
+    parser.add_argument(
+        "--full-reindex",
+        action="store_true",
+        help="Xóa toàn bộ collection và index lại từ đầu.",
+    )
+    args = parser.parse_args()
+
     try:
-        qdrant_client.delete_collection(collection_name=collection_name)
-        print(f"Đã xóa collection '{collection_name}' cũ.")
-        qdrant_client.create_collection(
-            collection_name=collection_name,
-            vectors_config=models.VectorParams(
-                size=VECTOR_DIMENSION, distance=models.Distance.COSINE
-            ),
-        )
-        print(f"Đã tạo lại collection '{collection_name}'.")
+        index_data(full_reindex=args.full_reindex)
     except Exception as e:
-        print(f"Lỗi khi xóa/tạo lại collection: {e}")
-    index_data()
+        print(f"Quá trình indexing thất bại: {e}")
