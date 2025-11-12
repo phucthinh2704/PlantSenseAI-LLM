@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, status # <-- Thêm status
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
@@ -13,10 +13,11 @@ from app.core.security import (
     create_refresh_token,
     verify_password,
     hash_password,
-    oauth2_scheme,
     decode_access_token,
     decode_refresh_token
 )
+# --- THAY ĐỔI: Import dependency ---
+from app.services.auth_service import get_current_active_user
 
 router = APIRouter()
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
@@ -27,14 +28,21 @@ GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
 async def register(user: User):
     existing = await user_service.get_user_by_email(user.email)
     if existing:
-        raise HTTPException(status_code=400, detail="Email already exists")
-    if user.password:
-        user.password = hash_password(user.password)
+        raise HTTPException(status_code=400, detail="Email đã tồn tại")
+    
+    # Đảm bảo password tồn tại trước khi hash
+    if not user.password:
+        raise HTTPException(status_code=400, detail="Mật khẩu là bắt buộc")
+        
+    user.password = hash_password(user.password)
     user.status = UserStatus.active
+    
+    # --- SỬA: model_dump() để loại bỏ 'id' None ---
     inserted_id = await user_service.create_user(user)
+    
     return APIResponse(
         success=True,
-        message="User registered successfully",
+        message="Đăng ký tài khoản thành công",
         data={"inserted_id": inserted_id},
     )
 
@@ -53,7 +61,7 @@ async def login(form_data: LoginRequest):
         or not user.password
         or not verify_password(form_data.password, user.password)
     ):
-        raise HTTPException(status_code=401, detail="Invalid credentials")
+        raise HTTPException(status_code=401, detail="Email hoặc mật khẩu không chính xác")
 
     # Tạo token
     access_token = create_access_token(
@@ -61,13 +69,12 @@ async def login(form_data: LoginRequest):
     )
     refresh_token = create_refresh_token({"sub": str(user.id)})
     
-    # Lưu refresh_token vào DB (nếu bạn muốn revoke sau này)
-    user.refresh_token = refresh_token
+    # Lưu refresh_token vào DB
     await user_service.update_user(user.id, {"refresh_token": refresh_token})
 
     return APIResponse(
         success=True,
-        message="Login success",
+        message="Đăng nhập thành công",
         data={
             "access_token": access_token,
             "refresh_token": refresh_token,
@@ -92,7 +99,7 @@ class TokenRequest(BaseModel):
 async def login_google(req: TokenRequest):
     result = await auth_service.google_login(req.token, GOOGLE_CLIENT_ID)
     if not result:
-        raise HTTPException(status_code=401, detail="Invalid Google token")
+        raise HTTPException(status_code=401, detail="Token Google không hợp lệ")
     return APIResponse(
         success=True,
         message="Đăng nhập thành công",
@@ -102,16 +109,14 @@ async def login_google(req: TokenRequest):
 
 # Me (get current user from JWT)
 @router.get("/me", response_model=APIResponse)
-async def get_me(token: str = Depends(oauth2_scheme)):
-    payload = decode_access_token(token)
-    user_id = payload.get("sub")
-    user = await user_service.get_user_by_id(user_id)
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
+# --- THAY ĐỔI: Dùng dependency ---
+async def get_me(current_user: User = Depends(get_current_active_user)):
+    # Không cần decode token, hàm dependency đã làm việc đó
+    # Trả về Pydantic model đã được serialize
     return APIResponse(
         success=True,
-        message="User retrieved successfully",
-        data=user.dict(),
+        message="Lấy thông tin người dùng thành công",
+        data=current_user.model_dump(by_alias=True)
     )
 
 class LogoutRequest(BaseModel):
@@ -119,26 +124,25 @@ class LogoutRequest(BaseModel):
 
 @router.post("/logout", response_model=APIResponse)
 async def logout(request: LogoutRequest):
+    # (Code logout của bạn đã ổn, giữ nguyên)
     refresh_token = request.refreshToken
     if not refresh_token:
-        raise HTTPException(status_code=400, detail="Missing refresh token")
+        raise HTTPException(status_code=400, detail="Thiếu refresh token")
 
     try:
-        # Giải mã refresh token
         payload = decode_refresh_token(refresh_token)
         user_id = payload.get("sub")
         user = await user_service.get_user_by_id(user_id)
 
         if not user or user.refresh_token != refresh_token:
-            raise HTTPException(status_code=401, detail="Invalid refresh token")
+            raise HTTPException(status_code=401, detail="Refresh token không hợp lệ")
 
-        # Xoá refresh token trong DB
         await user_service.update_user(user.id, {"refresh_token": None})
 
         return APIResponse(
             success=True,
-            message="Logged out successfully",
+            message="Đăng xuất thành công",
             data=None,
         )
     except Exception as e:
-        raise HTTPException(status_code=403, detail="Refresh token expired")
+        raise HTTPException(status_code=403, detail="Refresh token không hợp lệ hoặc hết hạn")

@@ -41,8 +41,17 @@ export default function MarkdownFormatter({ value, className }) {
 		<article className={className || "prose max-w-none"}>
 			<ReactMarkdown
 				remarkPlugins={[remarkGfm]}
-				rehypePlugins={[rehypeSanitize]} // nếu vẫn lỗi, tạm thời bỏ hẳn prop này để test
+				rehypePlugins={[rehypeSanitize]}
 				components={{
+					a: (props) => (
+						<a
+							href={props.href}
+							target="_blank" // <-- Mở link trong tab mới
+							rel="noopener noreferrer"
+						>
+							{props.children}
+						</a>
+					),
 					ol: (props) => (
 						<ol
 							style={{

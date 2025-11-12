@@ -13,7 +13,7 @@ class QueryRequest(BaseModel):
     user_id: str  # Xác định người dùng
     conversation_id: Optional[str] = None # Tùy chọn, null cho tin nhắn đầu
     image: Optional[str] = None # URL hoặc base64 của hình ảnh
-    top_k: int = 7
+    top_k: int = 10
 
 class QueryResponse(BaseModel):
     answer: str

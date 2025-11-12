@@ -14,6 +14,8 @@ from app.router import (
     insert_router,
     conversation_router,
     chat_router,
+    admin_router,
+    user_router,
 )
 from app.core.lifespan import lifespan
 
@@ -50,6 +52,8 @@ app.include_router(
 )
 app.include_router(insert_router.router, prefix="/insert", tags=["Insert"])
 app.include_router(chat_router.router, prefix="/chat", tags=["Chat"])
+app.include_router(admin_router.router, prefix="/admin", tags=["Admin"])
+app.include_router(user_router.router, prefix="/users", tags=["Users"])
 
 # py -m app.main
 if __name__ == "__main__":

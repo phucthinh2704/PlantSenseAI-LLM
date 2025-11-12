@@ -100,6 +100,7 @@ async def update_conversation_title(conv_id: str, title: str) -> bool:
     )
     return result.modified_count > 0
 
+
 async def update_retrieved_docs(conv_id: str, doc_ids: List[str]) -> bool:
     """Thêm các doc_id mới vào danh sách đã truy xuất của cuộc trò chuyện."""
     try:
@@ -116,3 +117,10 @@ async def update_retrieved_docs(conv_id: str, doc_ids: List[str]) -> bool:
         },
     )
     return result.modified_count > 0
+
+
+async def get_all_conversations_admin():
+    """Lấy TẤT CẢ các cuộc hội thoại (chỉ admin)."""
+    cursor = db.conversations.find().sort("updated_at", -1)  # Sắp xếp mới nhất
+    docs = await cursor.to_list(length=None)
+    return [serialize_doc(d) for d in docs]

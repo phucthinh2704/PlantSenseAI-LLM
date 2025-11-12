@@ -17,28 +17,29 @@ from app.prompts.chat_prompts import (
 )
 from app.services import conversation_service
 
-# Thiết lập logging cơ bản
 logging.basicConfig(level=logging.INFO)
 
 
 def _format_sources(sources_list: List[List[Source]]) -> str:
-    """
-    Chuyển đổi danh sách nguồn thành một chuỗi Markdown có thể đọc được.
-    """
     if not sources_list:
         return ""
-
     unique_sources = {}
     for source_group in sources_list:
         for source in source_group:
             if isinstance(source, Source):
                 key = (source.name, source.url)
-                if key not in unique_sources:
+                if key in unique_sources:
+                    continue
+                if source.url and (
+                    source.url.startswith("http://")
+                    or source.url.startswith("https://")
+                ):
                     unique_sources[key] = source
-
+                elif source.url and source.url == "local_file":
+                    if source.name and source.name.lower().endswith(".pdf"):
+                        unique_sources[key] = source
     if not unique_sources:
         return ""
-
     header = "\n\n---\n**Nguồn tham khảo:**\n"
     source_lines = []
     for i, source in enumerate(unique_sources.values()):
@@ -46,7 +47,6 @@ def _format_sources(sources_list: List[List[Source]]) -> str:
             source_lines.append(f"{i+1}. [{source.name}]({source.url})")
         else:
             source_lines.append(f"{i+1}. {source.name}")
-
     return header + "\n".join(source_lines)
 
 
@@ -56,14 +56,14 @@ async def process_chat_request(request: QueryRequest) -> dict:
     llm_rag = models_cache["llm_rag"]
     llm_fast = models_cache["llm_fast"]
     collection_name = os.getenv("QDRANT_COLLECTION_NAME")
+    VECTOR_DIMENSION = models_cache["vector_dimension"]
 
     conv_id = request.conversation_id
     user_question = request.question
 
-    # --- Lấy lịch sử (Cập nhật để lấy retrieved_doc_ids) ---
+    # Lấy lịch sử
     current_history: List[Dict] = []
-    retrieved_doc_ids: List[str] = []  # <-- Biến mới
-
+    retrieved_doc_ids: List[str] = []
     if conv_id:
         conversation = await conversation_service.get_conversation_by_id(conv_id)
         if conversation:
@@ -71,7 +71,6 @@ async def process_chat_request(request: QueryRequest) -> dict:
                 {"role": msg["sender"], "content": msg["content"]}
                 for msg in conversation.get("messages", [])
             ]
-            # Lấy danh sách ID đã xem từ DB
             retrieved_doc_ids = conversation.get("retrieved_doc_ids", [])
     else:
         new_conv_data = {"user_id": request.user_id, "messages": []}
@@ -89,46 +88,32 @@ async def process_chat_request(request: QueryRequest) -> dict:
         ]
     )
 
-    # =================================================================
-    # === BƯỚC 1: GỘP (PHÂN LOẠI, LẤY Ý ĐỊNH, VIẾT LẠI) ===
-    # =================================================================
+    # Bước 1: Gộp phân loại, ý định, viết lại
     combined_prompt = COMBINED_PROMPT.format(
         chat_history=chat_history_str, question=user_question
     )
-
     question_category = "NONG_NGHIEP"
     search_question = user_question
-    user_intent = "NEW_TOPIC"  # <-- THÊM BIẾN MỚI
-
+    user_intent = "NEW_TOPIC"
     try:
         response = await llm_fast.generate_content_async(combined_prompt)
         json_response_str = response.text.strip()
-
         if json_response_str.startswith("```json"):
             json_response_str = json_response_str[7:-3].strip()
-
-        logging.info(f"Phản hồi JSON gộp từ LLM: {json_response_str}")
         result_json = json.loads(json_response_str)
-
         question_category = result_json.get("loai", "NONG_NGHIEP").upper()
-        user_intent = result_json.get("intent", "NEW_TOPIC").upper()  # <-- LẤY Ý ĐỊNH
+        user_intent = result_json.get("intent", "NEW_TOPIC").upper()
         search_question = result_json.get("cau_hoi_tim_kiem", user_question)
-
         logging.info(
             f"Phân loại: {question_category} | Ý định: {user_intent} | Câu hỏi: {search_question}"
         )
-
     except Exception as e:
         logging.error(f"Lỗi khi gọi LLM gộp: {e}. Dùng mặc định.")
-    # =================================================================
-    # === KẾT THÚC THAY ĐỔI ===
-    # =================================================================
 
     answer = ""
     parsed_sources: List[List[Source]] = []
     final_answer_to_save = ""
 
-    # === BƯỚC 2: XỬ LÝ DỰA TRÊN LOẠI CÂU HỎI ===
     if question_category == "NONG_NGHIEP":
         logging.info(f"Xử lý RAG với câu hỏi: {search_question}")
 
@@ -136,13 +121,9 @@ async def process_chat_request(request: QueryRequest) -> dict:
             text_to_search = "query: " + search_question
             query_vector = embedding_model.encode(text_to_search).tolist()
 
-            # ==========================================================
-            # === BẮT ĐẦU THAY ĐỔI: LOGIC LỌC THÔNG MINH ===
-            # ==========================================================
-
-            rag_filter = None  # Mặc định không lọc
-
-            # CHỈ LỌC nếu người dùng muốn KHÁM PHÁ CÁI MỚI
+            # 1. Tạo bộ lọc (filter) chung
+            # Bộ lọc này chỉ dùng để loại bỏ các doc đã xem
+            rag_filter = None
             if user_intent == "EXPLORE_NEW" and retrieved_doc_ids:
                 logging.info(
                     f"Ý định: EXPLORE_NEW. Lọc bỏ {len(retrieved_doc_ids)} doc_id đã xem."
@@ -157,20 +138,84 @@ async def process_chat_request(request: QueryRequest) -> dict:
             else:
                 logging.info(f"Ý định: {user_intent}. Không lọc doc_id.")
 
-            search_results = qdrant_client.search(
+            # 2. Gửi 2 YÊU CẦU TÌM KIẾM
+
+            # Query 1: Vector Search (Semantic)
+            vector_request = models.SearchRequest(
+                vector=query_vector,
+                filter=rag_filter,
+                limit=request.top_k,
+                with_payload=True,
+            )
+
+            # Query 2: Keyword Search (Full-text trên trường 'content')
+            keyword_filter = models.Filter(
+                must=[
+                    models.FieldCondition(
+                        key="content", match=models.MatchText(text=search_question)
+                    )
+                ],
+                must_not=rag_filter.must_not if rag_filter else None,
+            )
+
+            # Lưu ý: Tìm kiếm keyword không dùng vector, nên ta set vector rỗng và filter
+            # Đây là một mẹo để dùng chung batch search
+            # Một cách khác tốt hơn là dùng `recommend_batch` hoặc logic re-rank riêng
+
+            # Gửi 2 request riêng biệt
+            vector_results = qdrant_client.search(
                 collection_name=collection_name,
                 query_vector=query_vector,
                 limit=request.top_k,
-                query_filter=rag_filter,  # <-- ÁP DỤNG BỘ LỌC (có thể là None)
+                query_filter=rag_filter,
+                with_payload=True,
             )
 
-            # ==========================================================
-            # === KẾT THÚC THAY ĐỔI ===
-            # ==========================================================
+            keyword_results = qdrant_client.search(
+                collection_name=collection_name,
+                query_vector=[0.0] * VECTOR_DIMENSION,
+                query_filter=keyword_filter,
+                limit=request.top_k,
+                with_payload=True,
+            )
+
+            # 3. Hợp nhất và Sắp xếp lại (Reciprocal Rank Fusion - RRF)
+            fused_scores = {}
+            k = 60  # Hằng số RRF, 60 là giá trị tiêu chuẩn
+
+            # Gán điểm cho kết quả vector
+            for i, point in enumerate(vector_results):
+                rank = i + 1
+                score = 1.0 / (k + rank)
+                if point.id not in fused_scores:
+                    fused_scores[point.id] = {"score": 0.0, "point": point}
+                fused_scores[point.id]["score"] += score
+
+            # Gán điểm cho kết quả keyword
+            for i, point in enumerate(keyword_results):
+                rank = i + 1
+                score = 1.0 / (k + rank)
+                if point.id not in fused_scores:
+                    fused_scores[point.id] = {"score": 0.0, "point": point}
+                fused_scores[point.id]["score"] += score
+
+            # Sắp xếp các kết quả đã hợp nhất
+            sorted_fused_results = sorted(
+                fused_scores.values(), key=lambda x: x["score"], reverse=True
+            )
+
+            # 4. Lấy top_k kết quả cuối cùng
+            search_results = [
+                item["point"] for item in sorted_fused_results[: request.top_k]
+            ]
+
+            logging.info(
+                f"Kết quả Vector: {len(vector_results)}, Keyword: {len(keyword_results)}, Hợp nhất: {len(search_results)}"
+            )
 
             context = ""
             retrieved_sources_str = set()
-            new_doc_ids_found = []  # <-- Biến mới để lưu ID vừa tìm thấy
+            new_doc_ids_found = []
 
             if search_results:
                 top_hit = search_results[0]
@@ -193,13 +238,13 @@ async def process_chat_request(request: QueryRequest) -> dict:
             else:
                 logging.info("Không tìm thấy kết quả NÀO MỚI trong Qdrant (đã lọc).")
 
+            # Phần code RAG, xử lý source, lưu DB...
             final_prompt = PROMPT_RAG_TEMPLATE.format(
                 chat_history=chat_history_str, context=context, question=user_question
             )
             response_from_llm = await llm_rag.generate_content_async(final_prompt)
             answer_text_only = response_from_llm.text
 
-            # ... (Code xử lý nguồn giữ nguyên) ...
             for source_json_string in list(retrieved_sources_str):
                 try:
                     list_of_source_dicts = json.loads(source_json_string)
@@ -223,10 +268,6 @@ async def process_chat_request(request: QueryRequest) -> dict:
                 and "tôi chưa tìm thấy thông tin" not in answer_text_only.lower()
             ):
                 final_answer_to_save = answer_text_only + formatted_sources_str
-
-                # --- THAY ĐỔI: Vẫn lưu các ID vừa tìm thấy ---
-                # Bất kể ý định là gì, chúng ta đều lưu ID vừa dùng
-                # để chuẩn bị cho câu hỏi "EXPLORE_NEW" tiếp theo
                 if conv_id and new_doc_ids_found:
                     await conversation_service.update_retrieved_docs(
                         conv_id, new_doc_ids_found
@@ -241,7 +282,6 @@ async def process_chat_request(request: QueryRequest) -> dict:
             answer = "Đã có lỗi xảy ra trong quá trình xử lý yêu cầu của bạn. Vui lòng thử lại sau."
             final_answer_to_save = answer
 
-    # ... (Các khối elif CHAO_HOI, NGOAI_LE, và LƯU TIN NHẮN giữ nguyên) ...
     elif question_category == "CHAO_HOI":
         chitchat_prompt = CHITCHAT_RESPONSE_TEMPLATE.format(question=user_question)
         try:
