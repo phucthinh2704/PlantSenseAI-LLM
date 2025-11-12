@@ -19,13 +19,16 @@ conversation_histories = Cache("cache/chat_histories")
 async def lifespan(app: FastAPI):
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-    models_cache["embedding_model"] = SentenceTransformer(os.getenv("MODEL_EMBEDDING", "intfloat/multilingual-e5-large"))
+    # models_cache["embedding_model"] = SentenceTransformer(os.getenv("MODEL_EMBEDDING", "intfloat/multilingual-e5-large"))
+    embedding_model = SentenceTransformer(os.getenv("MODEL_EMBEDDING", "intfloat/multilingual-e5-large"))
+    models_cache["embedding_model"] = embedding_model
     models_cache["qdrant_client"] = QdrantClient(
         url=os.getenv("QDRANT_URL"),
         api_key=os.getenv("QDRANT_API_KEY"),
     )
     models_cache["llm_rag"] = genai.GenerativeModel("gemini-2.5-pro")
     models_cache["llm_fast"] = genai.GenerativeModel("gemini-2.5-flash")
+    models_cache["vector_dimension"] = embedding_model.get_sentence_embedding_dimension()
     
     # Startup
     print("Ứng dụng đang khởi động...")

@@ -2,6 +2,8 @@ from fastapi import APIRouter, HTTPException
 from app.models.conversation import Conversation, Message
 from app.schema.response_schema import APIResponse
 from app.services import conversation_service
+from app.core.auth_deps import get_current_admin_user
+from fastapi import Depends
 from pydantic import BaseModel
 
 router = APIRouter()
@@ -22,6 +24,19 @@ async def get_user_conversations(user_id: str):
     conversations = await conversation_service.get_all_conversations(user_id)
     return APIResponse(
         success=True, message="Conversations retrieved", data=conversations
+    )
+
+
+@router.get("/all", response_model=APIResponse)
+async def get_all_conversations_for_admin(
+    admin_user: dict = Depends(get_current_admin_user),
+):
+    """
+    (Admin) Lấy tất cả các cuộc hội thoại từ mọi người dùng.
+    """
+    conversations = await conversation_service.get_all_conversations_admin()
+    return APIResponse(
+        success=True, message="All conversations retrieved", data=conversations
     )
 
 

@@ -1,24 +1,30 @@
+import { useCallback, useMemo } from "react";
 import Swal from "sweetalert2";
 
 export default function useAlert() {
-	const showSuccess = (message) =>
-		Swal.fire({
+	const showSuccess = useCallback((message, opts = {}) => {
+		return Swal.fire({
 			title: "Thành công!",
 			text: message,
 			icon: "success",
 			timer: 2000,
 			timerProgressBar: true,
 			showConfirmButton: false,
+			...opts,
 		});
+	}, []); // <-- không phụ thuộc gì, reference cố định
 
-	const showError = (message) =>
-		Swal.fire({
+	const showError = useCallback((message, opts = {}) => {
+		return Swal.fire({
 			title: "Lỗi!",
 			text: message,
 			icon: "error",
+			...opts,
 		});
+	}, []);
 
-	const showConfirm = async (message) => {
+	const showConfirm = useCallback((message, opts = {}) => {
+		// Trả về Promise của SweetAlert2
 		return Swal.fire({
 			title: "Xác nhận",
 			text: message,
@@ -28,8 +34,13 @@ export default function useAlert() {
 			cancelButtonText: "Hủy",
 			confirmButtonColor: "#d33",
 			cancelButtonColor: "#3085d6",
+			...opts,
 		});
-	};
+	}, []);
 
-	return { showSuccess, showError, showConfirm };
+	// Tránh tạo object mới mỗi lần render hook
+	return useMemo(
+		() => ({ showSuccess, showError, showConfirm }),
+		[showSuccess, showError, showConfirm]
+	);
 }

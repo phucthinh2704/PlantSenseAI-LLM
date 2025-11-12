@@ -14,23 +14,10 @@ from app.router import (
     insert_router,
     conversation_router,
     chat_router,
+    admin_router,
+    user_router,
 )
 from app.core.lifespan import lifespan
-
-# @asynccontextmanager
-# async def lifespan(app: FastAPI):
-#     # Startup
-#     print("Ứng dụng đang khởi động...")
-#     await create_indexes()  # tạo index bất đồng bộ
-
-#     await create_admin_user()
-#     print("Các chỉ mục và admin đã được tạo thành công.")
-
-#     yield
-#     # Shutdown
-#     print("Đang đóng kết nối MongoDB...")
-#     client.close()
-#     print("Kết nối đã được đóng.")
 
 
 app = FastAPI(
@@ -65,6 +52,8 @@ app.include_router(
 )
 app.include_router(insert_router.router, prefix="/insert", tags=["Insert"])
 app.include_router(chat_router.router, prefix="/chat", tags=["Chat"])
+app.include_router(admin_router.router, prefix="/admin", tags=["Admin"])
+app.include_router(user_router.router, prefix="/users", tags=["Users"])
 
 # py -m app.main
 if __name__ == "__main__":

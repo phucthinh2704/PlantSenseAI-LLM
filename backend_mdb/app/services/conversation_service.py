@@ -2,6 +2,7 @@ from bson import ObjectId, errors
 from datetime import datetime, timezone
 from app.core.database import db
 from datetime import datetime, timezone
+from typing import List
 
 
 def to_iso_z(dt: datetime) -> str:
@@ -98,3 +99,28 @@ async def update_conversation_title(conv_id: str, title: str) -> bool:
         {"$set": {"title": title, "updated_at": datetime.now(timezone.utc)}},
     )
     return result.modified_count > 0
+
+
+async def update_retrieved_docs(conv_id: str, doc_ids: List[str]) -> bool:
+    """Thêm các doc_id mới vào danh sách đã truy xuất của cuộc trò chuyện."""
+    try:
+        obj_id = ObjectId(conv_id)
+    except errors.InvalidId:
+        return False
+
+    result = await db.conversations.update_one(
+        {"_id": obj_id},
+        {
+            # $addToSet: Chỉ thêm nếu ID chưa tồn tại, tránh trùng lặp
+            "$addToSet": {"retrieved_doc_ids": {"$each": doc_ids}},
+            "$set": {"updated_at": datetime.now(timezone.utc)},
+        },
+    )
+    return result.modified_count > 0
+
+
+async def get_all_conversations_admin():
+    """Lấy TẤT CẢ các cuộc hội thoại (chỉ admin)."""
+    cursor = db.conversations.find().sort("updated_at", -1)  # Sắp xếp mới nhất
+    docs = await cursor.to_list(length=None)
+    return [serialize_doc(d) for d in docs]

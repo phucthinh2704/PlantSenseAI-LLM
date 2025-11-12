@@ -1,6 +1,5 @@
 import axios from "@configs/axios";
 
-
 export const apiGetConversationHistory = async (userId) =>
 	axios({
 		method: "GET",
@@ -21,4 +20,10 @@ export const apiUpdateConversationTitle = async (conversationId, title) =>
 		method: "PUT",
 		url: `/conversations/${conversationId}/title`,
 		data: { title },
+	});
+
+export const apiGetAllConversations = async () =>
+	axios({
+		method: "GET",
+		url: `/conversations/all`,
 	});

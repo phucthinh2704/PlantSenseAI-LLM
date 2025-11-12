@@ -1,16 +1,22 @@
 from bson import ObjectId, errors
-from datetime import datetime
+from datetime import datetime, timezone
 from app.core.database import db
 
 
 def serialize_doc(doc: dict) -> dict:
-    doc["_id"] = str(doc["_id"])
+    if doc:
+        doc["_id"] = str(doc["_id"])
     return doc
 
 
 async def create_disease(disease_data: dict) -> str:
-    disease_data["created_at"] = datetime.utcnow()
-    disease_data["updated_at"] = datetime.utcnow()
+    # Xóa _id nếu None
+    if disease_data.get("_id") is None:
+        disease_data.pop("_id", None)
+
+    now = datetime.now(timezone.utc)
+    disease_data["created_at"] = now
+    disease_data["updated_at"] = now
     result = await db.diseases.insert_one(disease_data)
     return str(result.inserted_id)
 
@@ -39,7 +45,7 @@ async def update_disease(disease_id: str, data: dict) -> bool:
         obj_id = ObjectId(disease_id)
     except errors.InvalidId:
         return False
-    data["updated_at"] = datetime.utcnow()
+    data["updated_at"] = datetime.now(timezone.utc)
     result = await db.diseases.update_one({"_id": obj_id}, {"$set": data})
     return result.modified_count > 0
 

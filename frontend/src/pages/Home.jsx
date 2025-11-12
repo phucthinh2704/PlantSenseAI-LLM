@@ -1242,8 +1242,8 @@ const HomePage = () => {
 			<ChatSidebar
 				isOpen={isSidebarOpen}
 				toggleSidebar={toggleSidebar}
-				onConversationSelect={handleConversationSelect} // <-- Hàm callback
-				currentConversationId={currentConversationId} // <-- ID đang active
+				onConversationSelect={handleConversationSelect}
+				currentConversationId={currentConversationId}
 			/>
 
 			{/* Main Chat Area */}
@@ -1276,7 +1276,7 @@ const HomePage = () => {
 
 				{/* Messages Area */}
 				<div className="flex-1 overflow-y-auto">
-					<div className="max-w-4xl mx-auto p-6">
+					<div className="max-w-4xl mx-auto p-5">
 						{messages.length === 0 && !isTyping ? (
 							<QuickActions onActionClick={handleQuickAction} />
 						) : (
@@ -1312,12 +1312,6 @@ const HomePage = () => {
 										}}
 									/>
 								))}
-								{/* <Message
-									message={
-										"Trứng gà ta được chăn thả tự nhiên, ăn thức ăn đa dạng (ngô, thóc, rau), cho chất lượng trứng vượt trội.\n\n**Đặc điểm nổi bật:**\n- **Cảm quan:** Vỏ trứng màu nâu nhạt (hoặc trắng hồng), cứng cáp. Lòng đỏ đậm màu, lòng trắng đặc, tỷ lệ lòng đỏ cao.\n- **Hương vị:** Khi chế biến, trứng có vị béo ngậy, thơm đặc trưng, không tanh.\n- **Đóng gói:** Vỉ 10 quả tiện lợi.\n\n**Gợi ý chế biến:**\n- **Món cơ bản:** Luộc (lòng đào), ốp la, chiên, hấp (trứng hấp thịt).\n- **Làm bánh:** Dùng làm nguyên liệu cho các loại bánh ngọt, bánh bông lan.\n\n**Hướng dẫn sử dụng & bảo quản:**\nBảo quản trong ngăn mát tủ lạnh."
-									}
-									isBot={true}
-								/> */}
 								{isTyping && (
 									<div className="flex w-full mb-6">
 										<div className="flex max-w-4xl w-full">
