@@ -78,3 +78,24 @@ async def update_conversation_title(conv_id: str, title: UpdateConversationTitle
             status_code=404, detail="Conversation not found or not updated"
         )
     return APIResponse(success=True, message="Conversation title updated")
+
+
+@router.delete("/user/{user_id}", response_model=APIResponse)
+async def delete_all_user_conversations(user_id: str):
+    """
+    Xóa toàn bộ lịch sử chat của một người dùng cụ thể.
+    """
+    deleted_count = await conversation_service.delete_all_conversations_by_user(user_id)
+
+    if deleted_count == 0:
+        return APIResponse(
+            success=True,
+            message="No conversations found to delete",
+            data={"deleted_count": 0},
+        )
+
+    return APIResponse(
+        success=True,
+        message=f"Successfully deleted {deleted_count} conversations",
+        data={"deleted_count": deleted_count},
+    )

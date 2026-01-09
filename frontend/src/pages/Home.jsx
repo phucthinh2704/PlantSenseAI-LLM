@@ -46,7 +46,6 @@ const ChatSidebar = ({
 	const [editingConvId, setEditingConvId] = useState(null);
 	const [newTitle, setNewTitle] = useState("");
 
-	const dispatch = useDispatch();
 	const { showConfirm, showError } = useAlert();
 	const { user } = useSelector((state) => state.auth);
 
@@ -195,14 +194,6 @@ const ChatSidebar = ({
 				}
 			}
 		);
-	};
-
-	const handleLogout = () => {
-		showConfirm("Bạn có chắc chắn muốn đăng xuất?").then((result) => {
-			if (result.isConfirmed) {
-				dispatch(logoutUser());
-			}
-		});
 	};
 
 	return (
@@ -382,24 +373,6 @@ const ChatSidebar = ({
 							</div>
 						</div>
 					))}
-				</div>
-
-				{/* Footer */}
-				<div className="p-4 border-t border-gray-700 space-y-2">
-					<button className="w-full flex items-center space-x-3 p-3 hover:bg-gray-800 rounded-lg transition-colors text-left">
-						<User size={18} />
-						<span>Tài khoản</span>
-					</button>
-					<button className="w-full flex items-center space-x-3 p-3 hover:bg-gray-800 rounded-lg transition-colors text-left">
-						<Settings size={18} />
-						<span>Cài đặt</span>
-					</button>
-					<button
-						onClick={handleLogout}
-						className="w-full flex items-center space-x-3 p-3 hover:bg-red-600/20 text-red-500 rounded-lg transition-colors text-left">
-						<LogOut size={18} />
-						<span>Đăng xuất</span>
-					</button>
 				</div>
 			</aside>
 		</>
