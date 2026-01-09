@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 from qdrant_client import QdrantClient, models
 from sentence_transformers import SentenceTransformer
 
-# --- THAY ĐỔI IMPORT ---
-from langchain.text_splitter import TokenTextSplitter
+from langchain_text_splitters import TokenTextSplitter
 from transformers import AutoTokenizer
 
 # ---------------------
@@ -100,7 +99,6 @@ text_splitter = TokenTextSplitter.from_huggingface_tokenizer(
     chunk_size=512,  # Số token tối đa mỗi chunk (nên bằng max_seq_length)
     chunk_overlap=50,  # Số token gối nhau
 )
-# --- KẾT THÚC THAY THẾ ---
 
 print("Tải model và khởi tạo text splitter thành công!")
 

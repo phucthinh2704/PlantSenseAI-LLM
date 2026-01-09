@@ -3,14 +3,14 @@ import pymongo
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient, models
 from sentence_transformers import SentenceTransformer
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 import json
 from bson import ObjectId
 import pypdf
 import docx
-import argparse  # MỚI: Để xử lý tham số dòng lệnh
-import uuid  # MỚI: Để tạo ID xác định
-from datetime import datetime, timezone  # MỚI: Để quản lý thời gian
+import argparse
+import uuid
+from datetime import datetime, timezone
 
 # --- 0. THIẾT LẬP CACHE VÀ STATE ---
 CACHE_DIR = "cache"
@@ -69,7 +69,9 @@ COLLECTION_CONFIG = {
 qdrant_client = QdrantClient(
     url=os.getenv("QDRANT_URL"),
     api_key=os.getenv("QDRANT_API_KEY"),
-    timeout=60,
+    timeout=300,
+    prefer_grpc=True,
+    grpc_options={"grpc.keepalive_timeout_ms": 300000},
 )
 
 # --- 2. KHỞI TẠO CÁC MÔ HÌNH ---
@@ -87,7 +89,9 @@ else:
     )
 
 VECTOR_DIMENSION = embedding_model.get_sentence_embedding_dimension()
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=512, chunk_overlap=50)
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=512, chunk_overlap=50
+)
 print("Tải model thành công!")
 
 collection_name = os.getenv("QDRANT_COLLECTION_NAME")
@@ -504,7 +508,7 @@ def index_data(full_reindex=False):
 
     print(f"\nTổng cộng có {len(all_chunks_to_upsert)} chunks MỚI/CẬP NHẬT để upsert.")
 
-    batch_size = 128
+    batch_size = 64
     total_chunks = len(all_chunks_to_upsert)
 
     for i in range(0, total_chunks, batch_size):

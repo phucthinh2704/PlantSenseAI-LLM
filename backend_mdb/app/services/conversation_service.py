@@ -124,3 +124,8 @@ async def get_all_conversations_admin():
     cursor = db.conversations.find().sort("updated_at", -1)  # Sắp xếp mới nhất
     docs = await cursor.to_list(length=None)
     return [serialize_doc(d) for d in docs]
+
+async def delete_all_conversations_by_user(user_id: str) -> int:
+    """Xóa tất cả cuộc hội thoại thuộc về một user_id cụ thể."""
+    result = await db.conversations.delete_many({"user_id": user_id})
+    return result.deleted_count
