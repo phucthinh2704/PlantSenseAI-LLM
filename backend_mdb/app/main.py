@@ -1,3 +1,9 @@
+# Tắt log verbose TensorFlow - phải đặt TRƯỚC khi import tensorflow
+import os
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+os.environ["KERAS_BACKEND"] = "tensorflow"
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv

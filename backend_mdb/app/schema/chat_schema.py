@@ -8,14 +8,8 @@ class Source(BaseModel):
     url: str
     retrieved_at: date = Field(default_factory=date.today)
 
-class QueryRequest(BaseModel):
-    question: str
-    user_id: str  # Xác định người dùng
-    conversation_id: Optional[str] = None # Tùy chọn, null cho tin nhắn đầu
-    image: Optional[str] = None # URL hoặc base64 của hình ảnh
-    top_k: int = 10
-
 class QueryResponse(BaseModel):
     answer: str
     sources: List[List[Source]]
-    conversation_id: str # Luôn trả về để frontend có thể lưu lại
+    conversation_id: str  # Luôn trả về để frontend có thể lưu lại
+    disease_info: Optional[dict] = None  # Thông tin bệnh từ CNN (nếu có ảnh)

@@ -56,6 +56,7 @@ from diskcache import Cache
 from dotenv import load_dotenv
 from app.models.user import create_admin_user
 from app.core.database import create_indexes, client
+from app.classification.classify import load_all_models
 
 load_dotenv()
 
@@ -104,6 +105,14 @@ async def lifespan(app: FastAPI):
     
     await create_indexes()
     await create_admin_user()
+
+    # Load CNN models vào bộ nhớ (chỉ 1 lần khi server khởi động)
+    print("⏳ Đang load CNN models (ConvNeXtV2 + ResNet101)...")
+    try:
+        load_all_models()
+        print("✅ CNN models đã load thành công!")
+    except Exception as e:
+        print(f"⚠️ CNN models load thất bại (sẽ bỏ qua phân loại ảnh): {e}")
     
     yield
     

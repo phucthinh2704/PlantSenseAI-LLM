@@ -251,11 +251,10 @@ const ChatSidebar = ({
 									handleSelectConversation(conv.id);
 								}
 							}}
-							className={`group relative p-3 rounded-lg cursor-pointer transition-all duration-200 ${
-								conv.active
+							className={`group relative p-3 rounded-lg cursor-pointer transition-all duration-200 ${conv.active
 									? "bg-green-700 text-white"
 									: "hover:bg-gray-700 text-gray-200"
-							}`}>
+								}`}>
 							<div className="flex items-start justify-between">
 								<div className="flex-1 min-w-0">
 									{/* Inline Editing */}
@@ -320,19 +319,17 @@ const ChatSidebar = ({
 									{editingConvId !== conv.id && (
 										<>
 											<p
-												className={`text-xs mt-1 truncate ${
-													conv.active
+												className={`text-xs mt-1 truncate ${conv.active
 														? "text-green-100"
 														: "text-gray-300"
-												}`}>
+													}`}>
 												{conv.lastMessage}
 											</p>
 											<span
-												className={`text-xs mt-1 block ${
-													conv.active
+												className={`text-xs mt-1 block ${conv.active
 														? "text-green-200"
 														: "text-gray-400"
-												}`}>
+													}`}>
 												{" "}
 												{/* Mờ hơn */}
 												{conv.timestamp}
@@ -346,7 +343,7 @@ const ChatSidebar = ({
 										editingConvId === conv.id
 											? "hidden"
 											: "flex"
-									} space-x-1 opacity-0 group-hover:opacity-100 transition-opacity absolute top-2 right-2`} // Định vị tuyệt đối
+										} space-x-1 opacity-0 group-hover:opacity-100 transition-opacity absolute top-2 right-2`} // Định vị tuyệt đối
 								>
 									<button
 										className="p-1 hover:bg-blue-600 rounded text-white bg-gray-600" // Thêm màu nền
@@ -408,11 +405,10 @@ const Navbar = ({ user }) => {
 						{/* Status */}
 						<div className="hidden sm:flex items-center space-x-2">
 							<div
-								className={`w-2 h-2 rounded-full ${
-									user.status === "active"
+								className={`w-2 h-2 rounded-full ${user.status === "active"
 										? "bg-green-500 animate-pulse"
 										: "bg-gray-400"
-								}`}></div>
+									}`}></div>
 							<span
 								className={`text-sm font-medium ${getStatusColor(
 									user.status
@@ -445,9 +441,8 @@ const Navbar = ({ user }) => {
 									</p>
 								</div>
 								<ChevronDown
-									className={`w-4 h-4 text-gray-500 transition-transform ${
-										showUserMenu ? "rotate-180" : ""
-									}`}
+									className={`w-4 h-4 text-gray-500 transition-transform ${showUserMenu ? "rotate-180" : ""
+										}`}
 								/>
 							</button>
 
@@ -489,12 +484,11 @@ const Navbar = ({ user }) => {
 													<div className="flex items-center justify-between mt-2">
 														<div className="flex items-center space-x-1">
 															<div
-																className={`w-2 h-2 rounded-full ${
-																	user.status ===
-																	"active"
+																className={`w-2 h-2 rounded-full ${user.status ===
+																		"active"
 																		? "bg-green-500"
 																		: "bg-gray-400"
-																}`}></div>
+																	}`}></div>
 															<span
 																className={`text-xs ${getStatusColor(
 																	user.status
@@ -609,6 +603,7 @@ const Navbar = ({ user }) => {
 // Message Component
 const Message = ({
 	message,
+	images = [],
 	isBot = false,
 	timestamp,
 	streaming = false,
@@ -616,19 +611,16 @@ const Message = ({
 }) => {
 	return (
 		<div
-			className={`flex w-full mb-6${
-				isBot ? "justify-start" : "justify-end"
-			}`}>
+			className={`flex w-full mb-6${isBot ? "justify-start" : "justify-end"
+				}`}>
 			<div className="flex max-w-4xl w-full">
 				{/* Avatar */}
 				<div
-					className={`flex-shrink-0 flex items-start ${
-						isBot ? "mr-4" : "ml-4 order-2"
-					}`}>
-					<div
-						className={`w-10 h-10 rounded-full flex items-center justify-center ${
-							isBot ? "bg-green-600" : "bg-blue-600"
+					className={`flex-shrink-0 flex items-start ${isBot ? "mr-4" : "ml-4 order-2"
 						}`}>
+					<div
+						className={`w-10 h-10 rounded-full flex items-center justify-center ${isBot ? "bg-green-600" : "bg-blue-600"
+							}`}>
 						{isBot ? (
 							<Bot
 								size={16}
@@ -645,35 +637,49 @@ const Message = ({
 
 				{/* Body */}
 				<div
-					className={`flex-1 min-w-0 flex flex-col ${
-						isBot ? "" : "items-end"
-					}`}>
+					className={`flex-1 min-w-0 flex flex-col ${isBot ? "" : "items-end"
+						}`}>
 					<div
-						className={`${
-							isBot ? "text-left" : "text-right"
-						} mb-1`}>
+						className={`${isBot ? "text-left" : "text-right"
+							} mb-1`}>
 						<span className="text-xs text-gray-500 font-medium">
 							{isBot ? "AgriBot" : "Bạn"} • {timestamp}
 						</span>
 					</div>
 
-					<div
-						className={`inline-block px-4 py-3 rounded-2xl max-w-fit break-words ${
-							isBot
-								? "bg-white border border-gray-200 text-gray-800"
-								: "bg-green-600 text-white"
-						}`}>
-						<div className="prose prose-sm max-w-none">
-							{isBot && streaming ? (
-								<TypewriterMarkdown
-									text={message}
-									onDone={onStreamEnd}
+					{/* Ảnh đính kèm (chỉ user message) */}
+					{!isBot && images.length > 0 && (
+						<div className="flex flex-wrap gap-2 mb-2 justify-end">
+							{images.map((url, idx) => (
+								<img
+									key={idx}
+									src={url}
+									alt={`img-${idx}`}
+									className="max-w-[220px] max-h-[220px] rounded-xl object-cover border border-gray-200 shadow-sm"
 								/>
-							) : (
-								<MarkdownFormatter value={message} />
-							)}
+							))}
 						</div>
-					</div>
+					)}
+
+					{/* Text bubble — ẩn nếu không có text */}
+					{(message || isBot) && (
+						<div
+							className={`inline-block px-4 py-3 rounded-2xl max-w-fit break-words ${isBot
+									? "bg-white border border-gray-200 text-gray-800"
+									: "bg-green-600 text-white"
+								}`}>
+							<div className="prose prose-sm max-w-none">
+								{isBot && streaming ? (
+									<TypewriterMarkdown
+										text={message}
+										onDone={onStreamEnd}
+									/>
+								) : (
+									<MarkdownFormatter value={message} />
+								)}
+							</div>
+						</div>
+					)}
 				</div>
 			</div>
 		</div>
@@ -888,11 +894,10 @@ const ChatInput = ({ onSendMessage, disabled = false }) => {
 							type="button"
 							onClick={() => fileInputRef.current?.click()}
 							disabled={disabled}
-							className={`p-3.5 rounded-xl transition-all duration-200 ${
-								!disabled
+							className={`p-3.5 rounded-xl transition-all duration-200 ${!disabled
 									? "bg-gray-200 hover:bg-gray-300 text-gray-700"
 									: "bg-gray-100 text-gray-400 cursor-not-allowed"
-							}`}>
+								}`}>
 							<ImageIcon size={20} />
 						</button>
 					</div>
@@ -919,11 +924,10 @@ const ChatInput = ({ onSendMessage, disabled = false }) => {
 								disabled={disabled}
 								aria-label="Xoá nội dung đang soạn"
 								className={`cursor-pointer absolute right-2 top-1/2  -translate-y-1/2 p-1.5 pb-2 rounded-md transition-colors
-        ${
-			!disabled
-				? "text-gray-500 hover:text-gray-700 hover:bg-gray-100"
-				: "text-gray-300 cursor-not-allowed"
-		}
+        ${!disabled
+										? "text-gray-500 hover:text-gray-700 hover:bg-gray-100"
+										: "text-gray-300 cursor-not-allowed"
+									}
       `}>
 								<X size={16} />
 							</button>
@@ -937,12 +941,11 @@ const ChatInput = ({ onSendMessage, disabled = false }) => {
 							(!message.trim() && selectedFiles.length === 0) ||
 							disabled
 						}
-						className={`p-3.5 rounded-xl transition-all duration-200 ${
-							(message.trim() || selectedFiles.length > 0) &&
-							!disabled
+						className={`p-3.5 rounded-xl transition-all duration-200 ${(message.trim() || selectedFiles.length > 0) &&
+								!disabled
 								? "bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl"
 								: "bg-gray-300 text-gray-500 cursor-not-allowed"
-						}`}>
+							}`}>
 						<Send size={20} />
 					</button>
 				</form>
@@ -1138,16 +1141,20 @@ const HomePage = () => {
 	// 	// tắt “đang soạn” (vì đã bắt đầu gõ)
 	// 	setIsTyping(false);
 	// }; // streaming
-	const handleSendMessage = async (messageText) => {
+	const handleSendMessage = async (messageText, selectedFiles = []) => {
 		if (!userId) {
 			console.error("User ID is missing!");
 			// Có thể hiển thị thông báo lỗi cho người dùng
 			return;
 		}
 
+		// Lưu preview URL của ảnh để hiển thị trong chat
+		const imagePreviewUrls = selectedFiles.map((f) => f.url);
+
 		const userMsg = {
 			id: `user-${Date.now()}`, // ID duy nhất hơn
 			text: messageText,
+			images: imagePreviewUrls, // Ảnh preview
 			isBot: false,
 			timestamp: new Date().toLocaleTimeString("vi-VN", {
 				hour: "2-digit",
@@ -1163,6 +1170,7 @@ const HomePage = () => {
 			question: messageText,
 			user_id: userId,
 			conversation_id: currentConversationId, // Gửi ID hiện tại (null nếu là cuộc trò chuyện mới)
+			images: selectedFiles, // Gửi mảng file ảnh
 		};
 
 		try {
@@ -1266,6 +1274,7 @@ const HomePage = () => {
 									<Message
 										key={m.id}
 										message={m.text}
+										images={m.images ?? []}
 										isBot={m.isBot}
 										timestamp={m.timestamp}
 										streaming={m.streaming}
@@ -1275,9 +1284,9 @@ const HomePage = () => {
 													prev.map((x) =>
 														x.id === m.id
 															? {
-																	...x,
-																	streaming: false,
-															  }
+																...x,
+																streaming: false,
+															}
 															: x
 													)
 												);

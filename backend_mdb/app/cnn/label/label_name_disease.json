@@ -1,0 +1,20 @@
+{
+    "Alternaria": "Bệnh đốm đen", 
+    "Anthracnose": "Bệnh thán thư", 
+    "Bacterial Canker": " Bệnh loét vi khuẩn", 
+    "Black Mould Rot": "Bệnh thối mốc đen", 
+    "Healthy": "Xoài khỏe mạnh", 
+    "Scab": "Bệnh ghẻ", 
+    "Stem End Rot": "Bệnh thối cuống",
+
+    "bacterial_leaf_blight": "Bệnh bạc lá", 
+    "brown_spot": "Bệnh đốm nâu", 
+    "healthy_rice": "Lúa khỏe mạnh", 
+    "leaf_blast": "Bệnh đạo ôn lá", 
+    "leaf_scald": "Bệnh cháy lá chóp", 
+    "narrow_brown_spot": "Bệnh đốm nâu hẹp", 
+    "neck_blast": "Bệnh đạo ôn cổ bông", 
+    "rice_hispa": "Bệnh sâu cuốn lá cứng", 
+    "sheath_blight": "Bệnh đốm vằn", 
+    "tungro": "Bệnh vàng lùn tungro"
+}
