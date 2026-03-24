@@ -197,27 +197,6 @@ def delete_chunks_by_doc_id(doc_id: str):
 
 
 # --- 4. CÁC HÀM FORMAT ---
-def format_plant_document_to_text(
-    doc: dict, db_client: pymongo.database.Database
-) -> str:
-    parts = []
-    if doc.get("name"):
-        parts.append(f"Tên giống cây: {doc['name']}.")
-    if doc.get("plant_type"):
-        parts.append(f"Loại cây: {doc['plant_type']}.")
-    if doc.get("category"):
-        parts.append(f"Phân loại: {doc['category']}.")
-    if doc.get("origin"):
-        parts.append(f"Nguồn gốc: {doc['origin']}.")
-    if doc.get("growth_duration"):
-        parts.append(f"Thời gian sinh trưởng: {doc['growth_duration']}.")
-    if doc.get("yields"):
-        parts.append(f"Năng suất: {doc['yields']}.")
-    if doc.get("morphology"):
-        parts.append(f"Đặc điểm hình thái: {doc['morphology']}.")
-    if doc.get("description"):
-        parts.append(f"Mô tả chi tiết: {doc['description']}.")
-    return "\n".join(parts)
 
 
 def format_disease_stage_document_to_text(
@@ -268,37 +247,45 @@ def format_disease_stage_document_to_text(
     )
     return "\n".join(filter(None, parts))
 
-
-def format_cultivation_technique_document_to_text(
-    doc: dict, db_client: pymongo.database.Database
-) -> str:
+# Cập nhật trong file indexing.py
+def format_plant_document_to_text(doc: dict, db_client: pymongo.database.Database) -> str:
     parts = []
     if doc.get("name"):
-        parts.append(f"Tên kỹ thuật canh tác: {doc['name']}.")
-    if doc.get("crop_type"):
-        parts.append(f"Áp dụng cho: {doc['crop_type']}.")
-    if doc.get("category"):
-        parts.append(f"Phân loại kỹ thuật: {doc['category']}.")
-    if doc.get("application_period"):
-        parts.append(f"Giai đoạn áp dụng: {doc['application_period']}.")
+        parts.append(f"Thông tin chi tiết về giống: {doc['name']}.")
+    if doc.get("category") and doc.get("plant_type"):
+        parts.append(f"Thuộc nhóm {doc['category']}, loài {doc['plant_type']}.")
+    
+    # Các trường cũ (nếu có)
+    if doc.get("origin"): parts.append(f"Nguồn gốc: {doc['origin']}.")
+    if doc.get("growth_duration"): parts.append(f"Thời gian sinh trưởng: {doc['growth_duration']}.")
+    if doc.get("yields"): parts.append(f"Năng suất: {doc['yields']}.")
+    if doc.get("morphology"): parts.append(f"Đặc điểm hình thái: {doc['morphology']}.")
+    
+    # Trường description chứa rất nhiều text từ Excel
     if doc.get("description"):
-        parts.append(f"Mô tả: {doc['description']}.")
-    if doc.get("requirements"):
-        parts.append(f"Yêu cầu: {doc['requirements']}.")
-    if doc.get("benefits"):
-        parts.append(f"Lợi ích: {doc['benefits']}.")
+        parts.append(f"Đặc tính và mô tả giống {doc.get('name')}:\n{doc['description']}")
+    return "\n".join(parts)
+
+def format_cultivation_technique_document_to_text(doc: dict, db_client: pymongo.database.Database) -> str:
+    parts = []
+    if doc.get("name"):
+        parts.append(f"{doc['name']}.")
+    if doc.get("crop_type"):
+        parts.append(f"Áp dụng cho loài: {doc['crop_type']}.")
+    
+    # Dữ liệu từ Excel nằm chủ yếu ở description
+    if doc.get("description"):
+        parts.append(f"Hướng dẫn canh tác chi tiết:\n{doc['description']}")
+        
+    # Phần steps cũ vẫn giữ nguyên nếu có nhập bằng tay sau này
     if doc.get("steps"):
         tech_steps = ["Các bước thực hiện:"]
         for step in doc["steps"]:
-            step_desc = f"- Bước {step.get('step', '')}: {step.get('name', '')}. Mô tả: {step.get('description', '')}."
-            if step.get("note"):
-                step_desc += f" Lưu ý: {step['note']}."
+            step_desc = f"- Bước {step.get('step', '')}: {step.get('name', '')}. {step.get('description', '')}"
             tech_steps.append(step_desc)
         parts.append("\n".join(tech_steps))
-    if doc.get("notes"):
-        parts.append(f"Ghi chú chung: {doc['notes']}.")
+        
     return "\n".join(parts)
-
 
 FORMATTERS = {
     "plant": format_plant_document_to_text,

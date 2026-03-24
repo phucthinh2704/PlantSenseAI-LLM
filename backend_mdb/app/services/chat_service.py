@@ -63,7 +63,7 @@ async def process_chat_request(
     question: str,
     conversation_id: Optional[str] = None,
     image_bytes: Optional[bytes] = None,
-    top_k: int = 10,
+    top_k: int = 20,
 ) -> dict:
     """
     Xử lý yêu cầu chat:

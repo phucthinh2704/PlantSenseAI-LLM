@@ -880,7 +880,7 @@ const ChatInput = ({ onSendMessage, disabled = false }) => {
 					onSubmit={handleSubmit}
 					className="flex items-center space-x-3">
 					{/* Nút upload nhiều ảnh */}
-					<div>
+					{/* <div>
 						<input
 							ref={fileInputRef}
 							type="file"
@@ -900,7 +900,7 @@ const ChatInput = ({ onSendMessage, disabled = false }) => {
 								}`}>
 							<ImageIcon size={20} />
 						</button>
-					</div>
+					</div> */}
 
 					{/* Textarea nhập tin nhắn */}
 					<div className="flex-1 relative">

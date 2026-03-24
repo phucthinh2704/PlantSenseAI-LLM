@@ -11,7 +11,7 @@ async def chat_with_rag(
     user_id: str = Form(...),
     question: str = Form(""),
     conversation_id: Optional[str] = Form(None),
-    top_k: int = Form(10),
+    top_k: int = Form(20),
     images: Optional[list[UploadFile]] = File(None),  # Nhận nhiều file ảnh
 ):
     try:

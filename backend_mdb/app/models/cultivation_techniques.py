@@ -45,8 +45,7 @@ class CultivationTechnique(BaseModel):
     notes: Optional[str] = Field(default=None, description="Ghi chú thêm")
 
     # === Phân biệt giữa lúa và xoài ===
-    crop_type: str = Field(..., description="Loại cây trồng (VD: 'Lúa', 'Xoài')")
-
+    crop_type: Optional[str] = Field(default=None, description="Loại cây trồng")
     sources: List[Source] = Field(
         default_factory=list,
         description="Danh sách các nguồn tham khảo cho kỹ thuật này",
